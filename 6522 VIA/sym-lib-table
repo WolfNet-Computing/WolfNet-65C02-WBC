@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name 65xx)(type Legacy)(uri C:/Projects/Electronics/My_PC/65xx.lib)(options "")(descr ""))
+  (lib (name PC)(type Legacy)(uri C:/Projects/Electronics/My_PC/PC.lib)(options "")(descr ""))
+)
