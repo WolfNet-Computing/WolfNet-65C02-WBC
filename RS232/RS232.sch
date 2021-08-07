@@ -349,7 +349,6 @@ NoConn ~ 10600 1700
 NoConn ~ 10600 1600
 NoConn ~ 10600 1500
 NoConn ~ 10600 1400
-NoConn ~ 10600 1300
 NoConn ~ 10600 1100
 NoConn ~ 10600 900 
 NoConn ~ 10600 800 
@@ -1084,4 +1083,6 @@ Wire Wire Line
 Connection ~ 4300 4200
 Wire Wire Line
 	4300 4200 4550 4200
+Text GLabel 10600 1300 2    50   Input ~ 0
+IRQ1
 $EndSCHEMATC

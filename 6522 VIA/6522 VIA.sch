@@ -80,7 +80,7 @@ D6
 Text GLabel 4450 3550 2    50   BiDi ~ 0
 D7
 Text GLabel 4450 4050 2    50   Output ~ 0
-NMI
+IRQ
 Text GLabel 3150 2250 0    50   Output ~ 0
 GPIO0
 Text GLabel 3150 2350 0    50   BiDi ~ 0
@@ -150,7 +150,6 @@ NoConn ~ 4050 6850
 NoConn ~ 4150 6850
 NoConn ~ 4250 6850
 NoConn ~ 4350 6850
-NoConn ~ 4450 6850
 NoConn ~ 4950 6850
 NoConn ~ 5050 6850
 $Comp
@@ -175,8 +174,6 @@ F 3 "" H 4950 6350 50  0001 C CNN
 	1    4950 6350
 	-1   0    0    1   
 $EndComp
-Text GLabel 4750 6850 3    50   Input ~ 0
-NMI
 Text GLabel 4850 6850 3    50   Output ~ 0
 PHI2
 Text GLabel 2450 6350 1    50   Output ~ 0
@@ -493,4 +490,7 @@ Text GLabel 8800 3400 2    50   Input ~ 0
 A8
 Text GLabel 8800 3900 2    50   Input ~ 0
 A9
+NoConn ~ 4750 6850
+Text GLabel 4450 6850 3    50   Input ~ 0
+IRQ
 $EndSCHEMATC
