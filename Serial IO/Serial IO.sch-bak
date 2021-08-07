@@ -1207,80 +1207,14 @@ Wire Wire Line
 Wire Wire Line
 	2400 6500 2500 6500
 $Comp
-L 74xx:74LS08 U?
-U 2 1 610FDBBE
-P 1850 5250
-F 0 "U?" H 1850 4933 50  0000 C CNN
-F 1 "74LS08" H 1850 5024 50  0000 C CNN
-F 2 "" H 1850 5250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 1850 5250 50  0001 C CNN
-	2    1850 5250
-	-1   0    0    1   
-$EndComp
-$Comp
 L 74xx:74HC04 U?
 U 1 1 61107C6A
-P 2800 5000
-F 0 "U?" H 2800 4683 50  0000 C CNN
-F 1 "74HC04" H 2800 4774 50  0000 C CNN
-F 2 "" H 2800 5000 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2800 5000 50  0001 C CNN
-	1    2800 5000
-	-1   0    0    1   
-$EndComp
-$Comp
-L 74xx:74HC04 U?
-U 2 1 6110C1EE
-P 2800 5500
-F 0 "U?" H 2800 5183 50  0000 C CNN
-F 1 "74HC04" H 2800 5274 50  0000 C CNN
-F 2 "" H 2800 5500 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2800 5500 50  0001 C CNN
-	2    2800 5500
-	-1   0    0    1   
-$EndComp
-$Comp
-L 74xx:74HC04 U?
-U 3 1 6110D529
-P 2800 6000
-F 0 "U?" H 2800 5683 50  0000 C CNN
-F 1 "74HC04" H 2800 5774 50  0000 C CNN
-F 2 "" H 2800 6000 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2800 6000 50  0001 C CNN
-	3    2800 6000
-	-1   0    0    1   
-$EndComp
-$Comp
-L 74xx:74HC04 U?
-U 4 1 6110E76D
-P 2800 6500
-F 0 "U?" H 2800 6183 50  0000 C CNN
-F 1 "74HC04" H 2800 6274 50  0000 C CNN
-F 2 "" H 2800 6500 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2800 6500 50  0001 C CNN
-	4    2800 6500
-	-1   0    0    1   
-$EndComp
-$Comp
-L 74xx:74HC04 U?
-U 5 1 6110FB29
-P 2800 7000
-F 0 "U?" H 2800 6683 50  0000 C CNN
-F 1 "74HC04" H 2800 6774 50  0000 C CNN
-F 2 "" H 2800 7000 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2800 7000 50  0001 C CNN
-	5    2800 7000
-	-1   0    0    1   
-$EndComp
-$Comp
-L 74xx:74HC04 U?
-U 6 1 61110BB3
-P 2800 7500
-F 0 "U?" H 2800 7183 50  0000 C CNN
-F 1 "74HC04" H 2800 7274 50  0000 C CNN
-F 2 "" H 2800 7500 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2800 7500 50  0001 C CNN
-	6    2800 7500
+P 2800 5350
+F 0 "U?" H 2800 5033 50  0000 C CNN
+F 1 "74HC04" H 2800 5124 50  0000 C CNN
+F 2 "" H 2800 5350 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2800 5350 50  0001 C CNN
+	1    2800 5350
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -1290,19 +1224,61 @@ Wire Wire Line
 Wire Wire Line
 	1300 5550 1350 5550
 Wire Wire Line
-	1350 5550 1350 5250
+	1350 5550 1350 5350
 Wire Wire Line
-	1350 5250 1550 5250
-Wire Wire Line
-	2350 5150 2350 5000
-Wire Wire Line
-	2350 5000 2500 5000
-Wire Wire Line
-	2150 5150 2350 5150
-Wire Wire Line
-	2150 5350 2350 5350
-Wire Wire Line
-	2350 5350 2350 5500
-Wire Wire Line
-	2350 5500 2500 5500
+	2500 5350 1350 5350
+Text GLabel 3100 5350 2    50   Input ~ 0
+A5
+$Comp
+L 74xx:74HC04 U?
+U 2 1 61154660
+P 2800 6000
+F 0 "U?" H 2800 5683 50  0000 C CNN
+F 1 "74HC04" H 2800 5774 50  0000 C CNN
+F 2 "" H 2800 6000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2800 6000 50  0001 C CNN
+	2    2800 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L 74xx:74HC04 U?
+U 3 1 6115519D
+P 2800 6500
+F 0 "U?" H 2800 6183 50  0000 C CNN
+F 1 "74HC04" H 2800 6274 50  0000 C CNN
+F 2 "" H 2800 6500 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2800 6500 50  0001 C CNN
+	3    2800 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L 74xx:74HC04 U?
+U 4 1 61155EC3
+P 2800 7000
+F 0 "U?" H 2800 6683 50  0000 C CNN
+F 1 "74HC04" H 2800 6774 50  0000 C CNN
+F 2 "" H 2800 7000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2800 7000 50  0001 C CNN
+	4    2800 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L 74xx:74HC04 U?
+U 5 1 61156C9A
+P 2800 7500
+F 0 "U?" H 2800 7183 50  0000 C CNN
+F 1 "74HC04" H 2800 7274 50  0000 C CNN
+F 2 "" H 2800 7500 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2800 7500 50  0001 C CNN
+	5    2800 7500
+	-1   0    0    1   
+$EndComp
+Text GLabel 3100 6000 2    50   Input ~ 0
+A6
+Text GLabel 3100 6500 2    50   Input ~ 0
+A7
+Text GLabel 3100 7000 2    50   Input ~ 0
+A8
+Text GLabel 3100 7500 2    50   Input ~ 0
+A9
 $EndSCHEMATC

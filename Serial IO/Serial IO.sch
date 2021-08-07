@@ -331,14 +331,8 @@ Text GLabel 6250 2550 0    50   Output ~ 0
 KBD_D6
 Text GLabel 6250 2450 0    50   Output ~ 0
 KBD_D7
-NoConn ~ 5000 1650
-NoConn ~ 5000 1750
 Text GLabel 5000 2050 2    50   Input ~ 0
 RESET
-Text GLabel 5000 1850 2    50   Input ~ 0
-A0
-Text GLabel 5000 1950 2    50   Input ~ 0
-A1
 $Comp
 L power:+5V #PWR0110
 U 1 1 60F42A63
@@ -430,8 +424,6 @@ D7
 Text GLabel 5000 2950 2    50   Input ~ 0
 PHI2
 Text GLabel 5000 3250 2    50   Input ~ 0
-A4
-Text GLabel 5000 3350 2    50   Input ~ 0
 RW
 Text GLabel 3700 1550 0    50   Input ~ 0
 KBD_D0
@@ -476,17 +468,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 3100 3
 $EndComp
 Text GLabel 3700 3150 0    50   Input ~ 0
 IN_DA
-$Comp
-L 65xx:WD65C21 U2
-U 1 1 60F3CD3E
-P 4350 2350
-F 0 "U2" H 4350 3537 60  0000 C CNN
-F 1 "WD65C21" H 4350 3431 60  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 3850 2550 60  0001 C CNN
-F 3 "" H 3850 2550 60  0000 C CNN
-	1    4350 2350
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C4
 U 1 1 60F5D9C0
@@ -1168,20 +1149,18 @@ $EndComp
 $Comp
 L 74xx:74LS08 U?
 U 1 1 6105548A
-P 1000 5650
-F 0 "U?" H 1000 5333 50  0000 C CNN
-F 1 "74LS08" H 1000 5424 50  0000 C CNN
-F 2 "" H 1000 5650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 1000 5650 50  0001 C CNN
-	1    1000 5650
+P 1900 5250
+F 0 "U?" H 1900 4933 50  0000 C CNN
+F 1 "74LS08" H 1900 5024 50  0000 C CNN
+F 2 "" H 1900 5250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 1900 5250 50  0001 C CNN
+	1    1900 5250
 	-1   0    0    1   
 $EndComp
 Text GLabel 700  5650 0    50   Output ~ 0
 CS0
 Text GLabel 5000 3050 2    50   Input ~ 0
 CS1
-Wire Wire Line
-	1300 5750 1350 5750
 Wire Wire Line
 	2150 6600 2250 6600
 Wire Wire Line
@@ -1217,16 +1196,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2800 535
 	1    2800 5350
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1350 6750 1550 6750
-Wire Wire Line
-	1350 5750 1350 6750
-Wire Wire Line
-	1300 5550 1350 5550
-Wire Wire Line
-	1350 5550 1350 5350
-Wire Wire Line
-	2500 5350 1350 5350
 Text GLabel 3100 5350 2    50   Input ~ 0
 A5
 $Comp
@@ -1281,4 +1250,52 @@ Text GLabel 3100 7000 2    50   Input ~ 0
 A8
 Text GLabel 3100 7500 2    50   Input ~ 0
 A9
+$Comp
+L 65xx:WD65C22 U?
+U 1 1 610F7212
+P 4350 2350
+F 0 "U?" H 4350 3537 60  0000 C CNN
+F 1 "WD65C22" H 4350 3431 60  0000 C CNN
+F 2 "" H 3850 2550 60  0000 C CNN
+F 3 "" H 3850 2550 60  0000 C CNN
+	1    4350 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 5000 3350 2    50   Output ~ 0
+NMI
+Text GLabel 2200 5150 2    50   Input ~ 0
+A4
+$Comp
+L 74xx:74LS08 U?
+U 2 1 6112490A
+P 1150 5650
+F 0 "U?" H 1150 5333 50  0000 C CNN
+F 1 "74LS08" H 1150 5424 50  0000 C CNN
+F 2 "" H 1150 5650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 1150 5650 50  0001 C CNN
+	2    1150 5650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	700  5650 850  5650
+Wire Wire Line
+	1450 5550 1550 5550
+Wire Wire Line
+	1550 5550 1550 5250
+Wire Wire Line
+	1550 5250 1600 5250
+Wire Wire Line
+	1450 5750 1550 5750
+Wire Wire Line
+	1550 5750 1550 6750
+Wire Wire Line
+	2200 5350 2500 5350
+Text GLabel 5000 1650 2    50   Input ~ 0
+A0
+Text GLabel 5000 1750 2    50   Input ~ 0
+A1
+Text GLabel 5000 1850 2    50   Input ~ 0
+A2
+Text GLabel 5000 1950 2    50   Input ~ 0
+A3
 $EndSCHEMATC
