@@ -182,3 +182,4 @@ pip-log.txt
 # Project specific files
 Reference
 WolfNet Software
+*.bat
