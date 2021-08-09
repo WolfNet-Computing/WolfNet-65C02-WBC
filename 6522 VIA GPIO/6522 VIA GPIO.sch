@@ -79,8 +79,6 @@ Text GLabel 4450 3450 2    50   BiDi ~ 0
 D6
 Text GLabel 4450 3550 2    50   BiDi ~ 0
 D7
-Text GLabel 4450 4050 2    50   Output ~ 0
-IRQ
 Text GLabel 3150 2250 0    50   Output ~ 0
 GPIO0
 Text GLabel 3150 2350 0    50   BiDi ~ 0
@@ -490,7 +488,9 @@ Text GLabel 8800 3400 2    50   Input ~ 0
 A8
 Text GLabel 8800 3900 2    50   Input ~ 0
 A9
-NoConn ~ 4750 6850
-Text GLabel 4450 6850 3    50   Input ~ 0
-IRQ
+Text GLabel 4450 4050 2    50   Output ~ 0
+NMI
+Text GLabel 4750 6850 3    50   Input ~ 0
+NMI
+NoConn ~ 4450 6850
 $EndSCHEMATC

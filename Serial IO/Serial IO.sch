@@ -423,8 +423,6 @@ Text GLabel 5000 2850 2    50   BiDi ~ 0
 D7
 Text GLabel 5000 2950 2    50   Input ~ 0
 PHI2
-Text GLabel 5000 3250 2    50   Input ~ 0
-RW
 Text GLabel 3700 1550 0    50   Input ~ 0
 KBD_D0
 Text GLabel 3700 1650 0    50   Input ~ 0
@@ -1250,19 +1248,6 @@ Text GLabel 3100 7000 2    50   Input ~ 0
 A8
 Text GLabel 3100 7500 2    50   Input ~ 0
 A9
-$Comp
-L 65xx:WD65C22 U?
-U 1 1 610F7212
-P 4350 2350
-F 0 "U?" H 4350 3537 60  0000 C CNN
-F 1 "WD65C22" H 4350 3431 60  0000 C CNN
-F 2 "" H 3850 2550 60  0000 C CNN
-F 3 "" H 3850 2550 60  0000 C CNN
-	1    4350 2350
-	1    0    0    -1  
-$EndComp
-Text GLabel 5000 3350 2    50   Output ~ 0
-NMI
 Text GLabel 2200 5150 2    50   Input ~ 0
 A4
 $Comp
@@ -1290,12 +1275,25 @@ Wire Wire Line
 	1550 5750 1550 6750
 Wire Wire Line
 	2200 5350 2500 5350
-Text GLabel 5000 1650 2    50   Input ~ 0
-A0
-Text GLabel 5000 1750 2    50   Input ~ 0
-A1
+$Comp
+L 65xx:WD65C21 U?
+U 1 1 61115C53
+P 4350 2350
+F 0 "U?" H 4350 3537 60  0000 C CNN
+F 1 "WD65C21" H 4350 3431 60  0000 C CNN
+F 2 "" H 3850 2550 60  0000 C CNN
+F 3 "" H 3850 2550 60  0000 C CNN
+	1    4350 2350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5000 1650
+NoConn ~ 5000 1750
 Text GLabel 5000 1850 2    50   Input ~ 0
-A2
+A0
 Text GLabel 5000 1950 2    50   Input ~ 0
-A3
+A1
+Text GLabel 5000 3250 2    50   Input ~ 0
+A4
+Text GLabel 5000 3350 2    50   Input ~ 0
+RW
 $EndSCHEMATC
