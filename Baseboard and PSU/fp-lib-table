@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name "Baseboard and PSU")(type KiCad)(uri "${KIPRJMOD}/Baseboard and PSU.pretty")(options "")(descr ""))
-  (lib (name PC)(type KiCad)(uri C:/Projects/Electronics/My_PC/PC.pretty)(options "")(descr ""))
-)

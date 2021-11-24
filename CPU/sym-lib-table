@@ -1,7 +1,0 @@
-(sym_lib_table
-  (lib (name 65xx)(type Legacy)(uri C:/Projects/Electronics/My_PC/65xx.lib)(options "")(descr ""))
-  (lib (name PC)(type Legacy)(uri C:/Projects/Electronics/My_PC/PC.lib)(options "")(descr ""))
-  (lib (name CPU-rescue)(type Legacy)(uri ${KIPRJMOD}/CPU-rescue.lib)(options "")(descr ""))
-  (lib (name Jumper_THT)(type Legacy)(uri C:/Projects/Electronics/My_PC/Jumper_THT.lib)(options "")(descr ""))
-  (lib (name Generic_Device)(type Legacy)(uri C:/Projects/Electronics/My_PC/Generic_Device.lib)(options "")(descr ""))
-)
