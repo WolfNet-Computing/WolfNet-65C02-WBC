@@ -19,7 +19,7 @@ U 1 1 618F571F
 P 2200 4850
 F 0 "P1" H 2217 5175 50  0000 C CNN
 F 1 "Conn_WallPlug" H 2217 5084 50  0000 C CNN
-F 2 "" H 2600 4850 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 2600 4850 50  0001 C CNN
 F 3 "~" H 2600 4850 50  0001 C CNN
 	1    2200 4850
 	1    0    0    -1  
@@ -172,7 +172,7 @@ U 1 1 6191C5BF
 P 2150 6050
 F 0 "J1" H 2207 6375 50  0000 C CNN
 F 1 "Jack-DC_18v" H 2207 6284 50  0000 C CNN
-F 2 "" H 2200 6010 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2200 6010 50  0001 C CNN
 F 3 "~" H 2200 6010 50  0001 C CNN
 	1    2150 6050
 	1    0    0    -1  
@@ -2266,9 +2266,9 @@ $EndComp
 Text GLabel 5800 13200 0    50   Input ~ 0
 IRQ_DECIDE
 Text GLabel 5950 12950 1    50   Output ~ 0
-IRQ1
+IRQ1\
 Text GLabel 5950 13450 3    50   Output ~ 0
-NMI
+NMI\
 $Comp
 L 74xx:74LS138 U18
 U 1 1 61D4A52C
@@ -4436,8 +4436,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 26700 11600 50  0001 C CNN
 	1    26700 11600
 	1    0    0    -1  
 $EndComp
-Text GLabel 27200 11300 2    50   Output ~ 0
-GND
 Text GLabel 27200 11400 2    50   Output ~ 0
 SEL1\
 Text GLabel 27200 11500 2    50   Output ~ 0
@@ -4625,385 +4623,484 @@ Text Notes 8600 4450 2    50   ~ 0
 WARNING: Do NOT switch input supply while plugged in.
 Text Notes 30600 4950 2    50   ~ 0
 TODO: Write code for EEPROM and Software-side.
-$Comp
-L PC:BaseboardConnector J4
-U 1 1 637BFC4F
-P 20850 14750
-F 0 "J4" H 20905 16367 50  0000 C CNN
-F 1 "BaseboardConnector" H 20905 16276 50  0000 C CNN
-F 2 "" H 20850 14750 50  0001 C CNN
-F 3 "~" H 20850 14750 50  0001 C CNN
-	1    20850 14750
-	1    0    0    -1  
-$EndComp
-$Comp
-L PC:BaseboardConnector J6
-U 1 1 61AF08C6
-P 24850 14750
-F 0 "J6" H 24905 16367 50  0000 C CNN
-F 1 "BaseboardConnector" H 24905 16276 50  0000 C CNN
-F 2 "" H 24850 14750 50  0001 C CNN
-F 3 "~" H 24850 14750 50  0001 C CNN
-	1    24850 14750
-	1    0    0    -1  
-$EndComp
-$Comp
-L PC:BaseboardConnector J7
-U 1 1 61AEE9CA
-P 26750 14750
-F 0 "J7" H 26805 16367 50  0000 C CNN
-F 1 "BaseboardConnector" H 26805 16276 50  0000 C CNN
-F 2 "" H 26750 14750 50  0001 C CNN
-F 3 "~" H 26750 14750 50  0001 C CNN
-	1    26750 14750
-	1    0    0    -1  
-$EndComp
-$Comp
-L PC:BaseboardConnector J5
-U 1 1 61AEC2D6
-P 22850 14750
-F 0 "J5" H 22905 16367 50  0000 C CNN
-F 1 "BaseboardConnector" H 22905 16276 50  0000 C CNN
-F 2 "" H 22850 14750 50  0001 C CNN
-F 3 "~" H 22850 14750 50  0001 C CNN
-	1    22850 14750
-	1    0    0    -1  
-$EndComp
-$Comp
-L PC:BaseboardConnector J9
-U 1 1 61AEAAD5
-P 28600 14750
-F 0 "J9" H 28655 16367 50  0000 C CNN
-F 1 "BaseboardConnector" H 28655 16276 50  0000 C CNN
-F 2 "" H 28600 14750 50  0001 C CNN
-F 3 "~" H 28600 14750 50  0001 C CNN
-	1    28600 14750
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	1900 16800 30950 16800
-Text GLabel 20650 13350 0    50   Input ~ 0
-VCC
-Text GLabel 20650 13450 0    50   Output ~ 0
-GND
-Text GLabel 20650 13550 0    50   Input ~ 0
-A0
-Text GLabel 20650 13650 0    50   Input ~ 0
-A1
-Text GLabel 20650 13750 0    50   Input ~ 0
-A2
-Text GLabel 20650 13850 0    50   Input ~ 0
-A3
-Text GLabel 20650 13950 0    50   Input ~ 0
-A4
-Text GLabel 20650 14050 0    50   Input ~ 0
-A5
-Text GLabel 20650 14150 0    50   Input ~ 0
-A6
-Text GLabel 20650 14250 0    50   Input ~ 0
-A7
-Text GLabel 20650 14350 0    50   Input ~ 0
-A8
-Text GLabel 20650 14450 0    50   Input ~ 0
-A9
-Text GLabel 20650 14550 0    50   Input ~ 0
-A10
-Text GLabel 20650 14650 0    50   Input ~ 0
-A11
-Text GLabel 20650 14750 0    50   Input ~ 0
-A12
-Text GLabel 20650 14850 0    50   Input ~ 0
-A13
-Text GLabel 20650 14950 0    50   Input ~ 0
-A14
-Text GLabel 20650 15050 0    50   Input ~ 0
-A15
-Text GLabel 21150 13450 2    50   Input ~ 0
-PHI1
-Text GLabel 21150 13550 2    50   Input ~ 0
-PHI2
-Text GLabel 21150 13350 2    50   Input ~ 0
-CLK
-Text GLabel 21150 13650 2    50   Input ~ 0
-NMI\
-Text GLabel 21150 13750 2    50   Input ~ 0
+NoConn ~ 27200 11300
+Text GLabel 23850 16350 2    50   Output ~ 0
 +12v
-Text GLabel 21150 13850 2    50   Input ~ 0
+Text GLabel 23850 16250 2    50   Output ~ 0
 -12v
-Text GLabel 20650 15150 0    50   Input ~ 0
-D0
-Text GLabel 20650 15250 0    50   Input ~ 0
-D1
-Text GLabel 20650 15350 0    50   Input ~ 0
-D2
-Text GLabel 20650 15450 0    50   Input ~ 0
-D3
-Text GLabel 20650 15550 0    50   Input ~ 0
-D4
-Text GLabel 20650 15650 0    50   Input ~ 0
-D5
-Text GLabel 20650 15750 0    50   Input ~ 0
-D6
-Text GLabel 20650 15850 0    50   Input ~ 0
-D7
-Text GLabel 20650 15950 0    50   Input ~ 0
-RW
-Text GLabel 20650 16050 0    50   Output ~ 0
-RDY
-Text GLabel 20650 16150 0    50   Input ~ 0
-Sync
-Text GLabel 20650 16250 0    50   Input ~ 0
-Reset\
-Text GLabel 22650 13350 0    50   Input ~ 0
-VCC
-Text GLabel 22650 13450 0    50   Output ~ 0
-GND
-Text GLabel 22650 13550 0    50   Input ~ 0
-A0
-Text GLabel 22650 13650 0    50   Input ~ 0
-A1
-Text GLabel 22650 13750 0    50   Input ~ 0
-A2
-Text GLabel 22650 13850 0    50   Input ~ 0
-A3
-Text GLabel 22650 13950 0    50   Input ~ 0
-A4
-Text GLabel 22650 14050 0    50   Input ~ 0
-A5
-Text GLabel 22650 14150 0    50   Input ~ 0
-A6
-Text GLabel 22650 14250 0    50   Input ~ 0
-A7
-Text GLabel 22650 14350 0    50   Input ~ 0
-A8
-Text GLabel 22650 14450 0    50   Input ~ 0
-A9
-Text GLabel 22650 14550 0    50   Input ~ 0
-A10
-Text GLabel 22650 14650 0    50   Input ~ 0
-A11
-Text GLabel 22650 14750 0    50   Input ~ 0
-A12
-Text GLabel 22650 14850 0    50   Input ~ 0
-A13
-Text GLabel 22650 14950 0    50   Input ~ 0
-A14
-Text GLabel 22650 15050 0    50   Input ~ 0
-A15
-Text GLabel 22650 15150 0    50   Input ~ 0
-D0
-Text GLabel 22650 15250 0    50   Input ~ 0
-D1
-Text GLabel 22650 15350 0    50   Input ~ 0
-D2
-Text GLabel 22650 15450 0    50   Input ~ 0
-D3
-Text GLabel 22650 15550 0    50   Input ~ 0
-D4
-Text GLabel 22650 15650 0    50   Input ~ 0
-D5
-Text GLabel 22650 15750 0    50   Input ~ 0
-D6
-Text GLabel 22650 15850 0    50   Input ~ 0
-D7
-Text GLabel 22650 15950 0    50   Input ~ 0
-RW
-Text GLabel 22650 16050 0    50   Output ~ 0
-RDY
-Text GLabel 22650 16150 0    50   Input ~ 0
-Sync
-Text GLabel 22650 16250 0    50   Input ~ 0
-Reset\
-Text GLabel 24650 13350 0    50   Input ~ 0
-VCC
-Text GLabel 24650 13450 0    50   Output ~ 0
-GND
-Text GLabel 24650 13550 0    50   Input ~ 0
-A0
-Text GLabel 24650 13650 0    50   Input ~ 0
-A1
-Text GLabel 24650 13750 0    50   Input ~ 0
-A2
-Text GLabel 24650 13850 0    50   Input ~ 0
-A3
-Text GLabel 24650 13950 0    50   Input ~ 0
-A4
-Text GLabel 24650 14050 0    50   Input ~ 0
-A5
-Text GLabel 24650 14150 0    50   Input ~ 0
-A6
-Text GLabel 24650 14250 0    50   Input ~ 0
-A7
-Text GLabel 24650 14350 0    50   Input ~ 0
-A8
-Text GLabel 24650 14450 0    50   Input ~ 0
-A9
-Text GLabel 24650 14550 0    50   Input ~ 0
-A10
-Text GLabel 24650 14650 0    50   Input ~ 0
-A11
-Text GLabel 24650 14750 0    50   Input ~ 0
-A12
-Text GLabel 24650 14850 0    50   Input ~ 0
-A13
-Text GLabel 24650 14950 0    50   Input ~ 0
-A14
-Text GLabel 24650 15050 0    50   Input ~ 0
-A15
-Text GLabel 24650 15150 0    50   Input ~ 0
-D0
-Text GLabel 24650 15250 0    50   Input ~ 0
-D1
-Text GLabel 24650 15350 0    50   Input ~ 0
-D2
-Text GLabel 24650 15450 0    50   Input ~ 0
-D3
-Text GLabel 24650 15550 0    50   Input ~ 0
-D4
-Text GLabel 24650 15650 0    50   Input ~ 0
-D5
-Text GLabel 24650 15750 0    50   Input ~ 0
-D6
-Text GLabel 24650 15850 0    50   Input ~ 0
-D7
-Text GLabel 24650 15950 0    50   Input ~ 0
-RW
-Text GLabel 24650 16050 0    50   Output ~ 0
-RDY
-Text GLabel 24650 16150 0    50   Input ~ 0
-Sync
-Text GLabel 24650 16250 0    50   Input ~ 0
-Reset\
-Text GLabel 26550 13350 0    50   Input ~ 0
-VCC
-Text GLabel 26550 13450 0    50   Output ~ 0
-GND
-Text GLabel 26550 13550 0    50   Input ~ 0
-A0
-Text GLabel 26550 13650 0    50   Input ~ 0
-A1
-Text GLabel 26550 13750 0    50   Input ~ 0
-A2
-Text GLabel 26550 13850 0    50   Input ~ 0
-A3
-Text GLabel 26550 13950 0    50   Input ~ 0
-A4
-Text GLabel 26550 14050 0    50   Input ~ 0
-A5
-Text GLabel 26550 14150 0    50   Input ~ 0
-A6
-Text GLabel 26550 14250 0    50   Input ~ 0
-A7
-Text GLabel 26550 14350 0    50   Input ~ 0
-A8
-Text GLabel 26550 14450 0    50   Input ~ 0
-A9
-Text GLabel 26550 14550 0    50   Input ~ 0
-A10
-Text GLabel 26550 14650 0    50   Input ~ 0
-A11
-Text GLabel 26550 14750 0    50   Input ~ 0
-A12
-Text GLabel 26550 14850 0    50   Input ~ 0
-A13
-Text GLabel 26550 14950 0    50   Input ~ 0
-A14
-Text GLabel 26550 15050 0    50   Input ~ 0
-A15
-Text GLabel 26550 15150 0    50   Input ~ 0
-D0
-Text GLabel 26550 15250 0    50   Input ~ 0
-D1
-Text GLabel 26550 15350 0    50   Input ~ 0
-D2
-Text GLabel 26550 15450 0    50   Input ~ 0
-D3
-Text GLabel 26550 15550 0    50   Input ~ 0
-D4
-Text GLabel 26550 15650 0    50   Input ~ 0
-D5
-Text GLabel 26550 15750 0    50   Input ~ 0
-D6
-Text GLabel 26550 15850 0    50   Input ~ 0
-D7
-Text GLabel 26550 15950 0    50   Input ~ 0
-RW
-Text GLabel 26550 16050 0    50   Output ~ 0
-RDY
-Text GLabel 26550 16150 0    50   Input ~ 0
-Sync
-Text GLabel 26550 16250 0    50   Input ~ 0
-Reset\
-Text GLabel 28400 13350 0    50   Input ~ 0
-VCC
-Text GLabel 28400 13450 0    50   Output ~ 0
-GND
-Text GLabel 28400 13550 0    50   Input ~ 0
-A0
-Text GLabel 28400 13650 0    50   Input ~ 0
-A1
-Text GLabel 28400 13750 0    50   Input ~ 0
-A2
-Text GLabel 28400 13850 0    50   Input ~ 0
-A3
-Text GLabel 28400 13950 0    50   Input ~ 0
-A4
-Text GLabel 28400 14050 0    50   Input ~ 0
-A5
-Text GLabel 28400 14150 0    50   Input ~ 0
-A6
-Text GLabel 28400 14250 0    50   Input ~ 0
-A7
-Text GLabel 28400 14350 0    50   Input ~ 0
-A8
-Text GLabel 28400 14450 0    50   Input ~ 0
-A9
-Text GLabel 28400 14550 0    50   Input ~ 0
-A10
-Text GLabel 28400 14650 0    50   Input ~ 0
-A11
-Text GLabel 28400 14750 0    50   Input ~ 0
-A12
-Text GLabel 28400 14850 0    50   Input ~ 0
-A13
-Text GLabel 28400 14950 0    50   Input ~ 0
-A14
-Text GLabel 28400 15050 0    50   Input ~ 0
-A15
-Text GLabel 28400 15150 0    50   Input ~ 0
-D0
-Text GLabel 28400 15250 0    50   Input ~ 0
-D1
-Text GLabel 28400 15350 0    50   Input ~ 0
-D2
-Text GLabel 28400 15450 0    50   Input ~ 0
-D3
-Text GLabel 28400 15550 0    50   Input ~ 0
-D4
-Text GLabel 28400 15650 0    50   Input ~ 0
-D5
-Text GLabel 28400 15750 0    50   Input ~ 0
-D6
-Text GLabel 28400 15850 0    50   Input ~ 0
-D7
-Text GLabel 28400 15950 0    50   Input ~ 0
-RW
-Text GLabel 28400 16050 0    50   Output ~ 0
-RDY
-Text GLabel 28400 16150 0    50   Input ~ 0
-Sync
-Text GLabel 28400 16250 0    50   Input ~ 0
-Reset\
-Text GLabel 21150 13950 2    50   Output ~ 0
-Page_En
-Text GLabel 21150 14050 2    50   Output ~ 0
-IRQ3\
-Text GLabel 21150 14150 2    50   Output ~ 0
-IRQ4\
-Text GLabel 21150 14250 2    50   Output ~ 0
-IRQ5\
-Text GLabel 21150 14350 2    50   Output ~ 0
-IRQ6\
-Text GLabel 21150 14450 2    50   Output ~ 0
+Text GLabel 23850 16150 2    50   Output ~ 0
 IRQ7\
+Text GLabel 23850 16050 2    50   Output ~ 0
+IRQ6\
+Text GLabel 23850 15950 2    50   Output ~ 0
+IRQ5\
+Text GLabel 23850 15850 2    50   Output ~ 0
+IRQ4\
+Text GLabel 23850 15750 2    50   Output ~ 0
+IRQ3\
+Text GLabel 23850 15650 2    50   Output ~ 0
+NMI\
+Text GLabel 23850 15550 2    50   Output ~ 0
+Page_En
+Text GLabel 23850 15450 2    50   Input ~ 0
+PHI2
+Text GLabel 23850 15350 2    50   Input ~ 0
+PHI1
+Text GLabel 23850 15250 2    50   Input ~ 0
+CLK
+Text GLabel 23850 15150 2    50   Input ~ 0
+Reset\
+Text GLabel 23850 15050 2    50   BiDi ~ 0
+D7
+Text GLabel 23850 14950 2    50   BiDi ~ 0
+D6
+Text GLabel 23850 14850 2    50   BiDi ~ 0
+D5
+Text GLabel 23850 14750 2    50   BiDi ~ 0
+D4
+Text GLabel 23850 14650 2    50   BiDi ~ 0
+D3
+Text GLabel 23850 14550 2    50   BiDi ~ 0
+D2
+Text GLabel 23850 14450 2    50   BiDi ~ 0
+D1
+Text GLabel 23850 14350 2    50   BiDi ~ 0
+D0
+$Comp
+L PC:Expansion_Connector J?
+U 1 1 61D86C8D
+P 23550 15350
+F 0 "J?" H 23605 16567 50  0000 C CNN
+F 1 "Expansion_Connector" H 23605 16476 50  0000 C CNN
+F 2 "" H 23550 15350 50  0001 C CNN
+F 3 "~" H 23550 15350 50  0001 C CNN
+	1    23550 15350
+	1    0    0    -1  
+$EndComp
+Text GLabel 23350 16350 0    50   Input ~ 0
+Sync
+Text GLabel 23350 16250 0    50   Output ~ 0
+RDY
+Text GLabel 23350 16150 0    50   Input ~ 0
+RW
+Text GLabel 23350 16050 0    50   Input ~ 0
+A15
+Text GLabel 23350 15950 0    50   Input ~ 0
+A14
+Text GLabel 23350 15850 0    50   Input ~ 0
+A13
+Text GLabel 23350 15750 0    50   Input ~ 0
+A12
+Text GLabel 23350 15650 0    50   Input ~ 0
+A11
+Text GLabel 23350 15550 0    50   Input ~ 0
+A10
+Text GLabel 23350 15450 0    50   Input ~ 0
+A9
+Text GLabel 23350 15350 0    50   Input ~ 0
+A8
+Text GLabel 23350 15250 0    50   Input ~ 0
+A7
+Text GLabel 23350 15150 0    50   Input ~ 0
+A6
+Text GLabel 23350 15050 0    50   Input ~ 0
+A5
+Text GLabel 23350 14950 0    50   Input ~ 0
+A4
+Text GLabel 23350 14850 0    50   Input ~ 0
+A3
+Text GLabel 23350 14750 0    50   Input ~ 0
+A2
+Text GLabel 23350 14650 0    50   Input ~ 0
+A1
+Text GLabel 23350 14550 0    50   Input ~ 0
+A0
+Text GLabel 23350 14450 0    50   Output ~ 0
+GND
+Text GLabel 23350 14350 0    50   Input ~ 0
+VCC
+Text GLabel 25500 16350 2    50   Output ~ 0
++12v
+Text GLabel 25500 16250 2    50   Output ~ 0
+-12v
+Text GLabel 25500 16150 2    50   Output ~ 0
+IRQ7\
+Text GLabel 25500 16050 2    50   Output ~ 0
+IRQ6\
+Text GLabel 25500 15950 2    50   Output ~ 0
+IRQ5\
+Text GLabel 25500 15850 2    50   Output ~ 0
+IRQ4\
+Text GLabel 25500 15750 2    50   Output ~ 0
+IRQ3\
+Text GLabel 25500 15650 2    50   Output ~ 0
+NMI\
+Text GLabel 25500 15550 2    50   Output ~ 0
+Page_En
+Text GLabel 25500 15450 2    50   Input ~ 0
+PHI2
+Text GLabel 25500 15350 2    50   Input ~ 0
+PHI1
+Text GLabel 25500 15250 2    50   Input ~ 0
+CLK
+Text GLabel 25500 15150 2    50   Input ~ 0
+Reset\
+Text GLabel 25500 15050 2    50   BiDi ~ 0
+D7
+Text GLabel 25500 14950 2    50   BiDi ~ 0
+D6
+Text GLabel 25500 14850 2    50   BiDi ~ 0
+D5
+Text GLabel 25500 14750 2    50   BiDi ~ 0
+D4
+Text GLabel 25500 14650 2    50   BiDi ~ 0
+D3
+Text GLabel 25500 14550 2    50   BiDi ~ 0
+D2
+Text GLabel 25500 14450 2    50   BiDi ~ 0
+D1
+Text GLabel 25500 14350 2    50   BiDi ~ 0
+D0
+$Comp
+L PC:Expansion_Connector J?
+U 1 1 61EEB611
+P 25200 15350
+F 0 "J?" H 25255 16567 50  0000 C CNN
+F 1 "Expansion_Connector" H 25255 16476 50  0000 C CNN
+F 2 "" H 25200 15350 50  0001 C CNN
+F 3 "~" H 25200 15350 50  0001 C CNN
+	1    25200 15350
+	1    0    0    -1  
+$EndComp
+Text GLabel 25000 16350 0    50   Input ~ 0
+Sync
+Text GLabel 25000 16250 0    50   Output ~ 0
+RDY
+Text GLabel 25000 16150 0    50   Input ~ 0
+RW
+Text GLabel 25000 16050 0    50   Input ~ 0
+A15
+Text GLabel 25000 15950 0    50   Input ~ 0
+A14
+Text GLabel 25000 15850 0    50   Input ~ 0
+A13
+Text GLabel 25000 15750 0    50   Input ~ 0
+A12
+Text GLabel 25000 15650 0    50   Input ~ 0
+A11
+Text GLabel 25000 15550 0    50   Input ~ 0
+A10
+Text GLabel 25000 15450 0    50   Input ~ 0
+A9
+Text GLabel 25000 15350 0    50   Input ~ 0
+A8
+Text GLabel 25000 15250 0    50   Input ~ 0
+A7
+Text GLabel 25000 15150 0    50   Input ~ 0
+A6
+Text GLabel 25000 15050 0    50   Input ~ 0
+A5
+Text GLabel 25000 14950 0    50   Input ~ 0
+A4
+Text GLabel 25000 14850 0    50   Input ~ 0
+A3
+Text GLabel 25000 14750 0    50   Input ~ 0
+A2
+Text GLabel 25000 14650 0    50   Input ~ 0
+A1
+Text GLabel 25000 14550 0    50   Input ~ 0
+A0
+Text GLabel 25000 14450 0    50   Output ~ 0
+GND
+Text GLabel 25000 14350 0    50   Input ~ 0
+VCC
+Text GLabel 27100 16350 2    50   Output ~ 0
++12v
+Text GLabel 27100 16250 2    50   Output ~ 0
+-12v
+Text GLabel 27100 16150 2    50   Output ~ 0
+IRQ7\
+Text GLabel 27100 16050 2    50   Output ~ 0
+IRQ6\
+Text GLabel 27100 15950 2    50   Output ~ 0
+IRQ5\
+Text GLabel 27100 15850 2    50   Output ~ 0
+IRQ4\
+Text GLabel 27100 15750 2    50   Output ~ 0
+IRQ3\
+Text GLabel 27100 15650 2    50   Output ~ 0
+NMI\
+Text GLabel 27100 15550 2    50   Output ~ 0
+Page_En
+Text GLabel 27100 15450 2    50   Input ~ 0
+PHI2
+Text GLabel 27100 15350 2    50   Input ~ 0
+PHI1
+Text GLabel 27100 15250 2    50   Input ~ 0
+CLK
+Text GLabel 27100 15150 2    50   Input ~ 0
+Reset\
+Text GLabel 27100 15050 2    50   BiDi ~ 0
+D7
+Text GLabel 27100 14950 2    50   BiDi ~ 0
+D6
+Text GLabel 27100 14850 2    50   BiDi ~ 0
+D5
+Text GLabel 27100 14750 2    50   BiDi ~ 0
+D4
+Text GLabel 27100 14650 2    50   BiDi ~ 0
+D3
+Text GLabel 27100 14550 2    50   BiDi ~ 0
+D2
+Text GLabel 27100 14450 2    50   BiDi ~ 0
+D1
+Text GLabel 27100 14350 2    50   BiDi ~ 0
+D0
+$Comp
+L PC:Expansion_Connector J?
+U 1 1 61F4B2A3
+P 26800 15350
+F 0 "J?" H 26855 16567 50  0000 C CNN
+F 1 "Expansion_Connector" H 26855 16476 50  0000 C CNN
+F 2 "" H 26800 15350 50  0001 C CNN
+F 3 "~" H 26800 15350 50  0001 C CNN
+	1    26800 15350
+	1    0    0    -1  
+$EndComp
+Text GLabel 26600 16350 0    50   Input ~ 0
+Sync
+Text GLabel 26600 16250 0    50   Output ~ 0
+RDY
+Text GLabel 26600 16150 0    50   Input ~ 0
+RW
+Text GLabel 26600 16050 0    50   Input ~ 0
+A15
+Text GLabel 26600 15950 0    50   Input ~ 0
+A14
+Text GLabel 26600 15850 0    50   Input ~ 0
+A13
+Text GLabel 26600 15750 0    50   Input ~ 0
+A12
+Text GLabel 26600 15650 0    50   Input ~ 0
+A11
+Text GLabel 26600 15550 0    50   Input ~ 0
+A10
+Text GLabel 26600 15450 0    50   Input ~ 0
+A9
+Text GLabel 26600 15350 0    50   Input ~ 0
+A8
+Text GLabel 26600 15250 0    50   Input ~ 0
+A7
+Text GLabel 26600 15150 0    50   Input ~ 0
+A6
+Text GLabel 26600 15050 0    50   Input ~ 0
+A5
+Text GLabel 26600 14950 0    50   Input ~ 0
+A4
+Text GLabel 26600 14850 0    50   Input ~ 0
+A3
+Text GLabel 26600 14750 0    50   Input ~ 0
+A2
+Text GLabel 26600 14650 0    50   Input ~ 0
+A1
+Text GLabel 26600 14550 0    50   Input ~ 0
+A0
+Text GLabel 26600 14450 0    50   Output ~ 0
+GND
+Text GLabel 26600 14350 0    50   Input ~ 0
+VCC
+Text GLabel 28700 16350 2    50   Output ~ 0
++12v
+Text GLabel 28700 16250 2    50   Output ~ 0
+-12v
+Text GLabel 28700 16150 2    50   Output ~ 0
+IRQ7\
+Text GLabel 28700 16050 2    50   Output ~ 0
+IRQ6\
+Text GLabel 28700 15950 2    50   Output ~ 0
+IRQ5\
+Text GLabel 28700 15850 2    50   Output ~ 0
+IRQ4\
+Text GLabel 28700 15750 2    50   Output ~ 0
+IRQ3\
+Text GLabel 28700 15650 2    50   Output ~ 0
+NMI\
+Text GLabel 28700 15550 2    50   Output ~ 0
+Page_En
+Text GLabel 28700 15450 2    50   Input ~ 0
+PHI2
+Text GLabel 28700 15350 2    50   Input ~ 0
+PHI1
+Text GLabel 28700 15250 2    50   Input ~ 0
+CLK
+Text GLabel 28700 15150 2    50   Input ~ 0
+Reset\
+Text GLabel 28700 15050 2    50   BiDi ~ 0
+D7
+Text GLabel 28700 14950 2    50   BiDi ~ 0
+D6
+Text GLabel 28700 14850 2    50   BiDi ~ 0
+D5
+Text GLabel 28700 14750 2    50   BiDi ~ 0
+D4
+Text GLabel 28700 14650 2    50   BiDi ~ 0
+D3
+Text GLabel 28700 14550 2    50   BiDi ~ 0
+D2
+Text GLabel 28700 14450 2    50   BiDi ~ 0
+D1
+Text GLabel 28700 14350 2    50   BiDi ~ 0
+D0
+$Comp
+L PC:Expansion_Connector J?
+U 1 1 61FAA796
+P 28400 15350
+F 0 "J?" H 28455 16567 50  0000 C CNN
+F 1 "Expansion_Connector" H 28455 16476 50  0000 C CNN
+F 2 "" H 28400 15350 50  0001 C CNN
+F 3 "~" H 28400 15350 50  0001 C CNN
+	1    28400 15350
+	1    0    0    -1  
+$EndComp
+Text GLabel 28200 16350 0    50   Input ~ 0
+Sync
+Text GLabel 28200 16250 0    50   Output ~ 0
+RDY
+Text GLabel 28200 16150 0    50   Input ~ 0
+RW
+Text GLabel 28200 16050 0    50   Input ~ 0
+A15
+Text GLabel 28200 15950 0    50   Input ~ 0
+A14
+Text GLabel 28200 15850 0    50   Input ~ 0
+A13
+Text GLabel 28200 15750 0    50   Input ~ 0
+A12
+Text GLabel 28200 15650 0    50   Input ~ 0
+A11
+Text GLabel 28200 15550 0    50   Input ~ 0
+A10
+Text GLabel 28200 15450 0    50   Input ~ 0
+A9
+Text GLabel 28200 15350 0    50   Input ~ 0
+A8
+Text GLabel 28200 15250 0    50   Input ~ 0
+A7
+Text GLabel 28200 15150 0    50   Input ~ 0
+A6
+Text GLabel 28200 15050 0    50   Input ~ 0
+A5
+Text GLabel 28200 14950 0    50   Input ~ 0
+A4
+Text GLabel 28200 14850 0    50   Input ~ 0
+A3
+Text GLabel 28200 14750 0    50   Input ~ 0
+A2
+Text GLabel 28200 14650 0    50   Input ~ 0
+A1
+Text GLabel 28200 14550 0    50   Input ~ 0
+A0
+Text GLabel 28200 14450 0    50   Output ~ 0
+GND
+Text GLabel 28200 14350 0    50   Input ~ 0
+VCC
+Text GLabel 30250 16350 2    50   Output ~ 0
++12v
+Text GLabel 30250 16250 2    50   Output ~ 0
+-12v
+Text GLabel 30250 16150 2    50   Output ~ 0
+IRQ7\
+Text GLabel 30250 16050 2    50   Output ~ 0
+IRQ6\
+Text GLabel 30250 15950 2    50   Output ~ 0
+IRQ5\
+Text GLabel 30250 15850 2    50   Output ~ 0
+IRQ4\
+Text GLabel 30250 15750 2    50   Output ~ 0
+IRQ3\
+Text GLabel 30250 15650 2    50   Output ~ 0
+NMI\
+Text GLabel 30250 15550 2    50   Output ~ 0
+Page_En
+Text GLabel 30250 15450 2    50   Input ~ 0
+PHI2
+Text GLabel 30250 15350 2    50   Input ~ 0
+PHI1
+Text GLabel 30250 15250 2    50   Input ~ 0
+CLK
+Text GLabel 30250 15150 2    50   Input ~ 0
+Reset\
+Text GLabel 30250 15050 2    50   BiDi ~ 0
+D7
+Text GLabel 30250 14950 2    50   BiDi ~ 0
+D6
+Text GLabel 30250 14850 2    50   BiDi ~ 0
+D5
+Text GLabel 30250 14750 2    50   BiDi ~ 0
+D4
+Text GLabel 30250 14650 2    50   BiDi ~ 0
+D3
+Text GLabel 30250 14550 2    50   BiDi ~ 0
+D2
+Text GLabel 30250 14450 2    50   BiDi ~ 0
+D1
+Text GLabel 30250 14350 2    50   BiDi ~ 0
+D0
+$Comp
+L PC:Expansion_Connector J?
+U 1 1 6200A4A5
+P 29950 15350
+F 0 "J?" H 30005 16567 50  0000 C CNN
+F 1 "Expansion_Connector" H 30005 16476 50  0000 C CNN
+F 2 "" H 29950 15350 50  0001 C CNN
+F 3 "~" H 29950 15350 50  0001 C CNN
+	1    29950 15350
+	1    0    0    -1  
+$EndComp
+Text GLabel 29750 16350 0    50   Input ~ 0
+Sync
+Text GLabel 29750 16250 0    50   Output ~ 0
+RDY
+Text GLabel 29750 16150 0    50   Input ~ 0
+RW
+Text GLabel 29750 16050 0    50   Input ~ 0
+A15
+Text GLabel 29750 15950 0    50   Input ~ 0
+A14
+Text GLabel 29750 15850 0    50   Input ~ 0
+A13
+Text GLabel 29750 15750 0    50   Input ~ 0
+A12
+Text GLabel 29750 15650 0    50   Input ~ 0
+A11
+Text GLabel 29750 15550 0    50   Input ~ 0
+A10
+Text GLabel 29750 15450 0    50   Input ~ 0
+A9
+Text GLabel 29750 15350 0    50   Input ~ 0
+A8
+Text GLabel 29750 15250 0    50   Input ~ 0
+A7
+Text GLabel 29750 15150 0    50   Input ~ 0
+A6
+Text GLabel 29750 15050 0    50   Input ~ 0
+A5
+Text GLabel 29750 14950 0    50   Input ~ 0
+A4
+Text GLabel 29750 14850 0    50   Input ~ 0
+A3
+Text GLabel 29750 14750 0    50   Input ~ 0
+A2
+Text GLabel 29750 14650 0    50   Input ~ 0
+A1
+Text GLabel 29750 14550 0    50   Input ~ 0
+A0
+Text GLabel 29750 14450 0    50   Output ~ 0
+GND
+Text GLabel 29750 14350 0    50   Input ~ 0
+VCC
+Text GLabel 20450 12850 3    50   Output ~ 0
+GND
 $EndSCHEMATC
