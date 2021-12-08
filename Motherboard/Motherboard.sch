@@ -6,9 +6,9 @@ encoding utf-8
 Sheet 1 1
 Title "WolfNet 6502 WBC"
 Date "2021-12-01"
-Rev "1.4"
+Rev "1.5"
 Comp "WolfNet"
-Comment1 ""
+Comment1 "Motherboard for the WolfNet 65C02 based (NMOS Compatible) WorkBench Computer."
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -270,7 +270,7 @@ Text GLabel 5350 9100 2    50   BiDi ~ 0
 D2
 Text GLabel 5350 9200 2    50   BiDi ~ 0
 D3
-Text Notes 8600 4400 2    50   ~ 0
+Text Notes 8600 4350 2    50   ~ 0
 Dual Power Supply - +5v/±12v
 Text GLabel 5350 9300 2    50   BiDi ~ 0
 D4
@@ -381,9 +381,9 @@ F 3 "~" H 3100 8000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 3300 7800 1    50   Input ~ 0
-IRQ
+IRQ\
 Text GLabel 3100 7800 1    50   Input ~ 0
-NMI
+NMI\
 Wire Wire Line
 	3300 8200 3300 8500
 Connection ~ 3300 8500
@@ -553,7 +553,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 11350 4250 11350
 Text GLabel 5250 10650 2    50   Output ~ 0
-RESET
+RESET\
 Text Notes 5250 7750 2    50   ~ 0
 6502 CPU
 Text Notes 8500 7750 2    50   ~ 0
@@ -732,21 +732,21 @@ GND
 Text GLabel 8200 11150 0    50   Output ~ 0
 CLK1
 Text GLabel 9150 5650 0    50   Input ~ 0
-IRQ0
+IRQ0\
 Text GLabel 9150 5750 0    50   Input ~ 0
-IRQ1
+IRQ1\
 Text GLabel 9150 5850 0    50   Input ~ 0
-IRQ2
+IRQ2\
 Text GLabel 9150 5950 0    50   Input ~ 0
-IRQ3
+IRQ3\
 Text GLabel 9150 6050 0    50   Input ~ 0
-IRQ4
+IRQ4\
 Text GLabel 9150 6150 0    50   Input ~ 0
-IRQ5
+IRQ5\
 Text GLabel 9150 6250 0    50   Input ~ 0
-IRQ6
+IRQ6\
 Text GLabel 9150 6350 0    50   Input ~ 0
-IRQ7
+IRQ7\
 $Comp
 L Device:R R13
 U 1 1 61AE9973
@@ -1055,7 +1055,7 @@ NoConn ~ 14200 5850
 NoConn ~ 14200 6250
 NoConn ~ 14200 6450
 Text GLabel 14800 6350 2    50   Output ~ 0
-IRQ
+IRQ\
 $Comp
 L 74xx:74HCT574 U23
 U 1 1 61CCD639
@@ -1352,16 +1352,12 @@ Text GLabel 15800 7050 0    50   Input ~ 0
 A13
 Text GLabel 15800 7150 0    50   Input ~ 0
 A14
-Text GLabel 15700 7550 0    50   Input ~ 0
-CS
 Wire Wire Line
 	15800 7450 15750 7450
 Wire Wire Line
 	15750 7450 15750 7550
 Wire Wire Line
 	15750 7550 15800 7550
-Wire Wire Line
-	15750 7550 15700 7550
 Connection ~ 15750 7550
 Text GLabel 16600 5750 2    50   Output ~ 0
 D0
@@ -1562,8 +1558,6 @@ Text GLabel 18000 9200 2    50   Input ~ 0
 A15
 Text GLabel 16700 9300 2    50   Input ~ 0
 A13
-Text GLabel 15650 8800 0    50   Output ~ 0
-CS
 Text GLabel 16800 7050 0    50   Output ~ 0
 PG
 Wire Wire Line
@@ -1698,7 +1692,7 @@ A2
 Text GLabel 3750 13400 2    50   Input ~ 0
 A3
 Text GLabel 3750 13500 2    50   Input ~ 0
-RESET
+RESET\
 Text GLabel 3750 12900 2    50   BiDi ~ 0
 CA1
 Text GLabel 3750 13000 2    50   BiDi ~ 0
@@ -1722,7 +1716,7 @@ D7
 Text GLabel 3750 14400 2    50   Input ~ 0
 PHI2
 Text GLabel 5350 8200 2    50   Input ~ 0
-RESET
+RESET\
 Text GLabel 5350 8300 2    50   Output ~ 0
 PHI2
 Text GLabel 3750 14500 2    50   Input ~ 0
@@ -2272,7 +2266,7 @@ $EndComp
 Text GLabel 5800 13200 0    50   Input ~ 0
 IRQ_DECIDE
 Text GLabel 5950 12950 1    50   Output ~ 0
-IRQ2
+IRQ1
 Text GLabel 5950 13450 3    50   Output ~ 0
 NMI
 $Comp
@@ -2508,9 +2502,9 @@ $Comp
 L Connector:DB9_Male J3
 U 1 1 61E9022E
 P 13050 12800
-F 0 "J3" H 13230 12846 50  0000 L CNN
-F 1 "DB9_Male" H 13230 12755 50  0000 L CNN
-F 2 "" H 13050 12800 50  0001 C CNN
+F 0 "J3" V 12922 12246 50  0000 R CNN
+F 1 "DB9_Male" V 13013 12246 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 13050 12800 50  0001 C CNN
 F 3 " ~" H 13050 12800 50  0001 C CNN
 	1    13050 12800
 	0    1    1    0   
@@ -2571,7 +2565,7 @@ Text GLabel 11550 10800 2    50   Input ~ 0
 RW
 NoConn ~ 10250 11200
 Text GLabel 10250 11100 0    50   Input ~ 0
-RESET
+RESET\
 Text GLabel 10250 10900 0    50   Input ~ 0
 CS_COM
 $Comp
@@ -2592,12 +2586,12 @@ Wire Wire Line
 Wire Wire Line
 	9550 13700 10400 13700
 $Comp
-L Memory_RAM:HM62256BLP U30
+L Memory_RAM:HM62256BLP U31
 U 1 1 61A675E2
 P 21050 6450
-F 0 "U30" H 21050 7531 50  0000 C CNN
+F 0 "U31" H 21050 7531 50  0000 C CNN
 F 1 "HM62256BLP" H 21050 7440 50  0000 C CNN
-F 2 "" H 21050 6350 50  0001 C CNN
+F 2 "Package_DIP:DIP-28_W7.62mm_Socket_LongPads" H 21050 6350 50  0001 C CNN
 F 3 "https://web.mit.edu/6.115/www/document/62256.pdf" H 21050 6350 50  0001 C CNN
 	1    21050 6450
 	1    0    0    -1  
@@ -2716,10 +2710,10 @@ F 3 "~" H 19800 8100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 74xx:74HCT04 U29
+L 74xx:74HCT04 U30
 U 4 1 61C2C173
 P 20550 8500
-F 0 "U29" H 20550 8183 50  0000 C CNN
+F 0 "U30" H 20550 8183 50  0000 C CNN
 F 1 "74HCT04" H 20550 8274 50  0000 C CNN
 F 2 "" H 20550 8500 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 20550 8500 50  0001 C CNN
@@ -2761,10 +2755,10 @@ F 3 "~" H 21650 7700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 74xx:74HCT00 U32
+L 74xx:74HCT00 U34
 U 1 1 61D0C0F3
 P 22200 7700
-F 0 "U32" H 22200 7383 50  0000 C CNN
+F 0 "U34" H 22200 7383 50  0000 C CNN
 F 1 "74HCT00" H 22200 7474 50  0000 C CNN
 F 2 "" H 22200 7700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 22200 7700 50  0001 C CNN
@@ -3012,7 +3006,7 @@ DTR_COM
 Text GLabel 15900 12300 2    50   Output ~ 0
 DTR_COM_PORT
 Text GLabel 16550 11600 2    50   Input ~ 0
-VCC
++12v
 $Comp
 L Generic_Device:CP C30
 U 1 1 62A74E06
@@ -3039,18 +3033,18 @@ Wire Wire Line
 Connection ~ 16350 11600
 Wire Wire Line
 	16350 11600 15900 11600
-Text GLabel 16550 11900 2    50   Output ~ 0
-GND
+Text GLabel 16550 11900 2    50   Input ~ 0
+-12V
 $Comp
 L Generic_Device:CP C28
 U 1 1 62ADDBC8
 P 16250 11900
-F 0 "C28" V 15995 11900 50  0000 C CNN
-F 1 "1 uF" V 16086 11900 50  0000 C CNN
+F 0 "C28" V 16500 11900 50  0000 C CNN
+F 1 "1 uF" V 16400 11900 50  0000 C CNN
 F 2 "" H 16288 11750 50  0001 C CNN
 F 3 "~" H 16250 11900 50  0001 C CNN
 	1    16250 11900
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	16550 11900 16400 11900
@@ -3163,10 +3157,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 22800 76
 	-1   0    0    1   
 $EndComp
 $Comp
-L 74xx:74HCT00 U32
+L 74xx:74HCT00 U34
 U 2 1 62C8E5D0
 P 22800 8200
-F 0 "U32" H 22800 7883 50  0000 C CNN
+F 0 "U34" H 22800 7883 50  0000 C CNN
 F 1 "74HCT00" H 22800 7974 50  0000 C CNN
 F 2 "" H 22800 8200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 22800 8200 50  0001 C CNN
@@ -3192,13 +3186,11 @@ Text GLabel 22500 8200 0    50   Output ~ 0
 RAM_OE
 Wire Notes Line
 	1900 10200 30950 10200
-Wire Notes Line
-	1900 16800 30950 16800
 $Comp
-L 74xx:74LS08 U31
+L 74xx:74LS08 U33
 U 1 1 62F3EADE
 P 22200 6650
-F 0 "U31" H 22200 6333 50  0000 C CNN
+F 0 "U33" H 22200 6333 50  0000 C CNN
 F 1 "74LS08" H 22200 6424 50  0000 C CNN
 F 2 "" H 22200 6650 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 22200 6650 50  0001 C CNN
@@ -3206,10 +3198,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 22200 6650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 74xx:74LS08 U31
+L 74xx:74LS08 U33
 U 2 1 62F415A1
 P 23000 6950
-F 0 "U31" H 23000 6633 50  0000 C CNN
+F 0 "U33" H 23000 6633 50  0000 C CNN
 F 1 "74LS08" H 23000 6724 50  0000 C CNN
 F 2 "" H 23000 6950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 23000 6950 50  0001 C CNN
@@ -3239,10 +3231,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 23850 7500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 74xx:74LS08 U33
+L 74xx:74LS08 U35
 U 2 1 62F93F6C
 P 23850 6400
-F 0 "U33" H 23850 6083 50  0000 C CNN
+F 0 "U35" H 23850 6083 50  0000 C CNN
 F 1 "74LS08" H 23850 6174 50  0000 C CNN
 F 2 "" H 23850 6400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 23850 6400 50  0001 C CNN
@@ -3250,10 +3242,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 23850 6400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 74xx:74LS08 U31
+L 74xx:74LS08 U33
 U 3 1 62F9D45D
 P 23850 5850
-F 0 "U31" H 23850 5533 50  0000 C CNN
+F 0 "U33" H 23850 5533 50  0000 C CNN
 F 1 "74LS08" H 23850 5624 50  0000 C CNN
 F 2 "" H 23850 5850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 23850 5850 50  0001 C CNN
@@ -3304,7 +3296,7 @@ F 3 "~" H 24300 7750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 24050 7750 0    50   Input ~ 0
-CS0
+CS0\
 Text GLabel 24550 7750 2    50   Input ~ 0
 VCC
 Wire Wire Line
@@ -3325,7 +3317,7 @@ Wire Wire Line
 Wire Wire Line
 	24850 7400 24850 7900
 Text GLabel 24600 8050 0    50   Input ~ 0
-CS1
+CS1\
 Text GLabel 25100 8050 2    50   Input ~ 0
 VCC
 Wire Wire Line
@@ -3344,7 +3336,7 @@ F 3 "~" H 24400 6100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 24150 6100 0    50   Input ~ 0
-CS6
+CS6\
 Text GLabel 24650 6100 2    50   Input ~ 0
 VCC
 $Comp
@@ -3359,7 +3351,7 @@ F 3 "~" H 25200 6200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 24950 6200 0    50   Input ~ 0
-CS7
+CS7\
 Wire Wire Line
 	25200 5750 25200 6050
 Text GLabel 25450 6200 2    50   Input ~ 0
@@ -3377,7 +3369,7 @@ Wire Wire Line
 Text GLabel 25450 6750 2    50   Input ~ 0
 VCC
 Text GLabel 24950 6750 0    50   Input ~ 0
-CS5
+CS5\
 $Comp
 L PC_Jumpers:Jumper_3_Bridged12 JP21
 U 1 1 6348C134
@@ -3392,7 +3384,7 @@ $EndComp
 Text GLabel 24650 6650 2    50   Input ~ 0
 VCC
 Text GLabel 24150 6650 0    50   Input ~ 0
-CS4
+CS4\
 $Comp
 L PC_Jumpers:Jumper_3_Bridged12 JP17
 U 1 1 6348B970
@@ -3405,10 +3397,10 @@ F 3 "~" H 24400 6650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 74xx:74LS08 U33
+L 74xx:74LS08 U35
 U 1 1 62F90CC4
 P 23850 6950
-F 0 "U33" H 23850 6633 50  0000 C CNN
+F 0 "U35" H 23850 6633 50  0000 C CNN
 F 1 "74LS08" H 23850 6724 50  0000 C CNN
 F 2 "" H 23850 6950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 23850 6950 50  0001 C CNN
@@ -3418,7 +3410,7 @@ $EndComp
 Text GLabel 25500 7300 2    50   Input ~ 0
 VCC
 Text GLabel 25000 7300 0    50   Input ~ 0
-CS3
+CS3\
 Wire Wire Line
 	25250 6850 25250 7150
 $Comp
@@ -3435,7 +3427,7 @@ $EndComp
 Text GLabel 24700 7200 2    50   Input ~ 0
 VCC
 Text GLabel 24200 7200 0    50   Input ~ 0
-CS2
+CS2\
 $Comp
 L PC_Jumpers:Jumper_3_Bridged12 JP18
 U 1 1 6335BCED
@@ -3544,7 +3536,7 @@ Wire Wire Line
 Wire Notes Line
 	8800 7500 1900 7500
 Text Notes 18200 10750 2    50   ~ 0
-RS-232 (Serial/UART/COM) ports
+RS-232 (Serial/COM) ports
 $Comp
 L Oscillator:ACO-xxxMHz X2
 U 1 1 61B94C4C
@@ -3667,10 +3659,10 @@ F 3 "~" H 26550 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74HCT04 U29
+L 74xx:74HCT04 U30
 U 2 1 6472BFFE
 P 29400 7150
-F 0 "U29" H 29400 7467 50  0000 C CNN
+F 0 "U30" H 29400 7467 50  0000 C CNN
 F 1 "74HCT04" H 29400 7376 50  0000 C CNN
 F 2 "" H 29400 7150 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 29400 7150 50  0001 C CNN
@@ -3699,10 +3691,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 27900 7550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 74xx:74HCT00 U32
+L 74xx:74HCT00 U34
 U 3 1 64614702
 P 27250 7550
-F 0 "U32" V 27296 7370 50  0000 R CNN
+F 0 "U34" V 27296 7370 50  0000 R CNN
 F 1 "74HCT00" V 27205 7370 50  0000 R CNN
 F 2 "" H 27250 7550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 27250 7550 50  0001 C CNN
@@ -3714,10 +3706,10 @@ PHI2
 Text GLabel 27150 8450 3    50   Input ~ 0
 RW
 $Comp
-L 74xx:74HCT04 U29
+L 74xx:74HCT04 U30
 U 1 1 64524A4F
 P 27150 8150
-F 0 "U29" V 27196 7970 50  0000 R CNN
+F 0 "U30" V 27196 7970 50  0000 R CNN
 F 1 "74HCT04" V 27105 7970 50  0000 R CNN
 F 2 "" H 27150 8150 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 27150 8150 50  0001 C CNN
@@ -3921,10 +3913,10 @@ VCC
 Text GLabel 28800 7100 1    50   Output ~ 0
 GND
 $Comp
-L Memory_EEPROM:28C256 U35
+L Memory_EEPROM:28C256 U39
 U 1 1 63ECA138
 P 28800 8450
-F 0 "U35" H 28800 7169 50  0000 C CNN
+F 0 "U39" H 28800 7169 50  0000 C CNN
 F 1 "28C256" H 28800 7260 50  0000 C CNN
 F 2 "" H 28800 8450 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 28800 8450 50  0001 C CNN
@@ -3961,10 +3953,10 @@ Wire Wire Line
 Wire Wire Line
 	27850 6950 27750 6950
 $Comp
-L 74xx:74HCT541 U34
+L 74xx:74HCT541 U38
 U 1 1 63954125
 P 28350 6550
-F 0 "U34" H 28350 7531 50  0000 C CNN
+F 0 "U38" H 28350 7531 50  0000 C CNN
 F 1 "74HCT541" H 28350 7440 50  0000 C CNN
 F 2 "" H 28350 6550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HCT541" H 28350 6550 50  0001 C CNN
@@ -4112,51 +4104,7 @@ Wire Wire Line
 Connection ~ 28000 8050
 Wire Wire Line
 	28000 8050 28000 7850
-$Comp
-L PC:BaseboardConnector J8
-U 1 1 61AEAAD5
-P 28600 14750
-F 0 "J8" H 28655 16367 50  0000 C CNN
-F 1 "BaseboardConnector" H 28655 16276 50  0000 C CNN
-F 2 "" H 28600 14750 50  0001 C CNN
-F 3 "~" H 28600 14750 50  0001 C CNN
-	1    28600 14750
-	1    0    0    -1  
-$EndComp
-$Comp
-L PC:BaseboardConnector J5
-U 1 1 61AEC2D6
-P 22850 14750
-F 0 "J5" H 22905 16367 50  0000 C CNN
-F 1 "BaseboardConnector" H 22905 16276 50  0000 C CNN
-F 2 "" H 22850 14750 50  0001 C CNN
-F 3 "~" H 22850 14750 50  0001 C CNN
-	1    22850 14750
-	1    0    0    -1  
-$EndComp
-$Comp
-L PC:BaseboardConnector J7
-U 1 1 61AEE9CA
-P 26750 14750
-F 0 "J7" H 26805 16367 50  0000 C CNN
-F 1 "BaseboardConnector" H 26805 16276 50  0000 C CNN
-F 2 "" H 26750 14750 50  0001 C CNN
-F 3 "~" H 26750 14750 50  0001 C CNN
-	1    26750 14750
-	1    0    0    -1  
-$EndComp
-$Comp
-L PC:BaseboardConnector J6
-U 1 1 61AF08C6
-P 24850 14750
-F 0 "J6" H 24905 16367 50  0000 C CNN
-F 1 "BaseboardConnector" H 24905 16276 50  0000 C CNN
-F 2 "" H 24850 14750 50  0001 C CNN
-F 3 "~" H 24850 14750 50  0001 C CNN
-	1    24850 14750
-	1    0    0    -1  
-$EndComp
-Text Notes 19700 10750 0    50   ~ 0
+Text Notes 20150 10750 0    50   ~ 0
 Expansion sockets and ports
 Wire Wire Line
 	5900 4700 5900 4750
@@ -4351,17 +4299,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 7750 9000 50  0001 C CNN
 	2    7750 9000
 	1    0    0    -1  
 $EndComp
-$Comp
-L PC:BaseboardConnector J4
-U 1 1 637BFC4F
-P 20850 14750
-F 0 "J4" H 20905 16367 50  0000 C CNN
-F 1 "BaseboardConnector" H 20905 16276 50  0000 C CNN
-F 2 "" H 20850 14750 50  0001 C CNN
-F 3 "~" H 20850 14750 50  0001 C CNN
-	1    20850 14750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6800 6150 6950 6150
 Wire Wire Line
@@ -4401,10 +4338,672 @@ F 3 "~" H 3700 8000 50  0001 C CNN
 	1    3700 8000
 	0    1    1    0   
 $EndComp
-Wire Bus Line
-	19900 16600 27400 16600
-Wire Bus Line
-	27400 16600 27400 13200
-Wire Bus Line
-	19900 13200 19900 16600
+$Comp
+L 65xx:WD65C22 U36
+U 1 1 61C6031F
+P 24450 11700
+F 0 "U36" H 24450 10463 60  0000 C CNN
+F 1 "WD65C22" H 24450 10569 60  0000 C CNN
+F 2 "" H 23950 11900 60  0000 C CNN
+F 3 "" H 23950 11900 60  0000 C CNN
+	1    24450 11700
+	-1   0    0    1   
+$EndComp
+$Comp
+L PC:65SIB_Connector J8
+U 1 1 61D1BDB7
+P 28200 11650
+F 0 "J8" H 28250 12267 50  0000 C CNN
+F 1 "65SIB_Connector" H 28250 12176 50  0000 C CNN
+F 2 "" H 28200 11650 50  0001 C CNN
+F 3 "~" H 28200 11650 50  0001 C CNN
+	1    28200 11650
+	1    0    0    -1  
+$EndComp
+Text GLabel 28000 12150 0    50   Output ~ 0
+GND
+Text GLabel 28500 11950 2    50   Output ~ 0
+GND
+Text GLabel 28500 11250 2    50   Output ~ 0
+GND
+Text GLabel 28500 11350 2    50   Output ~ 0
+GND
+Text GLabel 28500 11450 2    50   Output ~ 0
+GND
+Text GLabel 28500 11550 2    50   Input ~ 0
++12v
+Text GLabel 28500 11650 2    50   Input ~ 0
++12v
+Text GLabel 28000 11850 0    50   Input ~ 0
+-12v
+Text GLabel 28000 11250 0    50   Input ~ 0
+CONF\
+Text GLabel 28000 11350 0    50   Input ~ 0
+CLK
+Text GLabel 28000 11450 0    50   Input ~ 0
+MOSI
+Text GLabel 28000 11550 0    50   Output ~ 0
+MISO
+Text GLabel 28000 11650 0    50   Output ~ 0
+65SIB_IRQ\
+Text GLabel 28000 11750 0    50   Input ~ 0
+SEL1\
+Text GLabel 28000 11950 0    50   Input ~ 0
+SEL4\
+Text GLabel 28000 12050 0    50   Input ~ 0
+SEL5\
+Text GLabel 28500 11750 2    50   Input ~ 0
+SEL2\
+Text GLabel 28500 11850 2    50   Input ~ 0
+SEL3\
+Text GLabel 28500 12050 2    50   Input ~ 0
+SEL6\
+Text GLabel 28500 12150 2    50   Input ~ 0
+SEL7\
+Text GLabel 25100 12200 2    50   Output ~ 0
+CONF\
+Text GLabel 25100 12100 2    50   Output ~ 0
+MOSI
+Text GLabel 25100 12000 2    50   Input ~ 0
+MISO
+Text GLabel 23800 11100 0    50   Input ~ 0
+CLK
+Text GLabel 23800 10800 0    50   Input ~ 0
+RW
+Text GLabel 23800 10700 0    50   Output ~ 0
+IRQ2\
+Text GLabel 23800 12000 0    50   Input ~ 0
+RESET\
+$Comp
+L Graphic:Logo_Open_Hardware_Large #LOGO1
+U 1 1 61C12325
+P 31750 21000
+F 0 "#LOGO1" H 31750 21500 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Large" H 31750 20600 50  0001 C CNN
+F 2 "" H 31750 21000 50  0001 C CNN
+F 3 "~" H 31750 21000 50  0001 C CNN
+	1    31750 21000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS138 U37
+U 1 1 61C2AAA6
+P 26700 11600
+F 0 "U37" H 26700 12381 50  0000 C CNN
+F 1 "74LS138" H 26700 12290 50  0000 C CNN
+F 2 "" H 26700 11600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 26700 11600 50  0001 C CNN
+	1    26700 11600
+	1    0    0    -1  
+$EndComp
+Text GLabel 27200 11300 2    50   Output ~ 0
+GND
+Text GLabel 27200 11400 2    50   Output ~ 0
+SEL1\
+Text GLabel 27200 11500 2    50   Output ~ 0
+SEL2\
+Text GLabel 27200 11600 2    50   Output ~ 0
+SEL3\
+Text GLabel 27200 11700 2    50   Output ~ 0
+SEL4\
+Text GLabel 27200 11800 2    50   Output ~ 0
+SEL5\
+Text GLabel 27200 11900 2    50   Output ~ 0
+SEL6\
+Text GLabel 27200 12000 2    50   Output ~ 0
+SEL7\
+Text GLabel 23800 12600 0    50   Input ~ 0
+65SIB_IRQ\
+Text GLabel 26200 12000 0    50   Output ~ 0
+GND
+Text GLabel 26700 10750 1    50   Input ~ 0
+VCC
+Text GLabel 26700 12300 3    50   Output ~ 0
+GND
+Text GLabel 25100 12600 2    50   Output ~ 0
+GND
+Text GLabel 23800 11900 0    50   BiDi ~ 0
+D0
+Text GLabel 23800 11800 0    50   BiDi ~ 0
+D1
+Text GLabel 23800 11700 0    50   BiDi ~ 0
+D2
+Text GLabel 23800 11600 0    50   BiDi ~ 0
+D3
+Text GLabel 23800 11500 0    50   BiDi ~ 0
+D4
+Text GLabel 23800 11400 0    50   BiDi ~ 0
+D5
+Text GLabel 23800 11300 0    50   BiDi ~ 0
+D6
+Text GLabel 23800 11200 0    50   BiDi ~ 0
+D7
+Text GLabel 26200 11800 0    50   Input ~ 0
+65SIB_E3
+Wire Wire Line
+	25550 11500 25550 12300
+Wire Wire Line
+	25550 11500 26200 11500
+Wire Wire Line
+	25650 12400 25650 11400
+Wire Wire Line
+	25650 11400 26200 11400
+Wire Wire Line
+	25750 12500 25750 11300
+Wire Wire Line
+	25750 11300 26200 11300
+Text GLabel 26200 11900 0    50   Input ~ 0
+65SIB_E2\
+Text GLabel 23800 10900 0    50   Input ~ 0
+65SIB_E2\
+Text GLabel 23800 11000 0    50   Input ~ 0
+65SIB_E3
+Text GLabel 25100 10700 2    50   Input ~ 0
+VCC
+Wire Wire Line
+	25100 12400 25650 12400
+Wire Wire Line
+	25100 12500 25750 12500
+$Comp
+L 74xx:74LS138 U32
+U 1 1 621296CF
+P 21750 9200
+F 0 "U32" H 21750 9981 50  0000 C CNN
+F 1 "74LS138" H 21750 9890 50  0000 C CNN
+F 2 "" H 21750 9200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 21750 9200 50  0001 C CNN
+	1    21750 9200
+	1    0    0    -1  
+$EndComp
+Text GLabel 21750 8350 1    50   Input ~ 0
+VCC
+Text GLabel 21750 9900 3    50   Output ~ 0
+GND
+Text GLabel 22250 8900 2    50   Output ~ 0
+CS0\
+Text GLabel 22250 9000 2    50   Output ~ 0
+CS1\
+Text GLabel 22250 9100 2    50   Output ~ 0
+CS2\
+Text GLabel 22250 9200 2    50   Output ~ 0
+CS3\
+Text GLabel 22250 9300 2    50   Output ~ 0
+CS4\
+Text GLabel 22250 9400 2    50   Output ~ 0
+CS5\
+Text GLabel 22250 9500 2    50   Output ~ 0
+CS6\
+Text GLabel 22250 9600 2    50   Output ~ 0
+CS7\
+Text GLabel 21250 8900 0    50   Input ~ 0
+A12
+Text GLabel 21250 9000 0    50   Input ~ 0
+A13
+Text GLabel 21250 9100 0    50   Input ~ 0
+A14
+Text GLabel 21250 9400 0    50   Input ~ 0
+RAM_E3
+Wire Wire Line
+	21250 9500 21250 9600
+Wire Wire Line
+	21250 9900 21750 9900
+Wire Wire Line
+	21250 9600 21250 9900
+Connection ~ 21250 9600
+Wire Wire Line
+	21750 8350 21750 8600
+Wire Wire Line
+	26700 10750 26700 11000
+Text Notes 18200 10850 2    50   ~ 0
+IRQ0
+Text Notes 8400 12900 2    50   ~ 0
+IRQ1
+Text Notes 21250 10850 2    50   ~ 0
+IRQ2-7
+Text Notes 18200 10950 2    50   ~ 0
+TODO: Change MAX232 to MAX235
+Text Notes 21250 10950 2    50   ~ 0
+TODO: Finish address decoding for 6522
+Text Notes 21250 11050 2    50   ~ 0
+TODO: Connect bus to connectors.
+Wire Wire Line
+	25100 12300 25550 12300
+$Comp
+L 74xx:74LS138 U29
+U 1 1 6E11B869
+P 20450 12150
+F 0 "U29" H 20450 12931 50  0000 C CNN
+F 1 "74LS138" H 20450 12840 50  0000 C CNN
+F 2 "" H 20450 12150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 20450 12150 50  0001 C CNN
+	1    20450 12150
+	1    0    0    -1  
+$EndComp
+Text GLabel 19950 11850 0    50   Input ~ 0
+A12
+Text GLabel 19950 11950 0    50   Input ~ 0
+A13
+Text GLabel 19950 12050 0    50   Input ~ 0
+A14
+Text GLabel 19950 12350 0    50   Input ~ 0
+A15
+Text GLabel 20950 12350 2    50   Output ~ 0
+65SIB_E2\
+Wire Wire Line
+	15650 8800 15550 8800
+Wire Wire Line
+	15550 8800 15550 7550
+Wire Wire Line
+	15550 7550 15750 7550
+Text GLabel 19950 12450 0    50   Output ~ 0
+GND
+Text GLabel 19950 12550 0    50   Output ~ 0
+GND
+NoConn ~ 20950 11850
+NoConn ~ 20950 11950
+NoConn ~ 20950 12050
+NoConn ~ 20950 12150
+NoConn ~ 20950 12250
+NoConn ~ 20950 12450
+NoConn ~ 20950 12550
+Text GLabel 20450 11300 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	20450 11300 20450 11550
+$Comp
+L Graphic:SYM_Flash_XLarge #SYM1
+U 1 1 6ECD1321
+P 3050 5600
+F 0 "#SYM1" V 2900 5600 50  0001 C CNN
+F 1 "SYM_Flash_XLarge" V 3200 5600 50  0001 C CNN
+F 2 "" H 3050 5575 50  0001 C CNN
+F 3 "~" H 3450 5500 50  0001 C CNN
+	1    3050 5600
+	1    0    0    -1  
+$EndComp
+Text Notes 8600 4450 2    50   ~ 0
+WARNING: Do NOT switch input supply while plugged in.
+Text Notes 30600 4950 2    50   ~ 0
+TODO: Write code for EEPROM and Software-side.
+$Comp
+L PC:BaseboardConnector J4
+U 1 1 637BFC4F
+P 20850 14750
+F 0 "J4" H 20905 16367 50  0000 C CNN
+F 1 "BaseboardConnector" H 20905 16276 50  0000 C CNN
+F 2 "" H 20850 14750 50  0001 C CNN
+F 3 "~" H 20850 14750 50  0001 C CNN
+	1    20850 14750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PC:BaseboardConnector J6
+U 1 1 61AF08C6
+P 24850 14750
+F 0 "J6" H 24905 16367 50  0000 C CNN
+F 1 "BaseboardConnector" H 24905 16276 50  0000 C CNN
+F 2 "" H 24850 14750 50  0001 C CNN
+F 3 "~" H 24850 14750 50  0001 C CNN
+	1    24850 14750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PC:BaseboardConnector J7
+U 1 1 61AEE9CA
+P 26750 14750
+F 0 "J7" H 26805 16367 50  0000 C CNN
+F 1 "BaseboardConnector" H 26805 16276 50  0000 C CNN
+F 2 "" H 26750 14750 50  0001 C CNN
+F 3 "~" H 26750 14750 50  0001 C CNN
+	1    26750 14750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PC:BaseboardConnector J5
+U 1 1 61AEC2D6
+P 22850 14750
+F 0 "J5" H 22905 16367 50  0000 C CNN
+F 1 "BaseboardConnector" H 22905 16276 50  0000 C CNN
+F 2 "" H 22850 14750 50  0001 C CNN
+F 3 "~" H 22850 14750 50  0001 C CNN
+	1    22850 14750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PC:BaseboardConnector J9
+U 1 1 61AEAAD5
+P 28600 14750
+F 0 "J9" H 28655 16367 50  0000 C CNN
+F 1 "BaseboardConnector" H 28655 16276 50  0000 C CNN
+F 2 "" H 28600 14750 50  0001 C CNN
+F 3 "~" H 28600 14750 50  0001 C CNN
+	1    28600 14750
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1900 16800 30950 16800
+Text GLabel 20650 13350 0    50   Input ~ 0
+VCC
+Text GLabel 20650 13450 0    50   Output ~ 0
+GND
+Text GLabel 20650 13550 0    50   Input ~ 0
+A0
+Text GLabel 20650 13650 0    50   Input ~ 0
+A1
+Text GLabel 20650 13750 0    50   Input ~ 0
+A2
+Text GLabel 20650 13850 0    50   Input ~ 0
+A3
+Text GLabel 20650 13950 0    50   Input ~ 0
+A4
+Text GLabel 20650 14050 0    50   Input ~ 0
+A5
+Text GLabel 20650 14150 0    50   Input ~ 0
+A6
+Text GLabel 20650 14250 0    50   Input ~ 0
+A7
+Text GLabel 20650 14350 0    50   Input ~ 0
+A8
+Text GLabel 20650 14450 0    50   Input ~ 0
+A9
+Text GLabel 20650 14550 0    50   Input ~ 0
+A10
+Text GLabel 20650 14650 0    50   Input ~ 0
+A11
+Text GLabel 20650 14750 0    50   Input ~ 0
+A12
+Text GLabel 20650 14850 0    50   Input ~ 0
+A13
+Text GLabel 20650 14950 0    50   Input ~ 0
+A14
+Text GLabel 20650 15050 0    50   Input ~ 0
+A15
+Text GLabel 21150 13450 2    50   Input ~ 0
+PHI1
+Text GLabel 21150 13550 2    50   Input ~ 0
+PHI2
+Text GLabel 21150 13350 2    50   Input ~ 0
+CLK
+Text GLabel 21150 13650 2    50   Input ~ 0
+NMI\
+Text GLabel 21150 13750 2    50   Input ~ 0
++12v
+Text GLabel 21150 13850 2    50   Input ~ 0
+-12v
+Text GLabel 20650 15150 0    50   Input ~ 0
+D0
+Text GLabel 20650 15250 0    50   Input ~ 0
+D1
+Text GLabel 20650 15350 0    50   Input ~ 0
+D2
+Text GLabel 20650 15450 0    50   Input ~ 0
+D3
+Text GLabel 20650 15550 0    50   Input ~ 0
+D4
+Text GLabel 20650 15650 0    50   Input ~ 0
+D5
+Text GLabel 20650 15750 0    50   Input ~ 0
+D6
+Text GLabel 20650 15850 0    50   Input ~ 0
+D7
+Text GLabel 20650 15950 0    50   Input ~ 0
+RW
+Text GLabel 20650 16050 0    50   Output ~ 0
+RDY
+Text GLabel 20650 16150 0    50   Input ~ 0
+Sync
+Text GLabel 20650 16250 0    50   Input ~ 0
+Reset\
+Text GLabel 22650 13350 0    50   Input ~ 0
+VCC
+Text GLabel 22650 13450 0    50   Output ~ 0
+GND
+Text GLabel 22650 13550 0    50   Input ~ 0
+A0
+Text GLabel 22650 13650 0    50   Input ~ 0
+A1
+Text GLabel 22650 13750 0    50   Input ~ 0
+A2
+Text GLabel 22650 13850 0    50   Input ~ 0
+A3
+Text GLabel 22650 13950 0    50   Input ~ 0
+A4
+Text GLabel 22650 14050 0    50   Input ~ 0
+A5
+Text GLabel 22650 14150 0    50   Input ~ 0
+A6
+Text GLabel 22650 14250 0    50   Input ~ 0
+A7
+Text GLabel 22650 14350 0    50   Input ~ 0
+A8
+Text GLabel 22650 14450 0    50   Input ~ 0
+A9
+Text GLabel 22650 14550 0    50   Input ~ 0
+A10
+Text GLabel 22650 14650 0    50   Input ~ 0
+A11
+Text GLabel 22650 14750 0    50   Input ~ 0
+A12
+Text GLabel 22650 14850 0    50   Input ~ 0
+A13
+Text GLabel 22650 14950 0    50   Input ~ 0
+A14
+Text GLabel 22650 15050 0    50   Input ~ 0
+A15
+Text GLabel 22650 15150 0    50   Input ~ 0
+D0
+Text GLabel 22650 15250 0    50   Input ~ 0
+D1
+Text GLabel 22650 15350 0    50   Input ~ 0
+D2
+Text GLabel 22650 15450 0    50   Input ~ 0
+D3
+Text GLabel 22650 15550 0    50   Input ~ 0
+D4
+Text GLabel 22650 15650 0    50   Input ~ 0
+D5
+Text GLabel 22650 15750 0    50   Input ~ 0
+D6
+Text GLabel 22650 15850 0    50   Input ~ 0
+D7
+Text GLabel 22650 15950 0    50   Input ~ 0
+RW
+Text GLabel 22650 16050 0    50   Output ~ 0
+RDY
+Text GLabel 22650 16150 0    50   Input ~ 0
+Sync
+Text GLabel 22650 16250 0    50   Input ~ 0
+Reset\
+Text GLabel 24650 13350 0    50   Input ~ 0
+VCC
+Text GLabel 24650 13450 0    50   Output ~ 0
+GND
+Text GLabel 24650 13550 0    50   Input ~ 0
+A0
+Text GLabel 24650 13650 0    50   Input ~ 0
+A1
+Text GLabel 24650 13750 0    50   Input ~ 0
+A2
+Text GLabel 24650 13850 0    50   Input ~ 0
+A3
+Text GLabel 24650 13950 0    50   Input ~ 0
+A4
+Text GLabel 24650 14050 0    50   Input ~ 0
+A5
+Text GLabel 24650 14150 0    50   Input ~ 0
+A6
+Text GLabel 24650 14250 0    50   Input ~ 0
+A7
+Text GLabel 24650 14350 0    50   Input ~ 0
+A8
+Text GLabel 24650 14450 0    50   Input ~ 0
+A9
+Text GLabel 24650 14550 0    50   Input ~ 0
+A10
+Text GLabel 24650 14650 0    50   Input ~ 0
+A11
+Text GLabel 24650 14750 0    50   Input ~ 0
+A12
+Text GLabel 24650 14850 0    50   Input ~ 0
+A13
+Text GLabel 24650 14950 0    50   Input ~ 0
+A14
+Text GLabel 24650 15050 0    50   Input ~ 0
+A15
+Text GLabel 24650 15150 0    50   Input ~ 0
+D0
+Text GLabel 24650 15250 0    50   Input ~ 0
+D1
+Text GLabel 24650 15350 0    50   Input ~ 0
+D2
+Text GLabel 24650 15450 0    50   Input ~ 0
+D3
+Text GLabel 24650 15550 0    50   Input ~ 0
+D4
+Text GLabel 24650 15650 0    50   Input ~ 0
+D5
+Text GLabel 24650 15750 0    50   Input ~ 0
+D6
+Text GLabel 24650 15850 0    50   Input ~ 0
+D7
+Text GLabel 24650 15950 0    50   Input ~ 0
+RW
+Text GLabel 24650 16050 0    50   Output ~ 0
+RDY
+Text GLabel 24650 16150 0    50   Input ~ 0
+Sync
+Text GLabel 24650 16250 0    50   Input ~ 0
+Reset\
+Text GLabel 26550 13350 0    50   Input ~ 0
+VCC
+Text GLabel 26550 13450 0    50   Output ~ 0
+GND
+Text GLabel 26550 13550 0    50   Input ~ 0
+A0
+Text GLabel 26550 13650 0    50   Input ~ 0
+A1
+Text GLabel 26550 13750 0    50   Input ~ 0
+A2
+Text GLabel 26550 13850 0    50   Input ~ 0
+A3
+Text GLabel 26550 13950 0    50   Input ~ 0
+A4
+Text GLabel 26550 14050 0    50   Input ~ 0
+A5
+Text GLabel 26550 14150 0    50   Input ~ 0
+A6
+Text GLabel 26550 14250 0    50   Input ~ 0
+A7
+Text GLabel 26550 14350 0    50   Input ~ 0
+A8
+Text GLabel 26550 14450 0    50   Input ~ 0
+A9
+Text GLabel 26550 14550 0    50   Input ~ 0
+A10
+Text GLabel 26550 14650 0    50   Input ~ 0
+A11
+Text GLabel 26550 14750 0    50   Input ~ 0
+A12
+Text GLabel 26550 14850 0    50   Input ~ 0
+A13
+Text GLabel 26550 14950 0    50   Input ~ 0
+A14
+Text GLabel 26550 15050 0    50   Input ~ 0
+A15
+Text GLabel 26550 15150 0    50   Input ~ 0
+D0
+Text GLabel 26550 15250 0    50   Input ~ 0
+D1
+Text GLabel 26550 15350 0    50   Input ~ 0
+D2
+Text GLabel 26550 15450 0    50   Input ~ 0
+D3
+Text GLabel 26550 15550 0    50   Input ~ 0
+D4
+Text GLabel 26550 15650 0    50   Input ~ 0
+D5
+Text GLabel 26550 15750 0    50   Input ~ 0
+D6
+Text GLabel 26550 15850 0    50   Input ~ 0
+D7
+Text GLabel 26550 15950 0    50   Input ~ 0
+RW
+Text GLabel 26550 16050 0    50   Output ~ 0
+RDY
+Text GLabel 26550 16150 0    50   Input ~ 0
+Sync
+Text GLabel 26550 16250 0    50   Input ~ 0
+Reset\
+Text GLabel 28400 13350 0    50   Input ~ 0
+VCC
+Text GLabel 28400 13450 0    50   Output ~ 0
+GND
+Text GLabel 28400 13550 0    50   Input ~ 0
+A0
+Text GLabel 28400 13650 0    50   Input ~ 0
+A1
+Text GLabel 28400 13750 0    50   Input ~ 0
+A2
+Text GLabel 28400 13850 0    50   Input ~ 0
+A3
+Text GLabel 28400 13950 0    50   Input ~ 0
+A4
+Text GLabel 28400 14050 0    50   Input ~ 0
+A5
+Text GLabel 28400 14150 0    50   Input ~ 0
+A6
+Text GLabel 28400 14250 0    50   Input ~ 0
+A7
+Text GLabel 28400 14350 0    50   Input ~ 0
+A8
+Text GLabel 28400 14450 0    50   Input ~ 0
+A9
+Text GLabel 28400 14550 0    50   Input ~ 0
+A10
+Text GLabel 28400 14650 0    50   Input ~ 0
+A11
+Text GLabel 28400 14750 0    50   Input ~ 0
+A12
+Text GLabel 28400 14850 0    50   Input ~ 0
+A13
+Text GLabel 28400 14950 0    50   Input ~ 0
+A14
+Text GLabel 28400 15050 0    50   Input ~ 0
+A15
+Text GLabel 28400 15150 0    50   Input ~ 0
+D0
+Text GLabel 28400 15250 0    50   Input ~ 0
+D1
+Text GLabel 28400 15350 0    50   Input ~ 0
+D2
+Text GLabel 28400 15450 0    50   Input ~ 0
+D3
+Text GLabel 28400 15550 0    50   Input ~ 0
+D4
+Text GLabel 28400 15650 0    50   Input ~ 0
+D5
+Text GLabel 28400 15750 0    50   Input ~ 0
+D6
+Text GLabel 28400 15850 0    50   Input ~ 0
+D7
+Text GLabel 28400 15950 0    50   Input ~ 0
+RW
+Text GLabel 28400 16050 0    50   Output ~ 0
+RDY
+Text GLabel 28400 16150 0    50   Input ~ 0
+Sync
+Text GLabel 28400 16250 0    50   Input ~ 0
+Reset\
+Text GLabel 21150 13950 2    50   Output ~ 0
+Page_En
+Text GLabel 21150 14050 2    50   Output ~ 0
+IRQ3\
+Text GLabel 21150 14150 2    50   Output ~ 0
+IRQ4\
+Text GLabel 21150 14250 2    50   Output ~ 0
+IRQ5\
+Text GLabel 21150 14350 2    50   Output ~ 0
+IRQ6\
+Text GLabel 21150 14450 2    50   Output ~ 0
+IRQ7\
 $EndSCHEMATC
