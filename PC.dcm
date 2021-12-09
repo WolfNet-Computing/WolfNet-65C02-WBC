@@ -6,6 +6,12 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP ADM232A
+D Dual RS232 driver/receiver, 5V supply, 200kb/s
+K rs232 uart transceiver line-driver
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADM222_232A_242.pdf
+$ENDCMP
+#
 $CMP BaseboardConnector
 D Generic connector, double row, 02x30, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
@@ -22,6 +28,36 @@ $CMP GPIO_Connector
 D Generic connector, double row, 02x10, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
 F ~
+$ENDCMP
+#
+$CMP ICL3232
+D 3.0V to 5.5V, Low-Power, up to 250kbps, True RS-232 Transceivers Using Four 0.1μF External Capacitors
+K rs232 uart transceiver line-driver
+F http://www.intersil.com/content/dam/Intersil/documents/icl3/icl3221-22-23-32-41-43.pdf
+$ENDCMP
+#
+$CMP MAX202
+D Dual RS232 driver/receiver, 5V supply, 120kb/s, 0C-70C
+K rs232 uart transceiver line-driver
+F http://www.ti.com/lit/ds/symlink/max202.pdf
+$ENDCMP
+#
+$CMP MAX232I
+D Dual RS232 driver/receiver, 5V supply, 120kb/s, -40C-80C
+K rs232 uart transceiver line-driver
+F http://www.ti.com/lit/ds/symlink/max232.pdf
+$ENDCMP
+#
+$CMP MAX235
+D Dual RS232 driver/receiver, 5V supply, 120kb/s, 0C-70C
+K rs232 uart transceiver line-driver
+F http://www.ti.com/lit/ds/symlink/max232.pdf
+$ENDCMP
+#
+$CMP MAX3232
+D 3.0V to 5.5V, Low-Power, up to 1Mbps, True RS-232 Transceivers Using Four 0.1μF External Capacitors
+K rs232 uart transceiver line-driver
+F https://datasheets.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf
 $ENDCMP
 #
 $CMP SPI_Breakout
