@@ -12,12 +12,6 @@ K rs232 uart transceiver line-driver
 F https://www.analog.com/media/en/technical-documentation/data-sheets/ADM222_232A_242.pdf
 $ENDCMP
 #
-$CMP BaseboardConnector
-D Generic connector, double row, 02x30, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)
-K connector
-F ~
-$ENDCMP
-#
 $CMP Expansion_Connector
 D Generic connector, double row, 02x21, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector

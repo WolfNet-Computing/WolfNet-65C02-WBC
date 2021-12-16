@@ -1,4 +1,4 @@
-19222576700896141
+19220978903493579
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -59696,33 +59696,26 @@ DIL DIP PDIP 2.54mm 7.62mm 300mil
 4
 4
 PC
-BaseboardConnector_Female_Old
-Through hole straight socket strip, 1x40, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
-Through hole socket strip THT 1x40 2.54mm single row
+DSUB-9_RS-232
+9-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, male, pitch 2.77x2.84mm, pin-PCB-offset 4.9399999999999995mm, distance of mounting holes 25mm, distance of mounting holes to PCB edge 7.4799999999999995mm, see https://disti-assets.s3.amazonaws.com/tonar/files/datasheets/16730.pdf
+9-pin D-Sub connector horizontal angled 90deg THT male pitch 2.77x2.84mm pin-PCB-offset 4.9399999999999995mm mounting-holes-distance 25mm mounting-hole-offset 25mm
 0
-40
-40
+11
+10
 PC
-BaseboardConnector_Male_Old
-Through hole angled pin header, 1x40, 2.54mm pitch, 6mm pin length, single row
-Through hole angled pin header THT 1x40 2.54mm single row
+Expansion_Connector_Board
+Through hole angled pin header, 2x21, 2.54mm pitch, 6mm pin length, double rows
+Through hole angled pin header THT 2x21 2.54mm double row
 0
-40
-40
+42
+42
 PC
-BreadboardConnector_Female
-Through hole straight pin header, 2x30, 2.54mm pitch, double rows
-Through hole pin header THT 2x30 2.54mm double row
+Expansion_Connector_Motherboard
+Through hole straight pin header, 2x21, 2.54mm pitch, double rows
+Through hole pin header THT 2x21 2.54mm double row
 0
-60
-60
-PC
-BreadboardConnector_Male
-Through hole angled pin header, 2x30, 2.54mm pitch, 6mm pin length, double rows
-Through hole angled pin header THT 2x30 2.54mm double row
-0
-60
-60
+42
+42
 PC
 SPI_Breakout_Female
 Through hole straight socket strip, 1x06, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
