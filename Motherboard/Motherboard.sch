@@ -178,183 +178,183 @@ Wire Wire Line
 $Comp
 L 65xx:WD65C02 U4
 U 1 1 61936E15
-P 4600 6050
-F 0 "U4" H 4600 7237 60  0000 C CNN
-F 1 "WD65C02" H 4600 7131 60  0000 C CNN
-F 2 "" H 4100 6250 60  0001 C CNN
-F 3 "" H 4100 6250 60  0000 C CNN
-	1    4600 6050
+P 4500 6050
+F 0 "U4" H 4500 7237 60  0000 C CNN
+F 1 "WD65C02" H 4500 7131 60  0000 C CNN
+F 2 "" H 4000 6250 60  0001 C CNN
+F 3 "" H 4000 6250 60  0000 C CNN
+	1    4500 6050
 	1    0    0    -1  
 $EndComp
-Text GLabel 3950 5850 0    50   Input ~ 0
+Text GLabel 3850 5850 0    50   Input ~ 0
 VCC
-Text GLabel 3950 5950 0    50   Output ~ 0
+Text GLabel 3850 5950 0    50   Output ~ 0
 A0
-Text GLabel 3950 6050 0    50   Output ~ 0
+Text GLabel 3850 6050 0    50   Output ~ 0
 A1
-Text GLabel 3950 6150 0    50   Output ~ 0
+Text GLabel 3850 6150 0    50   Output ~ 0
 A2
-Text GLabel 3950 5350 0    50   Output ~ 0
+Text GLabel 3850 5350 0    50   Output ~ 0
 PHI1
-Text GLabel 5250 5450 2    50   Input ~ 0
+Text GLabel 5150 5450 2    50   Input ~ 0
 CLK
-NoConn ~ 5250 5550
-NoConn ~ 5250 5650
-NoConn ~ 3950 5550
-Text GLabel 3950 6250 0    50   Output ~ 0
+NoConn ~ 5150 5550
+NoConn ~ 5150 5650
+NoConn ~ 3850 5550
+Text GLabel 3850 6250 0    50   Output ~ 0
 A3
-Text GLabel 3950 6350 0    50   Output ~ 0
+Text GLabel 3850 6350 0    50   Output ~ 0
 A4
-Text GLabel 3950 6450 0    50   Output ~ 0
+Text GLabel 3850 6450 0    50   Output ~ 0
 A5
-Text GLabel 3950 6550 0    50   Output ~ 0
+Text GLabel 3850 6550 0    50   Output ~ 0
 A6
-Text GLabel 3950 6650 0    50   Output ~ 0
+Text GLabel 3850 6650 0    50   Output ~ 0
 A7
-Text GLabel 3950 6750 0    50   Output ~ 0
+Text GLabel 3850 6750 0    50   Output ~ 0
 A8
-Text GLabel 3950 6850 0    50   Output ~ 0
+Text GLabel 3850 6850 0    50   Output ~ 0
 A9
-Text GLabel 3950 6950 0    50   Output ~ 0
+Text GLabel 3850 6950 0    50   Output ~ 0
 A10
-Text GLabel 3950 7050 0    50   Output ~ 0
+Text GLabel 3850 7050 0    50   Output ~ 0
 A11
-Text GLabel 3950 5750 0    50   Output ~ 0
+Text GLabel 3850 5750 0    50   Output ~ 0
 SYNC
-Text GLabel 5250 5750 2    50   Output ~ 0
+Text GLabel 5150 5750 2    50   Output ~ 0
 RW
-Text GLabel 5250 5850 2    50   BiDi ~ 0
+Text GLabel 5150 5850 2    50   BiDi ~ 0
 D0
-Text GLabel 5250 5950 2    50   BiDi ~ 0
+Text GLabel 5150 5950 2    50   BiDi ~ 0
 D1
-Text GLabel 5250 6050 2    50   BiDi ~ 0
+Text GLabel 5150 6050 2    50   BiDi ~ 0
 D2
-Text GLabel 5250 6150 2    50   BiDi ~ 0
+Text GLabel 5150 6150 2    50   BiDi ~ 0
 D3
 Text Notes 8500 1300 2    50   ~ 0
 Power Supply 240v AC - +5v/±12v DC 1A
-Text GLabel 5250 6250 2    50   BiDi ~ 0
+Text GLabel 5150 6250 2    50   BiDi ~ 0
 D4
-Text GLabel 5250 6350 2    50   BiDi ~ 0
+Text GLabel 5150 6350 2    50   BiDi ~ 0
 D5
-Text GLabel 5250 6450 2    50   BiDi ~ 0
+Text GLabel 5150 6450 2    50   BiDi ~ 0
 D6
-Text GLabel 5250 6550 2    50   BiDi ~ 0
+Text GLabel 5150 6550 2    50   BiDi ~ 0
 D7
-Text GLabel 5250 6650 2    50   Output ~ 0
+Text GLabel 5150 6650 2    50   Output ~ 0
 A15
-Text GLabel 5250 6750 2    50   Output ~ 0
+Text GLabel 5150 6750 2    50   Output ~ 0
 A14
-Text GLabel 5250 6850 2    50   Output ~ 0
+Text GLabel 5150 6850 2    50   Output ~ 0
 A13
-Text GLabel 5250 6950 2    50   Output ~ 0
+Text GLabel 5150 6950 2    50   Output ~ 0
 A12
-Text GLabel 5250 7050 2    50   Output ~ 0
+Text GLabel 5150 7050 2    50   Output ~ 0
 GND
-Text GLabel 5250 5350 2    50   Input ~ 0
+Text GLabel 5150 5350 2    50   Input ~ 0
 VCC
-Text GLabel 3600 4750 1    50   Output ~ 0
+Text GLabel 3500 4750 1    50   Output ~ 0
 GND
 Wire Wire Line
-	3600 5150 3950 5150
-Text GLabel 3400 4750 1    50   Input ~ 0
+	3500 5150 3850 5150
+Text GLabel 3300 4750 1    50   Input ~ 0
 RDY
 $Comp
 L Device:R R2
 U 1 1 61928F59
-P 2750 5250
-F 0 "R2" V 2543 5250 50  0000 C CNN
-F 1 "3.3k" V 2634 5250 50  0000 C CNN
-F 2 "" V 2680 5250 50  0001 C CNN
-F 3 "~" H 2750 5250 50  0001 C CNN
-	1    2750 5250
+P 2650 5250
+F 0 "R2" V 2443 5250 50  0000 C CNN
+F 1 "3.3k" V 2534 5250 50  0000 C CNN
+F 2 "" V 2580 5250 50  0001 C CNN
+F 3 "~" H 2650 5250 50  0001 C CNN
+	1    2650 5250
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R3
 U 1 1 6192A191
-P 2750 5450
-F 0 "R3" V 2543 5450 50  0000 C CNN
-F 1 "3.3k" V 2634 5450 50  0000 C CNN
-F 2 "" V 2680 5450 50  0001 C CNN
-F 3 "~" H 2750 5450 50  0001 C CNN
-	1    2750 5450
+P 2650 5450
+F 0 "R3" V 2443 5450 50  0000 C CNN
+F 1 "3.3k" V 2534 5450 50  0000 C CNN
+F 2 "" V 2580 5450 50  0001 C CNN
+F 3 "~" H 2650 5450 50  0001 C CNN
+	1    2650 5450
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R4
 U 1 1 6192A5EC
-P 2750 5650
-F 0 "R4" V 2543 5650 50  0000 C CNN
-F 1 "3.3k" V 2634 5650 50  0000 C CNN
-F 2 "" V 2680 5650 50  0001 C CNN
-F 3 "~" H 2750 5650 50  0001 C CNN
-	1    2750 5650
+P 2650 5650
+F 0 "R4" V 2443 5650 50  0000 C CNN
+F 1 "3.3k" V 2534 5650 50  0000 C CNN
+F 2 "" V 2580 5650 50  0001 C CNN
+F 3 "~" H 2650 5650 50  0001 C CNN
+	1    2650 5650
 	0    1    1    0   
 $EndComp
-Text GLabel 2400 4750 1    50   Input ~ 0
+Text GLabel 2300 4750 1    50   Input ~ 0
 VCC
 Wire Wire Line
-	2400 4750 2400 5250
+	2300 4750 2300 5250
 Wire Wire Line
-	2400 5250 2600 5250
+	2300 5250 2500 5250
 Wire Wire Line
-	2600 5450 2400 5450
+	2500 5450 2300 5450
 Wire Wire Line
-	2400 5450 2400 5250
-Connection ~ 2400 5250
+	2300 5450 2300 5250
+Connection ~ 2300 5250
 Wire Wire Line
-	2600 5650 2400 5650
+	2500 5650 2300 5650
 Wire Wire Line
-	2400 5650 2400 5450
-Connection ~ 2400 5450
+	2300 5650 2300 5450
+Connection ~ 2300 5450
 Wire Wire Line
-	2900 5650 3000 5650
+	2800 5650 2900 5650
 Wire Wire Line
-	3950 5450 3200 5450
+	3850 5450 3100 5450
 Wire Wire Line
-	2900 5250 3400 5250
+	2800 5250 3300 5250
 Wire Wire Line
-	3400 4750 3400 5250
-Connection ~ 3400 5250
+	3300 4750 3300 5250
+Connection ~ 3300 5250
 Wire Wire Line
-	3400 5250 3950 5250
+	3300 5250 3850 5250
 $Comp
 L PC_Jumpers:Jumper_2_Bridged JP2
 U 1 1 61933BAE
-P 3200 4950
-F 0 "JP2" V 3154 5008 50  0000 L CNN
-F 1 "IRQ_EN" V 3245 5008 50  0000 L CNN
-F 2 "" H 3200 4950 50  0001 C CNN
-F 3 "~" H 3200 4950 50  0001 C CNN
-	1    3200 4950
+P 3100 4950
+F 0 "JP2" V 3054 5008 50  0000 L CNN
+F 1 "IRQ_EN" V 3145 5008 50  0000 L CNN
+F 2 "" H 3100 4950 50  0001 C CNN
+F 3 "~" H 3100 4950 50  0001 C CNN
+	1    3100 4950
 	0    1    1    0   
 $EndComp
 $Comp
 L PC_Jumpers:Jumper_2_Bridged JP1
 U 1 1 61934091
-P 3000 4950
-F 0 "JP1" V 2954 5008 50  0000 L CNN
-F 1 "NMI_EN" V 3045 5008 50  0000 L CNN
-F 2 "" H 3000 4950 50  0001 C CNN
-F 3 "~" H 3000 4950 50  0001 C CNN
-	1    3000 4950
+P 2900 4950
+F 0 "JP1" V 2854 5008 50  0000 L CNN
+F 1 "NMI_EN" V 2945 5008 50  0000 L CNN
+F 2 "" H 2900 4950 50  0001 C CNN
+F 3 "~" H 2900 4950 50  0001 C CNN
+	1    2900 4950
 	0    1    1    0   
 $EndComp
-Text GLabel 3200 4750 1    50   Input ~ 0
+Text GLabel 3100 4750 1    50   Input ~ 0
 IRQ\
-Text GLabel 3000 4750 1    50   Input ~ 0
+Text GLabel 2900 4750 1    50   Input ~ 0
 NMI\
 Wire Wire Line
-	3200 5150 3200 5450
-Connection ~ 3200 5450
+	3100 5150 3100 5450
+Connection ~ 3100 5450
 Wire Wire Line
-	3200 5450 2900 5450
+	3100 5450 2800 5450
 Wire Wire Line
-	3000 5150 3000 5650
-Connection ~ 3000 5650
+	2900 5150 2900 5650
+Connection ~ 2900 5650
 Wire Wire Line
-	3000 5650 3950 5650
+	2900 5650 3850 5650
 $Comp
 L 74xx:74LS138 U10
 U 1 1 6193D1D9
@@ -1168,9 +1168,9 @@ Text GLabel 3650 11250 2    50   BiDi ~ 0
 D7
 Text GLabel 3650 11350 2    50   Input ~ 0
 PHI2
-Text GLabel 5250 5150 2    50   Input ~ 0
+Text GLabel 5150 5150 2    50   Input ~ 0
 RESET\
-Text GLabel 5250 5250 2    50   Output ~ 0
+Text GLabel 5150 5250 2    50   Output ~ 0
 PHI2
 Text GLabel 3650 11450 2    50   Input ~ 0
 CS_GPIO
@@ -2586,12 +2586,12 @@ Wire Wire Line
 $Comp
 L PC_Jumpers:Jumper_2_Bridged JP3
 U 1 1 61921827
-P 3600 4950
-F 0 "JP3" V 3554 5008 50  0000 L CNN
-F 1 "VP_GND" V 3645 5008 50  0000 L CNN
-F 2 "" H 3600 4950 50  0001 C CNN
-F 3 "~" H 3600 4950 50  0001 C CNN
-	1    3600 4950
+P 3500 4950
+F 0 "JP3" V 3454 5008 50  0000 L CNN
+F 1 "VP_GND" V 3545 5008 50  0000 L CNN
+F 2 "" H 3500 4950 50  0001 C CNN
+F 3 "~" H 3500 4950 50  0001 C CNN
+	1    3500 4950
 	0    1    1    0   
 $EndComp
 $Comp
@@ -3416,7 +3416,7 @@ Text GLabel 25000 8850 2    50   Output ~ 0
 CONF\
 Text Notes 8400 4700 2    50   ~ 0
 Interrupt Priority Chip Select - Read/Write
-Text Notes 5150 4700 2    50   ~ 0
+Text Notes 5050 4700 2    50   ~ 0
 65(C)02 CPU
 Text GLabel 5650 3600 1    50   Input ~ 0
 15v_UNREG
