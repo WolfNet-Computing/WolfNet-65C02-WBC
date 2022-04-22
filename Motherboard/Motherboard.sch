@@ -114,18 +114,14 @@ $EndComp
 $Comp
 L Device:C C3
 U 1 1 61918BA3
-P 6700 2650
-F 0 "C3" H 6815 2696 50  0000 L CNN
-F 1 "0.33 uF" H 6815 2605 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6738 2500 50  0001 C CNN
-F 3 "~" H 6700 2650 50  0001 C CNN
-	1    6700 2650
+P 6700 2700
+F 0 "C3" H 6815 2746 50  0000 L CNN
+F 1 "0.33 uF" H 6815 2655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6738 2550 50  0001 C CNN
+F 3 "~" H 6700 2700 50  0001 C CNN
+	1    6700 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6700 2800 6700 3100
-Wire Wire Line
-	6700 2500 6700 2200
 Wire Wire Line
 	2350 3100 3750 3100
 $Comp
@@ -141,9 +137,6 @@ F 3 "~" H 7050 2750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7050 2900 7050 3100
-Connection ~ 6700 3100
-Wire Wire Line
-	6700 2200 7050 2200
 Wire Wire Line
 	7050 2200 7050 2300
 Text GLabel 8350 2200 2    50   Output ~ 0
@@ -1605,9 +1598,6 @@ F 3 "~" H 5250 2200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6550 2200 6700 2200
-Connection ~ 6700 2200
-Wire Wire Line
 	6250 2500 6250 3100
 $Comp
 L Regulator_Linear:LM7812_TO220 U1
@@ -1781,8 +1771,6 @@ Wire Wire Line
 Wire Wire Line
 	7800 1700 8250 1700
 Connection ~ 6550 3100
-Wire Wire Line
-	6550 3100 6700 3100
 Connection ~ 6550 2200
 Wire Wire Line
 	6550 2200 6550 3100
@@ -2334,8 +2322,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 7650 5950 50  0001 C CNN
 	2    7650 5950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6700 3100 6850 3100
 Wire Wire Line
 	7450 3100 7650 3100
 Wire Wire Line
@@ -3868,7 +3854,7 @@ U 1 1 61C6031F
 P 24350 8650
 F 0 "U27" H 24350 7413 60  0000 C CNN
 F 1 "WD65C22" H 24350 7519 60  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 23850 8850 60  0001 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 23850 8850 60  0001 C CNN
 F 3 "" H 23850 8850 60  0000 C CNN
 	1    24350 8650
 	-1   0    0    1   
@@ -4589,4 +4575,63 @@ VCC
 Text GLabel 19350 11150 3    50   Output ~ 0
 GND
 NoConn ~ 16200 10450
+$Comp
+L 74xx:74LS21 U39
+U 3 1 626DCCF3
+P 13700 11750
+F 0 "U39" H 13930 11796 50  0000 L CNN
+F 1 "74LS21" H 13930 11705 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 13700 11750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS21" H 13700 11750 50  0001 C CNN
+	3    13700 11750
+	1    0    0    -1  
+$EndComp
+Text GLabel 13700 11250 1    50   Input ~ 0
+VCC
+Text GLabel 13700 12250 3    50   Output ~ 0
+GND
+$Comp
+L 74xx:74LS08 U42
+U 5 1 626EAF96
+P 14450 11750
+F 0 "U42" H 14680 11796 50  0000 L CNN
+F 1 "74LS08" H 14680 11705 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 14450 11750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 14450 11750 50  0001 C CNN
+	5    14450 11750
+	1    0    0    -1  
+$EndComp
+Text GLabel 14450 11250 1    50   Input ~ 0
+VCC
+Text GLabel 14450 12250 3    50   Output ~ 0
+GND
+$Comp
+L 74xx:74HCT04 U43
+U 7 1 626F5FEB
+P 15200 11750
+F 0 "U43" H 15430 11796 50  0000 L CNN
+F 1 "74HCT04" H 15430 11705 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 15200 11750 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 15200 11750 50  0001 C CNN
+	7    15200 11750
+	1    0    0    -1  
+$EndComp
+Text GLabel 15200 11250 1    50   Input ~ 0
+VCC
+Text GLabel 15200 12250 3    50   Output ~ 0
+GND
+Wire Wire Line
+	6550 2200 6700 2200
+Wire Wire Line
+	6550 3100 6700 3100
+Wire Wire Line
+	6700 2850 6700 3100
+Connection ~ 6700 3100
+Wire Wire Line
+	6700 3100 6850 3100
+Wire Wire Line
+	6700 2550 6700 2200
+Connection ~ 6700 2200
+Wire Wire Line
+	6700 2200 7050 2200
 $EndSCHEMATC
