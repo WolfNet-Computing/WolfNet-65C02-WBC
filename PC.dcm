@@ -19,7 +19,7 @@ F ~
 $ENDCMP
 #
 $CMP GPIO_Connector
-D Generic connector, double row, 02x10, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)
+D Generic connector, double row, 02x11, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
 F ~
 $ENDCMP
