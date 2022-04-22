@@ -19,7 +19,7 @@ U 1 1 61C12325
 P 31750 21000
 F 0 "#LOGO1" H 31750 21500 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Large" H 31750 20600 50  0001 C CNN
-F 2 "" H 31750 21000 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_14.6x12mm_SilkScreen" H 31750 21000 50  0001 C CNN
 F 3 "~" H 31750 21000 50  0001 C CNN
 	1    31750 21000
 	1    0    0    -1  
@@ -1753,7 +1753,7 @@ Wire Notes Line
 	1800 7150 30850 7150
 Wire Notes Line
 	8700 4450 1800 4450
-Text Notes 18100 7700 2    50   ~ 0
+Text Notes 18750 7550 2    50   ~ 0
 RS-232 (Serial/COM) ports
 $Comp
 L Oscillator:ACO-xxxMHz X2
@@ -2521,7 +2521,7 @@ Wire Wire Line
 	21650 5300 21650 5550
 Wire Wire Line
 	26800 8500 26800 8750
-Text Notes 18100 7800 2    50   ~ 0
+Text Notes 18750 7650 2    50   ~ 0
 IRQ0
 Text Notes 8550 9850 2    50   ~ 0
 IRQ1
@@ -3784,7 +3784,7 @@ F 3 "~" H 4750 2400 50  0001 C CNN
 	1    4750 2400
 	1    0    0    -1  
 $EndComp
-Text Notes 18100 7900 2    50   ~ 0
+Text Notes 18750 7750 2    50   ~ 0
 Address space: 0xD014 - 0xD017
 Text GLabel 11750 12550 2    50   Input ~ 0
 A2

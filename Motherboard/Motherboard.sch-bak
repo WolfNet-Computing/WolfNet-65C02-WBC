@@ -19,7 +19,7 @@ U 1 1 61C12325
 P 31750 21000
 F 0 "#LOGO1" H 31750 21500 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Large" H 31750 20600 50  0001 C CNN
-F 2 "" H 31750 21000 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_14.6x12mm_SilkScreen" H 31750 21000 50  0001 C CNN
 F 3 "~" H 31750 21000 50  0001 C CNN
 	1    31750 21000
 	1    0    0    -1  
@@ -2480,13 +2480,13 @@ D6
 Text GLabel 23700 8150 0    50   BiDi ~ 0
 D7
 Text GLabel 26300 9550 0    50   Input ~ 0
-65SIB_E3
+65SIB_CS3
 Text GLabel 26300 9650 0    50   Input ~ 0
-65SIB_E2\
+65SIB_CS2\
 Text GLabel 23700 7850 0    50   Input ~ 0
-65SIB_E2\
+65SIB_CS2\
 Text GLabel 23700 7950 0    50   Input ~ 0
-65SIB_E3
+65SIB_CS3
 Text GLabel 25000 7650 2    50   Input ~ 0
 VCC
 $Comp
@@ -2547,7 +2547,7 @@ A14
 Text GLabel 19850 9300 0    50   Input ~ 0
 A15
 Text GLabel 20850 9300 2    50   Output ~ 0
-65SIB_E2\
+65SIB_CS2\
 Text GLabel 19850 9400 0    50   Output ~ 0
 GND
 Text GLabel 19850 9500 0    50   Output ~ 0
@@ -3918,7 +3918,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 20200 11800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 19900 11800 0    50   Output ~ 0
-65SIB_E3
+65SIB_CS3
 Text GLabel 21400 12100 2    50   Input ~ 0
 A7
 Wire Wire Line
