@@ -114,18 +114,14 @@ $EndComp
 $Comp
 L Device:C C3
 U 1 1 61918BA3
-P 6700 2650
-F 0 "C3" H 6815 2696 50  0000 L CNN
-F 1 "0.33 uF" H 6815 2605 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6738 2500 50  0001 C CNN
-F 3 "~" H 6700 2650 50  0001 C CNN
-	1    6700 2650
+P 6700 2700
+F 0 "C3" H 6815 2746 50  0000 L CNN
+F 1 "0.33 uF" H 6815 2655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6738 2550 50  0001 C CNN
+F 3 "~" H 6700 2700 50  0001 C CNN
+	1    6700 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6700 2800 6700 3100
-Wire Wire Line
-	6700 2500 6700 2200
 Wire Wire Line
 	2350 3100 3750 3100
 $Comp
@@ -141,9 +137,6 @@ F 3 "~" H 7050 2750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7050 2900 7050 3100
-Connection ~ 6700 3100
-Wire Wire Line
-	6700 2200 7050 2200
 Wire Wire Line
 	7050 2200 7050 2300
 Text GLabel 8350 2200 2    50   Output ~ 0
@@ -1598,15 +1591,12 @@ L Switch:SW_SPDT SW1
 U 1 1 62685756
 P 5250 2200
 F 0 "SW1" H 5250 1875 50  0000 C CNN
-F 1 "POWER SELECT" H 5250 1966 50  0000 C CNN
+F 1 "Barrel Jack / Mains" H 5250 1966 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_Slide_1P2T_CK_OS102011MS2Q" H 5250 2200 50  0001 C CNN
 F 3 "~" H 5250 2200 50  0001 C CNN
 	1    5250 2200
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6550 2200 6700 2200
-Connection ~ 6700 2200
 Wire Wire Line
 	6250 2500 6250 3100
 $Comp
@@ -1781,8 +1771,6 @@ Wire Wire Line
 Wire Wire Line
 	7800 1700 8250 1700
 Connection ~ 6550 3100
-Wire Wire Line
-	6550 3100 6700 3100
 Connection ~ 6550 2200
 Wire Wire Line
 	6550 2200 6550 3100
@@ -2335,8 +2323,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 7650 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 3100 6850 3100
-Wire Wire Line
 	7450 3100 7650 3100
 Wire Wire Line
 	7650 3400 7650 3100
@@ -2530,39 +2516,39 @@ IRQ3-7
 $Comp
 L 74xx:74LS138 U28
 U 1 1 6E11B869
-P 20350 9100
-F 0 "U28" H 20350 9881 50  0000 C CNN
-F 1 "74LS138" H 20350 9790 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 20350 9100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 20350 9100 50  0001 C CNN
-	1    20350 9100
+P 20150 9100
+F 0 "U28" H 20150 9881 50  0000 C CNN
+F 1 "74LS138" H 20150 9790 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 20150 9100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 20150 9100 50  0001 C CNN
+	1    20150 9100
 	1    0    0    -1  
 $EndComp
-Text GLabel 19850 8800 0    50   Input ~ 0
+Text GLabel 19650 8800 0    50   Input ~ 0
 A12
-Text GLabel 19850 8900 0    50   Input ~ 0
+Text GLabel 19650 8900 0    50   Input ~ 0
 A13
-Text GLabel 19850 9000 0    50   Input ~ 0
+Text GLabel 19650 9000 0    50   Input ~ 0
 A14
-Text GLabel 19850 9300 0    50   Input ~ 0
+Text GLabel 19650 9300 0    50   Input ~ 0
 A15
-Text GLabel 20850 9300 2    50   Output ~ 0
+Text GLabel 20650 9300 2    50   Output ~ 0
 65SIB_CS2\
-Text GLabel 19850 9400 0    50   Output ~ 0
+Text GLabel 19650 9400 0    50   Output ~ 0
 GND
-Text GLabel 19850 9500 0    50   Output ~ 0
+Text GLabel 19650 9500 0    50   Output ~ 0
 GND
-NoConn ~ 20850 8800
-NoConn ~ 20850 8900
-NoConn ~ 20850 9000
-NoConn ~ 20850 9100
-NoConn ~ 20850 9200
-NoConn ~ 20850 9400
-NoConn ~ 20850 9500
-Text GLabel 20350 8250 1    50   Input ~ 0
+NoConn ~ 20650 8800
+NoConn ~ 20650 8900
+NoConn ~ 20650 9000
+NoConn ~ 20650 9100
+NoConn ~ 20650 9200
+NoConn ~ 20650 9400
+NoConn ~ 20650 9500
+Text GLabel 20150 8250 1    50   Input ~ 0
 VCC
 Wire Wire Line
-	20350 8250 20350 8500
+	20150 8250 20150 8500
 $Comp
 L Graphic:SYM_Flash_XLarge #SYM1
 U 1 1 6ECD1321
@@ -2593,8 +2579,6 @@ Text GLabel 23750 12800 2    50   Output ~ 0
 IRQ4\
 Text GLabel 23750 12700 2    50   Output ~ 0
 IRQ3\
-Text GLabel 23750 12600 2    50   Output ~ 0
-NMI\
 Text GLabel 23750 12500 2    50   Output ~ 0
 Page_En
 Text GLabel 23750 12400 2    50   Input ~ 0
@@ -2688,8 +2672,6 @@ Text GLabel 25400 12800 2    50   Output ~ 0
 IRQ4\
 Text GLabel 25400 12700 2    50   Output ~ 0
 IRQ3\
-Text GLabel 25400 12600 2    50   Output ~ 0
-NMI\
 Text GLabel 25400 12500 2    50   Output ~ 0
 Page_En
 Text GLabel 25400 12400 2    50   Input ~ 0
@@ -2783,8 +2765,6 @@ Text GLabel 27000 12800 2    50   Output ~ 0
 IRQ4\
 Text GLabel 27000 12700 2    50   Output ~ 0
 IRQ3\
-Text GLabel 27000 12600 2    50   Output ~ 0
-NMI\
 Text GLabel 27000 12500 2    50   Output ~ 0
 Page_En
 Text GLabel 27000 12400 2    50   Input ~ 0
@@ -2878,8 +2858,6 @@ Text GLabel 28600 12800 2    50   Output ~ 0
 IRQ4\
 Text GLabel 28600 12700 2    50   Output ~ 0
 IRQ3\
-Text GLabel 28600 12600 2    50   Output ~ 0
-NMI\
 Text GLabel 28600 12500 2    50   Output ~ 0
 Page_En
 Text GLabel 28600 12400 2    50   Input ~ 0
@@ -2973,8 +2951,6 @@ Text GLabel 30150 12800 2    50   Output ~ 0
 IRQ4\
 Text GLabel 30150 12700 2    50   Output ~ 0
 IRQ3\
-Text GLabel 30150 12600 2    50   Output ~ 0
-NMI\
 Text GLabel 30150 12500 2    50   Output ~ 0
 Page_En
 Text GLabel 30150 12400 2    50   Input ~ 0
@@ -3054,7 +3030,7 @@ Text GLabel 29650 11400 0    50   Output ~ 0
 GND
 Text GLabel 29650 11300 0    50   Input ~ 0
 VCC
-Text GLabel 20350 9800 3    50   Output ~ 0
+Text GLabel 20150 9800 3    50   Output ~ 0
 GND
 Text GLabel 23700 9350 0    50   Input ~ 0
 A0
@@ -4634,4 +4610,23 @@ Text GLabel 15200 11250 1    50   Input ~ 0
 VCC
 Text GLabel 15200 12250 3    50   Output ~ 0
 GND
+Wire Wire Line
+	6550 2200 6700 2200
+Wire Wire Line
+	6550 3100 6700 3100
+Wire Wire Line
+	6700 2850 6700 3100
+Connection ~ 6700 3100
+Wire Wire Line
+	6700 3100 6850 3100
+Wire Wire Line
+	6700 2550 6700 2200
+Connection ~ 6700 2200
+Wire Wire Line
+	6700 2200 7050 2200
+NoConn ~ 30150 12600
+NoConn ~ 28600 12600
+NoConn ~ 27000 12600
+NoConn ~ 25400 12600
+NoConn ~ 23750 12600
 $EndSCHEMATC
