@@ -8,7 +8,5 @@ The first stable release will be version 2.0. This will be the case as we starte
 
 
 FAQ:
-
 Why a 6502?
-
 Because why not? It was good enough for the Apple I, the NES console and many other home computers.
