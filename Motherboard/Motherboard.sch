@@ -5,8 +5,8 @@ $Descr A1 33110 23386
 encoding utf-8
 Sheet 1 1
 Title "WolfNet 6502 WBC - Motherboard"
-Date "2022-04-20"
-Rev "2.0"
+Date "2022-04-23"
+Rev "2.1"
 Comp "WolfNet"
 Comment1 "Motherboard for the WolfNet 65C02 based (NMOS Compatible) WorkBench Computer."
 Comment2 "CODENAME: Wolfe-1"
@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 61C12325
-P 31750 21000
-F 0 "#LOGO1" H 31750 21500 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Large" H 31750 20600 50  0001 C CNN
-F 2 "Symbol:OSHW-Logo2_14.6x12mm_SilkScreen" H 31750 21000 50  0001 C CNN
-F 3 "~" H 31750 21000 50  0001 C CNN
-	1    31750 21000
+P 5500 14300
+F 0 "#LOGO1" H 5500 14800 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Large" H 5500 13900 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_14.6x12mm_SilkScreen" H 5500 14300 50  0001 C CNN
+F 3 "~" H 5500 14300 50  0001 C CNN
+	1    5500 14300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -81,7 +81,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4500 
 $EndComp
 Wire Wire Line
 	3750 1700 3750 1600
-Connection ~ 3750 1600
 Wire Wire Line
 	4500 2450 4500 2200
 Wire Wire Line
@@ -97,9 +96,6 @@ Wire Wire Line
 	2400 1600 2400 1700
 Wire Wire Line
 	2400 1700 2300 1700
-Wire Wire Line
-	3750 2200 3750 3100
-Connection ~ 3750 2200
 $Comp
 L Device:C C4
 U 1 1 6191865B
@@ -122,8 +118,6 @@ F 3 "~" H 6700 2700 50  0001 C CNN
 	1    6700 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2350 3100 3750 3100
 $Comp
 L Device:LED D5
 U 1 1 61924C81
@@ -141,8 +135,6 @@ Wire Wire Line
 	7050 2200 7050 2300
 Text GLabel 8350 2200 2    50   Output ~ 0
 VCC
-Wire Wire Line
-	4750 2550 4750 3100
 $Comp
 L 65xx:WD65C02 U21
 U 1 1 61936E15
@@ -1453,25 +1445,10 @@ DCD_COM_PORT
 Connection ~ 6250 3100
 Wire Wire Line
 	6250 3100 6550 3100
-Connection ~ 3750 3100
-Wire Wire Line
-	4750 3100 3750 3100
-Connection ~ 4750 3100
 Wire Wire Line
 	7050 2200 8350 2200
 Connection ~ 7050 2200
 Connection ~ 7050 3100
-$Comp
-L Switch:SW_SPDT SW1
-U 1 1 62685756
-P 5250 2200
-F 0 "SW1" H 5250 1875 50  0000 C CNN
-F 1 "Barrel Jack / Mains" H 5250 1966 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_Slide_1P2T_CK_OS102011MS2Q" H 5250 2200 50  0001 C CNN
-F 3 "~" H 5250 2200 50  0001 C CNN
-	1    5250 2200
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	6250 2500 6250 3100
 $Comp
@@ -1640,8 +1617,6 @@ GND
 Wire Wire Line
 	4750 1700 5050 1700
 Wire Wire Line
-	4750 1700 4750 2250
-Wire Wire Line
 	5050 2100 5050 1700
 Wire Wire Line
 	7800 1700 8250 1700
@@ -1649,10 +1624,6 @@ Connection ~ 6550 3100
 Connection ~ 6550 2200
 Wire Wire Line
 	6550 2200 6550 3100
-Wire Notes Line
-	1800 1150 1800 13750
-Wire Notes Line
-	8700 1150 8700 13750
 Wire Notes Line
 	14950 1150 14950 7150
 Wire Notes Line
@@ -2057,10 +2028,6 @@ Wire Wire Line
 Connection ~ 7200 3100
 Wire Wire Line
 	7200 3100 7450 3100
-Wire Wire Line
-	5050 2300 5050 2900
-Wire Wire Line
-	5050 2900 2350 2900
 Text GLabel 5450 2200 2    50   Output ~ 0
 FUSE_IN
 Text GLabel 6650 1700 0    50   Input ~ 0
@@ -2289,38 +2256,25 @@ Text GLabel 23700 7650 0    50   Output ~ 0
 IRQ2\
 Text GLabel 23700 8950 0    50   Input ~ 0
 RESET\
-$Comp
-L 74xx:74LS138 U30
-U 1 1 61C2AAA6
-P 26800 9350
-F 0 "U30" H 26800 10131 50  0000 C CNN
-F 1 "74LS138" H 26800 10040 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 26800 9350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 26800 9350 50  0001 C CNN
-	1    26800 9350
-	1    0    0    -1  
-$EndComp
-Text GLabel 27300 9150 2    50   Output ~ 0
+Text GLabel 27100 9150 2    50   Output ~ 0
 SEL1\
-Text GLabel 27300 9250 2    50   Output ~ 0
+Text GLabel 27100 9250 2    50   Output ~ 0
 SEL2\
-Text GLabel 27300 9350 2    50   Output ~ 0
+Text GLabel 27100 9350 2    50   Output ~ 0
 SEL3\
-Text GLabel 27300 9450 2    50   Output ~ 0
+Text GLabel 27100 9450 2    50   Output ~ 0
 SEL4\
-Text GLabel 27300 9550 2    50   Output ~ 0
+Text GLabel 27100 9550 2    50   Output ~ 0
 SEL5\
-Text GLabel 27300 9650 2    50   Output ~ 0
+Text GLabel 27100 9650 2    50   Output ~ 0
 SEL6\
-Text GLabel 27300 9750 2    50   Output ~ 0
+Text GLabel 27100 9750 2    50   Output ~ 0
 SEL7\
 Text GLabel 23700 9550 0    50   Input ~ 0
 65SIB_IRQ\
-Text GLabel 26300 9750 0    50   Output ~ 0
-GND
-Text GLabel 26800 8500 1    50   Input ~ 0
+Text GLabel 26700 8600 1    50   Input ~ 0
 VCC
-Text GLabel 26800 10050 3    50   Output ~ 0
+Text GLabel 26700 9950 3    50   Output ~ 0
 GND
 Text GLabel 25000 9550 2    50   Output ~ 0
 GND
@@ -2340,14 +2294,14 @@ Text GLabel 23700 8250 0    50   BiDi ~ 0
 D6
 Text GLabel 23700 8150 0    50   BiDi ~ 0
 D7
-Text GLabel 26300 9550 0    50   Input ~ 0
-65SIB_CS3
+Text GLabel 26300 9750 0    50   Input ~ 0
+65SIB_CS
 Text GLabel 26300 9650 0    50   Input ~ 0
 DEV_CS\
 Text GLabel 23700 7850 0    50   Input ~ 0
 DEV_CS\
 Text GLabel 23700 7950 0    50   Input ~ 0
-65SIB_CS3
+65SIB_CS
 Text GLabel 25000 7650 2    50   Input ~ 0
 VCC
 $Comp
@@ -2381,7 +2335,7 @@ Connection ~ 21150 6550
 Wire Wire Line
 	21650 5300 21650 5550
 Wire Wire Line
-	26800 8500 26800 8750
+	26700 8600 26700 8850
 Text Notes 18750 7650 2    50   ~ 0
 IRQ0
 Text Notes 8550 9850 2    50   ~ 0
@@ -2427,19 +2381,19 @@ Wire Wire Line
 $Comp
 L Graphic:SYM_Flash_XLarge #SYM1
 U 1 1 6ECD1321
-P 2950 2550
-F 0 "#SYM1" V 2800 2550 50  0001 C CNN
-F 1 "SYM_Flash_XLarge" V 3100 2550 50  0001 C CNN
-F 2 "" H 2950 2525 50  0001 C CNN
-F 3 "~" H 3350 2450 50  0001 C CNN
-	1    2950 2550
+P 2950 2600
+F 0 "#SYM1" V 2800 2600 50  0001 C CNN
+F 1 "SYM_Flash_XLarge" V 3100 2600 50  0001 C CNN
+F 2 "Symbol:Symbol_HighVoltage_Type2_CopperTop_Big" H 2950 2575 50  0001 C CNN
+F 3 "~" H 3350 2500 50  0001 C CNN
+	1    2950 2600
 	1    0    0    -1  
 $EndComp
 Text Notes 8500 1400 2    50   ~ 0
 WARNING: Do NOT switch input supply while plugged in.
 Wire Notes Line
 	1800 13750 30850 13750
-NoConn ~ 27300 9050
+NoConn ~ 27100 9050
 Text GLabel 23750 13300 2    50   Output ~ 0
 +12v
 Text GLabel 23750 13200 2    50   Output ~ 0
@@ -2964,8 +2918,6 @@ Text GLabel 15400 7750 1    50   Input ~ 0
 VCC
 Text GLabel 15400 10900 3    50   Output ~ 0
 GND
-Wire Wire Line
-	3400 2450 4500 2450
 NoConn ~ 13250 9450
 Wire Wire Line
 	25000 9250 26300 9250
@@ -3627,12 +3579,12 @@ $EndComp
 $Comp
 L Device:CP CP1
 U 1 1 61908C64
-P 4750 2400
-F 0 "CP1" H 4868 2446 50  0000 L CNN
-F 1 "1000 uF" H 4868 2355 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4788 2250 50  0001 C CNN
-F 3 "~" H 4750 2400 50  0001 C CNN
-	1    4750 2400
+P 4750 2150
+F 0 "CP1" H 4868 2196 50  0000 L CNN
+F 1 "1000 uF" H 4868 2105 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4788 2000 50  0001 C CNN
+F 3 "~" H 4750 2150 50  0001 C CNN
+	1    4750 2150
 	1    0    0    -1  
 $EndComp
 Text Notes 18750 7750 2    50   ~ 0
@@ -3672,47 +3624,38 @@ $EndComp
 $Comp
 L Graphic:SYM_ESD_Large #SYM2
 U 1 1 62084D56
-P 29250 21000
-F 0 "#SYM2" H 29250 21200 50  0001 C CNN
-F 1 "SYM_ESD_Large" H 29250 20750 50  0001 C CNN
-F 2 "" H 29245 20970 50  0001 C CNN
-F 3 "~" H 29245 20970 50  0001 C CNN
-	1    29250 21000
+P 4300 14400
+F 0 "#SYM2" H 4300 14600 50  0001 C CNN
+F 1 "SYM_ESD_Large" H 4300 14150 50  0001 C CNN
+F 2 "" H 4295 14370 50  0001 C CNN
+F 3 "~" H 4295 14370 50  0001 C CNN
+	1    4300 14400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Graphic:SYM_Flash_XLarge #SYM4
 U 1 1 620873CC
-P 28800 21050
-F 0 "#SYM4" V 28650 21050 50  0001 C CNN
-F 1 "SYM_Flash_XLarge" V 28950 21050 50  0001 C CNN
-F 2 "" H 28800 21025 50  0001 C CNN
-F 3 "~" H 29200 20950 50  0001 C CNN
-	1    28800 21050
+P 3850 14450
+F 0 "#SYM4" V 3700 14450 50  0001 C CNN
+F 1 "SYM_Flash_XLarge" V 4000 14450 50  0001 C CNN
+F 2 "" H 3850 14425 50  0001 C CNN
+F 3 "~" H 4250 14350 50  0001 C CNN
+	1    3850 14450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Graphic:SYM_Hot_Large #SYM3
 U 1 1 620C2A36
-P 29750 21000
-F 0 "#SYM3" H 29750 21200 50  0001 C CNN
-F 1 "SYM_Hot_Large" H 29750 20750 50  0001 C CNN
-F 2 "" H 29750 20800 50  0001 C CNN
-F 3 "~" H 29780 20800 50  0001 C CNN
-	1    29750 21000
+P 4800 14400
+F 0 "#SYM3" H 4800 14600 50  0001 C CNN
+F 1 "SYM_Hot_Large" H 4800 14150 50  0001 C CNN
+F 2 "" H 4800 14200 50  0001 C CNN
+F 3 "~" H 4830 14200 50  0001 C CNN
+	1    4800 14400
 	1    0    0    -1  
 $EndComp
 NoConn ~ 25000 7750
 NoConn ~ 25000 7850
-NoConn ~ 25000 7950
-NoConn ~ 25000 8050
-NoConn ~ 25000 8150
-NoConn ~ 25000 8250
-NoConn ~ 25000 8350
-NoConn ~ 25000 8450
-NoConn ~ 25000 8550
-NoConn ~ 25000 8650
-NoConn ~ 25000 8950
 $Comp
 L 65xx:WD65C22 U27
 U 1 1 61C6031F
@@ -3769,7 +3712,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 20200 11800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 19900 11800 0    50   Output ~ 0
-65SIB_CS3
+65SIB_CS
 Text GLabel 21400 12100 2    50   Input ~ 0
 A7
 Wire Wire Line
@@ -4123,7 +4066,6 @@ Wire Wire Line
 	4750 1700 4750 1600
 Wire Wire Line
 	4750 1600 4500 1600
-Connection ~ 4750 1700
 Connection ~ 4500 1600
 Wire Wire Line
 	8250 1700 8250 2050
@@ -4135,38 +4077,25 @@ Wire Wire Line
 Wire Wire Line
 	2450 1900 2450 2200
 Wire Wire Line
-	2450 2200 2700 2200
-Wire Wire Line
 	2300 1900 2450 1900
-Wire Wire Line
-	2400 1600 2700 1600
-Wire Wire Line
-	3100 1600 3750 1600
-Wire Wire Line
-	3400 1800 3100 1800
-Wire Wire Line
-	3400 1800 3400 2450
-NoConn ~ 3100 2000
-NoConn ~ 3100 2200
+NoConn ~ 3500 2000
+NoConn ~ 3500 2200
 $Comp
 L PC:Transformer TR1
 U 1 1 633F086E
-P 2900 1900
-F 0 "TR1" H 2900 2381 50  0000 C CNN
-F 1 "Transformer" H 2900 2290 50  0000 C CNN
-F 2 "Transformer_THT:Transformer_CHK_EI48-8VA_2xSec" H 2900 1900 50  0001 C CNN
-F 3 "" H 2900 1900 50  0001 C CNN
-	1    2900 1900
+P 3300 1900
+F 0 "TR1" H 3300 2381 50  0000 C CNN
+F 1 "Transformer" H 3300 2290 50  0000 C CNN
+F 2 "Transformer_THT:Transformer_CHK_EI48-8VA_2xSec" H 3300 1900 50  0001 C CNN
+F 3 "" H 3300 1900 50  0001 C CNN
+	1    3300 1900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4750 3100 5950 3100
 Wire Wire Line
 	6650 1700 6800 1700
 Connection ~ 6800 1700
 Wire Wire Line
 	5950 2850 5950 3100
-Connection ~ 5950 3100
 Wire Wire Line
 	5950 3100 6250 3100
 Wire Wire Line
@@ -4512,4 +4441,166 @@ Text GLabel 25400 12600 2    50   Input ~ 0
 DEV_CS\
 Text GLabel 23750 12600 2    50   Input ~ 0
 DEV_CS\
+Wire Wire Line
+	3750 2550 4750 2550
+Connection ~ 3750 2200
+Connection ~ 4750 2550
+$Comp
+L PC:SW_SPDT_x2 SW1
+U 1 1 62900224
+P 5450 2750
+F 0 "SW1" H 5650 1905 50  0000 C CNN
+F 1 "SW_SPDT_x2" H 5650 1996 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_E-Switch_EG1271_DPDT" H 5650 2800 50  0001 C CNN
+F 3 "" H 5650 2800 50  0001 C CNN
+	1    5450 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 2600 5700 3100
+Wire Wire Line
+	5700 3100 5950 3100
+Connection ~ 5950 3100
+Wire Wire Line
+	2350 3100 5050 3100
+Wire Wire Line
+	4750 2300 4750 2550
+Wire Wire Line
+	4750 2000 4750 1700
+Connection ~ 4750 1700
+Wire Wire Line
+	5050 2700 5050 3100
+Wire Wire Line
+	5000 2550 5000 2500
+Wire Wire Line
+	5000 2500 5050 2500
+Wire Wire Line
+	4750 2550 5000 2550
+Wire Wire Line
+	5050 2300 4850 2300
+Wire Wire Line
+	4850 2300 4850 2900
+Wire Wire Line
+	4850 2900 2350 2900
+Wire Wire Line
+	5450 2600 5700 2600
+Text Notes 2750 13950 2    50   ~ 0
+Miscellaneous parts
+$Comp
+L Generic_Device:Fuse F1
+U 1 1 62E4B17A
+P 2850 1600
+F 0 "F1" V 2653 1600 50  0000 C CNN
+F 1 "1A Fuse" V 2744 1600 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 2780 1600 50  0001 C CNN
+F 3 "~" H 2850 1600 50  0001 C CNN
+	1    2850 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 1600 2700 1600
+Wire Wire Line
+	2450 2200 3100 2200
+Wire Wire Line
+	3000 1600 3100 1600
+Wire Wire Line
+	3500 1600 3750 1600
+Connection ~ 3750 1600
+Wire Wire Line
+	3750 2200 3750 2550
+Wire Wire Line
+	4500 2450 3600 2450
+Wire Wire Line
+	3600 2450 3600 1800
+Wire Wire Line
+	3600 1800 3500 1800
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 63073D6D
+P 2050 14150
+F 0 "H1" H 2150 14196 50  0000 L CNN
+F 1 "MountingHole" H 2150 14105 50  0000 L CNN
+F 2 "" H 2050 14150 50  0001 C CNN
+F 3 "~" H 2050 14150 50  0001 C CNN
+	1    2050 14150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 630743AD
+P 2750 14150
+F 0 "H4" H 2850 14196 50  0000 L CNN
+F 1 "MountingHole" H 2850 14105 50  0000 L CNN
+F 2 "" H 2750 14150 50  0001 C CNN
+F 3 "~" H 2750 14150 50  0001 C CNN
+	1    2750 14150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 6307478A
+P 2750 14350
+F 0 "H5" H 2850 14396 50  0000 L CNN
+F 1 "MountingHole" H 2850 14305 50  0000 L CNN
+F 2 "" H 2750 14350 50  0001 C CNN
+F 3 "~" H 2750 14350 50  0001 C CNN
+	1    2750 14350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 63074A90
+P 2050 14350
+F 0 "H2" H 2150 14396 50  0000 L CNN
+F 1 "MountingHole" H 2150 14305 50  0000 L CNN
+F 2 "" H 2050 14350 50  0001 C CNN
+F 3 "~" H 2050 14350 50  0001 C CNN
+	1    2050 14350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 63074DBB
+P 2050 14550
+F 0 "H3" H 2150 14596 50  0000 L CNN
+F 1 "MountingHole" H 2150 14505 50  0000 L CNN
+F 2 "" H 2050 14550 50  0001 C CNN
+F 3 "~" H 2050 14550 50  0001 C CNN
+	1    2050 14550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 6307501F
+P 2750 14550
+F 0 "H6" H 2850 14596 50  0000 L CNN
+F 1 "MountingHole" H 2850 14505 50  0000 L CNN
+F 2 "" H 2750 14550 50  0001 C CNN
+F 3 "~" H 2750 14550 50  0001 C CNN
+	1    2750 14550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8700 14750 1800 14750
+Wire Notes Line
+	1800 1150 1800 14750
+Wire Notes Line
+	8700 1150 8700 14750
+$Comp
+L 74xx:74HCT137 U20
+U 1 1 6343FD00
+P 26700 9450
+F 0 "U20" H 26700 10231 50  0000 C CNN
+F 1 "74HCT137" H 26700 10140 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 26700 9450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc237.pdf" H 26700 9450 50  0001 C CNN
+	1    26700 9450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25000 8950 25650 8950
+Wire Wire Line
+	25650 8950 25650 9450
+Wire Wire Line
+	25650 9450 26300 9450
 $EndSCHEMATC
