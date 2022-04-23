@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name PC)(type Legacy)(uri C:/Projects/Electronics/WolfNet-6502-WBC/PC.lib)(options "")(descr ""))
+  (lib (name 65xx)(type Legacy)(uri C:/Projects/Electronics/WolfNet-6502-WBC/65xx.lib)(options "")(descr ""))
+  (lib (name Generic_Device)(type Legacy)(uri C:/Projects/Electronics/WolfNet-6502-WBC/Generic_Device.lib)(options "")(descr ""))
+  (lib (name Jumper_THT)(type Legacy)(uri C:/Projects/Electronics/WolfNet-6502-WBC/Jumper_THT.lib)(options "")(descr ""))
+)

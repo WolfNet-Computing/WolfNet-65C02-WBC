@@ -48,7 +48,7 @@ local.properties
 .vs
 
 # Build results
-[Dd]ebug/
+#[Dd]ebug/
 [Rr]elease/
 *_i.c
 *_p.c
@@ -182,4 +182,3 @@ pip-log.txt
 # Project specific files
 Reference
 WolfNet-6502-Software
-*.bat
