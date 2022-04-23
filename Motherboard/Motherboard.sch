@@ -149,7 +149,7 @@ U 1 1 61936E15
 P 4500 6050
 F 0 "U21" H 4500 7237 60  0000 C CNN
 F 1 "WD65C02" H 4500 7131 60  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 4000 6250 60  0001 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 4000 6250 60  0001 C CNN
 F 3 "" H 4000 6250 60  0000 C CNN
 	1    4500 6050
 	1    0    0    -1  
@@ -1013,7 +1013,7 @@ U 1 1 61A772A1
 P 3000 10750
 F 0 "U33" H 3000 11937 60  0000 C CNN
 F 1 "WD65C22" H 3000 11831 60  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 2500 10950 60  0001 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 2500 10950 60  0001 C CNN
 F 3 "" H 2500 10950 60  0000 C CNN
 	1    3000 10750
 	1    0    0    -1  
@@ -1370,7 +1370,7 @@ U 1 1 61A675E2
 P 20950 3400
 F 0 "U9" H 20950 4481 50  0000 C CNN
 F 1 "HM62256BLP" H 20950 4390 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 20950 3300 50  0001 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket_LongPads" H 20950 3300 50  0001 C CNN
 F 3 "https://web.mit.edu/6.115/www/document/62256.pdf" H 20950 3300 50  0001 C CNN
 	1    20950 3400
 	1    0    0    -1  
@@ -4493,11 +4493,6 @@ Wire Wire Line
 Connection ~ 6700 2200
 Wire Wire Line
 	6700 2200 7050 2200
-NoConn ~ 30150 12600
-NoConn ~ 28600 12600
-NoConn ~ 27000 12600
-NoConn ~ 25400 12600
-NoConn ~ 23750 12600
 Text GLabel 3650 11550 2    50   Input ~ 0
 DEV_CS\
 Wire Wire Line
@@ -4506,5 +4501,15 @@ Connection ~ 7050 5550
 Wire Wire Line
 	7050 5550 7050 5850
 Text GLabel 7000 5550 0    50   Input ~ 0
+DEV_CS\
+Text GLabel 30150 12600 2    50   Input ~ 0
+DEV_CS\
+Text GLabel 28600 12600 2    50   Input ~ 0
+DEV_CS\
+Text GLabel 27000 12600 2    50   Input ~ 0
+DEV_CS\
+Text GLabel 25400 12600 2    50   Input ~ 0
+DEV_CS\
+Text GLabel 23750 12600 2    50   Input ~ 0
 DEV_CS\
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-19222644751108394
+19222652151755983
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -59718,8 +59718,8 @@ Through hole angled pin header THT 2x21 2.54mm double row
 42
 PC
 Expansion_Connector_Motherboard
-Through hole straight pin header, 2x21, 2.54mm pitch, double rows
-Through hole pin header THT 2x21 2.54mm double row
+Through hole straight socket strip, 2x21, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated
+Through hole socket strip THT 2x21 2.54mm double row
 0
 42
 42
