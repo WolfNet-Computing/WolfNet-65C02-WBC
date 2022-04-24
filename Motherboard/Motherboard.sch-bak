@@ -5,8 +5,8 @@ $Descr A1 33110 23386
 encoding utf-8
 Sheet 1 1
 Title "WolfNet 6502 WBC - Motherboard"
-Date "2022-04-20"
-Rev "2.0"
+Date "2022-04-23"
+Rev "2.1"
 Comp "WolfNet"
 Comment1 "Motherboard for the WolfNet 65C02 based (NMOS Compatible) WorkBench Computer."
 Comment2 "CODENAME: Wolfe-1"
@@ -1444,8 +1444,6 @@ Text GLabel 12550 9450 1    50   Output ~ 0
 DCD_COM_PORT
 Connection ~ 6250 3100
 Wire Wire Line
-	6250 3100 6550 3100
-Wire Wire Line
 	7050 2200 8350 2200
 Connection ~ 7050 2200
 Connection ~ 7050 3100
@@ -1620,10 +1618,6 @@ Wire Wire Line
 	5050 2100 5050 1700
 Wire Wire Line
 	7800 1700 8250 1700
-Connection ~ 6550 3100
-Connection ~ 6550 2200
-Wire Wire Line
-	6550 2200 6550 3100
 Wire Notes Line
 	14950 1150 14950 7150
 Wire Notes Line
@@ -3627,7 +3621,7 @@ U 1 1 62084D56
 P 4300 14400
 F 0 "#SYM2" H 4300 14600 50  0001 C CNN
 F 1 "SYM_ESD_Large" H 4300 14150 50  0001 C CNN
-F 2 "" H 4295 14370 50  0001 C CNN
+F 2 "Symbol:ESD-Logo_13.2x12mm_SilkScreen" H 4295 14370 50  0001 C CNN
 F 3 "~" H 4295 14370 50  0001 C CNN
 	1    4300 14400
 	1    0    0    -1  
@@ -4124,21 +4118,8 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 14300 10
 $EndComp
 Text GLabel 14000 10450 0    50   Input ~ 0
 CS0_COM
-$Comp
-L 74xx:74LS08 U18
-U 5 1 628474C9
-P 7850 6650
-F 0 "U18" V 8217 6650 50  0000 C CNN
-F 1 "74LS08" V 8126 6650 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 7850 6650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 7850 6650 50  0001 C CNN
-	5    7850 6650
-	0    -1   -1   0   
-$EndComp
 Text GLabel 7350 6650 0    50   Input ~ 0
 VCC
-Text GLabel 8350 6650 2    50   Output ~ 0
-GND
 Text GLabel 5800 6900 0    50   Input ~ 0
 VCC
 Text GLabel 6800 6900 2    50   Output ~ 0
@@ -4411,8 +4392,6 @@ GND
 Wire Wire Line
 	6550 2200 6700 2200
 Wire Wire Line
-	6550 3100 6700 3100
-Wire Wire Line
 	6700 2850 6700 3100
 Connection ~ 6700 3100
 Wire Wire Line
@@ -4603,4 +4582,19 @@ Wire Wire Line
 	25650 8950 25650 9450
 Wire Wire Line
 	25650 9450 26300 9450
+Text GLabel 8350 6650 2    50   Output ~ 0
+GND
+$Comp
+L 74xx:74LS08 U18
+U 5 1 628474C9
+P 7850 6650
+F 0 "U18" V 8217 6650 50  0000 C CNN
+F 1 "74LS08" V 8126 6650 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 7850 6650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 7850 6650 50  0001 C CNN
+	5    7850 6650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 3100 6700 3100
 $EndSCHEMATC
