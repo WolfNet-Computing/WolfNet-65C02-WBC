@@ -2,6 +2,6 @@
 
 * [Memory map](memory_map.html)
 
-* [Hardware Licensing](license.md)
+* [Hardware Licensing](license.html)
  
-Conceived and created by [TheAlmostGenius](https://thealmostgenius.geekgalaxy.com) 2021 for [WolfNet Computing](https://github.com/WolfNet-Computing)
+Conceived and created by [TheAlmostGenius](https://thealmostgenius.geekgalaxy.com) 2022 for [WolfNet Computing](https://github.com/WolfNet-Computing) 2019 - 2022
