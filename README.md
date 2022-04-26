@@ -9,4 +9,4 @@ Why a 6502?
 Because why not? It was good enough for the Apple I, the NES console and many other home computers.
 
 Where can I find licensing information?  
-In the Licensing folder in [Plain Text](Licensing/LICENSE), [HTML](Licensing/license.html) and [Markdown](Licensing/license.md)
+In the Licensing folder in [Plain Text](Licensing/LICENSE), [HTML](thealmostgenius.geekgalaxy.com/docs/license.html) and [Markdown](Licensing/license.md)
