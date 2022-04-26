@@ -5,9 +5,11 @@ This license operates as a wraparound license to the Apache License Version 2.0 
 1. Terminology in the Apache License is supplemented or modified as follows:  
    * “Authorship”: any reference to ‘authorship’ shall be taken to read “authorship or design”.  
    * “Copyright owner”: any reference to ‘copyright owner’ shall be taken to read “Rights owner”.  
-   * “Copyright statement”: the reference to ‘copyright statement’ shall be taken to read ‘copyright or other statement pertaining to Rights’.  
+   * “Copyright statement”: the reference to ‘copyright statement’ shall be taken to read ‘copyright or other statement pertaining to Rights’.
+
    The following new definition shall be added to the Definitions section of the Apache License:  
-   * “Rights” means copyright and any similar right including design right (whether registered or unregistered), rights in semiconductor topographies (mask works) and database rights (but excluding Patents and Trademarks).  
+   * “Rights” means copyright and any similar right including design right (whether registered or unregistered), rights in semiconductor topographies (mask works) and database rights (but excluding Patents and Trademarks).
+
    The following definitions shall replace the corresponding definitions in the Apache License:  
    * “License” shall mean this Solderpad Hardware License version 2.1, being the terms and conditions for use, manufacture, instantiation, adaptation, reproduction, and distribution as defined by Sections 1 through 9 of this document.  
    * “Licensor” shall mean the owner of the Rights or entity authorized by the owner of the Rights that is granting the License.  
