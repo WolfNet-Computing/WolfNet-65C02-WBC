@@ -12,6 +12,12 @@ K rs232 uart transceiver line-driver
 F https://www.analog.com/media/en/technical-documentation/data-sheets/ADM222_232A_242.pdf
 $ENDCMP
 #
+$CMP DB9_Header
+D 9-pin male D-SUB connector
+K connector male D-SUB
+F  ~
+$ENDCMP
+#
 $CMP Expansion_Connector
 D Generic connector, double row, 02x21, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector

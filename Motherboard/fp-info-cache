@@ -1,4 +1,4 @@
-19222652151935414
+19221012804865304
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -59702,13 +59702,6 @@ Through hole pin header THT 2x05 2.54mm double row
 0
 9
 9
-PC
-DSUB-9_RS-232
-9-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, male, pitch 2.77x2.84mm, pin-PCB-offset 4.9399999999999995mm, distance of mounting holes 25mm, distance of mounting holes to PCB edge 7.4799999999999995mm, see https://disti-assets.s3.amazonaws.com/tonar/files/datasheets/16730.pdf
-9-pin D-Sub connector horizontal angled 90deg THT male pitch 2.77x2.84mm pin-PCB-offset 4.9399999999999995mm mounting-holes-distance 25mm mounting-hole-offset 25mm
-0
-11
-10
 PC
 Expansion_Connector_Board
 Through hole angled pin header, 2x21, 2.54mm pitch, 6mm pin length, double rows
