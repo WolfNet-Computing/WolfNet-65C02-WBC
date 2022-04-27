@@ -4164,116 +4164,116 @@ A0
 $Comp
 L 74xx:74HCT00 U?
 U 2 1 653EA77F
-P 7050 6250
-F 0 "U?" H 7050 5933 50  0000 C CNN
-F 1 "74HCT00" H 7050 6024 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 7050 6250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 7050 6250 50  0001 C CNN
-	2    7050 6250
+P 7050 6300
+F 0 "U?" H 7050 5983 50  0000 C CNN
+F 1 "74HCT00" H 7050 6074 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 7050 6300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 7050 6300 50  0001 C CNN
+	2    7050 6300
 	0    1    1    0   
 $EndComp
 $Comp
 L 74xx:74HCT00 U?
 U 3 1 653EA785
-P 6950 4950
-F 0 "U?" H 6950 4633 50  0000 C CNN
-F 1 "74HCT00" H 6950 4724 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6950 4950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 6950 4950 50  0001 C CNN
-	3    6950 4950
+P 6950 5000
+F 0 "U?" H 6950 4683 50  0000 C CNN
+F 1 "74HCT00" H 6950 4774 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6950 5000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 6950 5000 50  0001 C CNN
+	3    6950 5000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7050 6850 6900 6850
+	7050 6900 6900 6900
 $Comp
 L 74xx:74HCT04 U?
 U 3 1 653EA78C
-P 6950 5600
-F 0 "U?" H 6950 5283 50  0000 C CNN
-F 1 "74HCT04" H 6950 5374 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6950 5600 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6950 5600 50  0001 C CNN
-	3    6950 5600
+P 6950 5650
+F 0 "U?" H 6950 5333 50  0000 C CNN
+F 1 "74HCT04" H 6950 5424 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6950 5650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6950 5650 50  0001 C CNN
+	3    6950 5650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6950 5900 6950 5950
+	6950 5950 6950 6000
 Wire Wire Line
-	6950 5300 6950 5250
-Text GLabel 6850 4650 1    50   Input ~ 0
+	6950 5350 6950 5300
+Text GLabel 6850 4700 1    50   Input ~ 0
 A14
-Text GLabel 7150 5950 1    50   Input ~ 0
+Text GLabel 7150 6000 1    50   Input ~ 0
 A13
-Text GLabel 7050 4650 1    50   Input ~ 0
+Text GLabel 7050 4700 1    50   Input ~ 0
 A15
 $Comp
 L PC_Jumpers:Jumper_3_Bridged12 JP?
 U 1 1 653EA797
-P 6650 6850
-F 0 "JP?" V 6604 6917 50  0000 L CNN
-F 1 "ROM1_EN" V 6695 6917 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6650 6850 50  0001 C CNN
-F 3 "~" H 6650 6850 50  0001 C CNN
-	1    6650 6850
+P 6650 6900
+F 0 "JP?" V 6604 6967 50  0000 L CNN
+F 1 "ROM1_EN" V 6695 6967 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6650 6900 50  0001 C CNN
+F 3 "~" H 6650 6900 50  0001 C CNN
+	1    6650 6900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 6850 6200 6850
+	6400 6900 6200 6900
 Wire Wire Line
-	6200 6850 6200 6550
+	6200 6900 6200 6600
 Wire Wire Line
-	6650 5300 6650 6600
+	6650 5350 6650 6650
 Wire Wire Line
-	7050 6550 7050 6600
+	7050 6600 7050 6650
 Wire Wire Line
-	7050 6600 7050 6850
-Connection ~ 7050 6600
+	7050 6650 7050 6900
+Connection ~ 7050 6650
 Wire Wire Line
-	6650 6600 7050 6600
+	6650 6650 7050 6650
 $Comp
 L 74xx:74HCT00 U?
 U 1 1 653EA7A4
-P 6200 6250
-F 0 "U?" H 6200 5933 50  0000 C CNN
-F 1 "74HCT00" H 6200 6024 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6200 6250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 6200 6250 50  0001 C CNN
-	1    6200 6250
+P 6200 6300
+F 0 "U?" H 6200 5983 50  0000 C CNN
+F 1 "74HCT00" H 6200 6074 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6200 6300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 6200 6300 50  0001 C CNN
+	1    6200 6300
 	0    1    1    0   
 $EndComp
 $Comp
 L 74xx:74HCT04 U?
 U 2 1 653EA7AA
-P 6450 5600
-F 0 "U?" H 6450 5283 50  0000 C CNN
-F 1 "74HCT04" H 6450 5374 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6450 5600 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6450 5600 50  0001 C CNN
-	2    6450 5600
+P 6450 5650
+F 0 "U?" H 6450 5333 50  0000 C CNN
+F 1 "74HCT04" H 6450 5424 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6450 5650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6450 5650 50  0001 C CNN
+	2    6450 5650
 	0    1    1    0   
 $EndComp
 $Comp
 L 74xx:74HCT04 U?
 U 1 1 653EA7B0
-P 5950 5600
-F 0 "U?" H 5950 5283 50  0000 C CNN
-F 1 "74HCT04" H 5950 5374 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5950 5600 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5950 5600 50  0001 C CNN
-	1    5950 5600
+P 5950 5650
+F 0 "U?" H 5950 5333 50  0000 C CNN
+F 1 "74HCT04" H 5950 5424 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5950 5650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5950 5650 50  0001 C CNN
+	1    5950 5650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6100 5950 5950 5950
+	6100 6000 5950 6000
 Wire Wire Line
-	5950 5950 5950 5900
+	5950 6000 5950 5950
 Wire Wire Line
-	6300 5950 6450 5950
+	6300 6000 6450 6000
 Wire Wire Line
-	6450 5950 6450 5900
+	6450 6000 6450 5950
 Wire Wire Line
-	6450 5300 6650 5300
-Text GLabel 5950 5300 1    50   Input ~ 0
+	6450 5350 6650 5350
+Text GLabel 5950 5350 1    50   Input ~ 0
 ROM1_EN
 Wire Wire Line
 	7700 6600 7650 6600
@@ -4284,9 +4284,7 @@ Wire Wire Line
 Wire Wire Line
 	7650 6650 7400 6650
 Wire Wire Line
-	7400 6650 7400 7000
-Wire Wire Line
-	7400 7000 6650 7000
+	7400 7050 6650 7050
 Connection ~ 7650 6650
 Wire Wire Line
 	7650 6650 7650 6700
@@ -4703,4 +4701,6 @@ F 3 "" H 5650 2800 50  0001 C CNN
 	1    5450 2750
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	7400 6650 7400 7050
 $EndSCHEMATC
