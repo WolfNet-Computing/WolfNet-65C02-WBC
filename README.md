@@ -10,3 +10,6 @@ Because why not? It was good enough for the Apple I, the NES console and many ot
 
 Where can I find licensing information?  
 In the Licensing folder in [Plain Text](Licensing/LICENSE), [HTML](https://thealmostgenius.geekgalaxy.com/WolfNet-6502-WBC/license.html) and [Markdown](Licensing/license.md)
+
+Is this really free and if so how?  
+I work on this project in my own time and release all files under a OSHW license. WolfNet Computers is a not for profit organisation run by me.
