@@ -1,4 +1,4 @@
-update=26/04/2022 03:19:03
+update=27/04/2022 12:50:50
 version=1
 last_client=kicad
 [general]
@@ -25,8 +25,8 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
-CopperLayerCount=4
+LastNetListRead=Motherboard.net
+CopperLayerCount=6
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -39,6 +39,8 @@ MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.25
+TrackWidth2=1
+TrackWidth3=2.5
 ViaDiameter1=0.8
 ViaDrill1=0.4
 dPairWidth1=0.2
@@ -69,25 +71,25 @@ SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
-Name=SIG1.Cu
+Name=SIGH.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
+Name=-12v.Cu
+Type=0
+Enabled=1
+[pcbnew/Layer.In2.Cu]
 Name=GND.Cu
 Type=1
 Enabled=1
-[pcbnew/Layer.In2.Cu]
+[pcbnew/Layer.In3.Cu]
 Name=VCC.Cu
 Type=1
 Enabled=1
-[pcbnew/Layer.In3.Cu]
-Name=In3.Cu
-Type=0
-Enabled=0
 [pcbnew/Layer.In4.Cu]
-Name=In4.Cu
+Name=12v.Cu
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In5.Cu]
 Name=In5.Cu
 Type=0
@@ -193,7 +195,7 @@ Name=In30.Cu
 Type=0
 Enabled=0
 [pcbnew/Layer.B.Cu]
-Name=SIG2.Cu
+Name=SIGV.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.B.Adhes]
