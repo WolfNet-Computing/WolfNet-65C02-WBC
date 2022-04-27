@@ -8,6 +8,9 @@ FAQ:
 Why a 6502?  
 Because why not? It was good enough for the Apple I, the NES console and many other home computers.
 
+What programs(s) did you use to make the schematics and boards?  
+[KiCad for Windows bundle.](https://www.kicad.org/download/windows/)
+
 Where can I find licensing information?  
 In the Licensing folder in [Plain Text](Licensing/LICENSE), [HTML](https://thealmostgenius.geekgalaxy.com/WolfNet-6502-WBC/license.html) and [Markdown](Licensing/license.md)
 
