@@ -4484,7 +4484,7 @@ Wire Notes Line
 Wire Notes Line
 	23350 4450 19100 4450
 Text Notes 19400 4650 0    50   ~ 0
-Sound Generator
+Sound Generator and memory banking control
 Text GLabel 23750 2750 0    50   Input ~ 0
 VCC
 Text GLabel 23750 2850 0    50   Output ~ 0
@@ -4575,12 +4575,10 @@ Text GLabel 22850 5000 0    50   Input ~ 0
 R\~W
 Text GLabel 22850 5300 0    50   Input ~ 0
 PHI2
-Text GLabel 22650 5100 0    50   Input ~ 0
+Text GLabel 22450 5100 0    50   Input ~ 0
 ~CS_DEV
 Text GLabel 22850 5200 0    50   Input ~ 0
 CS_SaMS
-Wire Wire Line
-	22850 5100 22650 5100
 Wire Wire Line
 	22650 6200 22850 6200
 Text GLabel 24150 6800 2    50   Output ~ 0
@@ -4613,6 +4611,26 @@ Text GLabel 24150 5200 2    50   Output ~ 0
 CLK_SND
 Text GLabel 23750 3250 0    50   Input ~ 0
 2MHz
-Text GLabel 24150 5700 2    50   Output ~ 0
+Text GLabel 24550 5700 2    50   Output ~ 0
 ~CS_SND
+Text GLabel 24150 5600 2    50   Output ~ 0
+RAM1_EN
+Text GLabel 24150 5500 2    50   Output ~ 0
+RAM2_EN
+Text GLabel 24150 5400 2    50   Output ~ 0
+RAM3_EN
+Text GLabel 24150 5300 2    50   Output ~ 0
+RAM4_EN
+Text GLabel 22850 6800 0    50   Output ~ 0
+ROM1_EN
+Text GLabel 22850 6700 0    50   Output ~ 0
+ROM2_EN
+Text GLabel 24150 5100 2    50   Output ~ 0
+ROM3_EN
+Text GLabel 24150 5000 2    50   Output ~ 0
+ROM4_EN
+Wire Wire Line
+	24150 5700 24550 5700
+Wire Wire Line
+	22450 5100 22850 5100
 $EndSCHEMATC
