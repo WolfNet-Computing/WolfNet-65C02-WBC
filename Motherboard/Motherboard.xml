@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>C:\Projects\Electronics\WolfNet-6502-WBC\Motherboard\Motherboard.sch</source>
-    <date>27/04/2022 17:49:15</date>
+    <date>28/04/2022 00:56:39</date>
     <tool>Eeschema (5.1.10)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -266,7 +266,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61BD8554</tstamp>
     </comp>
-    <comp ref="U10">
+    <comp ref="IRQ_NOR1">
       <value>74HCT04</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
@@ -274,15 +274,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61A0241A</tstamp>
     </comp>
-    <comp ref="U26">
-      <value>74HCT04</value>
-      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
-      <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
-      <libsource lib="74xx" part="74HCT04" description="Hex Inverter"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>61A0A8FF</tstamp>
-    </comp>
-    <comp ref="U28">
+    <comp ref="RESET_NOR1">
       <value>74HCT04</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
@@ -313,7 +305,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61A75D9B</tstamp>
     </comp>
-    <comp ref="U21">
+    <comp ref="CS_UART_NOR1">
       <value>74HCT04</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
@@ -321,15 +313,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62139EC7</tstamp>
     </comp>
-    <comp ref="U47">
-      <value>74HCT04</value>
-      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
-      <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
-      <libsource lib="74xx" part="74HCT04" description="Hex Inverter"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>6210F3D2</tstamp>
-    </comp>
-    <comp ref="U41">
+    <comp ref="CS_UART_AND1">
       <value>74LS08</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>http://www.ti.com/lit/gpn/sn74LS08</datasheet>
@@ -401,7 +385,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61B94C4C</tstamp>
     </comp>
-    <comp ref="U3">
+    <comp ref="CS_VID_NAND1">
       <value>74HCT00</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>http://www.ti.com/lit/gpn/sn74hct00</datasheet>
@@ -409,29 +393,13 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>64616CC8</tstamp>
     </comp>
-    <comp ref="U5">
-      <value>74HCT00</value>
-      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
-      <datasheet>http://www.ti.com/lit/gpn/sn74hct00</datasheet>
-      <libsource lib="74xx" part="74HCT00" description="quad 2-input NAND gate"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>64614702</tstamp>
-    </comp>
-    <comp ref="U15">
+    <comp ref="CS_VID_NOR1">
       <value>74HCT04</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
       <libsource lib="74xx" part="74HCT04" description="Hex Inverter"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>64524A4F</tstamp>
-    </comp>
-    <comp ref="VID_ROM1">
-      <value>28C256</value>
-      <footprint>Socket:DIP_Socket-28_W11.9_W12.7_W15.24_W17.78_W18.5_3M_228-1277-00-0602J</footprint>
-      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf</datasheet>
-      <libsource lib="Memory_EEPROM" part="28C256" description="Paged Parallel EEPROM 256Kb (32K x 8), DIP-28/SOIC-28"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>63ECA138</tstamp>
     </comp>
     <comp ref="VID_BUFFER1">
       <value>74HCT541</value>
@@ -529,7 +497,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62155D6F</tstamp>
     </comp>
-    <comp ref="U18">
+    <comp ref="IRQ_RW_AND1">
       <value>74LS08</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>http://www.ti.com/lit/gpn/sn74LS08</datasheet>
@@ -641,7 +609,15 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61924392</tstamp>
     </comp>
-    <comp ref="U2">
+    <comp ref="CS_ROM_NAND1">
+      <value>74HCT00</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/sn74hct00</datasheet>
+      <libsource lib="74xx" part="74HCT00" description="quad 2-input NAND gate"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6192F4D4</tstamp>
+    </comp>
+    <comp ref="CS_ROM_NOR1">
       <value>74HCT04</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
@@ -712,7 +688,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61C6031F</tstamp>
     </comp>
-    <comp ref="U42">
+    <comp ref="CS_65SIB_AND4">
       <value>74LS21</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>http://www.ti.com/lit/gpn/sn74LS21</datasheet>
@@ -720,7 +696,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>626B78B0</tstamp>
     </comp>
-    <comp ref="U39">
+    <comp ref="CS_65SIB_AND1">
       <value>74LS08</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>http://www.ti.com/lit/gpn/sn74LS08</datasheet>
@@ -728,7 +704,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>626B78BC</tstamp>
     </comp>
-    <comp ref="U45">
+    <comp ref="CS_65SIB_NOR1">
       <value>74HCT04</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
@@ -736,15 +712,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62CC7CAC</tstamp>
     </comp>
-    <comp ref="U27">
-      <value>74HCT04</value>
-      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
-      <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
-      <libsource lib="74xx" part="74HCT04" description="Hex Inverter"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>6265DF02</tstamp>
-    </comp>
-    <comp ref="U46">
+    <comp ref="CS_65SIB_NOR2">
       <value>74HCT04</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
@@ -752,7 +720,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6266693B</tstamp>
     </comp>
-    <comp ref="U43">
+    <comp ref="CS_UART_AND4">
       <value>74LS21</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>http://www.ti.com/lit/gpn/sn74LS21</datasheet>
@@ -760,7 +728,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6208FE98</tstamp>
     </comp>
-    <comp ref="U30">
+    <comp ref="CS_GPIO_AND1">
       <value>74LS08</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>http://www.ti.com/lit/gpn/sn74LS08</datasheet>
@@ -768,7 +736,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>629ED00C</tstamp>
     </comp>
-    <comp ref="U38">
+    <comp ref="CS_GPIO_AND4">
       <value>74LS21</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>http://www.ti.com/lit/gpn/sn74LS21</datasheet>
@@ -776,7 +744,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>629ED013</tstamp>
     </comp>
-    <comp ref="U44">
+    <comp ref="CS_GPIO_NOR1">
       <value>74HCT04</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
@@ -791,7 +759,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>633F086E</tstamp>
     </comp>
-    <comp ref="U37">
+    <comp ref="~MAX235_EN1">
       <value>74HCT04</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
@@ -806,14 +774,6 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>626AD316</tstamp>
-    </comp>
-    <comp ref="U22">
-      <value>74LS21</value>
-      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
-      <datasheet>http://www.ti.com/lit/gpn/sn74LS21</datasheet>
-      <libsource lib="74xx" part="74LS21" description="Dual 4-input AND"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>629A9C9E</tstamp>
     </comp>
     <comp ref="F1">
       <value>1A Fuse</value>
@@ -837,6 +797,30 @@
       <libsource lib="65xx" part="W65C51N" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61C6ACB1</tstamp>
+    </comp>
+    <comp ref="RS_NAND1">
+      <value>74HCT00</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/sn74hct00</datasheet>
+      <libsource lib="74xx" part="74HCT00" description="quad 2-input NAND gate"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62C8E5D0</tstamp>
+    </comp>
+    <comp ref="RS_NOR2">
+      <value>74HCT04</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
+      <libsource lib="74xx" part="74HCT04" description="Hex Inverter"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>638B765D</tstamp>
+    </comp>
+    <comp ref="RS_NOR1">
+      <value>74HCT04</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
+      <libsource lib="74xx" part="74HCT04" description="Hex Inverter"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>646364AC</tstamp>
     </comp>
     <comp ref="SHARED_ROM1">
       <value>28C64</value>
@@ -862,7 +846,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>652A6AD9</tstamp>
     </comp>
-    <comp ref="U17">
+    <comp ref="ROM1_NAND1">
       <value>74HCT00</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>http://www.ti.com/lit/gpn/sn74hct00</datasheet>
@@ -870,20 +854,13 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>653EA77F</tstamp>
     </comp>
-    <comp ref="SOUND_GEN1">
-      <value>AY3-8913</value>
-      <footprint>Socket:DIP_Socket-24_W11.9_W12.7_W15.24_W17.78_W18.5_3M_224-1275-00-0602J</footprint>
-      <datasheet>http://www.ym2149.com/ym2149.pdf</datasheet>
-      <libsource lib="PC" part="AY3-8913" description="Software-Controlled Sound Generator, DIP-24"/>
+    <comp ref="ROM1_NOR1">
+      <value>74HCT04</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
+      <libsource lib="74xx" part="74HCT04" description="Hex Inverter"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>65629C0E</tstamp>
-    </comp>
-    <comp ref="SaMM_CTRL1">
-      <value>WD65C22</value>
-      <footprint>Socket:DIP_Socket-40_W11.9_W12.7_W15.24_W17.78_W18.5_3M_240-1280-00-0602J</footprint>
-      <libsource lib="65xx" part="WD65C22" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>65829668</tstamp>
+      <tstamp>653EA78C</tstamp>
     </comp>
     <comp ref="IRQ_PRIORITY1">
       <value>74HCT574</value>
@@ -916,7 +893,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62C5A14D</tstamp>
     </comp>
-    <comp ref="U48">
+    <comp ref="ROM2_NAND1">
       <value>74HCT00</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>http://www.ti.com/lit/gpn/sn74hct00</datasheet>
@@ -924,21 +901,13 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62C5A161</tstamp>
     </comp>
-    <comp ref="U63">
-      <value>74HCT00</value>
-      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
-      <datasheet>http://www.ti.com/lit/gpn/sn74hct00</datasheet>
-      <libsource lib="74xx" part="74HCT00" description="quad 2-input NAND gate"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>62C5A186</tstamp>
-    </comp>
-    <comp ref="U51">
+    <comp ref="ROM2_NOR1">
       <value>74HCT04</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
       <libsource lib="74xx" part="74HCT04" description="Hex Inverter"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>62C5A192</tstamp>
+      <tstamp>62C5A16E</tstamp>
     </comp>
     <comp ref="ROM3">
       <value>28C64</value>
@@ -956,7 +925,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62CB10BD</tstamp>
     </comp>
-    <comp ref="U49">
+    <comp ref="ROM3_NAND1">
       <value>74HCT00</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>http://www.ti.com/lit/gpn/sn74hct00</datasheet>
@@ -964,21 +933,13 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62CB10D1</tstamp>
     </comp>
-    <comp ref="U64">
-      <value>74HCT00</value>
-      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
-      <datasheet>http://www.ti.com/lit/gpn/sn74hct00</datasheet>
-      <libsource lib="74xx" part="74HCT00" description="quad 2-input NAND gate"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>62CB10F6</tstamp>
-    </comp>
-    <comp ref="U52">
+    <comp ref="ROM3_NOR1">
       <value>74HCT04</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
       <libsource lib="74xx" part="74HCT04" description="Hex Inverter"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>62CB1102</tstamp>
+      <tstamp>62CB10DE</tstamp>
     </comp>
     <comp ref="ROM4">
       <value>28C64</value>
@@ -996,7 +957,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62D10406</tstamp>
     </comp>
-    <comp ref="U50">
+    <comp ref="ROM4_NAND1">
       <value>74HCT00</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>http://www.ti.com/lit/gpn/sn74hct00</datasheet>
@@ -1004,21 +965,13 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62D1041A</tstamp>
     </comp>
-    <comp ref="U65">
-      <value>74HCT00</value>
-      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
-      <datasheet>http://www.ti.com/lit/gpn/sn74hct00</datasheet>
-      <libsource lib="74xx" part="74HCT00" description="quad 2-input NAND gate"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>62D1043F</tstamp>
-    </comp>
-    <comp ref="U53">
+    <comp ref="ROM4_NOR1">
       <value>74HCT04</value>
       <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
       <libsource lib="74xx" part="74HCT04" description="Hex Inverter"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>62D1044B</tstamp>
+      <tstamp>62D10427</tstamp>
     </comp>
     <comp ref="RAM2">
       <value>HM62256BLP</value>
@@ -1028,6 +981,22 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>626F6A12</tstamp>
     </comp>
+    <comp ref="RAM2_NAND1">
+      <value>74HCT00</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/sn74hct00</datasheet>
+      <libsource lib="74xx" part="74HCT00" description="quad 2-input NAND gate"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>626F6A55</tstamp>
+    </comp>
+    <comp ref="RAM2_NOR1">
+      <value>74HCT04</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
+      <libsource lib="74xx" part="74HCT04" description="Hex Inverter"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>626F6A61</tstamp>
+    </comp>
     <comp ref="RAM3">
       <value>HM62256BLP</value>
       <footprint>Package_DIP:DIP-28_W15.24mm_Socket_LongPads</footprint>
@@ -1035,6 +1004,22 @@
       <libsource lib="Memory_RAM" part="HM62256BLP" description="32,768-word × 8-bit High Speed CMOS Static RAM, 70ns, DIP-28"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62762DBA</tstamp>
+    </comp>
+    <comp ref="RAM3_NAND1">
+      <value>74HCT00</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/sn74hct00</datasheet>
+      <libsource lib="74xx" part="74HCT00" description="quad 2-input NAND gate"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62762DFD</tstamp>
+    </comp>
+    <comp ref="RAM3_NOR1">
+      <value>74HCT04</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
+      <libsource lib="74xx" part="74HCT04" description="Hex Inverter"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62762E09</tstamp>
     </comp>
     <comp ref="RAM4">
       <value>HM62256BLP</value>
@@ -1044,6 +1029,30 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>627D81DD</tstamp>
     </comp>
+    <comp ref="RAM4_NAND1">
+      <value>74HCT00</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/sn74hct00</datasheet>
+      <libsource lib="74xx" part="74HCT00" description="quad 2-input NAND gate"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>627D8220</tstamp>
+    </comp>
+    <comp ref="RAM4_NOR1">
+      <value>74HCT04</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf</datasheet>
+      <libsource lib="74xx" part="74HCT04" description="Hex Inverter"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>627D822C</tstamp>
+    </comp>
+    <comp ref="RS_NAND2">
+      <value>74HCT00</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/sn74hct00</datasheet>
+      <libsource lib="74xx" part="74HCT00" description="quad 2-input NAND gate"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>638B7651</tstamp>
+    </comp>
     <comp ref="RESET_GEN1">
       <value>NE555P</value>
       <footprint>Package_DIP:DIP-8_W7.62mm_LongPads</footprint>
@@ -1051,6 +1060,14 @@
       <libsource lib="Timer" part="NE555P" description="Precision Timers, 555 compatible,  PDIP-8"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>61966234</tstamp>
+    </comp>
+    <comp ref="VID_DECODER1">
+      <value>28C64</value>
+      <footprint>Socket:DIP_Socket-28_W11.9_W12.7_W15.24_W17.78_W18.5_3M_228-1277-00-0602J</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf</datasheet>
+      <libsource lib="PC" part="28C64" description="Paged Parallel EEPROM 256Kb (32K x 8), DIP-28/SOIC-28"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62F7D1C0</tstamp>
     </comp>
   </components>
   <libparts>
@@ -1760,48 +1777,6 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Memory_EEPROM" part="28C256">
-      <description>Paged Parallel EEPROM 256Kb (32K x 8), DIP-28/SOIC-28</description>
-      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf</docs>
-      <footprints>
-        <fp>DIP*W15.24mm*</fp>
-        <fp>SOIC*7.5x17.9mm*P1.27mm*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">28C256</field>
-      </fields>
-      <pins>
-        <pin num="1" name="A14" type="input"/>
-        <pin num="2" name="A12" type="input"/>
-        <pin num="3" name="A7" type="input"/>
-        <pin num="4" name="A6" type="input"/>
-        <pin num="5" name="A5" type="input"/>
-        <pin num="6" name="A4" type="input"/>
-        <pin num="7" name="A3" type="input"/>
-        <pin num="8" name="A2" type="input"/>
-        <pin num="9" name="A1" type="input"/>
-        <pin num="10" name="A0" type="input"/>
-        <pin num="11" name="D0" type="3state"/>
-        <pin num="12" name="D1" type="3state"/>
-        <pin num="13" name="D2" type="3state"/>
-        <pin num="14" name="GND" type="power_in"/>
-        <pin num="15" name="D3" type="3state"/>
-        <pin num="16" name="D4" type="3state"/>
-        <pin num="17" name="D5" type="3state"/>
-        <pin num="18" name="D6" type="3state"/>
-        <pin num="19" name="D7" type="3state"/>
-        <pin num="20" name="~CS" type="input"/>
-        <pin num="21" name="A10" type="input"/>
-        <pin num="22" name="~OE" type="input"/>
-        <pin num="23" name="A11" type="input"/>
-        <pin num="24" name="A9" type="input"/>
-        <pin num="25" name="A8" type="input"/>
-        <pin num="26" name="A13" type="input"/>
-        <pin num="27" name="~WE" type="input"/>
-        <pin num="28" name="VCC" type="power_in"/>
-      </pins>
-    </libpart>
     <libpart lib="Memory_RAM" part="KM62256CLP">
       <aliases>
         <alias>HM62256BLP</alias>
@@ -1943,44 +1918,6 @@
         <pin num="18" name="SEL6\" type="input"/>
         <pin num="19" name="GND" type="output"/>
         <pin num="20" name="SEL7\" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="PC" part="AY3-8913">
-      <description>Software-Controlled Sound Generator, DIP-24</description>
-      <docs>http://www.ym2149.com/ym2149.pdf</docs>
-      <footprints>
-        <fp>DIP*W15.24mm*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">AY3-8913</field>
-        <field name="Footprint">Package_DIP:DIP-24_W15.24mm_Socket_LongPads</field>
-      </fields>
-      <pins>
-        <pin num="1" name="VSS" type="power_out"/>
-        <pin num="2" name="BDIR" type="input"/>
-        <pin num="3" name="BC1" type="input"/>
-        <pin num="4" name="DA7" type="BiDi"/>
-        <pin num="5" name="DA6" type="BiDi"/>
-        <pin num="6" name="DA5" type="BiDi"/>
-        <pin num="7" name="DA4" type="BiDi"/>
-        <pin num="8" name="DA3" type="BiDi"/>
-        <pin num="9" name="DA2" type="BiDi"/>
-        <pin num="10" name="DA1" type="BiDi"/>
-        <pin num="11" name="DA0" type="BiDi"/>
-        <pin num="12" name="NC" type="NotConnected"/>
-        <pin num="13" name="VCC" type="power_in"/>
-        <pin num="14" name="NC" type="NotConnected"/>
-        <pin num="15" name="B" type="output"/>
-        <pin num="16" name="NC" type="NotConnected"/>
-        <pin num="17" name="A" type="output"/>
-        <pin num="18" name="C" type="output"/>
-        <pin num="19" name="VSS" type="power_out"/>
-        <pin num="20" name="CLOCK" type="input"/>
-        <pin num="21" name="~RESET" type="input"/>
-        <pin num="22" name="~A9" type="input"/>
-        <pin num="23" name="A8" type="input"/>
-        <pin num="24" name="~CS" type="input"/>
       </pins>
     </libpart>
     <libpart lib="PC" part="DB9_Header">
@@ -2392,9 +2329,6 @@
     <library logical="Generic_Device">
       <uri>C:/Projects/Electronics/WolfNet-6502-WBC/Generic_Device.lib</uri>
     </library>
-    <library logical="Memory_EEPROM">
-      <uri>C:\Program Files\KiCad\share\kicad\library/Memory_EEPROM.lib</uri>
-    </library>
     <library logical="Memory_RAM">
       <uri>C:\Program Files\KiCad\share\kicad\library/Memory_RAM.lib</uri>
     </library>
@@ -2424,1930 +2358,1751 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="XTL1_COM">
-      <node ref="UART_CLK1" pin="8"/>
-      <node ref="UART1" pin="6"/>
-    </net>
-    <net code="2" name="Net-(UART1-Pad7)">
-      <node ref="UART1" pin="7"/>
-    </net>
-    <net code="3" name="RTS_COM">
-      <node ref="UART1" pin="8"/>
-      <node ref="UART-RS232" pin="7"/>
-    </net>
-    <net code="4" name="R\~W">
-      <node ref="UART1" pin="28"/>
-      <node ref="GPIO_CTRL1" pin="22"/>
-      <node ref="U2" pin="9"/>
-      <node ref="J7" pin="37"/>
-      <node ref="U26" pin="1"/>
-      <node ref="SaMM_CTRL1" pin="22"/>
-      <node ref="J6" pin="37"/>
-      <node ref="J5" pin="37"/>
-      <node ref="65SIB1" pin="22"/>
-      <node ref="U15" pin="1"/>
-      <node ref="CPU1" pin="34"/>
-      <node ref="U3" pin="12"/>
-      <node ref="U5" pin="5"/>
-      <node ref="J8" pin="37"/>
-    </net>
-    <net code="5" name="Net-(UART1-Pad5)">
-      <node ref="UART1" pin="5"/>
-    </net>
-    <net code="6" name="PHI2">
-      <node ref="J5" pin="24"/>
-      <node ref="CPU1" pin="39"/>
-      <node ref="U5" pin="4"/>
-      <node ref="J8" pin="24"/>
-      <node ref="U3" pin="9"/>
-      <node ref="65SIB1" pin="25"/>
-      <node ref="J7" pin="24"/>
-      <node ref="SaMM_CTRL1" pin="25"/>
-      <node ref="GPIO_CTRL1" pin="25"/>
-      <node ref="J6" pin="24"/>
-      <node ref="U3" pin="13"/>
-      <node ref="UART1" pin="27"/>
-      <node ref="U5" pin="10"/>
-      <node ref="IRQ_PRIORITY1" pin="11"/>
-    </net>
-    <net code="7" name="~RAM_OE">
-      <node ref="U5" pin="6"/>
-      <node ref="RAM1" pin="22"/>
-      <node ref="RAM2" pin="22"/>
-      <node ref="RAM3" pin="22"/>
-      <node ref="RAM4" pin="22"/>
-    </net>
-    <net code="8" name="RAM1_EN">
-      <node ref="SaMM_CTRL1" pin="40"/>
-      <node ref="U2" pin="3"/>
-    </net>
-    <net code="9" name="Net-(U2-Pad4)">
-      <node ref="U2" pin="4"/>
-      <node ref="U3" pin="2"/>
-    </net>
-    <net code="10" name="~IRQ0">
-      <node ref="R8" pin="2"/>
-      <node ref="UART1" pin="26"/>
-      <node ref="IRQ_DECODE1" pin="10"/>
-    </net>
-    <net code="11" name="Net-(RAM1-Pad20)">
-      <node ref="RAM1" pin="20"/>
-      <node ref="U3" pin="3"/>
-    </net>
-    <net code="12" name="Net-(U2-Pad8)">
-      <node ref="U2" pin="8"/>
-      <node ref="U3" pin="10"/>
-    </net>
-    <net code="13" name="~RAM_WE">
-      <node ref="RAM4" pin="27"/>
-      <node ref="RAM3" pin="27"/>
-      <node ref="RAM2" pin="27"/>
-      <node ref="U3" pin="8"/>
-      <node ref="RAM1" pin="27"/>
-    </net>
-    <net code="14" name="Net-(U27-Pad4)">
-      <node ref="U27" pin="4"/>
-      <node ref="U42" pin="10"/>
-    </net>
-    <net code="15" name="Net-(SHARED_ROM1-Pad1)">
-      <node ref="SHARED_ROM1" pin="1"/>
-    </net>
-    <net code="16" name="Net-(J1-Pad2)">
-      <node ref="SW1" pin="1"/>
+    <net code="1" name="Net-(J1-Pad2)">
       <node ref="J1" pin="2"/>
+      <node ref="SW1" pin="1"/>
     </net>
-    <net code="17" name="Net-(CP1-Pad1)">
-      <node ref="D3" pin="1"/>
-      <node ref="SW1" pin="6"/>
+    <net code="2" name="Net-(CP1-Pad1)">
       <node ref="CP1" pin="1"/>
       <node ref="D1" pin="1"/>
+      <node ref="D3" pin="1"/>
+      <node ref="SW1" pin="6"/>
     </net>
-    <net code="18" name="Net-(J1-Pad1)">
-      <node ref="J1" pin="1"/>
-      <node ref="SW1" pin="4"/>
+    <net code="3" name="Net-(UART1-Pad7)">
+      <node ref="UART1" pin="7"/>
     </net>
-    <net code="19" name="Net-(UART-RS232-Pad21)">
+    <net code="4" name="CS_UART">
+      <node ref="~MAX235_EN1" pin="1"/>
+      <node ref="UART1" pin="2"/>
+      <node ref="CS_UART_AND1" pin="3"/>
+    </net>
+    <net code="5" name="Net-(UART-RS232-Pad20)">
+      <node ref="~MAX235_EN1" pin="2"/>
+      <node ref="UART-RS232" pin="20"/>
+    </net>
+    <net code="6" name="Net-(R16-Pad1)">
+      <node ref="VID_DECODER1" pin="27"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="7" name="Net-(UART-RS232-Pad21)">
       <node ref="UART-RS232" pin="21"/>
     </net>
-    <net code="20" name="VCC">
-      <node ref="R20" pin="2"/>
-      <node ref="R18" pin="2"/>
-      <node ref="U27" pin="14"/>
-      <node ref="R19" pin="2"/>
-      <node ref="U41" pin="14"/>
-      <node ref="UART_CLK1" pin="14"/>
-      <node ref="ROM3" pin="28"/>
-      <node ref="VID_BUFFER1" pin="20"/>
-      <node ref="SHARED_ROM1" pin="28"/>
-      <node ref="CLK_DIV1" pin="10"/>
-      <node ref="U28" pin="14"/>
-      <node ref="CLK_DIV1" pin="13"/>
-      <node ref="R25" pin="1"/>
-      <node ref="R21" pin="1"/>
-      <node ref="U21" pin="14"/>
-      <node ref="R16" pin="2"/>
-      <node ref="U3" pin="14"/>
-      <node ref="R23" pin="1"/>
-      <node ref="U2" pin="14"/>
-      <node ref="J8" pin="1"/>
-      <node ref="65SIB1" pin="20"/>
-      <node ref="U22" pin="14"/>
-      <node ref="U4" pin="3"/>
-      <node ref="~CS_DEV1" pin="16"/>
-      <node ref="GPIO_CTRL1" pin="20"/>
-      <node ref="UART-RS232" pin="12"/>
-      <node ref="J5" pin="1"/>
-      <node ref="R9" pin="1"/>
-      <node ref="J7" pin="1"/>
-      <node ref="J4" pin="1"/>
-      <node ref="R17" pin="2"/>
-      <node ref="CLK_DIV1" pin="14"/>
-      <node ref="U15" pin="14"/>
-      <node ref="ROM2" pin="28"/>
-      <node ref="R24" pin="1"/>
-      <node ref="RAM1" pin="28"/>
-      <node ref="IRQ_OUT1" pin="16"/>
-      <node ref="CLK_DIV1" pin="4"/>
-      <node ref="R22" pin="1"/>
-      <node ref="CLK_DIV1" pin="1"/>
-      <node ref="ROM1" pin="28"/>
-      <node ref="U30" pin="14"/>
-      <node ref="U42" pin="14"/>
-      <node ref="VID_ROM1" pin="28"/>
-      <node ref="U10" pin="14"/>
-      <node ref="U39" pin="14"/>
-      <node ref="U38" pin="14"/>
-      <node ref="U26" pin="14"/>
-      <node ref="SOUND_GEN1" pin="13"/>
-      <node ref="R26" pin="1"/>
-      <node ref="ROM4" pin="28"/>
-      <node ref="IRQ_PRIORITY1" pin="20"/>
-      <node ref="CPU1" pin="8"/>
-      <node ref="R7" pin="1"/>
-      <node ref="R2" pin="1"/>
-      <node ref="R3" pin="1"/>
-      <node ref="U18" pin="14"/>
-      <node ref="CPU1" pin="38"/>
-      <node ref="R4" pin="1"/>
-      <node ref="R5" pin="1"/>
-      <node ref="RAM4" pin="28"/>
-      <node ref="R6" pin="1"/>
-      <node ref="R8" pin="1"/>
-      <node ref="65SIB_LATCH1" pin="16"/>
-      <node ref="SOUND_GEN1" pin="23"/>
-      <node ref="RAM3" pin="28"/>
-      <node ref="SaMM_CTRL1" pin="20"/>
-      <node ref="R1" pin="1"/>
-      <node ref="X1" pin="14"/>
-      <node ref="C4" pin="1"/>
-      <node ref="IRQ_DECODE1" pin="16"/>
-      <node ref="RAM2" pin="28"/>
-      <node ref="J6" pin="1"/>
-      <node ref="UART1" pin="15"/>
-      <node ref="IRQ_MASK1" pin="20"/>
-      <node ref="IRQ_DECODE1" pin="15"/>
-      <node ref="RESET_GEN1" pin="4"/>
-      <node ref="RESET_GEN1" pin="8"/>
-    </net>
-    <net code="21" name="Net-(65SIB1-Pad7)">
-      <node ref="65SIB1" pin="7"/>
-      <node ref="65SIB_LATCH1" pin="4"/>
-    </net>
-    <net code="22" name="Net-(65SIB1-Pad17)">
-      <node ref="65SIB1" pin="17"/>
-    </net>
-    <net code="23" name="Net-(65SIB1-Pad16)">
-      <node ref="65SIB1" pin="16"/>
-    </net>
-    <net code="24" name="Net-(65SIB1-Pad15)">
-      <node ref="65SIB1" pin="15"/>
-    </net>
-    <net code="25" name="Net-(65SIB1-Pad14)">
-      <node ref="65SIB1" pin="14"/>
-    </net>
-    <net code="26" name="Net-(65SIB1-Pad13)">
-      <node ref="65SIB1" pin="13"/>
-    </net>
-    <net code="27" name="Net-(65SIB1-Pad12)">
-      <node ref="65SIB1" pin="12"/>
-    </net>
-    <net code="28" name="Net-(65SIB1-Pad11)">
-      <node ref="65SIB1" pin="11"/>
-    </net>
-    <net code="29" name="Net-(65SIB1-Pad10)">
-      <node ref="65SIB1" pin="10"/>
-    </net>
-    <net code="30" name="Net-(F1-Pad1)">
-      <node ref="F1" pin="1"/>
-      <node ref="TR1" pin="6"/>
-    </net>
-    <net code="31" name="Net-(F1-Pad2)">
-      <node ref="P1" pin="1"/>
-      <node ref="F1" pin="2"/>
-    </net>
-    <net code="32" name="Net-(P1-Pad2)">
-      <node ref="TR1" pin="1"/>
-      <node ref="P1" pin="2"/>
-    </net>
-    <net code="33" name="Net-(65SIB_LATCH1-Pad15)">
+    <net code="8" name="Net-(65SIB_LATCH1-Pad15)">
       <node ref="65SIB_LATCH1" pin="15"/>
     </net>
-    <net code="34" name="Net-(SOUND_GEN1-Pad12)">
-      <node ref="SOUND_GEN1" pin="12"/>
-    </net>
-    <net code="35" name="ROM1_EN">
-      <node ref="U21" pin="1"/>
-      <node ref="SaMM_CTRL1" pin="13"/>
-    </net>
-    <net code="36" name="Net-(U15-Pad4)">
-      <node ref="U17" pin="1"/>
-      <node ref="U15" pin="4"/>
-    </net>
-    <net code="37" name="Net-(ROM1-Pad20)">
-      <node ref="ROM1" pin="20"/>
-      <node ref="ROM1" pin="22"/>
-      <node ref="U17" pin="3"/>
-    </net>
-    <net code="38" name="DA1">
-      <node ref="SaMM_CTRL1" pin="3"/>
-      <node ref="SOUND_GEN1" pin="10"/>
-    </net>
-    <net code="39" name="DA0">
-      <node ref="SOUND_GEN1" pin="11"/>
-      <node ref="SaMM_CTRL1" pin="2"/>
-    </net>
-    <net code="40" name="Net-(SOUND_GEN1-Pad14)">
-      <node ref="SOUND_GEN1" pin="14"/>
-    </net>
-    <net code="41" name="Net-(SOUND_GEN1-Pad14)">
-      <node ref="SOUND_GEN1" pin="14"/>
-    </net>
-    <net code="42" name="OUT_B">
-      <node ref="SOUND_GEN1" pin="15"/>
-    </net>
-    <net code="43" name="Net-(SOUND_GEN1-Pad16)">
-      <node ref="SOUND_GEN1" pin="16"/>
-    </net>
-    <net code="44" name="OUT_A">
-      <node ref="SOUND_GEN1" pin="17"/>
-    </net>
-    <net code="45" name="OUT_C">
-      <node ref="SOUND_GEN1" pin="18"/>
-    </net>
-    <net code="46" name="2MHz">
-      <node ref="CLK_DIV1" pin="9"/>
-      <node ref="SOUND_GEN1" pin="20"/>
-      <node ref="JP6" pin="1"/>
-    </net>
-    <net code="47" name="Net-(U10-Pad5)">
-      <node ref="U10" pin="5"/>
-      <node ref="U17" pin="8"/>
-    </net>
-    <net code="48" name="A13">
-      <node ref="RAM4" pin="26"/>
-      <node ref="U5" pin="1"/>
-      <node ref="J7" pin="31"/>
-      <node ref="J6" pin="31"/>
-      <node ref="RAM3" pin="26"/>
-      <node ref="U50" pin="4"/>
-      <node ref="CPU1" pin="23"/>
-      <node ref="J5" pin="31"/>
-      <node ref="U48" pin="4"/>
-      <node ref="RAM2" pin="26"/>
-      <node ref="U17" pin="4"/>
-      <node ref="~CS_DEV1" pin="2"/>
-      <node ref="U49" pin="4"/>
-      <node ref="RAM1" pin="26"/>
-      <node ref="J8" pin="31"/>
-    </net>
-    <net code="49" name="Net-(U15-Pad3)">
-      <node ref="U15" pin="3"/>
-      <node ref="U17" pin="6"/>
-    </net>
-    <net code="50" name="A14">
-      <node ref="J8" pin="33"/>
-      <node ref="U50" pin="10"/>
-      <node ref="RAM2" pin="1"/>
-      <node ref="RAM3" pin="1"/>
-      <node ref="J7" pin="33"/>
-      <node ref="~CS_DEV1" pin="3"/>
-      <node ref="U49" pin="10"/>
-      <node ref="RAM4" pin="1"/>
-      <node ref="U48" pin="10"/>
-      <node ref="U17" pin="10"/>
-      <node ref="RAM1" pin="1"/>
-      <node ref="J6" pin="33"/>
-      <node ref="CPU1" pin="24"/>
-      <node ref="J5" pin="33"/>
-      <node ref="U3" pin="5"/>
-    </net>
-    <net code="51" name="Net-(U10-Pad6)">
-      <node ref="U17" pin="5"/>
-      <node ref="U10" pin="6"/>
-    </net>
-    <net code="52" name="~RESET">
-      <node ref="CPU1" pin="40"/>
-      <node ref="J7" pin="18"/>
-      <node ref="U28" pin="2"/>
-      <node ref="J6" pin="18"/>
-      <node ref="SOUND_GEN1" pin="21"/>
-      <node ref="GPIO_CTRL1" pin="34"/>
-      <node ref="SaMM_CTRL1" pin="34"/>
-      <node ref="J5" pin="18"/>
-      <node ref="65SIB1" pin="34"/>
-      <node ref="J8" pin="18"/>
-      <node ref="UART1" pin="4"/>
-    </net>
-    <net code="53" name="Net-(U17-Pad2)">
-      <node ref="U21" pin="2"/>
-      <node ref="U17" pin="2"/>
-    </net>
-    <net code="54" name="BDIR">
-      <node ref="SOUND_GEN1" pin="2"/>
-      <node ref="SaMM_CTRL1" pin="10"/>
-    </net>
-    <net code="55" name="BC1">
-      <node ref="SaMM_CTRL1" pin="11"/>
-      <node ref="SOUND_GEN1" pin="3"/>
-    </net>
-    <net code="56" name="ROM2_EN">
-      <node ref="SaMM_CTRL1" pin="14"/>
-      <node ref="U51" pin="1"/>
-    </net>
-    <net code="57" name="ROM3_EN">
-      <node ref="SaMM_CTRL1" pin="15"/>
-      <node ref="U52" pin="1"/>
-    </net>
-    <net code="58" name="CLK_SND">
-      <node ref="SaMM_CTRL1" pin="17"/>
-    </net>
-    <net code="59" name="~CS_SND">
-      <node ref="SOUND_GEN1" pin="24"/>
-      <node ref="SaMM_CTRL1" pin="12"/>
-    </net>
-    <net code="60" name="DA7">
-      <node ref="SOUND_GEN1" pin="4"/>
-      <node ref="SaMM_CTRL1" pin="9"/>
-    </net>
-    <net code="61" name="DA6">
-      <node ref="SOUND_GEN1" pin="5"/>
-      <node ref="SaMM_CTRL1" pin="8"/>
-    </net>
-    <net code="62" name="DA5">
-      <node ref="SOUND_GEN1" pin="6"/>
-      <node ref="SaMM_CTRL1" pin="7"/>
-    </net>
-    <net code="63" name="DA4">
-      <node ref="SOUND_GEN1" pin="7"/>
-      <node ref="SaMM_CTRL1" pin="6"/>
-    </net>
-    <net code="64" name="DA3">
-      <node ref="SOUND_GEN1" pin="8"/>
-      <node ref="SaMM_CTRL1" pin="5"/>
-    </net>
-    <net code="65" name="DA2">
-      <node ref="SaMM_CTRL1" pin="4"/>
-      <node ref="SOUND_GEN1" pin="9"/>
-    </net>
-    <net code="66" name="Net-(ROM1-Pad1)">
-      <node ref="ROM1" pin="1"/>
-    </net>
-    <net code="67" name="A0">
-      <node ref="J6" pin="5"/>
-      <node ref="ROM2" pin="10"/>
-      <node ref="ROM1" pin="10"/>
-      <node ref="SaMM_CTRL1" pin="38"/>
-      <node ref="ROM3" pin="10"/>
-      <node ref="SHARED_ROM1" pin="10"/>
-      <node ref="CPU1" pin="9"/>
-      <node ref="J5" pin="5"/>
-      <node ref="RAM4" pin="10"/>
-      <node ref="J7" pin="5"/>
-      <node ref="ROM4" pin="10"/>
-      <node ref="RAM1" pin="10"/>
-      <node ref="J8" pin="5"/>
-      <node ref="UART1" pin="13"/>
-      <node ref="GPIO_CTRL1" pin="38"/>
-      <node ref="RAM3" pin="10"/>
-      <node ref="RAM2" pin="10"/>
-      <node ref="65SIB1" pin="38"/>
-    </net>
-    <net code="68" name="MEM_D0">
-      <node ref="ROM3" pin="11"/>
-      <node ref="SaMM_CTRL1" pin="33"/>
-      <node ref="UART1" pin="18"/>
-      <node ref="IRQ_MASK1" pin="2"/>
-      <node ref="J8" pin="2"/>
-      <node ref="VID_BUFFER1" pin="18"/>
-      <node ref="J6" pin="2"/>
-      <node ref="ROM1" pin="11"/>
-      <node ref="SHARED_ROM1" pin="11"/>
-      <node ref="ROM4" pin="11"/>
-      <node ref="RAM2" pin="11"/>
-      <node ref="RAM4" pin="11"/>
-      <node ref="RAM3" pin="11"/>
-      <node ref="IRQ_PRIORITY1" pin="19"/>
-      <node ref="65SIB1" pin="33"/>
-      <node ref="J5" pin="2"/>
-      <node ref="VID_ROM1" pin="10"/>
-      <node ref="ROM2" pin="11"/>
-      <node ref="RAM1" pin="11"/>
-      <node ref="J7" pin="2"/>
-      <node ref="GPIO_CTRL1" pin="33"/>
-    </net>
-    <net code="69" name="MEM_D1">
-      <node ref="VID_ROM1" pin="9"/>
-      <node ref="RAM2" pin="12"/>
-      <node ref="ROM4" pin="12"/>
-      <node ref="ROM1" pin="12"/>
-      <node ref="SaMM_CTRL1" pin="32"/>
-      <node ref="65SIB1" pin="32"/>
-      <node ref="RAM3" pin="12"/>
-      <node ref="GPIO_CTRL1" pin="32"/>
-      <node ref="RAM1" pin="12"/>
-      <node ref="IRQ_PRIORITY1" pin="18"/>
-      <node ref="J7" pin="4"/>
-      <node ref="RAM4" pin="12"/>
-      <node ref="J6" pin="4"/>
-      <node ref="J5" pin="4"/>
-      <node ref="VID_BUFFER1" pin="17"/>
-      <node ref="SHARED_ROM1" pin="12"/>
-      <node ref="ROM2" pin="12"/>
-      <node ref="ROM3" pin="12"/>
-      <node ref="J8" pin="4"/>
-      <node ref="IRQ_MASK1" pin="3"/>
-      <node ref="UART1" pin="19"/>
-    </net>
-    <net code="70" name="MEM_D2">
-      <node ref="IRQ_PRIORITY1" pin="17"/>
-      <node ref="RAM4" pin="13"/>
-      <node ref="65SIB1" pin="31"/>
-      <node ref="J6" pin="6"/>
-      <node ref="UART1" pin="20"/>
-      <node ref="RAM1" pin="13"/>
-      <node ref="ROM3" pin="13"/>
-      <node ref="IRQ_MASK1" pin="4"/>
-      <node ref="J8" pin="6"/>
-      <node ref="RAM3" pin="13"/>
-      <node ref="GPIO_CTRL1" pin="31"/>
-      <node ref="SHARED_ROM1" pin="13"/>
-      <node ref="RAM2" pin="13"/>
-      <node ref="VID_BUFFER1" pin="16"/>
-      <node ref="SaMM_CTRL1" pin="31"/>
-      <node ref="J5" pin="6"/>
-      <node ref="ROM1" pin="13"/>
-      <node ref="ROM2" pin="13"/>
-      <node ref="ROM4" pin="13"/>
-      <node ref="J7" pin="6"/>
-      <node ref="VID_ROM1" pin="8"/>
-    </net>
-    <net code="71" name="Net-(R17-Pad1)">
-      <node ref="R17" pin="1"/>
-      <node ref="SHARED_ROM1" pin="27"/>
-    </net>
-    <net code="72" name="Net-(R21-Pad2)">
-      <node ref="R21" pin="2"/>
-      <node ref="ROM1" pin="27"/>
-    </net>
-    <net code="73" name="A9">
-      <node ref="RAM3" pin="24"/>
-      <node ref="J8" pin="23"/>
-      <node ref="U10" pin="9"/>
-      <node ref="J6" pin="23"/>
-      <node ref="RAM4" pin="24"/>
-      <node ref="ROM4" pin="24"/>
-      <node ref="J5" pin="23"/>
-      <node ref="ROM2" pin="24"/>
-      <node ref="SHARED_ROM1" pin="24"/>
-      <node ref="U15" pin="11"/>
-      <node ref="RAM1" pin="24"/>
-      <node ref="U15" pin="9"/>
-      <node ref="U21" pin="13"/>
-      <node ref="CPU1" pin="18"/>
-      <node ref="J7" pin="23"/>
-      <node ref="RAM2" pin="24"/>
-      <node ref="ROM3" pin="24"/>
-      <node ref="ROM1" pin="24"/>
-    </net>
-    <net code="74" name="MEM_D3">
-      <node ref="J5" pin="8"/>
-      <node ref="RAM4" pin="15"/>
-      <node ref="RAM2" pin="15"/>
-      <node ref="RAM3" pin="15"/>
-      <node ref="SHARED_ROM1" pin="15"/>
-      <node ref="GPIO_CTRL1" pin="30"/>
-      <node ref="ROM2" pin="15"/>
-      <node ref="UART1" pin="21"/>
-      <node ref="J6" pin="8"/>
-      <node ref="ROM3" pin="15"/>
-      <node ref="VID_BUFFER1" pin="15"/>
-      <node ref="J8" pin="8"/>
-      <node ref="ROM1" pin="15"/>
-      <node ref="IRQ_MASK1" pin="5"/>
-      <node ref="SaMM_CTRL1" pin="30"/>
-      <node ref="RAM1" pin="15"/>
-      <node ref="IRQ_PRIORITY1" pin="16"/>
-      <node ref="65SIB1" pin="30"/>
-      <node ref="J7" pin="8"/>
-      <node ref="ROM4" pin="15"/>
-      <node ref="VID_ROM1" pin="7"/>
-    </net>
-    <net code="75" name="MEM_D4">
-      <node ref="J6" pin="10"/>
-      <node ref="RAM1" pin="16"/>
-      <node ref="J5" pin="10"/>
-      <node ref="J8" pin="10"/>
-      <node ref="J7" pin="10"/>
-      <node ref="ROM3" pin="16"/>
-      <node ref="VID_BUFFER1" pin="14"/>
-      <node ref="RAM4" pin="16"/>
-      <node ref="SaMM_CTRL1" pin="29"/>
-      <node ref="IRQ_MASK1" pin="6"/>
-      <node ref="IRQ_PRIORITY1" pin="15"/>
-      <node ref="ROM2" pin="16"/>
-      <node ref="VID_ROM1" pin="6"/>
-      <node ref="RAM3" pin="16"/>
-      <node ref="GPIO_CTRL1" pin="29"/>
-      <node ref="SHARED_ROM1" pin="16"/>
-      <node ref="RAM2" pin="16"/>
-      <node ref="65SIB1" pin="29"/>
-      <node ref="ROM1" pin="16"/>
-      <node ref="UART1" pin="22"/>
-      <node ref="ROM4" pin="16"/>
-    </net>
-    <net code="76" name="MEM_D5">
-      <node ref="J5" pin="12"/>
-      <node ref="GPIO_CTRL1" pin="28"/>
-      <node ref="VID_BUFFER1" pin="13"/>
-      <node ref="ROM3" pin="17"/>
-      <node ref="SHARED_ROM1" pin="17"/>
-      <node ref="RAM4" pin="17"/>
-      <node ref="ROM4" pin="17"/>
-      <node ref="RAM3" pin="17"/>
-      <node ref="IRQ_PRIORITY1" pin="14"/>
-      <node ref="RAM2" pin="17"/>
-      <node ref="ROM1" pin="17"/>
-      <node ref="SaMM_CTRL1" pin="28"/>
-      <node ref="J8" pin="12"/>
-      <node ref="UART1" pin="23"/>
-      <node ref="J7" pin="12"/>
-      <node ref="VID_ROM1" pin="5"/>
-      <node ref="RAM1" pin="17"/>
-      <node ref="65SIB1" pin="28"/>
-      <node ref="J6" pin="12"/>
-      <node ref="IRQ_MASK1" pin="7"/>
-      <node ref="ROM2" pin="17"/>
-    </net>
-    <net code="77" name="MEM_D6">
-      <node ref="J5" pin="14"/>
-      <node ref="J8" pin="14"/>
-      <node ref="UART1" pin="24"/>
-      <node ref="ROM1" pin="18"/>
-      <node ref="SaMM_CTRL1" pin="27"/>
-      <node ref="J7" pin="14"/>
-      <node ref="RAM1" pin="18"/>
-      <node ref="IRQ_MASK1" pin="8"/>
-      <node ref="IRQ_PRIORITY1" pin="13"/>
-      <node ref="RAM3" pin="18"/>
-      <node ref="ROM4" pin="18"/>
-      <node ref="RAM4" pin="18"/>
-      <node ref="65SIB1" pin="27"/>
-      <node ref="ROM2" pin="18"/>
-      <node ref="VID_BUFFER1" pin="12"/>
-      <node ref="VID_ROM1" pin="4"/>
-      <node ref="ROM3" pin="18"/>
-      <node ref="SHARED_ROM1" pin="18"/>
-      <node ref="GPIO_CTRL1" pin="27"/>
-      <node ref="J6" pin="14"/>
-      <node ref="RAM2" pin="18"/>
-    </net>
-    <net code="78" name="MEM_D7">
-      <node ref="ROM2" pin="19"/>
-      <node ref="SaMM_CTRL1" pin="26"/>
-      <node ref="VID_BUFFER1" pin="11"/>
-      <node ref="ROM4" pin="19"/>
-      <node ref="RAM4" pin="19"/>
-      <node ref="J7" pin="16"/>
-      <node ref="RAM2" pin="19"/>
-      <node ref="GPIO_CTRL1" pin="26"/>
-      <node ref="J5" pin="16"/>
-      <node ref="J8" pin="16"/>
-      <node ref="ROM1" pin="19"/>
-      <node ref="IRQ_PRIORITY1" pin="12"/>
-      <node ref="RAM1" pin="19"/>
-      <node ref="65SIB1" pin="26"/>
-      <node ref="VID_ROM1" pin="3"/>
-      <node ref="ROM3" pin="19"/>
-      <node ref="SHARED_ROM1" pin="19"/>
-      <node ref="RAM3" pin="19"/>
-      <node ref="J6" pin="16"/>
-      <node ref="UART1" pin="25"/>
-      <node ref="IRQ_MASK1" pin="9"/>
-    </net>
-    <net code="79" name="A12">
-      <node ref="J5" pin="29"/>
-      <node ref="ROM3" pin="2"/>
-      <node ref="~CS_DEV1" pin="1"/>
-      <node ref="RAM3" pin="2"/>
-      <node ref="SHARED_ROM1" pin="2"/>
-      <node ref="J6" pin="29"/>
-      <node ref="J7" pin="29"/>
-      <node ref="RAM2" pin="2"/>
-      <node ref="ROM1" pin="2"/>
-      <node ref="ROM4" pin="2"/>
-      <node ref="RAM1" pin="2"/>
-      <node ref="CPU1" pin="22"/>
-      <node ref="ROM2" pin="2"/>
-      <node ref="RAM4" pin="2"/>
-      <node ref="J8" pin="29"/>
-    </net>
-    <net code="80" name="A10">
-      <node ref="J7" pin="25"/>
-      <node ref="SHARED_ROM1" pin="21"/>
-      <node ref="RAM2" pin="21"/>
-      <node ref="ROM1" pin="21"/>
-      <node ref="U2" pin="11"/>
-      <node ref="ROM4" pin="21"/>
-      <node ref="CPU1" pin="19"/>
-      <node ref="ROM3" pin="21"/>
-      <node ref="U15" pin="13"/>
-      <node ref="RAM1" pin="21"/>
-      <node ref="ROM2" pin="21"/>
-      <node ref="J8" pin="25"/>
-      <node ref="J5" pin="25"/>
-      <node ref="U10" pin="11"/>
-      <node ref="J6" pin="25"/>
-      <node ref="RAM4" pin="21"/>
-      <node ref="RAM3" pin="21"/>
-    </net>
-    <net code="81" name="A11">
-      <node ref="RAM2" pin="23"/>
-      <node ref="SHARED_ROM1" pin="23"/>
-      <node ref="RAM1" pin="23"/>
-      <node ref="ROM4" pin="23"/>
-      <node ref="ROM1" pin="23"/>
-      <node ref="RAM4" pin="23"/>
-      <node ref="ROM2" pin="23"/>
-      <node ref="J8" pin="27"/>
-      <node ref="U46" pin="1"/>
-      <node ref="U10" pin="13"/>
-      <node ref="J5" pin="27"/>
-      <node ref="RAM3" pin="23"/>
-      <node ref="ROM3" pin="23"/>
-      <node ref="J7" pin="27"/>
-      <node ref="J6" pin="27"/>
-      <node ref="CPU1" pin="20"/>
-      <node ref="U2" pin="13"/>
-    </net>
-    <net code="82" name="A8">
-      <node ref="U21" pin="5"/>
-      <node ref="U21" pin="11"/>
-      <node ref="J5" pin="21"/>
-      <node ref="U22" pin="1"/>
-      <node ref="RAM1" pin="25"/>
-      <node ref="ROM4" pin="25"/>
-      <node ref="ROM2" pin="25"/>
-      <node ref="J8" pin="21"/>
-      <node ref="J7" pin="21"/>
-      <node ref="J6" pin="21"/>
-      <node ref="RAM2" pin="25"/>
-      <node ref="SHARED_ROM1" pin="25"/>
-      <node ref="CPU1" pin="17"/>
-      <node ref="RAM3" pin="25"/>
-      <node ref="ROM1" pin="25"/>
-      <node ref="ROM3" pin="25"/>
-      <node ref="U21" pin="9"/>
-      <node ref="RAM4" pin="25"/>
-    </net>
-    <net code="83" name="A7">
-      <node ref="U42" pin="13"/>
-      <node ref="ROM2" pin="3"/>
-      <node ref="U26" pin="9"/>
-      <node ref="U26" pin="3"/>
-      <node ref="J8" pin="19"/>
-      <node ref="J5" pin="19"/>
-      <node ref="J7" pin="19"/>
-      <node ref="SHARED_ROM1" pin="3"/>
-      <node ref="RAM1" pin="3"/>
-      <node ref="ROM4" pin="3"/>
-      <node ref="RAM4" pin="3"/>
-      <node ref="CPU1" pin="16"/>
-      <node ref="ROM1" pin="3"/>
-      <node ref="U15" pin="5"/>
-      <node ref="J6" pin="19"/>
-      <node ref="ROM3" pin="3"/>
-      <node ref="RAM3" pin="3"/>
-      <node ref="RAM2" pin="3"/>
-    </net>
-    <net code="84" name="A6">
-      <node ref="U42" pin="12"/>
-      <node ref="U21" pin="3"/>
-      <node ref="ROM4" pin="4"/>
-      <node ref="ROM1" pin="4"/>
-      <node ref="RAM3" pin="4"/>
-      <node ref="J8" pin="17"/>
-      <node ref="J7" pin="17"/>
-      <node ref="U26" pin="5"/>
-      <node ref="RAM2" pin="4"/>
-      <node ref="J5" pin="17"/>
-      <node ref="RAM4" pin="4"/>
-      <node ref="U44" pin="1"/>
-      <node ref="J6" pin="17"/>
-      <node ref="RAM1" pin="4"/>
-      <node ref="ROM2" pin="4"/>
-      <node ref="CPU1" pin="15"/>
-      <node ref="ROM3" pin="4"/>
-      <node ref="SHARED_ROM1" pin="4"/>
-    </net>
-    <net code="85" name="A5">
-      <node ref="J6" pin="15"/>
-      <node ref="J7" pin="15"/>
-      <node ref="CPU1" pin="14"/>
-      <node ref="ROM1" pin="5"/>
-      <node ref="SHARED_ROM1" pin="5"/>
-      <node ref="J5" pin="15"/>
-      <node ref="RAM1" pin="5"/>
-      <node ref="U28" pin="3"/>
-      <node ref="RAM2" pin="5"/>
-      <node ref="RAM3" pin="5"/>
-      <node ref="RAM4" pin="5"/>
-      <node ref="ROM4" pin="5"/>
-      <node ref="ROM3" pin="5"/>
-      <node ref="ROM2" pin="5"/>
-      <node ref="U22" pin="10"/>
-      <node ref="J8" pin="15"/>
-      <node ref="U38" pin="10"/>
-      <node ref="U27" pin="3"/>
-    </net>
-    <net code="86" name="A4">
-      <node ref="J8" pin="13"/>
-      <node ref="U43" pin="12"/>
-      <node ref="J6" pin="13"/>
-      <node ref="CPU1" pin="13"/>
-      <node ref="RAM1" pin="6"/>
-      <node ref="U27" pin="1"/>
-      <node ref="RAM4" pin="6"/>
-      <node ref="J7" pin="13"/>
-      <node ref="U45" pin="1"/>
-      <node ref="RAM3" pin="6"/>
-      <node ref="ROM2" pin="6"/>
-      <node ref="ROM1" pin="6"/>
-      <node ref="J5" pin="13"/>
-      <node ref="SHARED_ROM1" pin="6"/>
-      <node ref="RAM2" pin="6"/>
-      <node ref="ROM4" pin="6"/>
-      <node ref="ROM3" pin="6"/>
-      <node ref="U38" pin="9"/>
-    </net>
-    <net code="87" name="A3">
-      <node ref="RAM2" pin="7"/>
-      <node ref="ROM3" pin="7"/>
-      <node ref="CPU1" pin="12"/>
-      <node ref="ROM2" pin="7"/>
-      <node ref="SaMM_CTRL1" pin="35"/>
-      <node ref="J7" pin="11"/>
-      <node ref="RAM4" pin="7"/>
-      <node ref="ROM4" pin="7"/>
-      <node ref="J8" pin="11"/>
-      <node ref="SHARED_ROM1" pin="7"/>
-      <node ref="J6" pin="11"/>
-      <node ref="GPIO_CTRL1" pin="35"/>
-      <node ref="J5" pin="11"/>
-      <node ref="RAM3" pin="7"/>
-      <node ref="ROM1" pin="7"/>
-      <node ref="U47" pin="1"/>
-      <node ref="65SIB1" pin="35"/>
-      <node ref="RAM1" pin="7"/>
-    </net>
-    <net code="88" name="A2">
-      <node ref="RAM4" pin="8"/>
-      <node ref="ROM1" pin="8"/>
-      <node ref="CPU1" pin="11"/>
-      <node ref="J5" pin="9"/>
-      <node ref="SaMM_CTRL1" pin="36"/>
-      <node ref="RAM1" pin="8"/>
-      <node ref="J6" pin="9"/>
-      <node ref="RAM2" pin="8"/>
-      <node ref="J8" pin="9"/>
-      <node ref="ROM4" pin="8"/>
-      <node ref="65SIB1" pin="36"/>
-      <node ref="ROM2" pin="8"/>
-      <node ref="J7" pin="9"/>
-      <node ref="ROM3" pin="8"/>
-      <node ref="U43" pin="9"/>
-      <node ref="GPIO_CTRL1" pin="36"/>
-      <node ref="RAM3" pin="8"/>
-      <node ref="SHARED_ROM1" pin="8"/>
-    </net>
-    <net code="89" name="A1">
-      <node ref="ROM3" pin="9"/>
-      <node ref="ROM4" pin="9"/>
-      <node ref="UART1" pin="14"/>
-      <node ref="ROM2" pin="9"/>
-      <node ref="J7" pin="7"/>
-      <node ref="ROM1" pin="9"/>
-      <node ref="J5" pin="7"/>
-      <node ref="RAM1" pin="9"/>
-      <node ref="SHARED_ROM1" pin="9"/>
-      <node ref="RAM3" pin="9"/>
-      <node ref="RAM2" pin="9"/>
-      <node ref="65SIB1" pin="37"/>
-      <node ref="SaMM_CTRL1" pin="37"/>
-      <node ref="CPU1" pin="10"/>
-      <node ref="J6" pin="7"/>
-      <node ref="RAM4" pin="9"/>
-      <node ref="J8" pin="7"/>
-      <node ref="GPIO_CTRL1" pin="37"/>
-    </net>
-    <net code="90" name="8MHz">
-      <node ref="CLK_DIV1" pin="3"/>
-      <node ref="X1" pin="8"/>
-      <node ref="JP4" pin="1"/>
-    </net>
-    <net code="91" name="4MHz">
-      <node ref="CLK_DIV1" pin="5"/>
-      <node ref="JP5" pin="1"/>
-    </net>
-    <net code="92" name="Net-(CLK_DIV1-Pad11)">
-      <node ref="CLK_DIV1" pin="2"/>
-      <node ref="CLK_DIV1" pin="6"/>
-      <node ref="CLK_DIV1" pin="11"/>
-    </net>
-    <net code="93" name="Net-(12v1-Pad2)">
-      <node ref="12v1" pin="2"/>
-      <node ref="R10" pin="2"/>
-    </net>
-    <net code="94" name="Net-(65SIB1-Pad19)">
-      <node ref="65SIB1" pin="19"/>
-    </net>
-    <net code="95" name="Net-(65SIB1-Pad18)">
-      <node ref="65SIB1" pin="18"/>
-    </net>
-    <net code="96" name="65SIB_CLK">
-      <node ref="65SIB1" pin="2"/>
-      <node ref="J2" pin="3"/>
-    </net>
-    <net code="97" name="Net-(65SIB1-Pad5)">
+    <net code="9" name="Net-(65SIB1-Pad5)">
       <node ref="65SIB_LATCH1" pin="2"/>
       <node ref="65SIB1" pin="5"/>
     </net>
-    <net code="98" name="Net-(65SIB1-Pad6)">
-      <node ref="65SIB1" pin="6"/>
-      <node ref="65SIB_LATCH1" pin="1"/>
-    </net>
-    <net code="99" name="CONF\">
-      <node ref="65SIB1" pin="8"/>
-      <node ref="J2" pin="1"/>
-    </net>
-    <net code="100" name="65SIB_MISO">
-      <node ref="65SIB1" pin="9"/>
-      <node ref="J2" pin="7"/>
-    </net>
-    <net code="101" name="Net-(65SIB1-Pad39)">
-      <node ref="65SIB1" pin="39"/>
-    </net>
-    <net code="102" name="Net-(U39-Pad9)">
-      <node ref="U42" pin="8"/>
-      <node ref="U39" pin="9"/>
-    </net>
-    <net code="103" name="Net-(U39-Pad10)">
-      <node ref="U39" pin="10"/>
-      <node ref="U42" pin="6"/>
-    </net>
-    <net code="104" name="Net-(65SIB1-Pad4)">
+    <net code="10" name="Net-(65SIB1-Pad4)">
       <node ref="65SIB_LATCH1" pin="3"/>
       <node ref="65SIB1" pin="4"/>
     </net>
-    <net code="105" name="Net-(U42-Pad5)">
-      <node ref="U46" pin="2"/>
-      <node ref="U42" pin="5"/>
+    <net code="11" name="Net-(65SIB1-Pad7)">
+      <node ref="65SIB_LATCH1" pin="4"/>
+      <node ref="65SIB1" pin="7"/>
     </net>
-    <net code="106" name="65SIB_MOSI">
-      <node ref="J2" pin="5"/>
-      <node ref="65SIB1" pin="3"/>
+    <net code="12" name="Net-(65SIB1-Pad17)">
+      <node ref="65SIB1" pin="17"/>
     </net>
-    <net code="107" name="Net-(SHARED_ROM1-Pad20)">
-      <node ref="U5" pin="3"/>
-      <node ref="SHARED_ROM1" pin="20"/>
-      <node ref="SHARED_ROM1" pin="22"/>
+    <net code="13" name="Net-(65SIB1-Pad16)">
+      <node ref="65SIB1" pin="16"/>
     </net>
-    <net code="108" name="Net-(UART-RS232-Pad14)">
-      <node ref="UART-RS232" pin="14"/>
+    <net code="14" name="Net-(F1-Pad2)">
+      <node ref="P1" pin="1"/>
+      <node ref="F1" pin="2"/>
     </net>
-    <net code="109" name="Net-(UART-RS232-Pad13)">
-      <node ref="UART-RS232" pin="13"/>
+    <net code="15" name="Net-(J1-Pad1)">
+      <node ref="SW1" pin="4"/>
+      <node ref="J1" pin="1"/>
     </net>
-    <net code="110" name="Net-(J3-Pad8)">
-      <node ref="J3" pin="8"/>
+    <net code="16" name="Net-(F1-Pad1)">
+      <node ref="TR1" pin="6"/>
+      <node ref="F1" pin="1"/>
     </net>
-    <net code="111" name="Net-(C5-Pad1)">
-      <node ref="SW3" pin="1"/>
-      <node ref="C5" pin="1"/>
-      <node ref="R22" pin="2"/>
-      <node ref="RESET_GEN1" pin="2"/>
-    </net>
-    <net code="112" name="Net-(U2-Pad1)">
-      <node ref="U3" pin="6"/>
-      <node ref="U2" pin="1"/>
-    </net>
-    <net code="113" name="Net-(U2-Pad2)">
-      <node ref="U2" pin="2"/>
-      <node ref="U5" pin="2"/>
-    </net>
-    <net code="114" name="Net-(-12v1-Pad2)">
-      <node ref="-12v1" pin="2"/>
-      <node ref="R11" pin="2"/>
-    </net>
-    <net code="115" name="Net-(Q2-Pad3)">
+    <net code="17" name="Net-(Q2-Pad3)">
       <node ref="R15" pin="1"/>
       <node ref="Q2" pin="3"/>
     </net>
-    <net code="116" name="Net-(5v1-Pad2)">
-      <node ref="R9" pin="2"/>
-      <node ref="5v1" pin="2"/>
-    </net>
-    <net code="117" name="Net-(TR1-Pad12)">
-      <node ref="TR1" pin="12"/>
-    </net>
-    <net code="118" name="Net-(TR1-Pad11)">
-      <node ref="TR1" pin="11"/>
-    </net>
-    <net code="119" name="Net-(U15-Pad8)">
-      <node ref="U38" pin="2"/>
-      <node ref="U15" pin="8"/>
-    </net>
-    <net code="120" name="Net-(U10-Pad10)">
-      <node ref="U38" pin="4"/>
-      <node ref="U10" pin="10"/>
-    </net>
-    <net code="121" name="Net-(U10-Pad12)">
-      <node ref="U10" pin="12"/>
-      <node ref="U38" pin="5"/>
-    </net>
-    <net code="122" name="Net-(R16-Pad1)">
-      <node ref="R16" pin="1"/>
-      <node ref="VID_ROM1" pin="27"/>
-    </net>
-    <net code="123" name="GND">
-      <node ref="U28" pin="7"/>
-      <node ref="65SIB1" pin="1"/>
-      <node ref="RAM1" pin="14"/>
-      <node ref="U41" pin="7"/>
-      <node ref="C5" pin="2"/>
-      <node ref="U21" pin="7"/>
-      <node ref="ROM1" pin="14"/>
-      <node ref="SW3" pin="2"/>
-      <node ref="5v1" pin="1"/>
-      <node ref="C4" pin="2"/>
-      <node ref="CPU1" pin="21"/>
-      <node ref="SHARED_ROM1" pin="14"/>
-      <node ref="C1" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="12v1" pin="1"/>
-      <node ref="J3" pin="9"/>
-      <node ref="U1" pin="2"/>
-      <node ref="U4" pin="2"/>
-      <node ref="J5" pin="3"/>
-      <node ref="U27" pin="7"/>
-      <node ref="CP4" pin="2"/>
-      <node ref="J2" pin="2"/>
-      <node ref="65SIB_LATCH1" pin="8"/>
-      <node ref="U18" pin="7"/>
-      <node ref="UART_CLK1" pin="7"/>
-      <node ref="IRQ_DECODE1" pin="8"/>
-      <node ref="ROM3" pin="14"/>
-      <node ref="U13" pin="3"/>
-      <node ref="U14" pin="1"/>
-      <node ref="CP3" pin="1"/>
-      <node ref="CP2" pin="1"/>
-      <node ref="VID_BUFFER1" pin="10"/>
-      <node ref="RESET_GEN1" pin="1"/>
-      <node ref="C6" pin="2"/>
-      <node ref="IRQ_PRIORITY1" pin="9"/>
-      <node ref="U26" pin="7"/>
-      <node ref="U39" pin="7"/>
-      <node ref="U38" pin="7"/>
-      <node ref="IRQ_PRIORITY1" pin="8"/>
-      <node ref="IRQ_PRIORITY1" pin="7"/>
-      <node ref="RAM3" pin="14"/>
-      <node ref="SW1" pin="2"/>
-      <node ref="ROM4" pin="14"/>
-      <node ref="J2" pin="19"/>
-      <node ref="UART1" pin="1"/>
-      <node ref="IRQ_DECODE1" pin="5"/>
-      <node ref="JP3" pin="1"/>
-      <node ref="RAM4" pin="14"/>
-      <node ref="IRQ_PRIORITY1" pin="10"/>
-      <node ref="IRQ_PRIORITY1" pin="2"/>
-      <node ref="RAM2" pin="14"/>
-      <node ref="IRQ_PRIORITY1" pin="6"/>
-      <node ref="X1" pin="7"/>
-      <node ref="CLK_DIV1" pin="7"/>
-      <node ref="J4" pin="22"/>
-      <node ref="U3" pin="7"/>
-      <node ref="SOUND_GEN1" pin="1"/>
-      <node ref="U2" pin="7"/>
-      <node ref="U22" pin="7"/>
-      <node ref="U30" pin="7"/>
-      <node ref="U42" pin="7"/>
-      <node ref="VID_ROM1" pin="21"/>
-      <node ref="VID_ROM1" pin="24"/>
-      <node ref="VID_ROM1" pin="26"/>
-      <node ref="IRQ_OUT1" pin="8"/>
-      <node ref="C3" pin="2"/>
-      <node ref="GPIO_CTRL1" pin="1"/>
-      <node ref="SOUND_GEN1" pin="22"/>
-      <node ref="J2" pin="16"/>
-      <node ref="SaMM_CTRL1" pin="1"/>
-      <node ref="VID_ROM1" pin="23"/>
-      <node ref="J8" pin="3"/>
-      <node ref="UART-RS232" pin="11"/>
-      <node ref="J7" pin="3"/>
-      <node ref="R11" pin="1"/>
-      <node ref="J6" pin="3"/>
-      <node ref="~CS_DEV1" pin="8"/>
-      <node ref="SOUND_GEN1" pin="19"/>
-      <node ref="~CS_DEV1" pin="5"/>
-      <node ref="~CS_DEV1" pin="4"/>
-      <node ref="VID_ROM1" pin="14"/>
-      <node ref="ROM2" pin="14"/>
-      <node ref="U15" pin="7"/>
-      <node ref="J2" pin="6"/>
-      <node ref="U10" pin="7"/>
-      <node ref="IRQ_MASK1" pin="1"/>
-      <node ref="VID_ROM1" pin="2"/>
-      <node ref="J2" pin="4"/>
-      <node ref="VID_ROM1" pin="1"/>
-      <node ref="U13" pin="4"/>
-      <node ref="VID_ROM1" pin="20"/>
-      <node ref="IRQ_MASK1" pin="10"/>
-    </net>
-    <net code="124" name="CS_UART">
-      <node ref="UART1" pin="2"/>
-      <node ref="U41" pin="8"/>
-      <node ref="U37" pin="1"/>
-    </net>
-    <net code="125" name="Net-(U37-Pad2)">
-      <node ref="U37" pin="2"/>
-      <node ref="UART-RS232" pin="20"/>
-    </net>
-    <net code="126" name="Net-(U42-Pad9)">
-      <node ref="U45" pin="2"/>
-      <node ref="U42" pin="9"/>
-    </net>
-    <net code="127" name="Net-(U21-Pad8)">
-      <node ref="U42" pin="1"/>
-      <node ref="U21" pin="8"/>
-    </net>
-    <net code="128" name="Net-(U15-Pad10)">
-      <node ref="U15" pin="10"/>
-      <node ref="U42" pin="2"/>
-    </net>
-    <net code="129" name="Net-(U41-Pad10)">
-      <node ref="U43" pin="6"/>
-      <node ref="U41" pin="10"/>
-    </net>
-    <net code="130" name="Net-(U43-Pad10)">
-      <node ref="U47" pin="2"/>
-      <node ref="U43" pin="10"/>
-    </net>
-    <net code="131" name="CS_65SIB">
-      <node ref="U39" pin="8"/>
-      <node ref="65SIB1" pin="24"/>
-      <node ref="65SIB_LATCH1" pin="6"/>
-    </net>
-    <net code="132" name="Net-(U15-Pad12)">
-      <node ref="U42" pin="4"/>
-      <node ref="U15" pin="12"/>
-    </net>
-    <net code="133" name="Net-(U21-Pad6)">
-      <node ref="U38" pin="1"/>
-      <node ref="U21" pin="6"/>
-    </net>
-    <net code="134" name="Net-(U30-Pad9)">
-      <node ref="U38" pin="8"/>
-      <node ref="U30" pin="9"/>
-    </net>
-    <net code="135" name="Net-(U38-Pad12)">
-      <node ref="U44" pin="2"/>
-      <node ref="U38" pin="12"/>
-    </net>
-    <net code="136" name="Net-(U26-Pad4)">
-      <node ref="U38" pin="13"/>
-      <node ref="U26" pin="4"/>
-    </net>
-    <net code="137" name="Net-(U30-Pad10)">
-      <node ref="U38" pin="6"/>
-      <node ref="U30" pin="10"/>
-    </net>
-    <net code="138" name="Net-(U28-Pad4)">
-      <node ref="U43" pin="13"/>
-      <node ref="U28" pin="4"/>
-    </net>
-    <net code="139" name="Net-(U41-Pad9)">
-      <node ref="U43" pin="8"/>
-      <node ref="U41" pin="9"/>
-    </net>
-    <net code="140" name="Net-(ROM4-Pad1)">
-      <node ref="ROM4" pin="1"/>
-    </net>
-    <net code="141" name="Net-(U53-Pad2)">
-      <node ref="U65" pin="2"/>
-      <node ref="U53" pin="2"/>
-    </net>
-    <net code="142" name="Net-(U10-Pad8)">
-      <node ref="U22" pin="2"/>
-      <node ref="U10" pin="8"/>
-    </net>
-    <net code="143" name="Net-(U37-Pad4)">
-      <node ref="U37" pin="4"/>
-      <node ref="U48" pin="2"/>
-    </net>
-    <net code="144" name="Net-(RAM2-Pad20)">
-      <node ref="U48" pin="3"/>
-      <node ref="RAM2" pin="20"/>
-    </net>
-    <net code="145" name="RAM2_EN">
-      <node ref="SaMM_CTRL1" pin="39"/>
-      <node ref="U37" pin="3"/>
-    </net>
-    <net code="146" name="Net-(R26-Pad2)">
-      <node ref="R26" pin="2"/>
-      <node ref="ROM4" pin="27"/>
-    </net>
-    <net code="147" name="Net-(U52-Pad2)">
-      <node ref="U52" pin="2"/>
-      <node ref="U64" pin="2"/>
-    </net>
-    <net code="148" name="Net-(ROM4-Pad20)">
-      <node ref="U65" pin="3"/>
-      <node ref="ROM4" pin="20"/>
-      <node ref="ROM4" pin="22"/>
-    </net>
-    <net code="149" name="Net-(U46-Pad3)">
-      <node ref="U46" pin="3"/>
-      <node ref="U50" pin="6"/>
-    </net>
-    <net code="150" name="Net-(U46-Pad4)">
-      <node ref="U65" pin="1"/>
-      <node ref="U46" pin="4"/>
-    </net>
-    <net code="151" name="ROM4_EN">
-      <node ref="SaMM_CTRL1" pin="16"/>
-      <node ref="U53" pin="1"/>
-    </net>
-    <net code="152" name="Net-(U37-Pad5)">
-      <node ref="U50" pin="8"/>
-      <node ref="U37" pin="5"/>
-    </net>
-    <net code="153" name="Net-(U37-Pad6)">
-      <node ref="U37" pin="6"/>
-      <node ref="U50" pin="5"/>
-    </net>
-    <net code="154" name="Net-(RAM4-Pad20)">
-      <node ref="U50" pin="3"/>
-      <node ref="RAM4" pin="20"/>
-    </net>
-    <net code="155" name="Net-(U50-Pad2)">
-      <node ref="U50" pin="2"/>
-      <node ref="U51" pin="4"/>
-    </net>
-    <net code="156" name="RAM4_EN">
-      <node ref="U51" pin="3"/>
-      <node ref="SaMM_CTRL1" pin="19"/>
-    </net>
-    <net code="157" name="A15">
-      <node ref="U3" pin="1"/>
-      <node ref="J7" pin="35"/>
-      <node ref="U17" pin="9"/>
-      <node ref="U50" pin="1"/>
-      <node ref="~CS_DEV1" pin="6"/>
-      <node ref="J8" pin="35"/>
-      <node ref="U48" pin="9"/>
-      <node ref="U48" pin="1"/>
-      <node ref="U49" pin="9"/>
-      <node ref="U50" pin="9"/>
-      <node ref="J5" pin="35"/>
-      <node ref="U3" pin="4"/>
-      <node ref="CPU1" pin="25"/>
-      <node ref="U49" pin="1"/>
-      <node ref="J6" pin="35"/>
-    </net>
-    <net code="158" name="Net-(SaMM_CTRL1-Pad24)">
-      <node ref="U18" pin="8"/>
-      <node ref="SaMM_CTRL1" pin="24"/>
-    </net>
-    <net code="159" name="Net-(J8-Pad26)">
-      <node ref="J8" pin="26"/>
-    </net>
-    <net code="160" name="Net-(J7-Pad26)">
-      <node ref="J7" pin="26"/>
-    </net>
-    <net code="161" name="Net-(J6-Pad26)">
-      <node ref="J6" pin="26"/>
-    </net>
-    <net code="162" name="Net-(C6-Pad1)">
-      <node ref="RESET_GEN1" pin="5"/>
-      <node ref="C6" pin="1"/>
-    </net>
-    <net code="163" name="Net-(CP4-Pad1)">
-      <node ref="RESET_GEN1" pin="6"/>
-      <node ref="RESET_GEN1" pin="7"/>
-      <node ref="CP4" pin="1"/>
-      <node ref="R23" pin="2"/>
-    </net>
-    <net code="164" name="Net-(U18-Pad2)">
-      <node ref="U18" pin="2"/>
-    </net>
-    <net code="165" name="Net-(J5-Pad26)">
-      <node ref="J5" pin="26"/>
-    </net>
-    <net code="166" name="Net-(J8-Pad30)">
-      <node ref="J8" pin="30"/>
-    </net>
-    <net code="167" name="Net-(J7-Pad30)">
-      <node ref="J7" pin="30"/>
-    </net>
-    <net code="168" name="Net-(J6-Pad30)">
-      <node ref="J6" pin="30"/>
-    </net>
-    <net code="169" name="Net-(J5-Pad30)">
-      <node ref="J5" pin="30"/>
-    </net>
-    <net code="170" name="Net-(IRQ_DECODE1-Pad14)">
-      <node ref="IRQ_DECODE1" pin="14"/>
-      <node ref="IRQ_OUT1" pin="15"/>
-    </net>
-    <net code="171" name="Net-(RAM3-Pad20)">
-      <node ref="RAM3" pin="20"/>
-      <node ref="U49" pin="3"/>
-    </net>
-    <net code="172" name="RAM3_EN">
-      <node ref="SaMM_CTRL1" pin="18"/>
-      <node ref="U47" pin="3"/>
-    </net>
-    <net code="173" name="Net-(U47-Pad4)">
-      <node ref="U49" pin="2"/>
-      <node ref="U47" pin="4"/>
-    </net>
-    <net code="174" name="Net-(ROM3-Pad1)">
-      <node ref="ROM3" pin="1"/>
-    </net>
-    <net code="175" name="Net-(U18-Pad10)">
-      <node ref="U22" pin="6"/>
-      <node ref="U18" pin="10"/>
-    </net>
-    <net code="176" name="Net-(U15-Pad6)">
-      <node ref="U15" pin="6"/>
-      <node ref="U22" pin="13"/>
-    </net>
-    <net code="177" name="Net-(U2-Pad10)">
-      <node ref="U22" pin="4"/>
-      <node ref="U2" pin="10"/>
-    </net>
-    <net code="178" name="Net-(U2-Pad12)">
-      <node ref="U2" pin="12"/>
-      <node ref="U22" pin="5"/>
-    </net>
-    <net code="179" name="Net-(ROM2-Pad1)">
-      <node ref="ROM2" pin="1"/>
-    </net>
-    <net code="180" name="~CS_DEV">
-      <node ref="U18" pin="1"/>
-      <node ref="UART1" pin="3"/>
-      <node ref="J5" pin="28"/>
-      <node ref="65SIB1" pin="23"/>
-      <node ref="GPIO_CTRL1" pin="23"/>
-      <node ref="J8" pin="28"/>
-      <node ref="J7" pin="28"/>
-      <node ref="J6" pin="28"/>
-      <node ref="~CS_DEV1" pin="10"/>
-      <node ref="SaMM_CTRL1" pin="23"/>
-      <node ref="65SIB_LATCH1" pin="5"/>
-      <node ref="U18" pin="4"/>
-    </net>
-    <net code="181" name="Net-(IRQ_MASK1-Pad11)">
-      <node ref="U18" pin="3"/>
-      <node ref="IRQ_MASK1" pin="11"/>
-    </net>
-    <net code="182" name="Net-(IRQ_PRIORITY1-Pad1)">
-      <node ref="U18" pin="6"/>
-      <node ref="IRQ_PRIORITY1" pin="1"/>
-    </net>
-    <net code="183" name="Net-(U21-Pad4)">
-      <node ref="U21" pin="4"/>
-      <node ref="U22" pin="12"/>
-    </net>
-    <net code="184" name="IRQ3">
-      <node ref="SaMM_CTRL1" pin="21"/>
-    </net>
-    <net code="185" name="Net-(U18-Pad9)">
-      <node ref="U18" pin="9"/>
-      <node ref="U22" pin="8"/>
-    </net>
-    <net code="186" name="Net-(U22-Pad9)">
-      <node ref="U22" pin="9"/>
-      <node ref="U27" pin="2"/>
-    </net>
-    <net code="187" name="Net-(R25-Pad2)">
-      <node ref="R25" pin="2"/>
-      <node ref="ROM3" pin="27"/>
-    </net>
-    <net code="188" name="Net-(ROM3-Pad20)">
-      <node ref="ROM3" pin="22"/>
-      <node ref="U64" pin="3"/>
-      <node ref="ROM3" pin="20"/>
-    </net>
-    <net code="189" name="Net-(U45-Pad3)">
-      <node ref="U49" pin="6"/>
-      <node ref="U45" pin="3"/>
-    </net>
-    <net code="190" name="Net-(U45-Pad4)">
-      <node ref="U64" pin="1"/>
-      <node ref="U45" pin="4"/>
-    </net>
-    <net code="191" name="Net-(U28-Pad5)">
-      <node ref="U49" pin="8"/>
-      <node ref="U28" pin="5"/>
-    </net>
-    <net code="192" name="Net-(U28-Pad6)">
-      <node ref="U28" pin="6"/>
-      <node ref="U49" pin="5"/>
-    </net>
-    <net code="193" name="Net-(R24-Pad2)">
-      <node ref="ROM2" pin="27"/>
-      <node ref="R24" pin="2"/>
-    </net>
-    <net code="194" name="Net-(ROM2-Pad20)">
-      <node ref="ROM2" pin="22"/>
-      <node ref="ROM2" pin="20"/>
-      <node ref="U63" pin="3"/>
-    </net>
-    <net code="195" name="Net-(U44-Pad4)">
-      <node ref="U44" pin="4"/>
-      <node ref="U63" pin="1"/>
-    </net>
-    <net code="196" name="Net-(U51-Pad2)">
-      <node ref="U63" pin="2"/>
-      <node ref="U51" pin="2"/>
-    </net>
-    <net code="197" name="Net-(U44-Pad3)">
-      <node ref="U44" pin="3"/>
-      <node ref="U48" pin="6"/>
-    </net>
-    <net code="198" name="Net-(U27-Pad5)">
-      <node ref="U27" pin="5"/>
-      <node ref="U48" pin="8"/>
-    </net>
-    <net code="199" name="Net-(U27-Pad6)">
-      <node ref="U27" pin="6"/>
-      <node ref="U48" pin="5"/>
-    </net>
-    <net code="200" name="CB2">
-      <node ref="J4" pin="21"/>
-      <node ref="GPIO_CTRL1" pin="19"/>
-    </net>
-    <net code="201" name="GPIO12">
-      <node ref="GPIO_CTRL1" pin="14"/>
-      <node ref="J4" pin="14"/>
-    </net>
-    <net code="202" name="GPIO13">
-      <node ref="GPIO_CTRL1" pin="15"/>
-      <node ref="J4" pin="15"/>
-    </net>
-    <net code="203" name="GPIO14">
-      <node ref="GPIO_CTRL1" pin="16"/>
-      <node ref="J4" pin="16"/>
-    </net>
-    <net code="204" name="GPIO15">
-      <node ref="J4" pin="17"/>
-      <node ref="GPIO_CTRL1" pin="17"/>
-    </net>
-    <net code="205" name="CA1">
-      <node ref="GPIO_CTRL1" pin="40"/>
-      <node ref="J4" pin="18"/>
-    </net>
-    <net code="206" name="CA2">
-      <node ref="J4" pin="19"/>
-      <node ref="GPIO_CTRL1" pin="39"/>
-    </net>
-    <net code="207" name="GPIO0">
-      <node ref="J4" pin="2"/>
-      <node ref="GPIO_CTRL1" pin="2"/>
-    </net>
-    <net code="208" name="CB1">
-      <node ref="GPIO_CTRL1" pin="18"/>
-      <node ref="J4" pin="20"/>
-    </net>
-    <net code="209" name="GPIO1">
-      <node ref="J4" pin="3"/>
-      <node ref="GPIO_CTRL1" pin="3"/>
-    </net>
-    <net code="210" name="GPIO2">
-      <node ref="J4" pin="4"/>
-      <node ref="GPIO_CTRL1" pin="4"/>
-    </net>
-    <net code="211" name="GPIO3">
-      <node ref="GPIO_CTRL1" pin="5"/>
-      <node ref="J4" pin="5"/>
-    </net>
-    <net code="212" name="GPIO4">
-      <node ref="GPIO_CTRL1" pin="6"/>
-      <node ref="J4" pin="6"/>
-    </net>
-    <net code="213" name="GPIO5">
-      <node ref="GPIO_CTRL1" pin="7"/>
-      <node ref="J4" pin="7"/>
-    </net>
-    <net code="214" name="GPIO6">
-      <node ref="GPIO_CTRL1" pin="8"/>
-      <node ref="J4" pin="8"/>
-    </net>
-    <net code="215" name="GPIO7">
-      <node ref="J4" pin="9"/>
-      <node ref="GPIO_CTRL1" pin="9"/>
-    </net>
-    <net code="216" name="Net-(IRQ_DECODE1-Pad7)">
-      <node ref="IRQ_OUT1" pin="12"/>
-      <node ref="IRQ_PRIORITY1" pin="4"/>
-      <node ref="IRQ_DECODE1" pin="7"/>
-    </net>
-    <net code="217" name="Net-(IRQ_DECODE1-Pad6)">
-      <node ref="IRQ_DECODE1" pin="6"/>
-      <node ref="IRQ_PRIORITY1" pin="5"/>
-      <node ref="IRQ_OUT1" pin="13"/>
-    </net>
-    <net code="218" name="Net-(IRQ_OUT1-Pad4)">
-      <node ref="IRQ_OUT1" pin="4"/>
-    </net>
-    <net code="219" name="Net-(IRQ_OUT1-Pad2)">
-      <node ref="IRQ_OUT1" pin="2"/>
-    </net>
-    <net code="220" name="Net-(IRQ_OUT1-Pad3)">
-      <node ref="IRQ_OUT1" pin="3"/>
-    </net>
-    <net code="221" name="Net-(IRQ_OUT1-Pad5)">
-      <node ref="IRQ_OUT1" pin="5"/>
-    </net>
-    <net code="222" name="Net-(IRQ_OUT1-Pad6)">
-      <node ref="IRQ_OUT1" pin="6"/>
-    </net>
-    <net code="223" name="Net-(IRQ_OUT1-Pad7)">
-      <node ref="IRQ_OUT1" pin="7"/>
-      <node ref="U10" pin="3"/>
-    </net>
-    <net code="224" name="Net-(IRQ_MASK1-Pad16)">
-      <node ref="IRQ_MASK1" pin="16"/>
-      <node ref="IRQ_OUT1" pin="1"/>
-    </net>
-    <net code="225" name="Net-(IRQ_MASK1-Pad17)">
-      <node ref="IRQ_MASK1" pin="17"/>
-      <node ref="IRQ_OUT1" pin="14"/>
-    </net>
-    <net code="226" name="Net-(IRQ_MASK1-Pad18)">
-      <node ref="IRQ_OUT1" pin="11"/>
-      <node ref="IRQ_MASK1" pin="18"/>
-    </net>
-    <net code="227" name="Net-(IRQ_MASK1-Pad19)">
-      <node ref="IRQ_MASK1" pin="19"/>
-      <node ref="IRQ_OUT1" pin="9"/>
-    </net>
-    <net code="228" name="Net-(IRQ_DECODE1-Pad9)">
-      <node ref="IRQ_PRIORITY1" pin="3"/>
-      <node ref="IRQ_OUT1" pin="10"/>
-      <node ref="IRQ_DECODE1" pin="9"/>
-    </net>
-    <net code="229" name="GPIO8">
-      <node ref="J4" pin="10"/>
-      <node ref="GPIO_CTRL1" pin="10"/>
-    </net>
-    <net code="230" name="GPIO9">
-      <node ref="GPIO_CTRL1" pin="11"/>
-      <node ref="J4" pin="11"/>
-    </net>
-    <net code="231" name="GPIO10">
-      <node ref="GPIO_CTRL1" pin="12"/>
-      <node ref="J4" pin="12"/>
-    </net>
-    <net code="232" name="GPIO11">
-      <node ref="GPIO_CTRL1" pin="13"/>
-      <node ref="J4" pin="13"/>
-    </net>
-    <net code="233" name="~IRQ_DECIDE">
-      <node ref="GPIO_CTRL1" pin="21"/>
-      <node ref="JP7" pin="2"/>
-    </net>
-    <net code="234" name="CS_GPIO">
-      <node ref="GPIO_CTRL1" pin="24"/>
-      <node ref="U30" pin="8"/>
-    </net>
-    <net code="235" name="Net-(RESET_GEN1-Pad3)">
-      <node ref="RESET_GEN1" pin="3"/>
-      <node ref="U28" pin="1"/>
-    </net>
-    <net code="236" name="~IRQ">
-      <node ref="U10" pin="4"/>
-      <node ref="JP2" pin="1"/>
-    </net>
-    <net code="237" name="Net-(U18-Pad5)">
-      <node ref="U18" pin="5"/>
-      <node ref="U26" pin="2"/>
-    </net>
-    <net code="238" name="+12v">
-      <node ref="U1" pin="3"/>
-      <node ref="U4" pin="1"/>
-      <node ref="J8" pin="42"/>
-      <node ref="J2" pin="8"/>
-      <node ref="J6" pin="42"/>
-      <node ref="C3" pin="1"/>
-      <node ref="C2" pin="1"/>
-      <node ref="R10" pin="1"/>
-      <node ref="J7" pin="42"/>
-      <node ref="J5" pin="42"/>
-      <node ref="J2" pin="10"/>
-    </net>
-    <net code="239" name="Net-(U26-Pad6)">
-      <node ref="U26" pin="6"/>
-      <node ref="U43" pin="1"/>
-    </net>
-    <net code="240" name="Net-(U21-Pad12)">
-      <node ref="U43" pin="5"/>
-      <node ref="U21" pin="12"/>
-    </net>
-    <net code="241" name="Net-(U21-Pad10)">
-      <node ref="U43" pin="4"/>
-      <node ref="U21" pin="10"/>
-    </net>
-    <net code="242" name="Net-(U26-Pad8)">
-      <node ref="U43" pin="2"/>
-      <node ref="U26" pin="8"/>
-    </net>
-    <net code="243" name="~IRQ1">
-      <node ref="R7" pin="2"/>
-      <node ref="JP7" pin="1"/>
-      <node ref="IRQ_DECODE1" pin="11"/>
-    </net>
-    <net code="244" name="~NMI">
-      <node ref="JP7" pin="3"/>
-      <node ref="JP1" pin="1"/>
-    </net>
-    <net code="245" name="RDY">
-      <node ref="R18" pin="1"/>
-      <node ref="J7" pin="39"/>
-      <node ref="CPU1" pin="2"/>
-      <node ref="J6" pin="39"/>
-      <node ref="J5" pin="39"/>
-      <node ref="J8" pin="39"/>
-    </net>
-    <net code="246" name="Net-(CPU1-Pad4)">
-      <node ref="R19" pin="1"/>
-      <node ref="JP2" pin="2"/>
-      <node ref="CPU1" pin="4"/>
-    </net>
-    <net code="247" name="Net-(CPU1-Pad6)">
-      <node ref="R20" pin="1"/>
-      <node ref="CPU1" pin="6"/>
-      <node ref="JP1" pin="2"/>
-    </net>
-    <net code="248" name="Net-(CPU1-Pad1)">
-      <node ref="JP3" pin="2"/>
-      <node ref="CPU1" pin="1"/>
-    </net>
-    <net code="249" name="Net-(CLK_DIV1-Pad12)">
-      <node ref="CLK_DIV1" pin="8"/>
-      <node ref="CLK_DIV1" pin="12"/>
-    </net>
-    <net code="250" name="Net-(D1-Pad2)">
+    <net code="18" name="Net-(P1-Pad2)">
+      <node ref="P1" pin="2"/>
+      <node ref="TR1" pin="1"/>
+    </net>
+    <net code="19" name="Net-(D1-Pad2)">
+      <node ref="D2" pin="1"/>
       <node ref="TR1" pin="7"/>
       <node ref="D1" pin="2"/>
-      <node ref="D2" pin="1"/>
     </net>
-    <net code="251" name="Net-(CP1-Pad2)">
-      <node ref="D4" pin="2"/>
-      <node ref="D2" pin="2"/>
-      <node ref="SW1" pin="3"/>
-      <node ref="CP1" pin="2"/>
-    </net>
-    <net code="252" name="Net-(D3-Pad2)">
+    <net code="20" name="Net-(D3-Pad2)">
       <node ref="TR1" pin="8"/>
-      <node ref="D3" pin="2"/>
       <node ref="D4" pin="1"/>
-    </net>
-    <net code="253" name="Net-(CPU1-Pad36)">
-      <node ref="CPU1" pin="36"/>
-    </net>
-    <net code="254" name="Net-(CPU1-Pad35)">
-      <node ref="CPU1" pin="35"/>
-    </net>
-    <net code="255" name="Net-(CPU1-Pad5)">
-      <node ref="CPU1" pin="5"/>
-    </net>
-    <net code="256" name="CPU_D7">
-      <node ref="VID_BUFFER1" pin="9"/>
-      <node ref="CPU1" pin="26"/>
-      <node ref="VID_ROM1" pin="19"/>
-    </net>
-    <net code="257" name="CPU_D6">
-      <node ref="VID_BUFFER1" pin="8"/>
-      <node ref="VID_ROM1" pin="18"/>
-      <node ref="CPU1" pin="27"/>
-    </net>
-    <net code="258" name="CPU_D5">
-      <node ref="VID_BUFFER1" pin="7"/>
-      <node ref="CPU1" pin="28"/>
-      <node ref="VID_ROM1" pin="17"/>
-    </net>
-    <net code="259" name="CPU_D4">
-      <node ref="VID_ROM1" pin="16"/>
-      <node ref="VID_BUFFER1" pin="6"/>
-      <node ref="CPU1" pin="29"/>
-    </net>
-    <net code="260" name="PHI1">
-      <node ref="CPU1" pin="3"/>
-      <node ref="J6" pin="22"/>
-      <node ref="J5" pin="22"/>
-      <node ref="J8" pin="22"/>
-      <node ref="J7" pin="22"/>
-    </net>
-    <net code="261" name="CPU_D3">
-      <node ref="CPU1" pin="30"/>
-      <node ref="VID_BUFFER1" pin="5"/>
-      <node ref="VID_ROM1" pin="15"/>
-    </net>
-    <net code="262" name="CPU_D2">
-      <node ref="CPU1" pin="31"/>
-      <node ref="VID_BUFFER1" pin="4"/>
-      <node ref="VID_ROM1" pin="13"/>
-    </net>
-    <net code="263" name="CPU_D1">
-      <node ref="VID_ROM1" pin="12"/>
-      <node ref="VID_BUFFER1" pin="3"/>
-      <node ref="CPU1" pin="32"/>
-    </net>
-    <net code="264" name="CPU_D0">
-      <node ref="CPU1" pin="33"/>
-      <node ref="VID_ROM1" pin="11"/>
-      <node ref="VID_BUFFER1" pin="2"/>
-    </net>
-    <net code="265" name="CLK">
-      <node ref="J5" pin="20"/>
-      <node ref="J8" pin="20"/>
-      <node ref="JP4" pin="2"/>
-      <node ref="JP6" pin="2"/>
-      <node ref="JP5" pin="2"/>
-      <node ref="J7" pin="20"/>
-      <node ref="J6" pin="20"/>
-      <node ref="CPU1" pin="37"/>
-    </net>
-    <net code="266" name="SYNC">
-      <node ref="J8" pin="41"/>
-      <node ref="VID_ROM1" pin="25"/>
-      <node ref="J7" pin="41"/>
-      <node ref="J5" pin="41"/>
-      <node ref="CPU1" pin="7"/>
-      <node ref="J6" pin="41"/>
-    </net>
-    <net code="267" name="Net-(IRQ_MASK1-Pad15)">
-      <node ref="IRQ_MASK1" pin="15"/>
-    </net>
-    <net code="268" name="Net-(IRQ_MASK1-Pad14)">
-      <node ref="IRQ_MASK1" pin="14"/>
-    </net>
-    <net code="269" name="Net-(IRQ_MASK1-Pad13)">
-      <node ref="IRQ_MASK1" pin="13"/>
-    </net>
-    <net code="270" name="Net-(IRQ_MASK1-Pad12)">
-      <node ref="IRQ_MASK1" pin="12"/>
-    </net>
-    <net code="271" name="Net-(X1-Pad1)">
-      <node ref="X1" pin="1"/>
-    </net>
-    <net code="272" name="~IRQ2">
-      <node ref="IRQ_DECODE1" pin="12"/>
-      <node ref="65SIB1" pin="21"/>
-      <node ref="R6" pin="2"/>
-    </net>
-    <net code="273" name="~IRQ3">
-      <node ref="IRQ_DECODE1" pin="13"/>
-      <node ref="R5" pin="2"/>
-    </net>
-    <net code="274" name="~IRQ4">
-      <node ref="R4" pin="2"/>
-      <node ref="J5" pin="32"/>
-      <node ref="J7" pin="32"/>
-      <node ref="J6" pin="32"/>
-      <node ref="IRQ_DECODE1" pin="1"/>
-      <node ref="J8" pin="32"/>
-    </net>
-    <net code="275" name="~IRQ7">
-      <node ref="IRQ_DECODE1" pin="4"/>
-      <node ref="J7" pin="38"/>
-      <node ref="J5" pin="38"/>
-      <node ref="J6" pin="38"/>
-      <node ref="J8" pin="38"/>
-      <node ref="R1" pin="2"/>
-    </net>
-    <net code="276" name="~IRQ6">
-      <node ref="J7" pin="36"/>
-      <node ref="J5" pin="36"/>
-      <node ref="J6" pin="36"/>
-      <node ref="R2" pin="2"/>
-      <node ref="J8" pin="36"/>
-      <node ref="IRQ_DECODE1" pin="3"/>
-    </net>
-    <net code="277" name="~IRQ5">
-      <node ref="J7" pin="34"/>
-      <node ref="J6" pin="34"/>
-      <node ref="J8" pin="34"/>
-      <node ref="J5" pin="34"/>
-      <node ref="IRQ_DECODE1" pin="2"/>
-      <node ref="R3" pin="2"/>
-    </net>
-    <net code="278" name="CTS_COM">
-      <node ref="UART1" pin="9"/>
-      <node ref="UART-RS232" pin="6"/>
-    </net>
-    <net code="279" name="DCD_COM_PORT">
-      <node ref="J3" pin="1"/>
-      <node ref="UART-RS232" pin="18"/>
-    </net>
-    <net code="280" name="Net-(UART-RS232-Pad19)">
-      <node ref="UART-RS232" pin="19"/>
-    </net>
-    <net code="281" name="DTR_COM_PORT">
-      <node ref="UART-RS232" pin="2"/>
-      <node ref="J3" pin="7"/>
-    </net>
-    <net code="282" name="Net-(UART-RS232-Pad22)">
-      <node ref="UART-RS232" pin="22"/>
-    </net>
-    <net code="283" name="DSR_COM">
-      <node ref="UART-RS232" pin="23"/>
-      <node ref="UART1" pin="17"/>
-    </net>
-    <net code="284" name="DSR_COM_PORT">
-      <node ref="J3" pin="2"/>
-      <node ref="UART-RS232" pin="24"/>
-    </net>
-    <net code="285" name="Tx_COM_PORT">
-      <node ref="UART-RS232" pin="3"/>
-      <node ref="J3" pin="5"/>
-    </net>
-    <net code="286" name="RTS_COM_PORT">
-      <node ref="J3" pin="4"/>
-      <node ref="UART-RS232" pin="4"/>
-    </net>
-    <net code="287" name="CTS_COM_PORT">
-      <node ref="J3" pin="6"/>
-      <node ref="UART-RS232" pin="5"/>
-    </net>
-    <net code="288" name="DCD_COM">
-      <node ref="UART1" pin="16"/>
-      <node ref="UART-RS232" pin="17"/>
-    </net>
-    <net code="289" name="Tx_COM">
-      <node ref="UART1" pin="10"/>
-      <node ref="UART-RS232" pin="8"/>
-    </net>
-    <net code="290" name="Rx_COM">
-      <node ref="UART1" pin="12"/>
-      <node ref="UART-RS232" pin="9"/>
-    </net>
-    <net code="291" name="Net-(UART-RS232-Pad1)">
-      <node ref="UART-RS232" pin="1"/>
-    </net>
-    <net code="292" name="Net-(UART-RS232-Pad16)">
-      <node ref="UART-RS232" pin="16"/>
-    </net>
-    <net code="293" name="Rx_COM_PORT">
-      <node ref="UART-RS232" pin="10"/>
-      <node ref="J3" pin="3"/>
-    </net>
-    <net code="294" name="DTR_COM">
-      <node ref="UART-RS232" pin="15"/>
-      <node ref="UART1" pin="11"/>
-    </net>
-    <net code="295" name="VID_OE">
-      <node ref="U3" pin="11"/>
-      <node ref="VID_ROM1" pin="22"/>
-    </net>
-    <net code="296" name="Net-(U5-Pad8)">
-      <node ref="VID_BUFFER1" pin="19"/>
-      <node ref="U5" pin="8"/>
-      <node ref="VID_BUFFER1" pin="1"/>
-    </net>
-    <net code="297" name="Net-(U13-Pad8)">
-      <node ref="U13" pin="8"/>
-    </net>
-    <net code="298" name="FUSE_OUT">
-      <node ref="R12" pin="2"/>
-      <node ref="C1" pin="1"/>
-      <node ref="Q1" pin="2"/>
-      <node ref="R14" pin="2"/>
-      <node ref="U1" pin="1"/>
-      <node ref="R13" pin="1"/>
-      <node ref="U13" pin="6"/>
-    </net>
-    <net code="299" name="Net-(U13-Pad7)">
-      <node ref="U13" pin="7"/>
-    </net>
-    <net code="300" name="Net-(U13-Pad1)">
-      <node ref="U13" pin="1"/>
-    </net>
-    <net code="301" name="-12v">
-      <node ref="J2" pin="13"/>
-      <node ref="J5" pin="40"/>
-      <node ref="J8" pin="40"/>
-      <node ref="-12v1" pin="1"/>
-      <node ref="U14" pin="3"/>
-      <node ref="J7" pin="40"/>
-      <node ref="J6" pin="40"/>
-      <node ref="CP3" pin="2"/>
-    </net>
-    <net code="302" name="Net-(R14-Pad1)">
-      <node ref="R14" pin="1"/>
-      <node ref="U13" pin="2"/>
-    </net>
-    <net code="303" name="Net-(U15-Pad2)">
-      <node ref="U15" pin="2"/>
-      <node ref="U5" pin="9"/>
-    </net>
-    <net code="304" name="Net-(UART_CLK1-Pad1)">
-      <node ref="UART_CLK1" pin="1"/>
-    </net>
-    <net code="305" name="SEL5\">
-      <node ref="65SIB_LATCH1" pin="10"/>
-      <node ref="J2" pin="17"/>
-    </net>
-    <net code="306" name="SEL6\">
-      <node ref="J2" pin="18"/>
-      <node ref="65SIB_LATCH1" pin="9"/>
-    </net>
-    <net code="307" name="SEL7\">
-      <node ref="J2" pin="20"/>
-      <node ref="65SIB_LATCH1" pin="7"/>
-    </net>
-    <net code="308" name="65SIB_IRQ\">
-      <node ref="J2" pin="9"/>
-      <node ref="65SIB1" pin="40"/>
-    </net>
-    <net code="309" name="Net-(~CS_DEV1-Pad7)">
-      <node ref="~CS_DEV1" pin="7"/>
-    </net>
-    <net code="310" name="Net-(~CS_DEV1-Pad9)">
-      <node ref="~CS_DEV1" pin="9"/>
-    </net>
-    <net code="311" name="Net-(~CS_DEV1-Pad15)">
-      <node ref="~CS_DEV1" pin="15"/>
-    </net>
-    <net code="312" name="Net-(~CS_DEV1-Pad14)">
-      <node ref="~CS_DEV1" pin="14"/>
-    </net>
-    <net code="313" name="Net-(~CS_DEV1-Pad13)">
-      <node ref="~CS_DEV1" pin="13"/>
-    </net>
-    <net code="314" name="Net-(~CS_DEV1-Pad12)">
-      <node ref="~CS_DEV1" pin="12"/>
-    </net>
-    <net code="315" name="Net-(~CS_DEV1-Pad11)">
-      <node ref="~CS_DEV1" pin="11"/>
-    </net>
-    <net code="316" name="FUSE_IN">
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="21" name="Net-(65SIB1-Pad6)">
+      <node ref="65SIB_LATCH1" pin="1"/>
+      <node ref="65SIB1" pin="6"/>
+    </net>
+    <net code="22" name="A10">
+      <node ref="RAM3" pin="21"/>
+      <node ref="ROM4" pin="21"/>
+      <node ref="ROM3" pin="21"/>
+      <node ref="RAM1" pin="21"/>
+      <node ref="ROM1" pin="21"/>
+      <node ref="SHARED_ROM1" pin="21"/>
+      <node ref="CS_65SIB_NOR1" pin="13"/>
+      <node ref="J5" pin="25"/>
+      <node ref="J8" pin="25"/>
+      <node ref="J7" pin="25"/>
+      <node ref="RAM4" pin="21"/>
+      <node ref="RAM2" pin="21"/>
+      <node ref="CPU1" pin="19"/>
+      <node ref="ROM2" pin="21"/>
+      <node ref="CS_GPIO_NOR1" pin="11"/>
+      <node ref="J6" pin="25"/>
+    </net>
+    <net code="23" name="A6">
+      <node ref="RAM2" pin="4"/>
+      <node ref="J5" pin="17"/>
+      <node ref="ROM4" pin="4"/>
+      <node ref="J8" pin="17"/>
+      <node ref="CS_65SIB_AND4" pin="12"/>
+      <node ref="SHARED_ROM1" pin="4"/>
+      <node ref="CS_GPIO_NOR1" pin="1"/>
+      <node ref="CPU1" pin="15"/>
+      <node ref="ROM3" pin="4"/>
+      <node ref="J6" pin="17"/>
+      <node ref="ROM1" pin="4"/>
+      <node ref="RAM3" pin="4"/>
+      <node ref="RAM4" pin="4"/>
+      <node ref="RAM1" pin="4"/>
+      <node ref="CS_UART_NOR1" pin="5"/>
+      <node ref="J7" pin="17"/>
+      <node ref="ROM2" pin="4"/>
+    </net>
+    <net code="24" name="Net-(CS_GPIO_AND4-Pad12)">
+      <node ref="CS_GPIO_AND4" pin="12"/>
+      <node ref="CS_GPIO_NOR1" pin="2"/>
+    </net>
+    <net code="25" name="A7">
+      <node ref="RAM4" pin="3"/>
+      <node ref="ROM2" pin="3"/>
+      <node ref="CPU1" pin="16"/>
+      <node ref="RAM1" pin="3"/>
+      <node ref="J5" pin="19"/>
+      <node ref="J8" pin="19"/>
+      <node ref="CS_65SIB_AND4" pin="13"/>
+      <node ref="ROM1" pin="3"/>
+      <node ref="CS_UART_NOR1" pin="9"/>
+      <node ref="ROM4" pin="3"/>
+      <node ref="CS_GPIO_NOR1" pin="3"/>
+      <node ref="ROM3" pin="3"/>
+      <node ref="J7" pin="19"/>
+      <node ref="J6" pin="19"/>
+      <node ref="SHARED_ROM1" pin="3"/>
+      <node ref="RAM2" pin="3"/>
+      <node ref="RAM3" pin="3"/>
+    </net>
+    <net code="26" name="Net-(CS_GPIO_AND4-Pad13)">
+      <node ref="CS_GPIO_NOR1" pin="4"/>
+      <node ref="CS_GPIO_AND4" pin="13"/>
+    </net>
+    <net code="27" name="A8">
+      <node ref="RAM1" pin="25"/>
+      <node ref="RAM2" pin="25"/>
+      <node ref="J8" pin="21"/>
+      <node ref="RAM3" pin="25"/>
+      <node ref="RAM4" pin="25"/>
+      <node ref="CS_UART_NOR1" pin="11"/>
+      <node ref="ROM4" pin="25"/>
+      <node ref="ROM2" pin="25"/>
+      <node ref="ROM1" pin="25"/>
+      <node ref="J7" pin="21"/>
+      <node ref="CS_GPIO_NOR1" pin="5"/>
+      <node ref="J5" pin="21"/>
+      <node ref="SHARED_ROM1" pin="25"/>
+      <node ref="J6" pin="21"/>
+      <node ref="ROM3" pin="25"/>
+      <node ref="CPU1" pin="17"/>
+      <node ref="CS_65SIB_NOR1" pin="9"/>
+    </net>
+    <net code="28" name="Net-(CS_GPIO_AND4-Pad1)">
+      <node ref="CS_GPIO_AND4" pin="1"/>
+      <node ref="CS_GPIO_NOR1" pin="6"/>
+    </net>
+    <net code="29" name="A9">
+      <node ref="J8" pin="23"/>
+      <node ref="J7" pin="23"/>
+      <node ref="RAM3" pin="24"/>
+      <node ref="ROM3" pin="24"/>
+      <node ref="RAM2" pin="24"/>
+      <node ref="ROM4" pin="24"/>
+      <node ref="J5" pin="23"/>
+      <node ref="RAM1" pin="24"/>
+      <node ref="CS_65SIB_NOR1" pin="11"/>
+      <node ref="J6" pin="23"/>
+      <node ref="RAM4" pin="24"/>
+      <node ref="CS_UART_NOR1" pin="13"/>
+      <node ref="ROM2" pin="24"/>
+      <node ref="CPU1" pin="18"/>
+      <node ref="SHARED_ROM1" pin="24"/>
+      <node ref="ROM1" pin="24"/>
+      <node ref="CS_GPIO_NOR1" pin="9"/>
+    </net>
+    <net code="30" name="A11">
+      <node ref="RAM4" pin="23"/>
+      <node ref="ROM1" pin="23"/>
+      <node ref="CS_65SIB_NOR2" pin="1"/>
+      <node ref="ROM2" pin="23"/>
+      <node ref="ROM4" pin="23"/>
+      <node ref="RAM3" pin="23"/>
+      <node ref="RAM1" pin="23"/>
+      <node ref="ROM3" pin="23"/>
+      <node ref="J6" pin="27"/>
+      <node ref="SHARED_ROM1" pin="23"/>
+      <node ref="J7" pin="27"/>
+      <node ref="RAM2" pin="23"/>
+      <node ref="CS_GPIO_NOR1" pin="13"/>
+      <node ref="J5" pin="27"/>
+      <node ref="J8" pin="27"/>
+      <node ref="CPU1" pin="20"/>
+    </net>
+    <net code="31" name="Net-(CS_GPIO_AND4-Pad4)">
+      <node ref="CS_GPIO_NOR1" pin="10"/>
+      <node ref="CS_GPIO_AND4" pin="4"/>
+    </net>
+    <net code="32" name="Net-(CS_GPIO_AND4-Pad2)">
+      <node ref="CS_GPIO_AND4" pin="2"/>
+      <node ref="CS_GPIO_NOR1" pin="8"/>
+    </net>
+    <net code="33" name="Net-(CS_GPIO_AND4-Pad5)">
+      <node ref="CS_GPIO_NOR1" pin="12"/>
+      <node ref="CS_GPIO_AND4" pin="5"/>
+    </net>
+    <net code="34" name="Net-(CS_GPIO_AND1-Pad10)">
+      <node ref="CS_GPIO_AND4" pin="6"/>
+      <node ref="CS_GPIO_AND1" pin="10"/>
+    </net>
+    <net code="35" name="A5">
+      <node ref="CS_UART_NOR1" pin="3"/>
+      <node ref="ROM2" pin="5"/>
+      <node ref="ROM3" pin="5"/>
+      <node ref="ROM1" pin="5"/>
+      <node ref="J6" pin="15"/>
+      <node ref="RAM2" pin="5"/>
+      <node ref="J7" pin="15"/>
+      <node ref="CPU1" pin="14"/>
+      <node ref="J8" pin="15"/>
+      <node ref="J5" pin="15"/>
+      <node ref="ROM4" pin="5"/>
+      <node ref="CS_65SIB_NOR1" pin="3"/>
+      <node ref="RAM4" pin="5"/>
+      <node ref="RAM3" pin="5"/>
+      <node ref="CS_GPIO_AND4" pin="10"/>
+      <node ref="SHARED_ROM1" pin="5"/>
+      <node ref="RAM1" pin="5"/>
+    </net>
+    <net code="36" name="Net-(CS_GPIO_AND1-Pad9)">
+      <node ref="CS_GPIO_AND1" pin="9"/>
+      <node ref="CS_GPIO_AND4" pin="8"/>
+    </net>
+    <net code="37" name="A4">
+      <node ref="ROM3" pin="6"/>
+      <node ref="J5" pin="13"/>
+      <node ref="ROM2" pin="6"/>
+      <node ref="SHARED_ROM1" pin="6"/>
+      <node ref="J8" pin="13"/>
+      <node ref="ROM4" pin="6"/>
+      <node ref="ROM1" pin="6"/>
+      <node ref="RAM1" pin="6"/>
+      <node ref="RAM2" pin="6"/>
+      <node ref="CS_UART_AND4" pin="12"/>
+      <node ref="CPU1" pin="13"/>
+      <node ref="RAM3" pin="6"/>
+      <node ref="CS_GPIO_AND4" pin="9"/>
+      <node ref="J7" pin="13"/>
+      <node ref="RAM4" pin="6"/>
+      <node ref="CS_65SIB_NOR1" pin="1"/>
+      <node ref="J6" pin="13"/>
+    </net>
+    <net code="38" name="Net-(TR1-Pad12)">
+      <node ref="TR1" pin="12"/>
+    </net>
+    <net code="39" name="Net-(TR1-Pad11)">
+      <node ref="TR1" pin="11"/>
+    </net>
+    <net code="40" name="FUSE_IN">
+      <node ref="SW2" pin="1"/>
       <node ref="SW1" pin="5"/>
       <node ref="Q1" pin="3"/>
       <node ref="Q2" pin="2"/>
-      <node ref="SW2" pin="1"/>
     </net>
-    <net code="317" name="Net-(R15-Pad2)">
-      <node ref="SW2" pin="2"/>
+    <net code="41" name="Net-(65SIB1-Pad15)">
+      <node ref="65SIB1" pin="15"/>
+    </net>
+    <net code="42" name="Net-(R17-Pad1)">
+      <node ref="SHARED_ROM1" pin="27"/>
+      <node ref="R17" pin="1"/>
+    </net>
+    <net code="43" name="A3">
+      <node ref="J5" pin="11"/>
+      <node ref="J6" pin="11"/>
+      <node ref="ROM4" pin="7"/>
+      <node ref="ROM1" pin="7"/>
+      <node ref="RAM4" pin="7"/>
+      <node ref="RAM3" pin="7"/>
+      <node ref="GPIO_CTRL1" pin="35"/>
+      <node ref="RAM1" pin="7"/>
+      <node ref="J7" pin="11"/>
+      <node ref="65SIB1" pin="35"/>
+      <node ref="CPU1" pin="12"/>
+      <node ref="CS_UART_NOR1" pin="1"/>
+      <node ref="ROM2" pin="7"/>
+      <node ref="RAM2" pin="7"/>
+      <node ref="SHARED_ROM1" pin="7"/>
+      <node ref="ROM3" pin="7"/>
+      <node ref="J8" pin="11"/>
+    </net>
+    <net code="44" name="A2">
+      <node ref="GPIO_CTRL1" pin="36"/>
+      <node ref="J7" pin="9"/>
+      <node ref="CPU1" pin="11"/>
+      <node ref="ROM4" pin="8"/>
+      <node ref="J5" pin="9"/>
+      <node ref="RAM3" pin="8"/>
+      <node ref="J8" pin="9"/>
+      <node ref="J6" pin="9"/>
+      <node ref="RAM1" pin="8"/>
+      <node ref="ROM1" pin="8"/>
+      <node ref="65SIB1" pin="36"/>
+      <node ref="RAM2" pin="8"/>
+      <node ref="ROM3" pin="8"/>
+      <node ref="ROM2" pin="8"/>
+      <node ref="CS_UART_AND4" pin="9"/>
+      <node ref="RAM4" pin="8"/>
+      <node ref="SHARED_ROM1" pin="8"/>
+    </net>
+    <net code="45" name="A1">
+      <node ref="RAM2" pin="9"/>
+      <node ref="ROM3" pin="9"/>
+      <node ref="J5" pin="7"/>
+      <node ref="J6" pin="7"/>
+      <node ref="65SIB1" pin="37"/>
+      <node ref="GPIO_CTRL1" pin="37"/>
+      <node ref="UART1" pin="14"/>
+      <node ref="RAM1" pin="9"/>
+      <node ref="SHARED_ROM1" pin="9"/>
+      <node ref="RAM4" pin="9"/>
+      <node ref="J8" pin="7"/>
+      <node ref="RAM3" pin="9"/>
+      <node ref="ROM2" pin="9"/>
+      <node ref="J7" pin="7"/>
+      <node ref="ROM1" pin="9"/>
+      <node ref="ROM4" pin="9"/>
+      <node ref="CPU1" pin="10"/>
+    </net>
+    <net code="46" name="Net-(ROM1-Pad1)">
+      <node ref="ROM1" pin="1"/>
+    </net>
+    <net code="47" name="MEM_D0">
+      <node ref="ROM3" pin="11"/>
+      <node ref="J7" pin="2"/>
+      <node ref="RAM1" pin="11"/>
+      <node ref="J6" pin="2"/>
+      <node ref="J8" pin="2"/>
+      <node ref="IRQ_MASK1" pin="2"/>
+      <node ref="ROM1" pin="11"/>
+      <node ref="UART1" pin="18"/>
+      <node ref="RAM3" pin="11"/>
+      <node ref="VID_BUFFER1" pin="18"/>
+      <node ref="RAM4" pin="11"/>
+      <node ref="IRQ_PRIORITY1" pin="19"/>
+      <node ref="SHARED_ROM1" pin="11"/>
+      <node ref="ROM4" pin="11"/>
+      <node ref="65SIB1" pin="33"/>
+      <node ref="GPIO_CTRL1" pin="33"/>
+      <node ref="J5" pin="2"/>
+      <node ref="VID_DECODER1" pin="10"/>
+      <node ref="RAM2" pin="11"/>
+      <node ref="ROM2" pin="11"/>
+    </net>
+    <net code="48" name="MEM_D1">
+      <node ref="RAM1" pin="12"/>
+      <node ref="UART1" pin="19"/>
+      <node ref="RAM3" pin="12"/>
+      <node ref="J8" pin="4"/>
+      <node ref="RAM2" pin="12"/>
+      <node ref="J5" pin="4"/>
+      <node ref="IRQ_PRIORITY1" pin="18"/>
+      <node ref="ROM3" pin="12"/>
+      <node ref="VID_BUFFER1" pin="17"/>
+      <node ref="ROM4" pin="12"/>
+      <node ref="SHARED_ROM1" pin="12"/>
+      <node ref="J6" pin="4"/>
+      <node ref="J7" pin="4"/>
+      <node ref="ROM2" pin="12"/>
+      <node ref="IRQ_MASK1" pin="3"/>
+      <node ref="VID_DECODER1" pin="9"/>
+      <node ref="RAM4" pin="12"/>
+      <node ref="65SIB1" pin="32"/>
+      <node ref="GPIO_CTRL1" pin="32"/>
+      <node ref="ROM1" pin="12"/>
+    </net>
+    <net code="49" name="Net-(SHARED_ROM1-Pad1)">
+      <node ref="SHARED_ROM1" pin="1"/>
+    </net>
+    <net code="50" name="Net-(RAM1-Pad20)">
+      <node ref="RAM1" pin="20"/>
+      <node ref="RS_NAND2" pin="3"/>
+    </net>
+    <net code="51" name="Net-(RS_NAND1-Pad5)">
+      <node ref="RS_NAND1" pin="5"/>
+      <node ref="RS_NOR1" pin="2"/>
+    </net>
+    <net code="52" name="~RAM_WE">
+      <node ref="RAM2" pin="27"/>
+      <node ref="RAM3" pin="27"/>
+      <node ref="RS_NAND1" pin="6"/>
+      <node ref="RAM1" pin="27"/>
+      <node ref="RAM4" pin="27"/>
+    </net>
+    <net code="53" name="Net-(CS_65SIB_AND4-Pad10)">
+      <node ref="CS_65SIB_AND4" pin="10"/>
+      <node ref="CS_65SIB_NOR1" pin="4"/>
+    </net>
+    <net code="54" name="MEM_D2">
+      <node ref="ROM1" pin="13"/>
+      <node ref="RAM3" pin="13"/>
+      <node ref="SHARED_ROM1" pin="13"/>
+      <node ref="J5" pin="6"/>
+      <node ref="IRQ_MASK1" pin="4"/>
+      <node ref="J6" pin="6"/>
+      <node ref="VID_BUFFER1" pin="16"/>
+      <node ref="ROM3" pin="13"/>
+      <node ref="RAM4" pin="13"/>
+      <node ref="ROM2" pin="13"/>
+      <node ref="RAM1" pin="13"/>
+      <node ref="J7" pin="6"/>
+      <node ref="J8" pin="6"/>
+      <node ref="RAM2" pin="13"/>
+      <node ref="UART1" pin="20"/>
+      <node ref="VID_DECODER1" pin="8"/>
+      <node ref="IRQ_PRIORITY1" pin="17"/>
+      <node ref="GPIO_CTRL1" pin="31"/>
+      <node ref="ROM4" pin="13"/>
+      <node ref="65SIB1" pin="31"/>
+    </net>
+    <net code="55" name="A0">
+      <node ref="J8" pin="5"/>
+      <node ref="RAM4" pin="10"/>
+      <node ref="ROM2" pin="10"/>
+      <node ref="ROM4" pin="10"/>
+      <node ref="CPU1" pin="9"/>
+      <node ref="J7" pin="5"/>
+      <node ref="UART1" pin="13"/>
+      <node ref="RAM1" pin="10"/>
+      <node ref="SHARED_ROM1" pin="10"/>
+      <node ref="65SIB1" pin="38"/>
+      <node ref="GPIO_CTRL1" pin="38"/>
+      <node ref="J5" pin="5"/>
+      <node ref="RAM2" pin="10"/>
+      <node ref="ROM3" pin="10"/>
+      <node ref="ROM1" pin="10"/>
+      <node ref="J6" pin="5"/>
+      <node ref="RAM3" pin="10"/>
+    </net>
+    <net code="56" name="Net-(R21-Pad2)">
+      <node ref="ROM1" pin="27"/>
+      <node ref="R21" pin="2"/>
+    </net>
+    <net code="57" name="MEM_D3">
+      <node ref="J6" pin="8"/>
+      <node ref="ROM4" pin="15"/>
+      <node ref="J7" pin="8"/>
+      <node ref="IRQ_PRIORITY1" pin="16"/>
+      <node ref="RAM2" pin="15"/>
+      <node ref="UART1" pin="21"/>
+      <node ref="RAM1" pin="15"/>
+      <node ref="65SIB1" pin="30"/>
+      <node ref="GPIO_CTRL1" pin="30"/>
+      <node ref="J8" pin="8"/>
+      <node ref="VID_DECODER1" pin="7"/>
+      <node ref="ROM2" pin="15"/>
+      <node ref="IRQ_MASK1" pin="5"/>
+      <node ref="RAM4" pin="15"/>
+      <node ref="ROM1" pin="15"/>
+      <node ref="VID_BUFFER1" pin="15"/>
+      <node ref="ROM3" pin="15"/>
+      <node ref="SHARED_ROM1" pin="15"/>
+      <node ref="J5" pin="8"/>
+      <node ref="RAM3" pin="15"/>
+    </net>
+    <net code="58" name="MEM_D4">
+      <node ref="ROM4" pin="16"/>
+      <node ref="J7" pin="10"/>
+      <node ref="IRQ_PRIORITY1" pin="15"/>
+      <node ref="J6" pin="10"/>
+      <node ref="ROM2" pin="16"/>
+      <node ref="VID_BUFFER1" pin="14"/>
+      <node ref="RAM4" pin="16"/>
+      <node ref="VID_DECODER1" pin="6"/>
+      <node ref="RAM2" pin="16"/>
+      <node ref="ROM1" pin="16"/>
+      <node ref="SHARED_ROM1" pin="16"/>
+      <node ref="ROM3" pin="16"/>
+      <node ref="65SIB1" pin="29"/>
+      <node ref="GPIO_CTRL1" pin="29"/>
+      <node ref="UART1" pin="22"/>
+      <node ref="J8" pin="10"/>
+      <node ref="RAM1" pin="16"/>
+      <node ref="IRQ_MASK1" pin="6"/>
+      <node ref="J5" pin="10"/>
+      <node ref="RAM3" pin="16"/>
+    </net>
+    <net code="59" name="MEM_D5">
+      <node ref="J6" pin="12"/>
+      <node ref="GPIO_CTRL1" pin="28"/>
+      <node ref="J8" pin="12"/>
+      <node ref="VID_DECODER1" pin="5"/>
+      <node ref="J5" pin="12"/>
+      <node ref="ROM1" pin="17"/>
+      <node ref="VID_BUFFER1" pin="13"/>
+      <node ref="IRQ_MASK1" pin="7"/>
+      <node ref="SHARED_ROM1" pin="17"/>
+      <node ref="RAM4" pin="17"/>
+      <node ref="RAM3" pin="17"/>
+      <node ref="65SIB1" pin="28"/>
+      <node ref="ROM3" pin="17"/>
+      <node ref="RAM1" pin="17"/>
+      <node ref="IRQ_PRIORITY1" pin="14"/>
+      <node ref="J7" pin="12"/>
+      <node ref="ROM2" pin="17"/>
+      <node ref="RAM2" pin="17"/>
+      <node ref="ROM4" pin="17"/>
+      <node ref="UART1" pin="23"/>
+    </net>
+    <net code="60" name="MEM_D6">
+      <node ref="J7" pin="14"/>
+      <node ref="VID_DECODER1" pin="4"/>
+      <node ref="RAM2" pin="18"/>
+      <node ref="SHARED_ROM1" pin="18"/>
+      <node ref="IRQ_MASK1" pin="8"/>
+      <node ref="RAM4" pin="18"/>
+      <node ref="RAM3" pin="18"/>
+      <node ref="VID_BUFFER1" pin="12"/>
+      <node ref="J8" pin="14"/>
+      <node ref="ROM4" pin="18"/>
+      <node ref="J5" pin="14"/>
+      <node ref="RAM1" pin="18"/>
+      <node ref="GPIO_CTRL1" pin="27"/>
+      <node ref="UART1" pin="24"/>
+      <node ref="IRQ_PRIORITY1" pin="13"/>
+      <node ref="J6" pin="14"/>
+      <node ref="65SIB1" pin="27"/>
+      <node ref="ROM2" pin="18"/>
+      <node ref="ROM3" pin="18"/>
+      <node ref="ROM1" pin="18"/>
+    </net>
+    <net code="61" name="MEM_D7">
+      <node ref="UART1" pin="25"/>
+      <node ref="IRQ_MASK1" pin="9"/>
+      <node ref="RAM1" pin="19"/>
+      <node ref="ROM2" pin="19"/>
+      <node ref="RAM4" pin="19"/>
+      <node ref="ROM1" pin="19"/>
+      <node ref="VID_BUFFER1" pin="11"/>
+      <node ref="SHARED_ROM1" pin="19"/>
+      <node ref="J7" pin="16"/>
+      <node ref="RAM2" pin="19"/>
+      <node ref="IRQ_PRIORITY1" pin="12"/>
+      <node ref="RAM3" pin="19"/>
+      <node ref="GPIO_CTRL1" pin="26"/>
+      <node ref="ROM3" pin="19"/>
+      <node ref="J8" pin="16"/>
+      <node ref="J6" pin="16"/>
+      <node ref="VID_DECODER1" pin="3"/>
+      <node ref="J5" pin="16"/>
+      <node ref="65SIB1" pin="26"/>
+      <node ref="ROM4" pin="19"/>
+    </net>
+    <net code="62" name="A12">
+      <node ref="J8" pin="29"/>
+      <node ref="J7" pin="29"/>
+      <node ref="RAM1" pin="2"/>
+      <node ref="~CS_DEV1" pin="1"/>
+      <node ref="SHARED_ROM1" pin="2"/>
+      <node ref="ROM2" pin="2"/>
+      <node ref="ROM3" pin="2"/>
+      <node ref="RAM3" pin="2"/>
+      <node ref="J5" pin="29"/>
+      <node ref="J6" pin="29"/>
+      <node ref="ROM4" pin="2"/>
+      <node ref="RAM4" pin="2"/>
+      <node ref="CPU1" pin="22"/>
+      <node ref="ROM1" pin="2"/>
+      <node ref="RAM2" pin="2"/>
+    </net>
+    <net code="63" name="XTL1_COM">
+      <node ref="UART1" pin="6"/>
+      <node ref="UART_CLK1" pin="8"/>
+    </net>
+    <net code="64" name="~IRQ0">
+      <node ref="UART1" pin="26"/>
+      <node ref="R8" pin="2"/>
+      <node ref="IRQ_DECODE1" pin="10"/>
+    </net>
+    <net code="65" name="Net-(UART1-Pad5)">
+      <node ref="UART1" pin="5"/>
+    </net>
+    <net code="66" name="R\~W">
+      <node ref="J7" pin="37"/>
+      <node ref="J5" pin="37"/>
+      <node ref="CPU1" pin="34"/>
+      <node ref="IRQ_NOR1" pin="1"/>
+      <node ref="GPIO_CTRL1" pin="22"/>
+      <node ref="RS_NOR1" pin="1"/>
+      <node ref="CS_VID_NAND1" pin="12"/>
+      <node ref="RS_NAND1" pin="2"/>
+      <node ref="65SIB1" pin="22"/>
+      <node ref="UART1" pin="28"/>
+      <node ref="CS_VID_NOR1" pin="1"/>
+      <node ref="J8" pin="37"/>
+      <node ref="J6" pin="37"/>
+    </net>
+    <net code="67" name="Net-(65SIB1-Pad14)">
+      <node ref="65SIB1" pin="14"/>
+    </net>
+    <net code="68" name="Net-(65SIB1-Pad13)">
+      <node ref="65SIB1" pin="13"/>
+    </net>
+    <net code="69" name="Net-(65SIB1-Pad12)">
+      <node ref="65SIB1" pin="12"/>
+    </net>
+    <net code="70" name="Net-(65SIB1-Pad11)">
+      <node ref="65SIB1" pin="11"/>
+    </net>
+    <net code="71" name="Net-(65SIB1-Pad10)">
+      <node ref="65SIB1" pin="10"/>
+    </net>
+    <net code="72" name="PHI2">
+      <node ref="UART1" pin="27"/>
+      <node ref="RS_NAND1" pin="1"/>
+      <node ref="J7" pin="24"/>
+      <node ref="J5" pin="24"/>
+      <node ref="J6" pin="24"/>
+      <node ref="RS_NAND1" pin="4"/>
+      <node ref="IRQ_PRIORITY1" pin="11"/>
+      <node ref="65SIB1" pin="25"/>
+      <node ref="GPIO_CTRL1" pin="25"/>
+      <node ref="CPU1" pin="39"/>
+      <node ref="CS_VID_NAND1" pin="13"/>
+      <node ref="CS_VID_NAND1" pin="10"/>
+      <node ref="J8" pin="24"/>
+    </net>
+    <net code="73" name="~RAM_OE">
+      <node ref="RAM2" pin="22"/>
+      <node ref="RAM3" pin="22"/>
+      <node ref="RAM1" pin="22"/>
+      <node ref="RAM4" pin="22"/>
+      <node ref="RS_NAND1" pin="3"/>
+    </net>
+    <net code="74" name="RAM1_EN">
+      <node ref="RS_NOR2" pin="1"/>
+    </net>
+    <net code="75" name="Net-(RS_NAND2-Pad2)">
+      <node ref="RS_NAND2" pin="2"/>
+      <node ref="RS_NOR2" pin="2"/>
+    </net>
+    <net code="76" name="Net-(J3-Pad8)">
+      <node ref="J3" pin="8"/>
+    </net>
+    <net code="77" name="Net-(UART-RS232-Pad14)">
+      <node ref="UART-RS232" pin="14"/>
+    </net>
+    <net code="78" name="Net-(UART-RS232-Pad13)">
+      <node ref="UART-RS232" pin="13"/>
+    </net>
+    <net code="79" name="DSR_COM">
+      <node ref="UART-RS232" pin="23"/>
+      <node ref="UART1" pin="17"/>
+    </net>
+    <net code="80" name="DSR_COM_PORT">
+      <node ref="J3" pin="2"/>
+      <node ref="UART-RS232" pin="24"/>
+    </net>
+    <net code="81" name="Tx_COM_PORT">
+      <node ref="J3" pin="5"/>
+      <node ref="UART-RS232" pin="3"/>
+    </net>
+    <net code="82" name="RTS_COM_PORT">
+      <node ref="J3" pin="4"/>
+      <node ref="UART-RS232" pin="4"/>
+    </net>
+    <net code="83" name="CTS_COM_PORT">
+      <node ref="J3" pin="6"/>
+      <node ref="UART-RS232" pin="5"/>
+    </net>
+    <net code="84" name="CTS_COM">
+      <node ref="UART-RS232" pin="6"/>
+      <node ref="UART1" pin="9"/>
+    </net>
+    <net code="85" name="RTS_COM">
+      <node ref="UART-RS232" pin="7"/>
+      <node ref="UART1" pin="8"/>
+    </net>
+    <net code="86" name="Tx_COM">
+      <node ref="UART1" pin="10"/>
+      <node ref="UART-RS232" pin="8"/>
+    </net>
+    <net code="87" name="Rx_COM">
+      <node ref="UART-RS232" pin="9"/>
+      <node ref="UART1" pin="12"/>
+    </net>
+    <net code="88" name="Net-(UART-RS232-Pad1)">
+      <node ref="UART-RS232" pin="1"/>
+    </net>
+    <net code="89" name="Net-(UART-RS232-Pad19)">
+      <node ref="UART-RS232" pin="19"/>
+    </net>
+    <net code="90" name="Net-(UART-RS232-Pad22)">
+      <node ref="UART-RS232" pin="22"/>
+    </net>
+    <net code="91" name="Net-(UART-RS232-Pad16)">
+      <node ref="UART-RS232" pin="16"/>
+    </net>
+    <net code="92" name="Net-(-12v1-Pad2)">
+      <node ref="R11" pin="2"/>
+      <node ref="-12v1" pin="2"/>
+    </net>
+    <net code="93" name="Net-(5v1-Pad2)">
+      <node ref="5v1" pin="2"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="94" name="Net-(J8-Pad30)">
+      <node ref="J8" pin="30"/>
+    </net>
+    <net code="95" name="A13">
+      <node ref="CPU1" pin="23"/>
+      <node ref="ROM1_NAND1" pin="4"/>
+      <node ref="RAM4" pin="26"/>
+      <node ref="ROM3_NAND1" pin="4"/>
+      <node ref="RAM2" pin="26"/>
+      <node ref="~CS_DEV1" pin="2"/>
+      <node ref="J7" pin="31"/>
+      <node ref="J6" pin="31"/>
+      <node ref="J8" pin="31"/>
+      <node ref="CS_ROM_NAND1" pin="1"/>
+      <node ref="J5" pin="31"/>
+      <node ref="RAM3" pin="26"/>
+      <node ref="RAM1" pin="26"/>
+      <node ref="ROM4_NAND1" pin="4"/>
+      <node ref="ROM2_NAND1" pin="4"/>
+    </net>
+    <net code="96" name="A14">
+      <node ref="J8" pin="33"/>
+      <node ref="CS_ROM_NAND1" pin="5"/>
+      <node ref="~CS_DEV1" pin="3"/>
+      <node ref="J7" pin="33"/>
+      <node ref="ROM4_NAND1" pin="10"/>
+      <node ref="ROM3_NAND1" pin="10"/>
+      <node ref="RAM3" pin="1"/>
+      <node ref="J5" pin="33"/>
+      <node ref="ROM1_NAND1" pin="10"/>
+      <node ref="RAM1" pin="1"/>
+      <node ref="RAM2" pin="1"/>
+      <node ref="RAM4" pin="1"/>
+      <node ref="J6" pin="33"/>
+      <node ref="CPU1" pin="24"/>
+      <node ref="ROM2_NAND1" pin="10"/>
+    </net>
+    <net code="97" name="RDY">
+      <node ref="CPU1" pin="2"/>
+      <node ref="J8" pin="39"/>
+      <node ref="J5" pin="39"/>
+      <node ref="R18" pin="1"/>
+      <node ref="J7" pin="39"/>
+      <node ref="J6" pin="39"/>
+    </net>
+    <net code="98" name="SYNC">
+      <node ref="CPU1" pin="7"/>
+      <node ref="J6" pin="41"/>
+      <node ref="VID_DECODER1" pin="25"/>
+      <node ref="J7" pin="41"/>
+      <node ref="J8" pin="41"/>
+      <node ref="J5" pin="41"/>
+    </net>
+    <net code="99" name="~RESET">
+      <node ref="J7" pin="18"/>
+      <node ref="RESET_NOR1" pin="2"/>
+      <node ref="J6" pin="18"/>
+      <node ref="J5" pin="18"/>
+      <node ref="GPIO_CTRL1" pin="34"/>
+      <node ref="CPU1" pin="40"/>
+      <node ref="UART1" pin="4"/>
+      <node ref="65SIB1" pin="34"/>
+      <node ref="J8" pin="18"/>
+    </net>
+    <net code="100" name="Net-(J8-Pad26)">
+      <node ref="J8" pin="26"/>
+    </net>
+    <net code="101" name="Rx_COM_PORT">
+      <node ref="J3" pin="3"/>
+      <node ref="UART-RS232" pin="10"/>
+    </net>
+    <net code="102" name="DTR_COM">
+      <node ref="UART1" pin="11"/>
+      <node ref="UART-RS232" pin="15"/>
+    </net>
+    <net code="103" name="DCD_COM">
+      <node ref="UART1" pin="16"/>
+      <node ref="UART-RS232" pin="17"/>
+    </net>
+    <net code="104" name="DCD_COM_PORT">
+      <node ref="J3" pin="1"/>
+      <node ref="UART-RS232" pin="18"/>
+    </net>
+    <net code="105" name="DTR_COM_PORT">
+      <node ref="J3" pin="7"/>
+      <node ref="UART-RS232" pin="2"/>
+    </net>
+    <net code="106" name="Net-(CS_65SIB_AND4-Pad9)">
+      <node ref="CS_65SIB_AND4" pin="9"/>
+      <node ref="CS_65SIB_NOR1" pin="2"/>
+    </net>
+    <net code="107" name="Net-(CS_65SIB_AND4-Pad5)">
+      <node ref="CS_65SIB_AND4" pin="5"/>
+      <node ref="CS_65SIB_NOR2" pin="2"/>
+    </net>
+    <net code="108" name="Net-(CS_65SIB_AND1-Pad2)">
+      <node ref="CS_65SIB_AND1" pin="2"/>
+      <node ref="CS_65SIB_AND4" pin="6"/>
+    </net>
+    <net code="109" name="CS_65SIB">
+      <node ref="65SIB1" pin="24"/>
+      <node ref="65SIB_LATCH1" pin="6"/>
+      <node ref="CS_65SIB_AND1" pin="3"/>
+    </net>
+    <net code="110" name="Net-(CS_65SIB_AND1-Pad1)">
+      <node ref="CS_65SIB_AND1" pin="1"/>
+      <node ref="CS_65SIB_AND4" pin="8"/>
+    </net>
+    <net code="111" name="Net-(65SIB1-Pad39)">
+      <node ref="65SIB1" pin="39"/>
+    </net>
+    <net code="112" name="65SIB_IRQ\">
+      <node ref="65SIB1" pin="40"/>
+      <node ref="J2" pin="9"/>
+    </net>
+    <net code="113" name="CONF\">
+      <node ref="J2" pin="1"/>
+      <node ref="65SIB1" pin="8"/>
+    </net>
+    <net code="114" name="65SIB_MISO">
+      <node ref="J2" pin="7"/>
+      <node ref="65SIB1" pin="9"/>
+    </net>
+    <net code="115" name="Net-(CS_65SIB_AND4-Pad2)">
+      <node ref="CS_65SIB_NOR1" pin="10"/>
+      <node ref="CS_65SIB_AND4" pin="2"/>
+    </net>
+    <net code="116" name="Net-(CS_65SIB_AND4-Pad1)">
+      <node ref="CS_65SIB_AND4" pin="1"/>
+      <node ref="CS_65SIB_NOR1" pin="8"/>
+    </net>
+    <net code="117" name="Net-(CS_UART_AND4-Pad10)">
+      <node ref="CS_UART_NOR1" pin="2"/>
+      <node ref="CS_UART_AND4" pin="10"/>
+    </net>
+    <net code="118" name="Net-(CS_UART_AND4-Pad13)">
+      <node ref="CS_UART_NOR1" pin="4"/>
+      <node ref="CS_UART_AND4" pin="13"/>
+    </net>
+    <net code="119" name="Net-(CS_UART_AND1-Pad1)">
+      <node ref="CS_UART_AND1" pin="1"/>
+      <node ref="CS_UART_AND4" pin="8"/>
+    </net>
+    <net code="120" name="Net-(CS_65SIB_AND4-Pad4)">
+      <node ref="CS_65SIB_NOR1" pin="12"/>
+      <node ref="CS_65SIB_AND4" pin="4"/>
+    </net>
+    <net code="121" name="Net-(CS_ROM_NAND1-Pad3)">
+      <node ref="SHARED_ROM1" pin="20"/>
+      <node ref="CS_ROM_NAND1" pin="3"/>
+      <node ref="SHARED_ROM1" pin="22"/>
+    </net>
+    <net code="122" name="Net-(CS_ROM_NAND1-Pad6)">
+      <node ref="CS_ROM_NAND1" pin="6"/>
+      <node ref="CS_ROM_NOR1" pin="1"/>
+    </net>
+    <net code="123" name="Net-(CS_ROM_NAND1-Pad2)">
+      <node ref="CS_ROM_NOR1" pin="2"/>
+      <node ref="CS_ROM_NAND1" pin="2"/>
+    </net>
+    <net code="124" name="Net-(C5-Pad1)">
+      <node ref="RESET_GEN1" pin="2"/>
+      <node ref="SW3" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="R22" pin="2"/>
+    </net>
+    <net code="125" name="Net-(65SIB1-Pad18)">
+      <node ref="65SIB1" pin="18"/>
+    </net>
+    <net code="126" name="Net-(65SIB1-Pad19)">
+      <node ref="65SIB1" pin="19"/>
+    </net>
+    <net code="127" name="65SIB_CLK">
+      <node ref="65SIB1" pin="2"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="128" name="4MHz">
+      <node ref="CLK_DIV1" pin="5"/>
+      <node ref="JP5" pin="1"/>
+    </net>
+    <net code="129" name="8MHz">
+      <node ref="JP4" pin="1"/>
+      <node ref="X1" pin="8"/>
+      <node ref="CLK_DIV1" pin="3"/>
+    </net>
+    <net code="130" name="Net-(CLK_DIV1-Pad11)">
+      <node ref="CLK_DIV1" pin="11"/>
+      <node ref="CLK_DIV1" pin="2"/>
+      <node ref="CLK_DIV1" pin="6"/>
+    </net>
+    <net code="131" name="Net-(12v1-Pad2)">
+      <node ref="R10" pin="2"/>
+      <node ref="12v1" pin="2"/>
+    </net>
+    <net code="132" name="Net-(RAM2_NAND1-Pad2)">
+      <node ref="RAM2_NAND1" pin="2"/>
+      <node ref="RAM2_NOR1" pin="4"/>
+    </net>
+    <net code="133" name="Net-(RAM2-Pad20)">
+      <node ref="RAM2_NAND1" pin="3"/>
+      <node ref="RAM2" pin="20"/>
+    </net>
+    <net code="134" name="RAM2_EN">
+      <node ref="RAM2_NOR1" pin="3"/>
+    </net>
+    <net code="135" name="Net-(ROM4-Pad20)">
+      <node ref="ROM4" pin="20"/>
+      <node ref="ROM4" pin="22"/>
+      <node ref="ROM4_NAND1" pin="3"/>
+    </net>
+    <net code="136" name="ROM4_EN">
+      <node ref="ROM4_NOR1" pin="1"/>
+    </net>
+    <net code="137" name="Net-(ROM4_NAND1-Pad1)">
+      <node ref="ROM4_NAND1" pin="1"/>
+      <node ref="ROM4_NOR1" pin="4"/>
+    </net>
+    <net code="138" name="Net-(ROM4_NAND1-Pad2)">
+      <node ref="ROM4_NOR1" pin="2"/>
+      <node ref="ROM4_NAND1" pin="2"/>
+    </net>
+    <net code="139" name="Net-(ROM4-Pad1)">
+      <node ref="ROM4" pin="1"/>
+    </net>
+    <net code="140" name="Net-(ROM4_NAND1-Pad5)">
+      <node ref="ROM4_NOR1" pin="6"/>
+      <node ref="ROM4_NAND1" pin="5"/>
+    </net>
+    <net code="141" name="Net-(ROM4_NAND1-Pad6)">
+      <node ref="ROM4_NAND1" pin="6"/>
+      <node ref="ROM4_NOR1" pin="3"/>
+    </net>
+    <net code="142" name="Net-(ROM4_NAND1-Pad8)">
+      <node ref="ROM4_NOR1" pin="5"/>
+      <node ref="ROM4_NAND1" pin="8"/>
+    </net>
+    <net code="143" name="Net-(CP4-Pad1)">
+      <node ref="RESET_GEN1" pin="7"/>
+      <node ref="RESET_GEN1" pin="6"/>
+      <node ref="CP4" pin="1"/>
+      <node ref="R23" pin="2"/>
+    </net>
+    <net code="144" name="Net-(J5-Pad26)">
+      <node ref="J5" pin="26"/>
+    </net>
+    <net code="145" name="Net-(RAM4_NAND1-Pad2)">
+      <node ref="RAM4_NAND1" pin="2"/>
+      <node ref="RAM4_NOR1" pin="4"/>
+    </net>
+    <net code="146" name="Net-(RAM4-Pad20)">
+      <node ref="RAM4" pin="20"/>
+      <node ref="RAM4_NAND1" pin="3"/>
+    </net>
+    <net code="147" name="A15">
+      <node ref="ROM4_NAND1" pin="9"/>
+      <node ref="RS_NAND2" pin="1"/>
+      <node ref="RAM4_NAND1" pin="1"/>
+      <node ref="ROM3_NAND1" pin="9"/>
+      <node ref="RAM2_NAND1" pin="1"/>
+      <node ref="CS_ROM_NAND1" pin="4"/>
+      <node ref="ROM2_NAND1" pin="9"/>
+      <node ref="J5" pin="35"/>
+      <node ref="ROM1_NAND1" pin="9"/>
+      <node ref="~CS_DEV1" pin="6"/>
+      <node ref="CPU1" pin="25"/>
+      <node ref="J8" pin="35"/>
+      <node ref="J7" pin="35"/>
+      <node ref="J6" pin="35"/>
+      <node ref="RAM3_NAND1" pin="1"/>
+    </net>
+    <net code="148" name="Net-(J7-Pad26)">
+      <node ref="J7" pin="26"/>
+    </net>
+    <net code="149" name="Net-(J6-Pad26)">
+      <node ref="J6" pin="26"/>
+    </net>
+    <net code="150" name="Net-(J7-Pad30)">
+      <node ref="J7" pin="30"/>
+    </net>
+    <net code="151" name="Net-(J6-Pad30)">
+      <node ref="J6" pin="30"/>
+    </net>
+    <net code="152" name="Net-(J5-Pad30)">
+      <node ref="J5" pin="30"/>
+    </net>
+    <net code="153" name="Net-(IRQ_DECODE1-Pad14)">
+      <node ref="IRQ_DECODE1" pin="14"/>
+      <node ref="IRQ_OUT1" pin="15"/>
+    </net>
+    <net code="154" name="Net-(VID_DECODER1-Pad1)">
+      <node ref="VID_DECODER1" pin="1"/>
+    </net>
+    <net code="155" name="Net-(IRQ_RW_AND1-Pad2)">
+      <node ref="IRQ_RW_AND1" pin="2"/>
+    </net>
+    <net code="156" name="-12v">
+      <node ref="J7" pin="40"/>
+      <node ref="J6" pin="40"/>
+      <node ref="J8" pin="40"/>
+      <node ref="J2" pin="13"/>
+      <node ref="J5" pin="40"/>
+      <node ref="U14" pin="3"/>
+      <node ref="-12v1" pin="1"/>
+      <node ref="CP3" pin="2"/>
+    </net>
+    <net code="157" name="Net-(RAM3_NAND1-Pad2)">
+      <node ref="RAM3_NAND1" pin="2"/>
+      <node ref="RAM3_NOR1" pin="4"/>
+    </net>
+    <net code="158" name="Net-(RAM3-Pad20)">
+      <node ref="RAM3_NAND1" pin="3"/>
+      <node ref="RAM3" pin="20"/>
+    </net>
+    <net code="159" name="RAM3_EN">
+      <node ref="RAM3_NOR1" pin="3"/>
+    </net>
+    <net code="160" name="RAM4_EN">
+      <node ref="RAM4_NOR1" pin="3"/>
+    </net>
+    <net code="161" name="Net-(R24-Pad2)">
+      <node ref="ROM2" pin="27"/>
+      <node ref="R24" pin="2"/>
+    </net>
+    <net code="162" name="Net-(ROM2-Pad20)">
+      <node ref="ROM2_NAND1" pin="3"/>
+      <node ref="ROM2" pin="22"/>
+      <node ref="ROM2" pin="20"/>
+    </net>
+    <net code="163" name="Net-(ROM1-Pad20)">
+      <node ref="ROM1_NAND1" pin="3"/>
+      <node ref="ROM1" pin="20"/>
+      <node ref="ROM1" pin="22"/>
+    </net>
+    <net code="164" name="Net-(ROM1_NAND1-Pad2)">
+      <node ref="ROM1_NAND1" pin="2"/>
+      <node ref="ROM1_NOR1" pin="2"/>
+    </net>
+    <net code="165" name="Net-(ROM2-Pad1)">
+      <node ref="ROM2" pin="1"/>
+    </net>
+    <net code="166" name="Net-(ROM2_NAND1-Pad8)">
+      <node ref="ROM2_NAND1" pin="8"/>
+      <node ref="ROM2_NOR1" pin="5"/>
+    </net>
+    <net code="167" name="Net-(ROM2_NAND1-Pad5)">
+      <node ref="ROM2_NOR1" pin="6"/>
+      <node ref="ROM2_NAND1" pin="5"/>
+    </net>
+    <net code="168" name="Net-(ROM1_NAND1-Pad6)">
+      <node ref="ROM1_NOR1" pin="3"/>
+      <node ref="ROM1_NAND1" pin="6"/>
+    </net>
+    <net code="169" name="Net-(ROM1_NAND1-Pad1)">
+      <node ref="ROM1_NOR1" pin="4"/>
+      <node ref="ROM1_NAND1" pin="1"/>
+    </net>
+    <net code="170" name="ROM1_EN">
+      <node ref="ROM1_NOR1" pin="1"/>
+    </net>
+    <net code="171" name="Net-(ROM1_NAND1-Pad8)">
+      <node ref="ROM1_NOR1" pin="5"/>
+      <node ref="ROM1_NAND1" pin="8"/>
+    </net>
+    <net code="172" name="Net-(ROM1_NAND1-Pad5)">
+      <node ref="ROM1_NOR1" pin="6"/>
+      <node ref="ROM1_NAND1" pin="5"/>
+    </net>
+    <net code="173" name="Net-(IRQ_MASK1-Pad11)">
+      <node ref="IRQ_MASK1" pin="11"/>
+      <node ref="IRQ_RW_AND1" pin="3"/>
+    </net>
+    <net code="174" name="Net-(IRQ_PRIORITY1-Pad1)">
+      <node ref="IRQ_RW_AND1" pin="6"/>
+      <node ref="IRQ_PRIORITY1" pin="1"/>
+    </net>
+    <net code="175" name="Net-(ROM2_NAND1-Pad1)">
+      <node ref="ROM2_NOR1" pin="4"/>
+      <node ref="ROM2_NAND1" pin="1"/>
+    </net>
+    <net code="176" name="Net-(ROM3_NAND1-Pad2)">
+      <node ref="ROM3_NOR1" pin="2"/>
+      <node ref="ROM3_NAND1" pin="2"/>
+    </net>
+    <net code="177" name="Net-(ROM3-Pad20)">
+      <node ref="ROM3_NAND1" pin="3"/>
+      <node ref="ROM3" pin="20"/>
+      <node ref="ROM3" pin="22"/>
+    </net>
+    <net code="178" name="Net-(ROM3-Pad1)">
+      <node ref="ROM3" pin="1"/>
+    </net>
+    <net code="179" name="Net-(ROM3_NAND1-Pad5)">
+      <node ref="ROM3_NAND1" pin="5"/>
+      <node ref="ROM3_NOR1" pin="6"/>
+    </net>
+    <net code="180" name="Net-(ROM3_NAND1-Pad8)">
+      <node ref="ROM3_NOR1" pin="5"/>
+      <node ref="ROM3_NAND1" pin="8"/>
+    </net>
+    <net code="181" name="Net-(ROM3_NAND1-Pad1)">
+      <node ref="ROM3_NOR1" pin="4"/>
+      <node ref="ROM3_NAND1" pin="1"/>
+    </net>
+    <net code="182" name="Net-(ROM3_NAND1-Pad6)">
+      <node ref="ROM3_NOR1" pin="3"/>
+      <node ref="ROM3_NAND1" pin="6"/>
+    </net>
+    <net code="183" name="ROM3_EN">
+      <node ref="ROM3_NOR1" pin="1"/>
+    </net>
+    <net code="184" name="Net-(R26-Pad2)">
+      <node ref="R26" pin="2"/>
+      <node ref="ROM4" pin="27"/>
+    </net>
+    <net code="185" name="Net-(ROM2_NAND1-Pad2)">
+      <node ref="ROM2_NOR1" pin="2"/>
+      <node ref="ROM2_NAND1" pin="2"/>
+    </net>
+    <net code="186" name="Net-(ROM2_NAND1-Pad6)">
+      <node ref="ROM2_NOR1" pin="3"/>
+      <node ref="ROM2_NAND1" pin="6"/>
+    </net>
+    <net code="187" name="ROM2_EN">
+      <node ref="ROM2_NOR1" pin="1"/>
+    </net>
+    <net code="188" name="Net-(R25-Pad2)">
+      <node ref="ROM3" pin="27"/>
+      <node ref="R25" pin="2"/>
+    </net>
+    <net code="189" name="~CS_DEV">
+      <node ref="J7" pin="28"/>
+      <node ref="GPIO_CTRL1" pin="23"/>
+      <node ref="~CS_DEV1" pin="10"/>
+      <node ref="J6" pin="28"/>
+      <node ref="IRQ_RW_AND1" pin="1"/>
+      <node ref="IRQ_RW_AND1" pin="4"/>
+      <node ref="J5" pin="28"/>
+      <node ref="UART1" pin="3"/>
+      <node ref="65SIB1" pin="23"/>
+      <node ref="J8" pin="28"/>
+      <node ref="65SIB_LATCH1" pin="5"/>
+    </net>
+    <net code="190" name="CS_GPIO">
+      <node ref="GPIO_CTRL1" pin="24"/>
+      <node ref="CS_GPIO_AND1" pin="8"/>
+    </net>
+    <net code="191" name="Net-(IRQ_NOR1-Pad3)">
+      <node ref="IRQ_OUT1" pin="7"/>
+      <node ref="IRQ_NOR1" pin="3"/>
+    </net>
+    <net code="192" name="Net-(RESET_GEN1-Pad3)">
+      <node ref="RESET_NOR1" pin="1"/>
+      <node ref="RESET_GEN1" pin="3"/>
+    </net>
+    <net code="193" name="~IRQ">
+      <node ref="IRQ_NOR1" pin="4"/>
+      <node ref="JP2" pin="1"/>
+    </net>
+    <net code="194" name="Net-(IRQ_NOR1-Pad2)">
+      <node ref="IRQ_NOR1" pin="2"/>
+      <node ref="IRQ_RW_AND1" pin="5"/>
+    </net>
+    <net code="195" name="GPIO0">
+      <node ref="GPIO_CTRL1" pin="2"/>
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="196" name="GPIO8">
+      <node ref="GPIO_CTRL1" pin="10"/>
+      <node ref="J4" pin="10"/>
+    </net>
+    <net code="197" name="GPIO9">
+      <node ref="J4" pin="11"/>
+      <node ref="GPIO_CTRL1" pin="11"/>
+    </net>
+    <net code="198" name="GPIO10">
+      <node ref="GPIO_CTRL1" pin="12"/>
+      <node ref="J4" pin="12"/>
+    </net>
+    <net code="199" name="GPIO11">
+      <node ref="J4" pin="13"/>
+      <node ref="GPIO_CTRL1" pin="13"/>
+    </net>
+    <net code="200" name="GPIO12">
+      <node ref="J4" pin="14"/>
+      <node ref="GPIO_CTRL1" pin="14"/>
+    </net>
+    <net code="201" name="GPIO13">
+      <node ref="J4" pin="15"/>
+      <node ref="GPIO_CTRL1" pin="15"/>
+    </net>
+    <net code="202" name="GPIO14">
+      <node ref="J4" pin="16"/>
+      <node ref="GPIO_CTRL1" pin="16"/>
+    </net>
+    <net code="203" name="GPIO15">
+      <node ref="GPIO_CTRL1" pin="17"/>
+      <node ref="J4" pin="17"/>
+    </net>
+    <net code="204" name="VCC">
+      <node ref="IRQ_OUT1" pin="16"/>
+      <node ref="R17" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="IRQ_MASK1" pin="20"/>
+      <node ref="R9" pin="1"/>
+      <node ref="J5" pin="1"/>
+      <node ref="R21" pin="1"/>
+      <node ref="SHARED_ROM1" pin="28"/>
+      <node ref="R4" pin="1"/>
+      <node ref="X1" pin="14"/>
+      <node ref="U4" pin="3"/>
+      <node ref="UART1" pin="15"/>
+      <node ref="R8" pin="1"/>
+      <node ref="ROM1" pin="28"/>
+      <node ref="R5" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="UART_CLK1" pin="14"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="IRQ_PRIORITY1" pin="20"/>
+      <node ref="J7" pin="1"/>
+      <node ref="R26" pin="1"/>
+      <node ref="RAM2" pin="28"/>
+      <node ref="ROM4" pin="28"/>
+      <node ref="ROM3" pin="28"/>
+      <node ref="J6" pin="1"/>
+      <node ref="RESET_GEN1" pin="4"/>
+      <node ref="RESET_GEN1" pin="8"/>
+      <node ref="VID_DECODER1" pin="28"/>
+      <node ref="RAM4" pin="28"/>
+      <node ref="J8" pin="1"/>
+      <node ref="ROM2" pin="28"/>
+      <node ref="R24" pin="1"/>
+      <node ref="R22" pin="1"/>
+      <node ref="R23" pin="1"/>
+      <node ref="UART-RS232" pin="12"/>
+      <node ref="J4" pin="1"/>
+      <node ref="R25" pin="1"/>
+      <node ref="RAM3" pin="28"/>
+      <node ref="GPIO_CTRL1" pin="20"/>
+      <node ref="~CS_DEV1" pin="16"/>
+      <node ref="CLK_DIV1" pin="4"/>
+      <node ref="CLK_DIV1" pin="1"/>
+      <node ref="65SIB1" pin="20"/>
+      <node ref="CPU1" pin="38"/>
+      <node ref="65SIB_LATCH1" pin="16"/>
+      <node ref="IRQ_DECODE1" pin="15"/>
+      <node ref="CPU1" pin="8"/>
+      <node ref="R16" pin="2"/>
+      <node ref="RAM1" pin="28"/>
+      <node ref="C4" pin="1"/>
+      <node ref="VID_BUFFER1" pin="20"/>
+      <node ref="CLK_DIV1" pin="13"/>
+      <node ref="CLK_DIV1" pin="10"/>
+      <node ref="R20" pin="2"/>
+      <node ref="R18" pin="2"/>
+      <node ref="R19" pin="2"/>
+      <node ref="IRQ_DECODE1" pin="16"/>
+    </net>
+    <net code="205" name="CB1">
+      <node ref="J4" pin="20"/>
+      <node ref="GPIO_CTRL1" pin="18"/>
+    </net>
+    <net code="206" name="CB2">
+      <node ref="GPIO_CTRL1" pin="19"/>
+      <node ref="J4" pin="21"/>
+    </net>
+    <net code="207" name="GND">
+      <node ref="5v1" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="VID_DECODER1" pin="2"/>
+      <node ref="VID_DECODER1" pin="20"/>
+      <node ref="~CS_DEV1" pin="4"/>
+      <node ref="VID_DECODER1" pin="21"/>
+      <node ref="~CS_DEV1" pin="5"/>
+      <node ref="J6" pin="3"/>
+      <node ref="~CS_DEV1" pin="8"/>
+      <node ref="VID_DECODER1" pin="23"/>
+      <node ref="VID_DECODER1" pin="24"/>
+      <node ref="VID_BUFFER1" pin="10"/>
+      <node ref="65SIB1" pin="1"/>
+      <node ref="J8" pin="3"/>
+      <node ref="J4" pin="22"/>
+      <node ref="J2" pin="16"/>
+      <node ref="U13" pin="3"/>
+      <node ref="U13" pin="4"/>
+      <node ref="CPU1" pin="21"/>
+      <node ref="UART-RS232" pin="11"/>
+      <node ref="GPIO_CTRL1" pin="1"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="CP4" pin="2"/>
+      <node ref="RESET_GEN1" pin="1"/>
+      <node ref="ROM4" pin="14"/>
+      <node ref="SW3" pin="2"/>
+      <node ref="IRQ_PRIORITY1" pin="9"/>
+      <node ref="IRQ_PRIORITY1" pin="8"/>
+      <node ref="IRQ_PRIORITY1" pin="7"/>
+      <node ref="IRQ_PRIORITY1" pin="6"/>
+      <node ref="U14" pin="1"/>
+      <node ref="IRQ_PRIORITY1" pin="2"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="CP3" pin="1"/>
+      <node ref="CP2" pin="1"/>
+      <node ref="IRQ_PRIORITY1" pin="10"/>
+      <node ref="ROM2" pin="14"/>
+      <node ref="ROM3" pin="14"/>
+      <node ref="J7" pin="3"/>
+      <node ref="RAM3" pin="14"/>
+      <node ref="RAM2" pin="14"/>
+      <node ref="VID_DECODER1" pin="14"/>
+      <node ref="RAM4" pin="14"/>
+      <node ref="12v1" pin="1"/>
+      <node ref="J5" pin="3"/>
+      <node ref="UART_CLK1" pin="7"/>
+      <node ref="R11" pin="1"/>
+      <node ref="IRQ_DECODE1" pin="5"/>
+      <node ref="C1" pin="2"/>
+      <node ref="IRQ_MASK1" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="J3" pin="9"/>
+      <node ref="ROM1" pin="14"/>
+      <node ref="J2" pin="19"/>
+      <node ref="J2" pin="2"/>
+      <node ref="UART1" pin="1"/>
+      <node ref="J2" pin="4"/>
+      <node ref="J2" pin="6"/>
+      <node ref="U4" pin="2"/>
+      <node ref="SHARED_ROM1" pin="14"/>
+      <node ref="IRQ_DECODE1" pin="8"/>
+      <node ref="X1" pin="7"/>
+      <node ref="IRQ_OUT1" pin="8"/>
+      <node ref="RAM1" pin="14"/>
+      <node ref="65SIB_LATCH1" pin="8"/>
+      <node ref="JP3" pin="1"/>
+      <node ref="IRQ_MASK1" pin="10"/>
+    </net>
+    <net code="208" name="GPIO1">
+      <node ref="J4" pin="3"/>
+      <node ref="GPIO_CTRL1" pin="3"/>
+    </net>
+    <net code="209" name="GPIO2">
+      <node ref="J4" pin="4"/>
+      <node ref="GPIO_CTRL1" pin="4"/>
+    </net>
+    <net code="210" name="GPIO3">
+      <node ref="GPIO_CTRL1" pin="5"/>
+      <node ref="J4" pin="5"/>
+    </net>
+    <net code="211" name="GPIO4">
+      <node ref="GPIO_CTRL1" pin="6"/>
+      <node ref="J4" pin="6"/>
+    </net>
+    <net code="212" name="GPIO5">
+      <node ref="GPIO_CTRL1" pin="7"/>
+      <node ref="J4" pin="7"/>
+    </net>
+    <net code="213" name="GPIO6">
+      <node ref="GPIO_CTRL1" pin="8"/>
+      <node ref="J4" pin="8"/>
+    </net>
+    <net code="214" name="CA2">
+      <node ref="J4" pin="19"/>
+      <node ref="GPIO_CTRL1" pin="39"/>
+    </net>
+    <net code="215" name="CA1">
+      <node ref="GPIO_CTRL1" pin="40"/>
+      <node ref="J4" pin="18"/>
+    </net>
+    <net code="216" name="Net-(IRQ_MASK1-Pad16)">
+      <node ref="IRQ_MASK1" pin="16"/>
+      <node ref="IRQ_OUT1" pin="1"/>
+    </net>
+    <net code="217" name="Net-(IRQ_OUT1-Pad2)">
+      <node ref="IRQ_OUT1" pin="2"/>
+    </net>
+    <net code="218" name="Net-(IRQ_OUT1-Pad3)">
+      <node ref="IRQ_OUT1" pin="3"/>
+    </net>
+    <net code="219" name="Net-(IRQ_OUT1-Pad4)">
+      <node ref="IRQ_OUT1" pin="4"/>
+    </net>
+    <net code="220" name="Net-(IRQ_OUT1-Pad5)">
+      <node ref="IRQ_OUT1" pin="5"/>
+    </net>
+    <net code="221" name="Net-(IRQ_OUT1-Pad6)">
+      <node ref="IRQ_OUT1" pin="6"/>
+    </net>
+    <net code="222" name="Net-(IRQ_MASK1-Pad19)">
+      <node ref="IRQ_OUT1" pin="9"/>
+      <node ref="IRQ_MASK1" pin="19"/>
+    </net>
+    <net code="223" name="Net-(IRQ_MASK1-Pad15)">
+      <node ref="IRQ_MASK1" pin="15"/>
+    </net>
+    <net code="224" name="Net-(IRQ_MASK1-Pad14)">
+      <node ref="IRQ_MASK1" pin="14"/>
+    </net>
+    <net code="225" name="Net-(IRQ_MASK1-Pad13)">
+      <node ref="IRQ_MASK1" pin="13"/>
+    </net>
+    <net code="226" name="Net-(IRQ_MASK1-Pad12)">
+      <node ref="IRQ_MASK1" pin="12"/>
+    </net>
+    <net code="227" name="Net-(IRQ_DECODE1-Pad7)">
+      <node ref="IRQ_PRIORITY1" pin="4"/>
+      <node ref="IRQ_OUT1" pin="12"/>
+      <node ref="IRQ_DECODE1" pin="7"/>
+    </net>
+    <net code="228" name="Net-(IRQ_MASK1-Pad17)">
+      <node ref="IRQ_MASK1" pin="17"/>
+      <node ref="IRQ_OUT1" pin="14"/>
+    </net>
+    <net code="229" name="Net-(IRQ_MASK1-Pad18)">
+      <node ref="IRQ_MASK1" pin="18"/>
+      <node ref="IRQ_OUT1" pin="11"/>
+    </net>
+    <net code="230" name="GPIO7">
+      <node ref="J4" pin="9"/>
+      <node ref="GPIO_CTRL1" pin="9"/>
+    </net>
+    <net code="231" name="Net-(IRQ_DECODE1-Pad9)">
+      <node ref="IRQ_OUT1" pin="10"/>
+      <node ref="IRQ_PRIORITY1" pin="3"/>
+      <node ref="IRQ_DECODE1" pin="9"/>
+    </net>
+    <net code="232" name="Net-(IRQ_DECODE1-Pad6)">
+      <node ref="IRQ_DECODE1" pin="6"/>
+      <node ref="IRQ_OUT1" pin="13"/>
+      <node ref="IRQ_PRIORITY1" pin="5"/>
+    </net>
+    <net code="233" name="Net-(CS_UART_AND1-Pad2)">
+      <node ref="CS_UART_AND4" pin="6"/>
+      <node ref="CS_UART_AND1" pin="2"/>
+    </net>
+    <net code="234" name="Net-(CS_UART_AND4-Pad1)">
+      <node ref="CS_UART_AND4" pin="1"/>
+      <node ref="CS_UART_NOR1" pin="6"/>
+    </net>
+    <net code="235" name="Net-(CS_UART_AND4-Pad5)">
+      <node ref="CS_UART_AND4" pin="5"/>
+      <node ref="CS_UART_NOR1" pin="12"/>
+    </net>
+    <net code="236" name="Net-(CS_UART_AND4-Pad4)">
+      <node ref="CS_UART_AND4" pin="4"/>
+      <node ref="CS_UART_NOR1" pin="10"/>
+    </net>
+    <net code="237" name="Net-(CS_UART_AND4-Pad2)">
+      <node ref="CS_UART_AND4" pin="2"/>
+      <node ref="CS_UART_NOR1" pin="8"/>
+    </net>
+    <net code="238" name="~NMI">
+      <node ref="JP1" pin="1"/>
+      <node ref="JP7" pin="3"/>
+    </net>
+    <net code="239" name="~IRQ1">
+      <node ref="JP7" pin="1"/>
+      <node ref="R7" pin="2"/>
+      <node ref="IRQ_DECODE1" pin="11"/>
+    </net>
+    <net code="240" name="~IRQ_DECIDE">
+      <node ref="JP7" pin="2"/>
+      <node ref="GPIO_CTRL1" pin="21"/>
+    </net>
+    <net code="241" name="Net-(CPU1-Pad1)">
+      <node ref="JP3" pin="2"/>
+      <node ref="CPU1" pin="1"/>
+    </net>
+    <net code="242" name="Net-(CLK_DIV1-Pad12)">
+      <node ref="CLK_DIV1" pin="8"/>
+      <node ref="CLK_DIV1" pin="12"/>
+    </net>
+    <net code="243" name="2MHz">
+      <node ref="CLK_DIV1" pin="9"/>
+      <node ref="JP6" pin="1"/>
+    </net>
+    <net code="244" name="Net-(CPU1-Pad4)">
+      <node ref="JP2" pin="2"/>
+      <node ref="R19" pin="1"/>
+      <node ref="CPU1" pin="4"/>
+    </net>
+    <net code="245" name="Net-(CPU1-Pad6)">
+      <node ref="JP1" pin="2"/>
+      <node ref="CPU1" pin="6"/>
+      <node ref="R20" pin="1"/>
+    </net>
+    <net code="246" name="Net-(CP1-Pad2)">
+      <node ref="D2" pin="2"/>
+      <node ref="CP1" pin="2"/>
+      <node ref="D4" pin="2"/>
+      <node ref="SW1" pin="3"/>
+    </net>
+    <net code="247" name="Net-(CPU1-Pad5)">
+      <node ref="CPU1" pin="5"/>
+    </net>
+    <net code="248" name="Net-(CPU1-Pad36)">
+      <node ref="CPU1" pin="36"/>
+    </net>
+    <net code="249" name="Net-(CPU1-Pad35)">
+      <node ref="CPU1" pin="35"/>
+    </net>
+    <net code="250" name="CPU_D3">
+      <node ref="CPU1" pin="30"/>
+      <node ref="VID_DECODER1" pin="15"/>
+      <node ref="VID_BUFFER1" pin="5"/>
+    </net>
+    <net code="251" name="CPU_D7">
+      <node ref="VID_DECODER1" pin="19"/>
+      <node ref="CPU1" pin="26"/>
+      <node ref="VID_BUFFER1" pin="9"/>
+    </net>
+    <net code="252" name="CPU_D6">
+      <node ref="CPU1" pin="27"/>
+      <node ref="VID_BUFFER1" pin="8"/>
+      <node ref="VID_DECODER1" pin="18"/>
+    </net>
+    <net code="253" name="CPU_D5">
+      <node ref="VID_DECODER1" pin="17"/>
+      <node ref="VID_BUFFER1" pin="7"/>
+      <node ref="CPU1" pin="28"/>
+    </net>
+    <net code="254" name="CPU_D4">
+      <node ref="VID_DECODER1" pin="16"/>
+      <node ref="VID_BUFFER1" pin="6"/>
+      <node ref="CPU1" pin="29"/>
+    </net>
+    <net code="255" name="PHI1">
+      <node ref="J5" pin="22"/>
+      <node ref="CPU1" pin="3"/>
+      <node ref="J8" pin="22"/>
+      <node ref="J6" pin="22"/>
+      <node ref="J7" pin="22"/>
+    </net>
+    <net code="256" name="CPU_D2">
+      <node ref="VID_BUFFER1" pin="4"/>
+      <node ref="CPU1" pin="31"/>
+      <node ref="VID_DECODER1" pin="13"/>
+    </net>
+    <net code="257" name="CPU_D1">
+      <node ref="CPU1" pin="32"/>
+      <node ref="VID_BUFFER1" pin="3"/>
+      <node ref="VID_DECODER1" pin="12"/>
+    </net>
+    <net code="258" name="CPU_D0">
+      <node ref="VID_DECODER1" pin="11"/>
+      <node ref="VID_BUFFER1" pin="2"/>
+      <node ref="CPU1" pin="33"/>
+    </net>
+    <net code="259" name="CLK">
+      <node ref="J6" pin="20"/>
+      <node ref="J7" pin="20"/>
+      <node ref="J5" pin="20"/>
+      <node ref="CPU1" pin="37"/>
+      <node ref="JP5" pin="2"/>
+      <node ref="JP4" pin="2"/>
+      <node ref="J8" pin="20"/>
+      <node ref="JP6" pin="2"/>
+    </net>
+    <net code="260" name="~IRQ4">
+      <node ref="J7" pin="32"/>
+      <node ref="R4" pin="2"/>
+      <node ref="IRQ_DECODE1" pin="1"/>
+      <node ref="J8" pin="32"/>
+      <node ref="J5" pin="32"/>
+      <node ref="J6" pin="32"/>
+    </net>
+    <net code="261" name="~IRQ3">
+      <node ref="R5" pin="2"/>
+      <node ref="IRQ_DECODE1" pin="13"/>
+    </net>
+    <net code="262" name="~IRQ2">
+      <node ref="65SIB1" pin="21"/>
+      <node ref="IRQ_DECODE1" pin="12"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="263" name="~IRQ6">
+      <node ref="R2" pin="2"/>
+      <node ref="J6" pin="36"/>
+      <node ref="J5" pin="36"/>
+      <node ref="J8" pin="36"/>
+      <node ref="IRQ_DECODE1" pin="3"/>
+      <node ref="J7" pin="36"/>
+    </net>
+    <net code="264" name="~IRQ5">
+      <node ref="IRQ_DECODE1" pin="2"/>
+      <node ref="J6" pin="34"/>
+      <node ref="R3" pin="2"/>
+      <node ref="J8" pin="34"/>
+      <node ref="J5" pin="34"/>
+      <node ref="J7" pin="34"/>
+    </net>
+    <net code="265" name="~IRQ7">
+      <node ref="J5" pin="38"/>
+      <node ref="J6" pin="38"/>
+      <node ref="J8" pin="38"/>
+      <node ref="IRQ_DECODE1" pin="4"/>
+      <node ref="J7" pin="38"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="266" name="Net-(X1-Pad1)">
+      <node ref="X1" pin="1"/>
+    </net>
+    <net code="267" name="Net-(~CS_DEV1-Pad11)">
+      <node ref="~CS_DEV1" pin="11"/>
+    </net>
+    <net code="268" name="Net-(~CS_DEV1-Pad12)">
+      <node ref="~CS_DEV1" pin="12"/>
+    </net>
+    <net code="269" name="Net-(~CS_DEV1-Pad13)">
+      <node ref="~CS_DEV1" pin="13"/>
+    </net>
+    <net code="270" name="Net-(~CS_DEV1-Pad9)">
+      <node ref="~CS_DEV1" pin="9"/>
+    </net>
+    <net code="271" name="Net-(~CS_DEV1-Pad7)">
+      <node ref="~CS_DEV1" pin="7"/>
+    </net>
+    <net code="272" name="Net-(~CS_DEV1-Pad14)">
+      <node ref="~CS_DEV1" pin="14"/>
+    </net>
+    <net code="273" name="Net-(~CS_DEV1-Pad15)">
+      <node ref="~CS_DEV1" pin="15"/>
+    </net>
+    <net code="274" name="+12v">
+      <node ref="J2" pin="8"/>
+      <node ref="J6" pin="42"/>
+      <node ref="C3" pin="1"/>
+      <node ref="J2" pin="10"/>
+      <node ref="U4" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="J5" pin="42"/>
+      <node ref="J8" pin="42"/>
+      <node ref="J7" pin="42"/>
+      <node ref="R10" pin="1"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="275" name="Net-(CS_VID_NAND1-Pad8)">
+      <node ref="VID_BUFFER1" pin="1"/>
+      <node ref="VID_BUFFER1" pin="19"/>
+      <node ref="CS_VID_NAND1" pin="8"/>
+    </net>
+    <net code="276" name="VID_OE">
+      <node ref="VID_DECODER1" pin="22"/>
+      <node ref="CS_VID_NAND1" pin="11"/>
+    </net>
+    <net code="277" name="Net-(CS_VID_NAND1-Pad9)">
+      <node ref="CS_VID_NOR1" pin="2"/>
+      <node ref="CS_VID_NAND1" pin="9"/>
+    </net>
+    <net code="278" name="Net-(UART_CLK1-Pad1)">
+      <node ref="UART_CLK1" pin="1"/>
+    </net>
+    <net code="279" name="Net-(C6-Pad1)">
+      <node ref="RESET_GEN1" pin="5"/>
+      <node ref="C6" pin="1"/>
+    </net>
+    <net code="280" name="Net-(R15-Pad2)">
       <node ref="R15" pin="2"/>
+      <node ref="SW2" pin="2"/>
     </net>
-    <net code="318" name="Net-(Q1-Pad1)">
+    <net code="281" name="Net-(Q1-Pad1)">
       <node ref="R12" pin="1"/>
       <node ref="Q1" pin="1"/>
       <node ref="Q2" pin="1"/>
     </net>
-    <net code="319" name="Net-(CP2-Pad2)">
-      <node ref="CP2" pin="2"/>
-      <node ref="U14" pin="2"/>
-      <node ref="R13" pin="2"/>
-      <node ref="U13" pin="5"/>
+    <net code="282" name="SEL7\">
+      <node ref="65SIB_LATCH1" pin="7"/>
+      <node ref="J2" pin="20"/>
     </net>
-    <net code="320" name="SEL1\">
-      <node ref="J2" pin="11"/>
+    <net code="283" name="65SIB_MOSI">
+      <node ref="J2" pin="5"/>
+      <node ref="65SIB1" pin="3"/>
+    </net>
+    <net code="284" name="SEL6\">
+      <node ref="65SIB_LATCH1" pin="9"/>
+      <node ref="J2" pin="18"/>
+    </net>
+    <net code="285" name="SEL1\">
       <node ref="65SIB_LATCH1" pin="14"/>
+      <node ref="J2" pin="11"/>
     </net>
-    <net code="321" name="SEL2\">
+    <net code="286" name="SEL2\">
       <node ref="J2" pin="12"/>
       <node ref="65SIB_LATCH1" pin="13"/>
     </net>
-    <net code="322" name="SEL3\">
-      <node ref="65SIB_LATCH1" pin="12"/>
+    <net code="287" name="SEL3\">
       <node ref="J2" pin="14"/>
+      <node ref="65SIB_LATCH1" pin="12"/>
     </net>
-    <net code="323" name="SEL4\">
-      <node ref="J2" pin="15"/>
+    <net code="288" name="SEL4\">
       <node ref="65SIB_LATCH1" pin="11"/>
+      <node ref="J2" pin="15"/>
+    </net>
+    <net code="289" name="SEL5\">
+      <node ref="J2" pin="17"/>
+      <node ref="65SIB_LATCH1" pin="10"/>
+    </net>
+    <net code="290" name="Net-(U13-Pad1)">
+      <node ref="U13" pin="1"/>
+    </net>
+    <net code="291" name="FUSE_OUT">
+      <node ref="Q1" pin="2"/>
+      <node ref="R13" pin="1"/>
+      <node ref="U13" pin="6"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="R14" pin="2"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="292" name="Net-(U13-Pad7)">
+      <node ref="U13" pin="7"/>
+    </net>
+    <net code="293" name="Net-(U13-Pad8)">
+      <node ref="U13" pin="8"/>
+    </net>
+    <net code="294" name="Net-(R14-Pad1)">
+      <node ref="U13" pin="2"/>
+      <node ref="R14" pin="1"/>
+    </net>
+    <net code="295" name="Net-(CP2-Pad2)">
+      <node ref="U14" pin="2"/>
+      <node ref="U13" pin="5"/>
+      <node ref="R13" pin="2"/>
+      <node ref="CP2" pin="2"/>
     </net>
   </nets>
 </export>
