@@ -1,4 +1,4 @@
-update=28/04/2022 00:46:43
+update=30/04/2022 01:33:34
 version=1
 last_client=kicad
 [general]
@@ -26,8 +26,8 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=Motherboard.net
-CopperLayerCount=6
-BoardThickness=3.2
+CopperLayerCount=8
+BoardThickness=4
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
@@ -75,29 +75,29 @@ Name=SIGH.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
-Name=-12v.Cu
-Type=0
+Name=SIG_RES.Cu
+Type=1
 Enabled=1
 [pcbnew/Layer.In2.Cu]
-Name=GND.Cu
+Name=-12v.Cu
 Type=1
 Enabled=1
 [pcbnew/Layer.In3.Cu]
-Name=VCC.Cu
+Name=GND.Cu
 Type=1
 Enabled=1
 [pcbnew/Layer.In4.Cu]
+Name=VCC.Cu
+Type=1
+Enabled=1
+[pcbnew/Layer.In5.Cu]
 Name=12v.Cu
 Type=0
 Enabled=1
-[pcbnew/Layer.In5.Cu]
-Name=In5.Cu
-Type=0
-Enabled=0
 [pcbnew/Layer.In6.Cu]
-Name=In6.Cu
+Name=HOPE_NOT_2_USE.Cu
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In7.Cu]
 Name=In7.Cu
 Type=0
