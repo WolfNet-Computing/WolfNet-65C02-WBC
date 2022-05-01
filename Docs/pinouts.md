@@ -18,4 +18,4 @@
 
 ## 65SIB Connector
 
-For this connector I would refer to the 6502.org forum post for the 65 Serial Interface Bus [here](http://forum.6502.org/viewtopic.php?p=10957#p10957)
+For this connector I would refer to the 6502.org forum post for the 65 Serial Interface Bus [here](http://forum.6502.org/viewtopic.php?p=10957#p10957). However I will provide a pinout anyways.
