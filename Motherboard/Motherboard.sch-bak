@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 61C12325
-P 8150 22200
-F 0 "#LOGO1" H 8150 22700 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Large" H 8150 21800 50  0001 C CNN
-F 2 "Symbol:OSHW-Logo2_14.6x12mm_SilkScreen" H 8150 22200 50  0001 C CNN
-F 3 "~" H 8150 22200 50  0001 C CNN
-	1    8150 22200
+P 14850 20600
+F 0 "#LOGO1" H 14850 21100 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Large" H 14850 20200 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_14.6x12mm_SilkScreen" H 14850 20600 50  0001 C CNN
+F 3 "~" H 14850 20600 50  0001 C CNN
+	1    14850 20600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1962,7 +1962,7 @@ U 1 1 61D1BDB7
 P 29000 9200
 F 0 "J2" H 29050 9817 50  0000 C CNN
 F 1 "65SIB_Connector" H 29050 9726 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 29000 9200 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x10-1MP_P2.54mm_Latch6.5mm_Vertical" H 29000 9200 50  0001 C CNN
 F 3 "~" H 29000 9200 50  0001 C CNN
 	1    29000 9200
 	1    0    0    -1  
@@ -2027,8 +2027,6 @@ Text GLabel 25000 7650 2    50   Input ~ 0
 VCC
 Wire Wire Line
 	26700 8000 26700 8250
-Text Notes 18750 7650 2    50   ~ 0
-IRQ0
 Text Notes 8550 9850 2    50   ~ 0
 IRQ1
 $Comp
@@ -2739,8 +2737,6 @@ F 3 "~" H 4750 2150 50  0001 C CNN
 	1    4750 2150
 	1    0    0    -1  
 $EndComp
-Text Notes 18750 7750 2    50   ~ 0
-Address space: 0xD014 - 0xD017
 Text GLabel 10950 11450 3    50   Input ~ 0
 A2
 Text GLabel 20100 4800 0    50   Input ~ 0
@@ -2772,34 +2768,34 @@ $EndComp
 $Comp
 L Graphic:SYM_ESD_Large #SYM2
 U 1 1 62084D56
-P 6950 22300
-F 0 "#SYM2" H 6950 22500 50  0001 C CNN
-F 1 "SYM_ESD_Large" H 6950 22050 50  0001 C CNN
-F 2 "Symbol:ESD-Logo_13.2x12mm_SilkScreen" H 6945 22270 50  0001 C CNN
-F 3 "~" H 6945 22270 50  0001 C CNN
-	1    6950 22300
+P 13650 20700
+F 0 "#SYM2" H 13650 20900 50  0001 C CNN
+F 1 "SYM_ESD_Large" H 13650 20450 50  0001 C CNN
+F 2 "Symbol:ESD-Logo_13.2x12mm_SilkScreen" H 13645 20670 50  0001 C CNN
+F 3 "~" H 13645 20670 50  0001 C CNN
+	1    13650 20700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Graphic:SYM_Flash_XLarge #SYM4
 U 1 1 620873CC
-P 6500 22350
-F 0 "#SYM4" V 6350 22350 50  0001 C CNN
-F 1 "SYM_Flash_XLarge" V 6650 22350 50  0001 C CNN
-F 2 "" H 6500 22325 50  0001 C CNN
-F 3 "~" H 6900 22250 50  0001 C CNN
-	1    6500 22350
+P 13200 20750
+F 0 "#SYM4" V 13050 20750 50  0001 C CNN
+F 1 "SYM_Flash_XLarge" V 13350 20750 50  0001 C CNN
+F 2 "Symbol:Symbol_HighVoltage_Type2_CopperTop_Big" H 13200 20725 50  0001 C CNN
+F 3 "~" H 13600 20650 50  0001 C CNN
+	1    13200 20750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Graphic:SYM_Hot_Large #SYM3
 U 1 1 620C2A36
-P 7450 22300
-F 0 "#SYM3" H 7450 22500 50  0001 C CNN
-F 1 "SYM_Hot_Large" H 7450 22050 50  0001 C CNN
-F 2 "" H 7450 22100 50  0001 C CNN
-F 3 "~" H 7480 22100 50  0001 C CNN
-	1    7450 22300
+P 14150 20700
+F 0 "#SYM3" H 14150 20900 50  0001 C CNN
+F 1 "SYM_Hot_Large" H 14150 20450 50  0001 C CNN
+F 2 "" H 14150 20500 50  0001 C CNN
+F 3 "~" H 14180 20500 50  0001 C CNN
+	1    14150 20700
 	1    0    0    -1  
 $EndComp
 NoConn ~ 25000 7750
@@ -3304,7 +3300,7 @@ Wire Wire Line
 	4850 2900 2350 2900
 Wire Wire Line
 	5450 2600 5700 2600
-Text Notes 2700 21700 2    50   ~ 0
+Text Notes 2700 20150 2    50   ~ 0
 Miscellaneous parts
 $Comp
 L Generic_Device:Fuse F1
@@ -3569,10 +3565,6 @@ Wire Wire Line
 	7500 6600 7450 6600
 Wire Wire Line
 	7450 6700 7500 6700
-Wire Notes Line
-	1800 22800 8750 22800
-Wire Notes Line
-	1800 21600 8750 21600
 Wire Wire Line
 	13150 5000 12850 5000
 Wire Wire Line
@@ -4153,10 +4145,6 @@ Text GLabel 23900 12600 2    50   Input ~ 0
 NoConn ~ 23900 12500
 Wire Notes Line
 	19100 1150 19100 16850
-Wire Notes Line
-	8750 21600 8750 22800
-Wire Notes Line
-	1800 21600 1800 22800
 Text GLabel 30150 12700 2    50   Output ~ 0
 ~IRQ3
 Text GLabel 28600 12700 2    50   Output ~ 0
@@ -4840,8 +4828,6 @@ Wire Wire Line
 Wire Wire Line
 	11250 17100 11250 17300
 Wire Notes Line
-	1800 1150 1800 19950
-Wire Notes Line
 	5150 13750 5150 19950
 Wire Notes Line
 	8750 1150 8750 19950
@@ -4949,8 +4935,6 @@ Text Notes 12250 17300 0    50   ~ 0
 Read-Only Memory\nBank 4 high
 Wire Wire Line
 	14500 17100 14500 17300
-Wire Notes Line
-	15550 13750 15550 19950
 Wire Notes Line
 	1800 19950 15550 19950
 Wire Wire Line
@@ -5153,4 +5137,76 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 16050 4800 50  0001 C CNN
 $EndComp
 Text GLabel 16200 4500 1    50   Input ~ 0
 A13
+Wire Notes Line
+	1800 1150 1800 22800
+Wire Notes Line
+	1800 22800 15550 22800
+Wire Notes Line
+	15550 13750 15550 22800
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6483DDE7
+P 14650 21150
+F 0 "H?" H 14750 21196 50  0000 L CNN
+F 1 "MountingHole" H 14750 21105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 14650 21150 50  0001 C CNN
+F 3 "~" H 14650 21150 50  0001 C CNN
+	1    14650 21150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6483E48F
+P 13900 21150
+F 0 "H?" H 14000 21196 50  0000 L CNN
+F 1 "MountingHole" H 14000 21105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 13900 21150 50  0001 C CNN
+F 3 "~" H 13900 21150 50  0001 C CNN
+	1    13900 21150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6483EC45
+P 14650 21400
+F 0 "H?" H 14750 21446 50  0000 L CNN
+F 1 "MountingHole" H 14750 21355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 14650 21400 50  0001 C CNN
+F 3 "~" H 14650 21400 50  0001 C CNN
+	1    14650 21400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6483EC4B
+P 13900 21400
+F 0 "H?" H 14000 21446 50  0000 L CNN
+F 1 "MountingHole" H 14000 21355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 13900 21400 50  0001 C CNN
+F 3 "~" H 13900 21400 50  0001 C CNN
+	1    13900 21400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6489366B
+P 14650 21650
+F 0 "H?" H 14750 21696 50  0000 L CNN
+F 1 "MountingHole" H 14750 21605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 14650 21650 50  0001 C CNN
+F 3 "~" H 14650 21650 50  0001 C CNN
+	1    14650 21650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 64893671
+P 13900 21650
+F 0 "H?" H 14000 21696 50  0000 L CNN
+F 1 "MountingHole" H 14000 21605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 13900 21650 50  0001 C CNN
+F 3 "~" H 13900 21650 50  0001 C CNN
+	1    13900 21650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
