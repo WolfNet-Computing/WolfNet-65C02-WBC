@@ -9,3 +9,5 @@
 | GPIO1 | CB1 |
 | GPIO2 | CA2 |
 | GPIO3 | CA1 |
+| GPIO4 | GPIO15 |
+| GPIO5 | GPIO14 |
