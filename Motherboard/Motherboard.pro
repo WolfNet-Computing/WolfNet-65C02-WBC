@@ -1,4 +1,4 @@
-update=30/04/2022 01:33:34
+update=01/05/2022 18:17:27
 version=1
 last_client=kicad
 [general]
@@ -75,7 +75,7 @@ Name=SIGH.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
-Name=SIG_RES.Cu
+Name=SIG_RESV.Cu
 Type=1
 Enabled=1
 [pcbnew/Layer.In2.Cu]
@@ -95,7 +95,7 @@ Name=12v.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.In6.Cu]
-Name=HOPE_NOT_2_USE.Cu
+Name=SIG_RESH.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.In7.Cu]
