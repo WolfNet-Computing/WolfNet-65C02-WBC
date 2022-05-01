@@ -1,1 +1,2 @@
+# Pinouts for the connectors.
 
