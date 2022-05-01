@@ -4,4 +4,4 @@
 
 | Column 1 | Column 2 |
 | :---: | :---: |
-| 1 | 2 |
+| VCC | GND |
