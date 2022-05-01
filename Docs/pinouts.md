@@ -31,3 +31,11 @@ For this connector I would refer to the 6502.org forum post for the 65 Serial In
 | MISO | +12v |
 | IRQ\ | +12v |
 | SEL1\ | SEL2\ |
+| -12v | SEL3 |
+| SEL4\ | GND |
+| SEL5\ | SEL6\ |
+| GND | SEL7\ |
+
+## Expansion ports
+
+COMING SOON!
