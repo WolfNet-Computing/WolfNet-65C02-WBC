@@ -4,4 +4,4 @@
 
 * [Hardware Licensing](license.html)
  
-Conceived and created by [TheAlmostGenius](https://thealmostgenius.geekgalaxy.com) 2022 for [WolfNet Computing](https://github.com/WolfNet-Computing) 2019 - 2022
+Conceived and created by [TheAlmostGenius](https://thealmostgenius.geekgalaxy.com) 2021-2022 for [WolfNet Computing](https://github.com/WolfNet-Computing) 2019 - 2022
