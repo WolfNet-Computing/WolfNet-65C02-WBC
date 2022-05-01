@@ -11,3 +11,9 @@
 | GPIO3 | CA1 |
 | GPIO4 | GPIO15 |
 | GPIO5 | GPIO14 |
+| GPIO6 | GPIO13 |
+| GPIO7 | GPIO12 |
+| GPIO8 | GPIO11 |
+| GPIO9 | GPIO10 |
+
+## 65SIB Connector
