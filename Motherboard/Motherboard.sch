@@ -7,7 +7,7 @@ Sheet 1 1
 Title "WolfNet 6502 WBC - Motherboard"
 Date "2022-04-29"
 Rev "2.3"
-Comp "WolfNet"
+Comp "WolfNet Computing"
 Comment1 "Motherboard for the WolfNet 65C02 based (NMOS Compatible) WorkBench Computer."
 Comment2 "CODENAME: Wolfe-1"
 Comment3 "NOTE: Always use same type of components for the board. CMOS OR TTL NOT MIXED!"
@@ -919,56 +919,56 @@ F 3 "" H 2500 10950 60  0000 C CNN
 	1    3000 10750
 	1    0    0    -1  
 $EndComp
-Text GLabel 4300 10000 0    50   BiDi ~ 0
+Text GLabel 4550 10000 0    50   BiDi ~ 0
 GPIO0
-Text GLabel 4300 10100 0    50   BiDi ~ 0
+Text GLabel 4550 10100 0    50   BiDi ~ 0
 GPIO1
-Text GLabel 4300 10200 0    50   BiDi ~ 0
+Text GLabel 4550 10200 0    50   BiDi ~ 0
 GPIO2
-Text GLabel 4300 10300 0    50   BiDi ~ 0
+Text GLabel 4550 10300 0    50   BiDi ~ 0
 GPIO3
-Text GLabel 4300 10400 0    50   BiDi ~ 0
+Text GLabel 4550 10400 0    50   BiDi ~ 0
 GPIO4
 $Comp
 L PC:GPIO_Connector J4
 U 1 1 61A7B6BE
-P 4500 10400
-F 0 "J4" H 4550 11100 50  0000 C CNN
-F 1 "GPIO_Connector" H 4550 11000 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x11_P2.54mm_Vertical" H 4500 10400 50  0001 C CNN
-F 3 "~" H 4500 10400 50  0001 C CNN
-	1    4500 10400
+P 4750 10400
+F 0 "J4" H 4800 11100 50  0000 C CNN
+F 1 "GPIO_Connector" H 4800 11000 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x11_P2.54mm_Vertical" H 4750 10400 50  0001 C CNN
+F 3 "~" H 4750 10400 50  0001 C CNN
+	1    4750 10400
 	1    0    0    -1  
 $EndComp
-Text GLabel 4300 10600 0    50   BiDi ~ 0
+Text GLabel 4550 10600 0    50   BiDi ~ 0
 GPIO6
-Text GLabel 4300 10500 0    50   BiDi ~ 0
+Text GLabel 4550 10500 0    50   BiDi ~ 0
 GPIO5
-Text GLabel 4300 10700 0    50   BiDi ~ 0
+Text GLabel 4550 10700 0    50   BiDi ~ 0
 GPIO7
-Text GLabel 4300 10800 0    50   BiDi ~ 0
+Text GLabel 4550 10800 0    50   BiDi ~ 0
 GPIO8
-Text GLabel 4300 10900 0    50   BiDi ~ 0
+Text GLabel 4550 10900 0    50   BiDi ~ 0
 GPIO9
-Text GLabel 4800 10400 2    50   BiDi ~ 0
+Text GLabel 5050 10400 2    50   BiDi ~ 0
 GPIO15
-Text GLabel 4800 10500 2    50   BiDi ~ 0
+Text GLabel 5050 10500 2    50   BiDi ~ 0
 GPIO14
-Text GLabel 4800 10600 2    50   BiDi ~ 0
+Text GLabel 5050 10600 2    50   BiDi ~ 0
 GPIO13
-Text GLabel 4800 10700 2    50   BiDi ~ 0
+Text GLabel 5050 10700 2    50   BiDi ~ 0
 GPIO12
-Text GLabel 4800 10800 2    50   BiDi ~ 0
+Text GLabel 5050 10800 2    50   BiDi ~ 0
 GPIO11
-Text GLabel 4800 10900 2    50   BiDi ~ 0
+Text GLabel 5050 10900 2    50   BiDi ~ 0
 GPIO10
-Text GLabel 4800 10300 2    50   BiDi ~ 0
+Text GLabel 5050 10300 2    50   BiDi ~ 0
 CA1
-Text GLabel 4800 10200 2    50   BiDi ~ 0
+Text GLabel 5050 10200 2    50   BiDi ~ 0
 CA2
-Text GLabel 4800 10100 2    50   BiDi ~ 0
+Text GLabel 5050 10100 2    50   BiDi ~ 0
 CB1
-Text GLabel 4800 10000 2    50   BiDi ~ 0
+Text GLabel 5050 10000 2    50   BiDi ~ 0
 CB2
 Text GLabel 3650 10050 2    50   Input ~ 0
 A0
@@ -1061,19 +1061,19 @@ Text GLabel 3650 11750 2    50   Output ~ 0
 $Comp
 L PC_Jumpers:Jumper_3_Bridged12 JP7
 U 1 1 61A75D9B
-P 5850 10150
-F 0 "JP7" V 5804 10217 50  0000 L CNN
-F 1 "NMI/IRQ1" V 5895 10217 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5850 10150 50  0001 C CNN
-F 3 "~" H 5850 10150 50  0001 C CNN
-	1    5850 10150
+P 5350 11750
+F 0 "JP7" V 5304 11817 50  0000 L CNN
+F 1 "NMI/IRQ1" V 5395 11817 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5350 11750 50  0001 C CNN
+F 3 "~" H 5350 11750 50  0001 C CNN
+	1    5350 11750
 	0    1    1    0   
 $EndComp
-Text GLabel 5700 10150 0    50   Input ~ 0
+Text GLabel 5200 11750 0    50   Input ~ 0
 ~IRQ_DECIDE
-Text GLabel 5850 9900 1    50   Output ~ 0
+Text GLabel 5350 11500 1    50   Output ~ 0
 ~IRQ1
-Text GLabel 5850 10400 3    50   Output ~ 0
+Text GLabel 5350 12000 3    50   Output ~ 0
 ~NMI
 Text GLabel 15100 8900 1    50   Output ~ 0
 GND
@@ -1781,7 +1781,7 @@ Connection ~ 27650 4550
 Wire Wire Line
 	27650 4550 27650 4350
 Text Notes 23200 10900 0    50   ~ 0
-Expansion sockets and ports\nIRQ3 - IRQ7
+Expansion ports\nIRQ3 - IRQ7
 Wire Wire Line
 	7050 3100 7200 3100
 Wire Wire Line
@@ -3217,9 +3217,9 @@ Text GLabel 15100 11900 0    50   Input ~ 0
 CS_UART
 Wire Wire Line
 	16500 9200 16500 9450
-Text GLabel 4300 9900 0    50   Input ~ 0
+Text GLabel 4550 9900 0    50   Input ~ 0
 VCC
-Text GLabel 4800 9900 2    50   Output ~ 0
+Text GLabel 5050 9900 2    50   Output ~ 0
 GND
 NoConn ~ 10150 8350
 $Comp
@@ -3952,10 +3952,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 21850 4300 50  0001 C CNN
 $EndComp
 Text GLabel 30150 12100 2    50   Input ~ 0
 ~RESET
-NoConn ~ 30150 12500
-NoConn ~ 28600 12500
-NoConn ~ 27000 12500
-NoConn ~ 25400 12500
 Wire Wire Line
 	11800 3100 13100 3100
 Wire Wire Line
@@ -4140,7 +4136,6 @@ Text GLabel 23400 11300 0    50   Input ~ 0
 VCC
 Text GLabel 23900 12600 2    50   Input ~ 0
 ~CS_DEV
-NoConn ~ 23900 12500
 Wire Notes Line
 	19100 1150 19100 16850
 Text GLabel 30150 12700 2    50   Output ~ 0
@@ -5213,4 +5208,14 @@ Wire Notes Line
 	12100 22800 15550 22800
 Wire Notes Line
 	12100 13750 12100 22800
+Text GLabel 30150 12500 2    50   Input ~ 0
+8MHz
+Text GLabel 28600 12500 2    50   Input ~ 0
+8MHz
+Text GLabel 27000 12500 2    50   Input ~ 0
+8MHz
+Text GLabel 25400 12500 2    50   Input ~ 0
+8MHz
+Text GLabel 23900 12500 2    50   Input ~ 0
+8MHz
 $EndSCHEMATC
