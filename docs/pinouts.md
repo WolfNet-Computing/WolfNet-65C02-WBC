@@ -38,4 +38,19 @@ For this connector I would refer to the 6502.org forum post for the 65 Serial In
 
 ## Expansion ports
 
-COMING SOON!
+| Column 1 | Column 2 |
+| :---: | :---: |
+| VCC | MEM_D0 |
+| GND | MEM_D1 |
+| A0 | MEM_D2 |
+| A1 | MEM_D3 |
+| A2 | MEM_D4 |
+| A3 | MEM_D5 |
+| A4 | MEM_D6 |
+| A5 | MEM_D7 |
+| A6 | RESET\ |
+| A7 | CLK |
+| A8 | PHI1 |
+| A9 | PHI2 |
+| A10 | 8MHz |
+| A11 | CS_DEV\ |
