@@ -5945,17 +5945,6 @@ F 3 "~" H 25850 16250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C33
-U 1 1 62CB9D76
-P 26350 16250
-F 0 "C33" H 26465 16296 50  0000 L CNN
-F 1 "100 nF" H 26465 16205 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 26388 16100 50  0001 C CNN
-F 3 "~" H 26350 16250 50  0001 C CNN
-	1    26350 16250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C34
 U 1 1 62CB9D7C
 P 26850 16250
@@ -6000,8 +5989,6 @@ Text GLabel 25350 16100 1    50   Input ~ 0
 VCC
 Text GLabel 25850 16100 1    50   Input ~ 0
 VCC
-Text GLabel 26350 16100 1    50   Input ~ 0
-VCC
 Text GLabel 26850 16100 1    50   Input ~ 0
 VCC
 Text GLabel 27350 16100 1    50   Input ~ 0
@@ -6025,8 +6012,6 @@ GND
 Text GLabel 27850 16400 3    50   Output ~ 0
 GND
 Text GLabel 26850 16400 3    50   Output ~ 0
-GND
-Text GLabel 26350 16400 3    50   Output ~ 0
 GND
 $Comp
 L Device:C C37
@@ -6070,17 +6055,6 @@ F 1 "100 nF" H 24965 16955 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 24888 16850 50  0001 C CNN
 F 3 "~" H 24850 17000 50  0001 C CNN
 	1    24850 17000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C41
-U 1 1 62D11A5C
-P 25350 17000
-F 0 "C41" H 25465 17046 50  0000 L CNN
-F 1 "100 nF" H 25465 16955 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 25388 16850 50  0001 C CNN
-F 3 "~" H 25350 17000 50  0001 C CNN
-	1    25350 17000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -6146,8 +6120,6 @@ Text GLabel 24350 16850 1    50   Input ~ 0
 VCC
 Text GLabel 24850 16850 1    50   Input ~ 0
 VCC
-Text GLabel 25350 16850 1    50   Input ~ 0
-VCC
 Text GLabel 25850 16850 1    50   Input ~ 0
 VCC
 Text GLabel 26350 16850 1    50   Input ~ 0
@@ -6165,8 +6137,6 @@ GND
 Text GLabel 24350 17150 3    50   Output ~ 0
 GND
 Text GLabel 24850 17150 3    50   Output ~ 0
-GND
-Text GLabel 25350 17150 3    50   Output ~ 0
 GND
 Text GLabel 25850 17150 3    50   Output ~ 0
 GND
