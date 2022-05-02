@@ -38,6 +38,8 @@ For this connector I would refer to the 6502.org forum post for the 65 Serial In
 
 ## Expansion ports
 
+These are all usable lines taken directly from the board or processor. To be used with the matching right-angled connectors so that they can be used similarly to PCI ports in x86 family PCs.
+
 | Column 1 | Column 2 |
 | :---: | :---: |
 | VCC | MEM_D0 |
@@ -54,3 +56,10 @@ For this connector I would refer to the 6502.org forum post for the 65 Serial In
 | A9 | PHI2 |
 | A10 | 8MHz |
 | A11 | CS_DEV\ |
+| A12 | IRQ3\ |
+| A13 | IRQ4\ |
+| A14 | IRQ5\ |
+| A15 | IRQ6\ |
+| R\W | IRQ7\ |
+| RDY | -12v |
+| SYNC | +12v |
