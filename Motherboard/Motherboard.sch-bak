@@ -1781,7 +1781,7 @@ Connection ~ 27650 4550
 Wire Wire Line
 	27650 4550 27650 4350
 Text Notes 23200 10900 0    50   ~ 0
-Expansion sockets and ports\nIRQ3 - IRQ7
+Expansion ports\nIRQ3 - IRQ7
 Wire Wire Line
 	7050 3100 7200 3100
 Wire Wire Line
@@ -4149,10 +4149,10 @@ Text GLabel 25400 12700 2    50   Output ~ 0
 Text GLabel 23900 12700 2    50   Output ~ 0
 ~IRQ3
 $Comp
-L 65xx:WD65C22 65SIB1
+L 65xx:WD65C22 65SIB/MM1
 U 1 1 61C6031F
 P 24350 8650
-F 0 "65SIB1" H 24350 7413 60  0000 C CNN
+F 0 "65SIB/MM1" H 24350 7413 60  0000 C CNN
 F 1 "WD65C22" H 24350 7519 60  0000 C CNN
 F 2 "Socket:DIP_Socket-40_W11.9_W12.7_W15.24_W17.78_W18.5_3M_240-1280-00-0602J" H 23850 8850 60  0001 C CNN
 F 3 "" H 23850 8850 60  0000 C CNN
@@ -5201,7 +5201,7 @@ Wire Notes Line
 Wire Notes Line
 	30850 1150 30850 21550
 Text Notes 23200 14200 0    50   ~ 0
-VCC, GND and capacitors.
+VCC, GND and 52 capacitors.
 Wire Notes Line
 	1800 1150 1800 19950
 Wire Notes Line
@@ -5218,4 +5218,1144 @@ Text GLabel 25400 12500 2    50   Input ~ 0
 8MHz
 Text GLabel 23900 12500 2    50   Input ~ 0
 8MHz
+$Comp
+L 74xx:74HCT00 CS_VID_NAND1
+U 5 1 62757EA9
+P 15850 17650
+F 0 "CS_VID_NAND1" H 16080 17696 50  0000 L CNN
+F 1 "74HCT00" H 16080 17605 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 15850 17650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 15850 17650 50  0001 C CNN
+	5    15850 17650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT00 RAM_NAND1
+U 5 1 6275A1EE
+P 16650 17650
+F 0 "RAM_NAND1" H 16880 17696 50  0000 L CNN
+F 1 "74HCT00" H 16880 17605 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 16650 17650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 16650 17650 50  0001 C CNN
+	5    16650 17650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT00 RAM_NAND2
+U 5 1 6275C030
+P 17450 17650
+F 0 "RAM_NAND2" H 17680 17696 50  0000 L CNN
+F 1 "74HCT00" H 17680 17605 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 17450 17650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 17450 17650 50  0001 C CNN
+	5    17450 17650
+	1    0    0    -1  
+$EndComp
+Text GLabel 15850 17150 1    50   Input ~ 0
+VCC
+Text GLabel 16650 17150 1    50   Input ~ 0
+VCC
+Text GLabel 17450 17150 1    50   Input ~ 0
+VCC
+Text GLabel 15850 18150 3    50   Output ~ 0
+GND
+Text GLabel 16650 18150 3    50   Output ~ 0
+GND
+Text GLabel 17450 18150 3    50   Output ~ 0
+GND
+$Comp
+L 74xx:74HCT04 IRQ_NOR1
+U 7 1 627CBC04
+P 15850 19100
+F 0 "IRQ_NOR1" H 16080 19146 50  0000 L CNN
+F 1 "74HCT04" H 16080 19055 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 15850 19100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 15850 19100 50  0001 C CNN
+	7    15850 19100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 RESET_NOR1
+U 7 1 627CCAD6
+P 16700 19100
+F 0 "RESET_NOR1" H 16930 19146 50  0000 L CNN
+F 1 "74HCT04" H 16930 19055 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 16700 19100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 16700 19100 50  0001 C CNN
+	7    16700 19100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 CS_UART_NOR1
+U 7 1 627CED62
+P 17550 19100
+F 0 "CS_UART_NOR1" H 17780 19146 50  0000 L CNN
+F 1 "74HCT04" H 17780 19055 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 17550 19100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 17550 19100 50  0001 C CNN
+	7    17550 19100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 CS_VID_NOR1
+U 7 1 627CED68
+P 18400 19100
+F 0 "CS_VID_NOR1" H 18630 19146 50  0000 L CNN
+F 1 "74HCT04" H 18630 19055 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 18400 19100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 18400 19100 50  0001 C CNN
+	7    18400 19100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 CS_GPIO_NOR1
+U 7 1 62824262
+P 19250 19100
+F 0 "CS_GPIO_NOR1" H 19480 19146 50  0000 L CNN
+F 1 "74HCT04" H 19480 19055 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 19250 19100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 19250 19100 50  0001 C CNN
+	7    19250 19100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 RAM_NOR1
+U 7 1 62824268
+P 20100 19100
+F 0 "RAM_NOR1" H 20330 19146 50  0000 L CNN
+F 1 "74HCT04" H 20330 19055 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 20100 19100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 20100 19100 50  0001 C CNN
+	7    20100 19100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 ROM_NOR1
+U 7 1 6287A06C
+P 20950 19100
+F 0 "ROM_NOR1" H 21180 19146 50  0000 L CNN
+F 1 "74HCT04" H 21180 19055 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 20950 19100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 20950 19100 50  0001 C CNN
+	7    20950 19100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 CS_65SIB_NOR1
+U 7 1 6287A072
+P 21800 19100
+F 0 "CS_65SIB_NOR1" H 22030 19146 50  0000 L CNN
+F 1 "74HCT04" H 22030 19055 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 21800 19100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 21800 19100 50  0001 C CNN
+	7    21800 19100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 ~MAX235_EN1
+U 7 1 62923506
+P 22650 19100
+F 0 "~MAX235_EN1" H 22880 19145 50  0000 L CNN
+F 1 "74HCT04" H 22880 19048 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 22650 19100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 22650 19100 50  0001 C CNN
+	7    22650 19100
+	1    0    0    -1  
+$EndComp
+Text GLabel 15850 18600 1    50   Input ~ 0
+VCC
+Text GLabel 18400 18600 1    50   Input ~ 0
+VCC
+Text GLabel 16700 18600 1    50   Input ~ 0
+VCC
+Text GLabel 17550 18600 1    50   Input ~ 0
+VCC
+Text GLabel 19250 18600 1    50   Input ~ 0
+VCC
+Text GLabel 20100 18600 1    50   Input ~ 0
+VCC
+Text GLabel 20950 18600 1    50   Input ~ 0
+VCC
+Text GLabel 21800 18600 1    50   Input ~ 0
+VCC
+Text GLabel 22650 18600 1    50   Input ~ 0
+VCC
+Text GLabel 15850 19600 3    50   Output ~ 0
+GND
+Text GLabel 16700 19600 3    50   Output ~ 0
+GND
+Text GLabel 17550 19600 3    50   Output ~ 0
+GND
+Text GLabel 18400 19600 3    50   Output ~ 0
+GND
+Text GLabel 19250 19600 3    50   Output ~ 0
+GND
+Text GLabel 20100 19600 3    50   Output ~ 0
+GND
+Text GLabel 20950 19600 3    50   Output ~ 0
+GND
+Text GLabel 21800 19600 3    50   Output ~ 0
+GND
+Text GLabel 22650 19600 3    50   Output ~ 0
+GND
+$Comp
+L 74xx:74LS08 CS_UART_AND1
+U 5 1 6293C5C3
+P 18250 17650
+F 0 "CS_UART_AND1" H 18480 17696 50  0000 L CNN
+F 1 "74LS08" H 18480 17605 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 18250 17650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 18250 17650 50  0001 C CNN
+	5    18250 17650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 IRQ_RW_AND1
+U 5 1 6293D3A2
+P 19000 17650
+F 0 "IRQ_RW_AND1" H 19230 17696 50  0000 L CNN
+F 1 "74LS08" H 19230 17605 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 19000 17650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 19000 17650 50  0001 C CNN
+	5    19000 17650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 CS_GPIO_AND1
+U 5 1 629EC527
+P 19750 17650
+F 0 "CS_GPIO_AND1" H 19980 17696 50  0000 L CNN
+F 1 "74LS08" H 19980 17605 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 19750 17650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 19750 17650 50  0001 C CNN
+	5    19750 17650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 CS_65SIB_AND1
+U 5 1 629EDB6E
+P 20500 17650
+F 0 "CS_65SIB_AND1" H 20730 17696 50  0000 L CNN
+F 1 "74LS08" H 20730 17605 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 20500 17650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 20500 17650 50  0001 C CNN
+	5    20500 17650
+	1    0    0    -1  
+$EndComp
+Text GLabel 18250 17150 1    50   Input ~ 0
+VCC
+Text GLabel 19000 17150 1    50   Input ~ 0
+VCC
+Text GLabel 19750 17150 1    50   Input ~ 0
+VCC
+Text GLabel 20500 17150 1    50   Input ~ 0
+VCC
+Text GLabel 18250 18150 3    50   Output ~ 0
+GND
+Text GLabel 19000 18150 3    50   Output ~ 0
+GND
+Text GLabel 19750 18150 3    50   Output ~ 0
+GND
+Text GLabel 20500 18150 3    50   Output ~ 0
+GND
+$Comp
+L 74xx:74LS20 SHARED_ROM2
+U 3 1 629FAEE2
+P 15850 20600
+F 0 "SHARED_ROM2" H 16080 20646 50  0000 L CNN
+F 1 "74LS20" H 16080 20555 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 15850 20600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 15850 20600 50  0001 C CNN
+	3    15850 20600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS20 ROM1_NAND4
+U 3 1 629FCC9D
+P 16600 20600
+F 0 "ROM1_NAND4" H 16830 20646 50  0000 L CNN
+F 1 "74LS20" H 16830 20555 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 16600 20600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 16600 20600 50  0001 C CNN
+	3    16600 20600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS20 ROM2_NAND4
+U 3 1 629FD6A1
+P 17350 20600
+F 0 "ROM2_NAND4" H 17580 20646 50  0000 L CNN
+F 1 "74LS20" H 17580 20555 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 17350 20600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 17350 20600 50  0001 C CNN
+	3    17350 20600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS20 ROM3_NAND4
+U 3 1 629FE686
+P 18100 20600
+F 0 "ROM3_NAND4" H 18330 20646 50  0000 L CNN
+F 1 "74LS20" H 18330 20555 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 18100 20600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 18100 20600 50  0001 C CNN
+	3    18100 20600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS20 ROM4_NAND4
+U 3 1 629FF5D8
+P 18850 20600
+F 0 "ROM4_NAND4" H 19080 20646 50  0000 L CNN
+F 1 "74LS20" H 19080 20555 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 18850 20600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 18850 20600 50  0001 C CNN
+	3    18850 20600
+	1    0    0    -1  
+$EndComp
+Text GLabel 15850 20100 1    50   Input ~ 0
+VCC
+Text GLabel 16600 20100 1    50   Input ~ 0
+VCC
+Text GLabel 17350 20100 1    50   Input ~ 0
+VCC
+Text GLabel 18100 20100 1    50   Input ~ 0
+VCC
+Text GLabel 18850 20100 1    50   Input ~ 0
+VCC
+Text GLabel 15850 21100 3    50   Output ~ 0
+GND
+Text GLabel 16600 21100 3    50   Output ~ 0
+GND
+Text GLabel 17350 21100 3    50   Output ~ 0
+GND
+Text GLabel 18100 21100 3    50   Output ~ 0
+GND
+Text GLabel 18850 21100 3    50   Output ~ 0
+GND
+$Comp
+L 74xx:74LS21 CS_UART_AND4
+U 3 1 62A07AC1
+P 19650 20600
+F 0 "CS_UART_AND4" H 19880 20646 50  0000 L CNN
+F 1 "74LS21" H 19880 20555 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 19650 20600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS21" H 19650 20600 50  0001 C CNN
+	3    19650 20600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS21 CS_GPIO_AND4
+U 3 1 62A0DA99
+P 20400 20600
+F 0 "CS_GPIO_AND4" H 20630 20646 50  0000 L CNN
+F 1 "74LS21" H 20630 20555 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 20400 20600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS21" H 20400 20600 50  0001 C CNN
+	3    20400 20600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS21 CS_65SIB_AND4
+U 3 1 62A0EC4C
+P 21150 20600
+F 0 "CS_65SIB_AND4" H 21380 20646 50  0000 L CNN
+F 1 "74LS21" H 21380 20555 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 21150 20600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS21" H 21150 20600 50  0001 C CNN
+	3    21150 20600
+	1    0    0    -1  
+$EndComp
+Text GLabel 19650 20100 1    50   Input ~ 0
+VCC
+Text GLabel 20400 20100 1    50   Input ~ 0
+VCC
+Text GLabel 21150 20100 1    50   Input ~ 0
+VCC
+Text GLabel 19650 21100 3    50   Output ~ 0
+GND
+Text GLabel 20400 21100 3    50   Output ~ 0
+GND
+Text GLabel 21150 21100 3    50   Output ~ 0
+GND
+$Comp
+L Device:C C7
+U 1 1 62A9E179
+P 23350 14750
+F 0 "C7" H 23465 14796 50  0000 L CNN
+F 1 "100 nF" H 23465 14705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 23388 14600 50  0001 C CNN
+F 3 "~" H 23350 14750 50  0001 C CNN
+	1    23350 14750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 62A9E610
+P 23850 14750
+F 0 "C8" H 23965 14796 50  0000 L CNN
+F 1 "100 nF" H 23965 14705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 23888 14600 50  0001 C CNN
+F 3 "~" H 23850 14750 50  0001 C CNN
+	1    23850 14750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 62A9EE75
+P 24350 14750
+F 0 "C9" H 24465 14796 50  0000 L CNN
+F 1 "100 nF" H 24465 14705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 24388 14600 50  0001 C CNN
+F 3 "~" H 24350 14750 50  0001 C CNN
+	1    24350 14750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 62A9EE7B
+P 24850 14750
+F 0 "C10" H 24965 14796 50  0000 L CNN
+F 1 "100 nF" H 24965 14705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 24888 14600 50  0001 C CNN
+F 3 "~" H 24850 14750 50  0001 C CNN
+	1    24850 14750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 62AF3861
+P 25350 14750
+F 0 "C11" H 25465 14796 50  0000 L CNN
+F 1 "100 nF" H 25465 14705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 25388 14600 50  0001 C CNN
+F 3 "~" H 25350 14750 50  0001 C CNN
+	1    25350 14750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 62AF3867
+P 25850 14750
+F 0 "C12" H 25965 14796 50  0000 L CNN
+F 1 "100 nF" H 25965 14705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 25888 14600 50  0001 C CNN
+F 3 "~" H 25850 14750 50  0001 C CNN
+	1    25850 14750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 62B48127
+P 26350 14750
+F 0 "C13" H 26465 14796 50  0000 L CNN
+F 1 "100 nF" H 26465 14705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 26388 14600 50  0001 C CNN
+F 3 "~" H 26350 14750 50  0001 C CNN
+	1    26350 14750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 62B4812D
+P 26850 14750
+F 0 "C14" H 26965 14796 50  0000 L CNN
+F 1 "100 nF" H 26965 14705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 26888 14600 50  0001 C CNN
+F 3 "~" H 26850 14750 50  0001 C CNN
+	1    26850 14750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 62B9CA45
+P 27350 14750
+F 0 "C15" H 27465 14796 50  0000 L CNN
+F 1 "100 nF" H 27465 14705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 27388 14600 50  0001 C CNN
+F 3 "~" H 27350 14750 50  0001 C CNN
+	1    27350 14750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 62B9CA4B
+P 27850 14750
+F 0 "C16" H 27965 14796 50  0000 L CNN
+F 1 "100 nF" H 27965 14705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 27888 14600 50  0001 C CNN
+F 3 "~" H 27850 14750 50  0001 C CNN
+	1    27850 14750
+	1    0    0    -1  
+$EndComp
+Text GLabel 23350 14600 1    50   Input ~ 0
+VCC
+Text GLabel 23850 14600 1    50   Input ~ 0
+VCC
+Text GLabel 24350 14600 1    50   Input ~ 0
+VCC
+Text GLabel 24850 14600 1    50   Input ~ 0
+VCC
+Text GLabel 25350 14600 1    50   Input ~ 0
+VCC
+Text GLabel 25850 14600 1    50   Input ~ 0
+VCC
+Text GLabel 26350 14600 1    50   Input ~ 0
+VCC
+Text GLabel 26850 14600 1    50   Input ~ 0
+VCC
+Text GLabel 27350 14600 1    50   Input ~ 0
+VCC
+Text GLabel 27850 14600 1    50   Input ~ 0
+VCC
+Text GLabel 23350 14900 3    50   Output ~ 0
+GND
+Text GLabel 23850 14900 3    50   Output ~ 0
+GND
+Text GLabel 24350 14900 3    50   Output ~ 0
+GND
+Text GLabel 24850 14900 3    50   Output ~ 0
+GND
+Text GLabel 25350 14900 3    50   Output ~ 0
+GND
+Text GLabel 25850 14900 3    50   Output ~ 0
+GND
+Text GLabel 27350 14900 3    50   Output ~ 0
+GND
+Text GLabel 27850 14900 3    50   Output ~ 0
+GND
+Text GLabel 26850 14900 3    50   Output ~ 0
+GND
+Text GLabel 26350 14900 3    50   Output ~ 0
+GND
+$Comp
+L Device:C C17
+U 1 1 62C631F8
+P 23350 15500
+F 0 "C17" H 23465 15546 50  0000 L CNN
+F 1 "100 nF" H 23465 15455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 23388 15350 50  0001 C CNN
+F 3 "~" H 23350 15500 50  0001 C CNN
+	1    23350 15500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 62C631FE
+P 23850 15500
+F 0 "C18" H 23965 15546 50  0000 L CNN
+F 1 "100 nF" H 23965 15455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 23888 15350 50  0001 C CNN
+F 3 "~" H 23850 15500 50  0001 C CNN
+	1    23850 15500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C19
+U 1 1 62C63204
+P 24350 15500
+F 0 "C19" H 24465 15546 50  0000 L CNN
+F 1 "100 nF" H 24465 15455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 24388 15350 50  0001 C CNN
+F 3 "~" H 24350 15500 50  0001 C CNN
+	1    24350 15500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 62C6320A
+P 24850 15500
+F 0 "C20" H 24965 15546 50  0000 L CNN
+F 1 "100 nF" H 24965 15455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 24888 15350 50  0001 C CNN
+F 3 "~" H 24850 15500 50  0001 C CNN
+	1    24850 15500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C21
+U 1 1 62C63210
+P 25350 15500
+F 0 "C21" H 25465 15546 50  0000 L CNN
+F 1 "100 nF" H 25465 15455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 25388 15350 50  0001 C CNN
+F 3 "~" H 25350 15500 50  0001 C CNN
+	1    25350 15500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 62C63216
+P 25850 15500
+F 0 "C22" H 25965 15546 50  0000 L CNN
+F 1 "100 nF" H 25965 15455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 25888 15350 50  0001 C CNN
+F 3 "~" H 25850 15500 50  0001 C CNN
+	1    25850 15500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C23
+U 1 1 62C6321C
+P 26350 15500
+F 0 "C23" H 26465 15546 50  0000 L CNN
+F 1 "100 nF" H 26465 15455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 26388 15350 50  0001 C CNN
+F 3 "~" H 26350 15500 50  0001 C CNN
+	1    26350 15500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C24
+U 1 1 62C63222
+P 26850 15500
+F 0 "C24" H 26965 15546 50  0000 L CNN
+F 1 "100 nF" H 26965 15455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 26888 15350 50  0001 C CNN
+F 3 "~" H 26850 15500 50  0001 C CNN
+	1    26850 15500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C25
+U 1 1 62C63228
+P 27350 15500
+F 0 "C25" H 27465 15546 50  0000 L CNN
+F 1 "100 nF" H 27465 15455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 27388 15350 50  0001 C CNN
+F 3 "~" H 27350 15500 50  0001 C CNN
+	1    27350 15500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C26
+U 1 1 62C6322E
+P 27850 15500
+F 0 "C26" H 27965 15546 50  0000 L CNN
+F 1 "100 nF" H 27965 15455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 27888 15350 50  0001 C CNN
+F 3 "~" H 27850 15500 50  0001 C CNN
+	1    27850 15500
+	1    0    0    -1  
+$EndComp
+Text GLabel 23350 15350 1    50   Input ~ 0
+VCC
+Text GLabel 23850 15350 1    50   Input ~ 0
+VCC
+Text GLabel 24350 15350 1    50   Input ~ 0
+VCC
+Text GLabel 24850 15350 1    50   Input ~ 0
+VCC
+Text GLabel 25350 15350 1    50   Input ~ 0
+VCC
+Text GLabel 25850 15350 1    50   Input ~ 0
+VCC
+Text GLabel 26350 15350 1    50   Input ~ 0
+VCC
+Text GLabel 26850 15350 1    50   Input ~ 0
+VCC
+Text GLabel 27350 15350 1    50   Input ~ 0
+VCC
+Text GLabel 27850 15350 1    50   Input ~ 0
+VCC
+Text GLabel 23350 15650 3    50   Output ~ 0
+GND
+Text GLabel 23850 15650 3    50   Output ~ 0
+GND
+Text GLabel 24350 15650 3    50   Output ~ 0
+GND
+Text GLabel 24850 15650 3    50   Output ~ 0
+GND
+Text GLabel 25350 15650 3    50   Output ~ 0
+GND
+Text GLabel 25850 15650 3    50   Output ~ 0
+GND
+Text GLabel 27350 15650 3    50   Output ~ 0
+GND
+Text GLabel 27850 15650 3    50   Output ~ 0
+GND
+Text GLabel 26850 15650 3    50   Output ~ 0
+GND
+Text GLabel 26350 15650 3    50   Output ~ 0
+GND
+$Comp
+L Device:C C27
+U 1 1 62CB9D52
+P 23350 16250
+F 0 "C27" H 23465 16296 50  0000 L CNN
+F 1 "100 nF" H 23465 16205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 23388 16100 50  0001 C CNN
+F 3 "~" H 23350 16250 50  0001 C CNN
+	1    23350 16250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C28
+U 1 1 62CB9D58
+P 23850 16250
+F 0 "C28" H 23965 16296 50  0000 L CNN
+F 1 "100 nF" H 23965 16205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 23888 16100 50  0001 C CNN
+F 3 "~" H 23850 16250 50  0001 C CNN
+	1    23850 16250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C29
+U 1 1 62CB9D5E
+P 24350 16250
+F 0 "C29" H 24465 16296 50  0000 L CNN
+F 1 "100 nF" H 24465 16205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 24388 16100 50  0001 C CNN
+F 3 "~" H 24350 16250 50  0001 C CNN
+	1    24350 16250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C30
+U 1 1 62CB9D64
+P 24850 16250
+F 0 "C30" H 24965 16296 50  0000 L CNN
+F 1 "100 nF" H 24965 16205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 24888 16100 50  0001 C CNN
+F 3 "~" H 24850 16250 50  0001 C CNN
+	1    24850 16250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C31
+U 1 1 62CB9D6A
+P 25350 16250
+F 0 "C31" H 25465 16296 50  0000 L CNN
+F 1 "100 nF" H 25465 16205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 25388 16100 50  0001 C CNN
+F 3 "~" H 25350 16250 50  0001 C CNN
+	1    25350 16250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C32
+U 1 1 62CB9D70
+P 25850 16250
+F 0 "C32" H 25965 16296 50  0000 L CNN
+F 1 "100 nF" H 25965 16205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 25888 16100 50  0001 C CNN
+F 3 "~" H 25850 16250 50  0001 C CNN
+	1    25850 16250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C33
+U 1 1 62CB9D76
+P 26350 16250
+F 0 "C33" H 26465 16296 50  0000 L CNN
+F 1 "100 nF" H 26465 16205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 26388 16100 50  0001 C CNN
+F 3 "~" H 26350 16250 50  0001 C CNN
+	1    26350 16250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C34
+U 1 1 62CB9D7C
+P 26850 16250
+F 0 "C34" H 26965 16296 50  0000 L CNN
+F 1 "100 nF" H 26965 16205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 26888 16100 50  0001 C CNN
+F 3 "~" H 26850 16250 50  0001 C CNN
+	1    26850 16250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C35
+U 1 1 62CB9D82
+P 27350 16250
+F 0 "C35" H 27465 16296 50  0000 L CNN
+F 1 "100 nF" H 27465 16205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 27388 16100 50  0001 C CNN
+F 3 "~" H 27350 16250 50  0001 C CNN
+	1    27350 16250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C36
+U 1 1 62CB9D88
+P 27850 16250
+F 0 "C36" H 27965 16296 50  0000 L CNN
+F 1 "100 nF" H 27965 16205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 27888 16100 50  0001 C CNN
+F 3 "~" H 27850 16250 50  0001 C CNN
+	1    27850 16250
+	1    0    0    -1  
+$EndComp
+Text GLabel 23350 16100 1    50   Input ~ 0
+VCC
+Text GLabel 23850 16100 1    50   Input ~ 0
+VCC
+Text GLabel 24350 16100 1    50   Input ~ 0
+VCC
+Text GLabel 24850 16100 1    50   Input ~ 0
+VCC
+Text GLabel 25350 16100 1    50   Input ~ 0
+VCC
+Text GLabel 25850 16100 1    50   Input ~ 0
+VCC
+Text GLabel 26350 16100 1    50   Input ~ 0
+VCC
+Text GLabel 26850 16100 1    50   Input ~ 0
+VCC
+Text GLabel 27350 16100 1    50   Input ~ 0
+VCC
+Text GLabel 27850 16100 1    50   Input ~ 0
+VCC
+Text GLabel 23350 16400 3    50   Output ~ 0
+GND
+Text GLabel 23850 16400 3    50   Output ~ 0
+GND
+Text GLabel 24350 16400 3    50   Output ~ 0
+GND
+Text GLabel 24850 16400 3    50   Output ~ 0
+GND
+Text GLabel 25350 16400 3    50   Output ~ 0
+GND
+Text GLabel 25850 16400 3    50   Output ~ 0
+GND
+Text GLabel 27350 16400 3    50   Output ~ 0
+GND
+Text GLabel 27850 16400 3    50   Output ~ 0
+GND
+Text GLabel 26850 16400 3    50   Output ~ 0
+GND
+Text GLabel 26350 16400 3    50   Output ~ 0
+GND
+$Comp
+L Device:C C37
+U 1 1 62D11A44
+P 23350 17000
+F 0 "C37" H 23465 17046 50  0000 L CNN
+F 1 "100 nF" H 23465 16955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 23388 16850 50  0001 C CNN
+F 3 "~" H 23350 17000 50  0001 C CNN
+	1    23350 17000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C38
+U 1 1 62D11A4A
+P 23850 17000
+F 0 "C38" H 23965 17046 50  0000 L CNN
+F 1 "100 nF" H 23965 16955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 23888 16850 50  0001 C CNN
+F 3 "~" H 23850 17000 50  0001 C CNN
+	1    23850 17000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C39
+U 1 1 62D11A50
+P 24350 17000
+F 0 "C39" H 24465 17046 50  0000 L CNN
+F 1 "100 nF" H 24465 16955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 24388 16850 50  0001 C CNN
+F 3 "~" H 24350 17000 50  0001 C CNN
+	1    24350 17000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C40
+U 1 1 62D11A56
+P 24850 17000
+F 0 "C40" H 24965 17046 50  0000 L CNN
+F 1 "100 nF" H 24965 16955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 24888 16850 50  0001 C CNN
+F 3 "~" H 24850 17000 50  0001 C CNN
+	1    24850 17000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C41
+U 1 1 62D11A5C
+P 25350 17000
+F 0 "C41" H 25465 17046 50  0000 L CNN
+F 1 "100 nF" H 25465 16955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 25388 16850 50  0001 C CNN
+F 3 "~" H 25350 17000 50  0001 C CNN
+	1    25350 17000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C42
+U 1 1 62D11A62
+P 25850 17000
+F 0 "C42" H 25965 17046 50  0000 L CNN
+F 1 "100 nF" H 25965 16955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 25888 16850 50  0001 C CNN
+F 3 "~" H 25850 17000 50  0001 C CNN
+	1    25850 17000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C43
+U 1 1 62D11A68
+P 26350 17000
+F 0 "C43" H 26465 17046 50  0000 L CNN
+F 1 "100 nF" H 26465 16955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 26388 16850 50  0001 C CNN
+F 3 "~" H 26350 17000 50  0001 C CNN
+	1    26350 17000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C44
+U 1 1 62D11A6E
+P 26850 17000
+F 0 "C44" H 26965 17046 50  0000 L CNN
+F 1 "100 nF" H 26965 16955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 26888 16850 50  0001 C CNN
+F 3 "~" H 26850 17000 50  0001 C CNN
+	1    26850 17000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C45
+U 1 1 62D11A74
+P 27350 17000
+F 0 "C45" H 27465 17046 50  0000 L CNN
+F 1 "100 nF" H 27465 16955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 27388 16850 50  0001 C CNN
+F 3 "~" H 27350 17000 50  0001 C CNN
+	1    27350 17000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C46
+U 1 1 62D11A7A
+P 27850 17000
+F 0 "C46" H 27965 17046 50  0000 L CNN
+F 1 "100 nF" H 27965 16955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 27888 16850 50  0001 C CNN
+F 3 "~" H 27850 17000 50  0001 C CNN
+	1    27850 17000
+	1    0    0    -1  
+$EndComp
+Text GLabel 23350 16850 1    50   Input ~ 0
+VCC
+Text GLabel 23850 16850 1    50   Input ~ 0
+VCC
+Text GLabel 24350 16850 1    50   Input ~ 0
+VCC
+Text GLabel 24850 16850 1    50   Input ~ 0
+VCC
+Text GLabel 25350 16850 1    50   Input ~ 0
+VCC
+Text GLabel 25850 16850 1    50   Input ~ 0
+VCC
+Text GLabel 26350 16850 1    50   Input ~ 0
+VCC
+Text GLabel 26850 16850 1    50   Input ~ 0
+VCC
+Text GLabel 27350 16850 1    50   Input ~ 0
+VCC
+Text GLabel 27850 16850 1    50   Input ~ 0
+VCC
+Text GLabel 23350 17150 3    50   Output ~ 0
+GND
+Text GLabel 23850 17150 3    50   Output ~ 0
+GND
+Text GLabel 24350 17150 3    50   Output ~ 0
+GND
+Text GLabel 24850 17150 3    50   Output ~ 0
+GND
+Text GLabel 25350 17150 3    50   Output ~ 0
+GND
+Text GLabel 25850 17150 3    50   Output ~ 0
+GND
+Text GLabel 27350 17150 3    50   Output ~ 0
+GND
+Text GLabel 27850 17150 3    50   Output ~ 0
+GND
+Text GLabel 26850 17150 3    50   Output ~ 0
+GND
+Text GLabel 26350 17150 3    50   Output ~ 0
+GND
+$Comp
+L Device:C C47
+U 1 1 62D68588
+P 23350 17750
+F 0 "C47" H 23465 17796 50  0000 L CNN
+F 1 "100 nF" H 23465 17705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 23388 17600 50  0001 C CNN
+F 3 "~" H 23350 17750 50  0001 C CNN
+	1    23350 17750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C48
+U 1 1 62D6858E
+P 23850 17750
+F 0 "C48" H 23965 17796 50  0000 L CNN
+F 1 "100 nF" H 23965 17705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 23888 17600 50  0001 C CNN
+F 3 "~" H 23850 17750 50  0001 C CNN
+	1    23850 17750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C49
+U 1 1 62D68594
+P 24350 17750
+F 0 "C49" H 24465 17796 50  0000 L CNN
+F 1 "100 nF" H 24465 17705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 24388 17600 50  0001 C CNN
+F 3 "~" H 24350 17750 50  0001 C CNN
+	1    24350 17750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C50
+U 1 1 62D6859A
+P 24850 17750
+F 0 "C50" H 24965 17796 50  0000 L CNN
+F 1 "100 nF" H 24965 17705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 24888 17600 50  0001 C CNN
+F 3 "~" H 24850 17750 50  0001 C CNN
+	1    24850 17750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C51
+U 1 1 62D685A0
+P 25350 17750
+F 0 "C51" H 25465 17796 50  0000 L CNN
+F 1 "100 nF" H 25465 17705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 25388 17600 50  0001 C CNN
+F 3 "~" H 25350 17750 50  0001 C CNN
+	1    25350 17750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C52
+U 1 1 62D685A6
+P 25850 17750
+F 0 "C52" H 25965 17796 50  0000 L CNN
+F 1 "100 nF" H 25965 17705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 25888 17600 50  0001 C CNN
+F 3 "~" H 25850 17750 50  0001 C CNN
+	1    25850 17750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C53
+U 1 1 62D685AC
+P 26350 17750
+F 0 "C53" H 26465 17796 50  0000 L CNN
+F 1 "100 nF" H 26465 17705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 26388 17600 50  0001 C CNN
+F 3 "~" H 26350 17750 50  0001 C CNN
+	1    26350 17750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C54
+U 1 1 62D685B2
+P 26850 17750
+F 0 "C54" H 26965 17796 50  0000 L CNN
+F 1 "100 nF" H 26965 17705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 26888 17600 50  0001 C CNN
+F 3 "~" H 26850 17750 50  0001 C CNN
+	1    26850 17750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C55
+U 1 1 62D685B8
+P 27350 17750
+F 0 "C55" H 27465 17796 50  0000 L CNN
+F 1 "100 nF" H 27465 17705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 27388 17600 50  0001 C CNN
+F 3 "~" H 27350 17750 50  0001 C CNN
+	1    27350 17750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C56
+U 1 1 62D685BE
+P 27850 17750
+F 0 "C56" H 27965 17796 50  0000 L CNN
+F 1 "100 nF" H 27965 17705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 27888 17600 50  0001 C CNN
+F 3 "~" H 27850 17750 50  0001 C CNN
+	1    27850 17750
+	1    0    0    -1  
+$EndComp
+Text GLabel 23350 17600 1    50   Input ~ 0
+VCC
+Text GLabel 23850 17600 1    50   Input ~ 0
+VCC
+Text GLabel 24350 17600 1    50   Input ~ 0
+VCC
+Text GLabel 24850 17600 1    50   Input ~ 0
+VCC
+Text GLabel 25350 17600 1    50   Input ~ 0
+VCC
+Text GLabel 25850 17600 1    50   Input ~ 0
+VCC
+Text GLabel 26350 17600 1    50   Input ~ 0
+VCC
+Text GLabel 26850 17600 1    50   Input ~ 0
+VCC
+Text GLabel 27350 17600 1    50   Input ~ 0
+VCC
+Text GLabel 27850 17600 1    50   Input ~ 0
+VCC
+Text GLabel 23350 17900 3    50   Output ~ 0
+GND
+Text GLabel 23850 17900 3    50   Output ~ 0
+GND
+Text GLabel 24350 17900 3    50   Output ~ 0
+GND
+Text GLabel 24850 17900 3    50   Output ~ 0
+GND
+Text GLabel 25350 17900 3    50   Output ~ 0
+GND
+Text GLabel 25850 17900 3    50   Output ~ 0
+GND
+Text GLabel 27350 17900 3    50   Output ~ 0
+GND
+Text GLabel 27850 17900 3    50   Output ~ 0
+GND
+Text GLabel 26850 17900 3    50   Output ~ 0
+GND
+Text GLabel 26350 17900 3    50   Output ~ 0
+GND
+$Comp
+L Device:C C57
+U 1 1 62DBED42
+P 23350 18500
+F 0 "C57" H 23465 18546 50  0000 L CNN
+F 1 "100 nF" H 23465 18455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 23388 18350 50  0001 C CNN
+F 3 "~" H 23350 18500 50  0001 C CNN
+	1    23350 18500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C58
+U 1 1 62DBED48
+P 23850 18500
+F 0 "C58" H 23965 18546 50  0000 L CNN
+F 1 "100 nF" H 23965 18455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 23888 18350 50  0001 C CNN
+F 3 "~" H 23850 18500 50  0001 C CNN
+	1    23850 18500
+	1    0    0    -1  
+$EndComp
+Text GLabel 23350 18350 1    50   Input ~ 0
+VCC
+Text GLabel 23850 18350 1    50   Input ~ 0
+VCC
+Text GLabel 23350 18650 3    50   Output ~ 0
+GND
+Text GLabel 23850 18650 3    50   Output ~ 0
+GND
 $EndSCHEMATC
