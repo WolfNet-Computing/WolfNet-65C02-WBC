@@ -6358,4 +6358,19 @@ Text GLabel 25350 16850 1    50   Input ~ 0
 VCC
 Text GLabel 25350 17150 3    50   Output ~ 0
 GND
+$Comp
+L 74xx:74HC74 CLK_DIV1
+U 3 1 627B16A5
+P 21250 17650
+F 0 "CLK_DIV1" H 21250 18131 50  0000 C CNN
+F 1 "74HC74" H 21250 18040 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 21250 17650 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 21250 17650 50  0001 C CNN
+	3    21250 17650
+	1    0    0    -1  
+$EndComp
+Text GLabel 21250 17250 1    50   Input ~ 0
+VCC
+Text GLabel 21250 18050 3    50   Output ~ 0
+GND
 $EndSCHEMATC

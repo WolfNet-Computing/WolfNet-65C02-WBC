@@ -6328,4 +6328,34 @@ Text GLabel 23350 18650 3    50   Output ~ 0
 GND
 Text GLabel 23850 18650 3    50   Output ~ 0
 GND
+$Comp
+L Device:C C33
+U 1 1 62755F17
+P 26350 16250
+F 0 "C33" H 26465 16296 50  0000 L CNN
+F 1 "100 nF" H 26465 16205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 26388 16100 50  0001 C CNN
+F 3 "~" H 26350 16250 50  0001 C CNN
+	1    26350 16250
+	1    0    0    -1  
+$EndComp
+Text GLabel 26350 16100 1    50   Input ~ 0
+VCC
+Text GLabel 26350 16400 3    50   Output ~ 0
+GND
+$Comp
+L Device:C C41
+U 1 1 627AAA94
+P 25350 17000
+F 0 "C41" H 25465 17046 50  0000 L CNN
+F 1 "100 nF" H 25465 16955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 25388 16850 50  0001 C CNN
+F 3 "~" H 25350 17000 50  0001 C CNN
+	1    25350 17000
+	1    0    0    -1  
+$EndComp
+Text GLabel 25350 16850 1    50   Input ~ 0
+VCC
+Text GLabel 25350 17150 3    50   Output ~ 0
+GND
 $EndSCHEMATC
