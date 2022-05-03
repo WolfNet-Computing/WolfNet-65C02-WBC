@@ -398,8 +398,6 @@ Wire Wire Line
 Wire Wire Line
 	6800 8150 6800 8450
 Wire Wire Line
-	6800 8450 6650 8450
-Wire Wire Line
 	5650 8450 5650 7950
 Wire Wire Line
 	5650 7950 5950 7950
@@ -418,9 +416,7 @@ Wire Wire Line
 	6250 8350 6250 8400
 Wire Wire Line
 	7300 8400 7300 8350
-Wire Wire Line
-	6650 8450 6650 8600
-Text GLabel 6650 8600 3    50   Input ~ 0
+Text GLabel 6650 8550 3    50   Input ~ 0
 VCC
 $Comp
 L PC_Jumpers:Jumper_2_Bridged JP4
@@ -6368,9 +6364,13 @@ GND
 Connection ~ 6650 7500
 Wire Wire Line
 	6650 7500 7300 7500
-Connection ~ 6650 8450
 Wire Wire Line
-	6650 8450 5650 8450
+	6250 8400 6650 8400
+Connection ~ 6650 8400
 Wire Wire Line
-	6250 8400 7300 8400
+	6650 8400 7300 8400
+Wire Wire Line
+	5650 8450 6800 8450
+Wire Wire Line
+	6650 8400 6650 8550
 $EndSCHEMATC

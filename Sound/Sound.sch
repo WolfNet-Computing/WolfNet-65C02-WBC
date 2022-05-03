@@ -54,12 +54,6 @@ Text GLabel 6100 2050 0    50   BiDi ~ 0
 DA6
 Text GLabel 6100 2150 0    50   BiDi ~ 0
 DA7
-Text GLabel 7100 1450 2    50   Output ~ 0
-OUT_A
-Text GLabel 7100 1550 2    50   Output ~ 0
-OUT_B
-Text GLabel 7100 1650 2    50   Output ~ 0
-OUT_C
 $Comp
 L 65xx:WD65C22 YamahaSound1
 U 1 1 65829668
@@ -307,7 +301,7 @@ Wire Wire Line
 Text GLabel 6100 3000 0    50   Input ~ 0
 ~CS_SND
 Text Notes 1150 1300 0    50   ~ 0
-Sound and Memory Mapping controller (SaMM)\nIRQ3\nAddress space: 0xD120 - 0xD12F
+Sound controller\nIRQ3\nAddress space: 0xD120 - 0xD12F
 $Comp
 L PC:Expansion_Connector J1
 U 1 1 62713709
@@ -476,34 +470,34 @@ Text GLabel 5050 2650 2    50   Output ~ 0
 2MHz
 NoConn ~ 5700 5050
 $Comp
-L Amplifier_Audio:LM386 U?
+L Amplifier_Audio:LM386 U6
 U 1 1 6273CD26
 P 8900 3500
-F 0 "U?" H 9244 3546 50  0000 L CNN
+F 0 "U6" H 9244 3546 50  0000 L CNN
 F 1 "LM386" H 9244 3455 50  0000 L CNN
-F 2 "" H 9000 3600 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 9000 3600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 9100 3700 50  0001 C CNN
 	1    8900 3500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Audio:LM386 U?
+L Amplifier_Audio:LM386 U7
 U 1 1 6273DB9A
 P 8900 4800
-F 0 "U?" H 9244 4846 50  0000 L CNN
+F 0 "U7" H 9244 4846 50  0000 L CNN
 F 1 "LM386" H 9244 4755 50  0000 L CNN
-F 2 "" H 9000 4900 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 9000 4900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 9100 5000 50  0001 C CNN
 	1    8900 4800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Audio:LM386 U?
+L Amplifier_Audio:LM386 U5
 U 1 1 6273E396
 P 8900 2100
-F 0 "U?" H 9244 2146 50  0000 L CNN
+F 0 "U5" H 9244 2146 50  0000 L CNN
 F 1 "LM386" H 9244 2055 50  0000 L CNN
-F 2 "" H 9000 2200 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 9000 2200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 9100 2300 50  0001 C CNN
 	1    8900 2100
 	1    0    0    -1  
@@ -554,4 +548,219 @@ Wire Wire Line
 	8350 3200 8250 3200
 Text GLabel 8250 3200 0    50   Input ~ 0
 VCC
+Wire Wire Line
+	8500 2400 8050 2400
+Wire Wire Line
+	8050 2400 8050 2150
+Wire Wire Line
+	8200 2000 8600 2000
+Wire Wire Line
+	7100 1450 8050 1450
+Wire Wire Line
+	8050 1450 8050 1850
+$Comp
+L Device:R_POT RV3
+U 1 1 6271DAF0
+P 8050 4700
+F 0 "RV3" H 7981 4746 50  0000 R CNN
+F 1 "R_POT" H 7981 4655 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_T-16H_Single_Horizontal" H 8050 4700 50  0001 C CNN
+F 3 "~" H 8050 4700 50  0001 C CNN
+	1    8050 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4700 8200 4700
+Wire Wire Line
+	8100 3400 8600 3400
+Wire Wire Line
+	8500 4900 8050 4900
+Wire Wire Line
+	8050 4900 8050 4850
+Wire Wire Line
+	8500 3600 7950 3600
+Wire Wire Line
+	7950 3600 7950 3550
+Wire Wire Line
+	7950 3250 7950 2400
+Wire Wire Line
+	7950 2400 7650 2400
+Wire Wire Line
+	7650 2400 7650 1550
+Wire Wire Line
+	7650 1550 7100 1550
+Wire Wire Line
+	7100 1650 7550 1650
+Wire Wire Line
+	7550 1650 7550 4050
+Wire Wire Line
+	7550 4050 8050 4050
+Wire Wire Line
+	8050 4050 8050 4550
+NoConn ~ 8900 1800
+NoConn ~ 8900 3200
+NoConn ~ 8900 4500
+$Comp
+L Device:R_POT_Dual_Separate RV1
+U 1 1 62732FE3
+P 8050 2000
+F 0 "RV1" H 7980 2046 50  0000 R CNN
+F 1 "R_POT_Dual_Separate" H 7980 1955 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_T-16H_Double_Horizontal" H 8050 2000 50  0001 C CNN
+F 3 "~" H 8050 2000 50  0001 C CNN
+	1    8050 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_Dual_Separate RV1
+U 2 1 62733622
+P 7950 3400
+F 0 "RV1" H 7880 3446 50  0000 R CNN
+F 1 "R_POT_Dual_Separate" H 7880 3355 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_T-16H_Double_Horizontal" H 7950 3400 50  0001 C CNN
+F 3 "~" H 7950 3400 50  0001 C CNN
+	2    7950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 2100 9350 2100
+Wire Wire Line
+	9200 3500 9350 3500
+Wire Wire Line
+	9550 4800 9350 4800
+NoConn ~ 8900 2400
+NoConn ~ 9000 2400
+NoConn ~ 8900 3800
+NoConn ~ 9000 3800
+NoConn ~ 8900 5100
+NoConn ~ 9000 5100
+$Comp
+L Device:C C4
+U 1 1 6274E865
+P 9350 3800
+F 0 "C4" H 9465 3846 50  0000 L CNN
+F 1 "C" H 9465 3755 50  0000 L CNN
+F 2 "" H 9388 3650 50  0001 C CNN
+F 3 "~" H 9350 3800 50  0001 C CNN
+	1    9350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 6274EADA
+P 9350 2400
+F 0 "C2" H 9465 2446 50  0000 L CNN
+F 1 "C" H 9465 2355 50  0000 L CNN
+F 2 "" H 9388 2250 50  0001 C CNN
+F 3 "~" H 9350 2400 50  0001 C CNN
+	1    9350 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 6274F92D
+P 9350 5100
+F 0 "C6" H 9465 5146 50  0000 L CNN
+F 1 "C" H 9465 5055 50  0000 L CNN
+F 2 "" H 9388 4950 50  0001 C CNN
+F 3 "~" H 9350 5100 50  0001 C CNN
+	1    9350 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2100 9350 2250
+Connection ~ 9350 2100
+Wire Wire Line
+	9350 2100 9550 2100
+Wire Wire Line
+	9350 3650 9350 3500
+Connection ~ 9350 3500
+Wire Wire Line
+	9350 3500 9550 3500
+Wire Wire Line
+	9350 4950 9350 4800
+Connection ~ 9350 4800
+Wire Wire Line
+	9350 4800 9200 4800
+Text GLabel 9350 5250 3    50   Output ~ 0
+GND
+Text GLabel 9350 3950 3    50   Output ~ 0
+GND
+Text GLabel 9350 2550 3    50   Output ~ 0
+GND
+$Comp
+L Device:CP C1
+U 1 1 62759524
+P 9700 2100
+F 0 "C1" V 9955 2100 50  0000 C CNN
+F 1 "CP" V 9864 2100 50  0000 C CNN
+F 2 "" H 9738 1950 50  0001 C CNN
+F 3 "~" H 9700 2100 50  0001 C CNN
+	1    9700 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 6275E25B
+P 9700 3500
+F 0 "C3" V 9955 3500 50  0000 C CNN
+F 1 "CP" V 9864 3500 50  0000 C CNN
+F 2 "" H 9738 3350 50  0001 C CNN
+F 3 "~" H 9700 3500 50  0001 C CNN
+	1    9700 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 6275E993
+P 9700 4800
+F 0 "C5" V 9955 4800 50  0000 C CNN
+F 1 "CP" V 9864 4800 50  0000 C CNN
+F 2 "" H 9738 4650 50  0001 C CNN
+F 3 "~" H 9700 4800 50  0001 C CNN
+	1    9700 4800
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9850 2100 2    50   Output ~ 0
+SND_R
+Text GLabel 9850 3500 2    50   Output ~ 0
+SND_L
+Text GLabel 9850 4800 2    50   Output ~ 0
+SND_SUB
+$Comp
+L Connector:AudioJack3_Ground J2
+U 1 1 62762067
+P 6900 4900
+F 0 "J2" H 6882 5225 50  0000 C CNN
+F 1 "LINE OUT" H 6882 5134 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal" H 6900 4900 50  0001 C CNN
+F 3 "~" H 6900 4900 50  0001 C CNN
+	1    6900 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 6900 5200 3    50   Output ~ 0
+GND
+Text GLabel 7100 5000 2    50   Input ~ 0
+SND_L
+Text GLabel 7100 4900 2    50   Input ~ 0
+SND_R
+Text GLabel 7100 4800 2    50   Output ~ 0
+GND
+$Comp
+L Connector:AudioJack2_Ground J3
+U 1 1 62765D72
+P 6850 5850
+F 0 "J3" H 6882 6175 50  0000 C CNN
+F 1 "SUB OUT" H 6882 6084 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal" H 6850 5850 50  0001 C CNN
+F 3 "~" H 6850 5850 50  0001 C CNN
+	1    6850 5850
+	1    0    0    -1  
+$EndComp
+Text GLabel 6850 6050 3    50   Output ~ 0
+GND
+Text GLabel 7050 5750 2    50   Output ~ 0
+GND
+Text GLabel 7050 5850 2    50   Output ~ 0
+SND_SUB
 $EndSCHEMATC
