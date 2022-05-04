@@ -280,10 +280,10 @@ Connection ~ 3300 5250
 Wire Wire Line
 	3300 5250 3850 5250
 $Comp
-L PC_Jumpers:Jumper_2_Bridged JP2
+L PC_Jumpers:Jumper_2_Bridged IRQ_EN1
 U 1 1 61933BAE
 P 3100 4950
-F 0 "JP2" V 3054 5008 50  0000 L CNN
+F 0 "IRQ_EN1" V 3054 5008 50  0000 L CNN
 F 1 "IRQ_EN" V 3145 5008 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3100 4950 50  0001 C CNN
 F 3 "~" H 3100 4950 50  0001 C CNN
@@ -291,10 +291,10 @@ F 3 "~" H 3100 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PC_Jumpers:Jumper_2_Bridged JP1
+L PC_Jumpers:Jumper_2_Bridged NMI_EN1
 U 1 1 61934091
 P 2900 4950
-F 0 "JP1" V 2854 5008 50  0000 L CNN
+F 0 "NMI_EN1" V 2854 5008 50  0000 L CNN
 F 1 "NMI_EN" V 2945 5008 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2900 4950 50  0001 C CNN
 F 3 "~" H 2900 4950 50  0001 C CNN
@@ -1036,11 +1036,11 @@ GND
 Text GLabel 3650 11750 2    50   Output ~ 0
 ~IRQ_DECIDE
 $Comp
-L PC_Jumpers:Jumper_3_Bridged12 JP7
+L PC_Jumpers:Jumper_3_Bridged12 NMI/IRQ1
 U 1 1 61A75D9B
 P 5350 11750
-F 0 "JP7" V 5304 11817 50  0000 L CNN
-F 1 "NMI/IRQ1" V 5395 11817 50  0000 L CNN
+F 0 "NMI/IRQ1" V 5304 11817 50  0000 L CNN
+F 1 "SW" V 5395 11817 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5350 11750 50  0001 C CNN
 F 3 "~" H 5350 11750 50  0001 C CNN
 	1    5350 11750
@@ -1800,10 +1800,10 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/PowerInnovations/mXyzrtvs.pdf" H 
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Switch:SW_Push SW2
+L Switch:SW_Push ON1
 U 1 1 61ACCAEF
 P 2600 4400
-F 0 "SW2" H 2600 4685 50  0000 C CNN
+F 0 "ON1" H 2600 4685 50  0000 C CNN
 F 1 "POWER ON" H 2600 4594 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 2600 4600 50  0001 C CNN
 F 3 "~" H 2600 4600 50  0001 C CNN
@@ -1919,10 +1919,10 @@ Connection ~ 6850 3900
 Wire Wire Line
 	6850 3900 6900 3900
 $Comp
-L PC_Jumpers:Jumper_2_Bridged JP3
+L PC_Jumpers:Jumper_2_Bridged VP_GND1
 U 1 1 61921827
 P 3500 4950
-F 0 "JP3" V 3454 5008 50  0000 L CNN
+F 0 "VP_GND1" V 3454 5008 50  0000 L CNN
 F 1 "VP_GND" V 3545 5008 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3500 4950 50  0001 C CNN
 F 3 "~" H 3500 4950 50  0001 C CNN
@@ -6334,10 +6334,10 @@ Wire Wire Line
 Wire Wire Line
 	6650 8400 6650 8550
 $Comp
-L Switch:SW_Push SW3
+L Switch:SW_Push OFF1
 U 1 1 6280758E
 P 2750 3250
-F 0 "SW3" H 2750 3050 50  0000 C CNN
+F 0 "OFF1" H 2750 3050 50  0000 C CNN
 F 1 "POWER OFF" H 2750 3150 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 2750 3450 50  0001 C CNN
 F 3 "~" H 2750 3450 50  0001 C CNN
@@ -6361,10 +6361,10 @@ Wire Wire Line
 Wire Wire Line
 	3650 3250 3650 3550
 $Comp
-L Switch:SW_Push SW4
+L Switch:SW_Push RESET1
 U 1 1 6196BAC3
 P 2200 8300
-F 0 "SW4" V 2154 8448 50  0000 L CNN
+F 0 "RESET1" V 2154 8448 50  0000 L CNN
 F 1 "PROCESSOR RESET" V 2245 8448 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 2200 8500 50  0001 C CNN
 F 3 "~" H 2200 8500 50  0001 C CNN

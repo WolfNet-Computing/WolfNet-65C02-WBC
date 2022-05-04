@@ -375,77 +375,77 @@ NoConn ~ 2300 4150
 $Comp
 L 74xx:74LS74 U1
 U 1 1 6271DA31
-P 3750 2700
-F 0 "U1" H 3750 3181 50  0000 C CNN
-F 1 "74HCT74" H 3750 3090 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 3750 2700 50  0001 C CNN
-F 3 "74xx/74hc_hct74.pdf" H 3750 2700 50  0001 C CNN
-	1    3750 2700
+P 3700 3750
+F 0 "U1" H 3700 4231 50  0000 C CNN
+F 1 "74HCT74" H 3700 4140 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 3700 3750 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 3700 3750 50  0001 C CNN
+	1    3700 3750
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS74 U1
 U 2 1 6271E60A
-P 4750 2750
-F 0 "U1" H 4750 3231 50  0000 C CNN
-F 1 "74HCT74" H 4750 3140 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 4750 2750 50  0001 C CNN
-F 3 "74xx/74hc_hct74.pdf" H 4750 2750 50  0001 C CNN
-	2    4750 2750
+P 4700 3800
+F 0 "U1" H 4700 4281 50  0000 C CNN
+F 1 "74HCT74" H 4700 4190 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 4700 3800 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 4700 3800 50  0001 C CNN
+	2    4700 3800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4050 2600
-Text GLabel 3450 2700 0    50   Input ~ 0
+NoConn ~ 4000 3650
+Text GLabel 3400 3750 0    50   Input ~ 0
 8MHz
 Wire Wire Line
-	4200 2800 4200 3100
+	4150 3850 4150 4150
 Wire Wire Line
-	3100 3100 3100 2600
+	3050 4150 3050 3650
 Wire Wire Line
-	3100 2600 3450 2600
+	3050 3650 3400 3650
 Wire Wire Line
-	4200 2750 4200 2800
+	4150 3800 4150 3850
 Wire Wire Line
-	3750 3000 3750 3050
+	3700 4050 3700 4100
 Wire Wire Line
-	5050 2850 5050 3100
+	5000 3900 5000 4150
 Wire Wire Line
-	5050 3100 4400 3100
+	5000 4150 4350 4150
 Wire Wire Line
-	4400 3100 4400 2650
+	4350 4150 4350 3700
 Wire Wire Line
-	4400 2650 4450 2650
+	4350 3700 4400 3700
 Wire Wire Line
-	3750 2400 3750 2150
+	3700 3450 3700 3200
 Wire Wire Line
-	3750 2150 4250 2150
+	3700 3200 4200 3200
 Wire Wire Line
-	4750 2150 4750 2450
+	4700 3200 4700 3500
 Wire Wire Line
-	4250 2150 4250 2050
-Connection ~ 4250 2150
+	4200 3200 4200 3100
+Connection ~ 4200 3200
 Wire Wire Line
-	4250 2150 4300 2150
+	4200 3200 4250 3200
 Wire Wire Line
-	3750 3050 4300 3050
+	3700 4100 4250 4100
 Wire Wire Line
-	4300 3050 4300 2150
-Connection ~ 4300 2150
-Connection ~ 4300 3050
+	4250 4100 4250 3200
+Connection ~ 4250 3200
+Connection ~ 4250 4100
 Wire Wire Line
-	4300 3050 4750 3050
+	4250 4100 4700 4100
 Wire Wire Line
-	4300 2150 4750 2150
+	4250 3200 4700 3200
 Wire Wire Line
-	4200 2750 4450 2750
-Connection ~ 4200 2800
+	4150 3800 4400 3800
+Connection ~ 4150 3850
 Wire Wire Line
-	4050 2800 4200 2800
+	4000 3850 4150 3850
 Wire Wire Line
-	3100 3100 4200 3100
-Text GLabel 4250 2050 1    50   Input ~ 0
+	3050 4150 4150 4150
+Text GLabel 4200 3100 1    50   Input ~ 0
 VCC
-Text GLabel 5050 2650 2    50   Output ~ 0
+Text GLabel 5000 3700 2    50   Output ~ 0
 2MHz
 NoConn ~ 5700 5050
 $Comp
@@ -538,10 +538,10 @@ Wire Wire Line
 Wire Wire Line
 	8050 1450 8050 1850
 $Comp
-L Device:R_POT RV3
+L Device:R_POT SUB_VOLUME1
 U 1 1 6271DAF0
 P 8050 4700
-F 0 "RV3" H 7981 4746 50  0000 R CNN
+F 0 "SUB_VOLUME1" H 7981 4746 50  0000 R CNN
 F 1 "R_POT" H 7981 4655 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Piher_T-16H_Single_Horizontal" H 8050 4700 50  0001 C CNN
 F 3 "~" H 8050 4700 50  0001 C CNN
@@ -580,22 +580,22 @@ NoConn ~ 8900 1800
 NoConn ~ 8900 3200
 NoConn ~ 8900 4500
 $Comp
-L Device:R_POT_Dual_Separate RV1
+L Device:R_POT_Dual_Separate LINE_OUT_VOLUME1
 U 1 1 62732FE3
 P 8050 2000
-F 0 "RV1" H 7980 2046 50  0000 R CNN
-F 1 "R_POT_Dual_Separate" H 7980 1955 50  0000 R CNN
+F 0 "LINE_OUT_VOLUME1" H 7980 2046 50  0000 R CNN
+F 1 "LINE OUT VOLUME" H 7980 1955 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Piher_T-16H_Double_Horizontal" H 8050 2000 50  0001 C CNN
 F 3 "~" H 8050 2000 50  0001 C CNN
 	1    8050 2000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT_Dual_Separate RV1
+L Device:R_POT_Dual_Separate LINE_OUT_VOLUME1
 U 2 1 62733622
 P 7950 3400
-F 0 "RV1" H 7880 3446 50  0000 R CNN
-F 1 "R_POT_Dual_Separate" H 7880 3355 50  0000 R CNN
+F 0 "LINE_OUT_VOLUME1" H 7880 3446 50  0000 R CNN
+F 1 "LINE OUT VOLUME" H 7880 3355 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Piher_T-16H_Double_Horizontal" H 7950 3400 50  0001 C CNN
 F 3 "~" H 7950 3400 50  0001 C CNN
 	2    7950 3400
@@ -707,7 +707,7 @@ SND_L
 Text GLabel 9850 4800 2    50   Output ~ 0
 SND_SUB
 $Comp
-L Connector:AudioJack3_Ground J2
+L Connector:AudioJack3 J2
 U 1 1 62762067
 P 6900 4900
 F 0 "J2" H 6882 5225 50  0000 C CNN
@@ -717,8 +717,6 @@ F 3 "~" H 6900 4900 50  0001 C CNN
 	1    6900 4900
 	1    0    0    -1  
 $EndComp
-Text GLabel 6900 5200 3    50   Output ~ 0
-GND
 Text GLabel 7100 5000 2    50   Input ~ 0
 SND_L
 Text GLabel 7100 4900 2    50   Input ~ 0
@@ -726,7 +724,7 @@ SND_R
 Text GLabel 7100 4800 2    50   Output ~ 0
 GND
 $Comp
-L Connector:AudioJack2_Ground J3
+L Connector:AudioJack2 J3
 U 1 1 62765D72
 P 6850 5850
 F 0 "J3" H 6882 6175 50  0000 C CNN
@@ -736,8 +734,6 @@ F 3 "~" H 6850 5850 50  0001 C CNN
 	1    6850 5850
 	1    0    0    -1  
 $EndComp
-Text GLabel 6850 6050 3    50   Output ~ 0
-GND
 Text GLabel 7050 5750 2    50   Output ~ 0
 GND
 Text GLabel 7050 5850 2    50   Output ~ 0
@@ -759,4 +755,64 @@ NoConn ~ 2300 3650
 NoConn ~ 2300 3750
 NoConn ~ 2300 3850
 NoConn ~ 2300 3950
+$Comp
+L 74xx:74HCT04 U4
+U 7 1 6273984F
+P 2850 1700
+F 0 "U4" H 3080 1746 50  0000 L CNN
+F 1 "74HCT04" H 3080 1655 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 2850 1700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2850 1700 50  0001 C CNN
+	7    2850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS21 U3
+U 3 1 6273C74D
+P 3650 1700
+F 0 "U3" H 3880 1746 50  0000 L CNN
+F 1 "74HCT21" H 3880 1655 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 3650 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS21" H 3650 1700 50  0001 C CNN
+	3    3650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U2
+U 5 1 6273E4DC
+P 4400 1700
+F 0 "U2" H 4630 1746 50  0000 L CNN
+F 1 "74HCT08" H 4630 1655 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 4400 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 4400 1700 50  0001 C CNN
+	5    4400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 U1
+U 3 1 62740A05
+P 5150 1700
+F 0 "U1" H 5380 1746 50  0000 L CNN
+F 1 "74HCT74" H 5380 1655 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5150 1700 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 5150 1700 50  0001 C CNN
+	3    5150 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel 2850 1200 1    50   Input ~ 0
+VCC
+Text GLabel 3650 1200 1    50   Input ~ 0
+VCC
+Text GLabel 4400 1200 1    50   Input ~ 0
+VCC
+Text GLabel 5150 1300 1    50   Input ~ 0
+VCC
+Text GLabel 2850 2200 3    50   Output ~ 0
+GND
+Text GLabel 3650 2200 3    50   Output ~ 0
+GND
+Text GLabel 4400 2200 3    50   Output ~ 0
+GND
+Text GLabel 5150 2100 3    50   Output ~ 0
+GND
 $EndSCHEMATC
