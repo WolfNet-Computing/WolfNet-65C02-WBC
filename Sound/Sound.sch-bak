@@ -55,10 +55,10 @@ DA6
 Text GLabel 6100 2150 0    50   BiDi ~ 0
 DA7
 $Comp
-L 65xx:WD65C22 YamahaSound1
+L 65xx:WD65C22 SOUND_CTRL1
 U 1 1 65829668
 P 5050 5750
-F 0 "YamahaSound1" H 5050 4513 60  0000 C CNN
+F 0 "SOUND_CTRL1" H 5050 4513 60  0000 C CNN
 F 1 "WD65C22" H 5050 4619 60  0000 C CNN
 F 2 "Socket:DIP_Socket-40_W11.9_W12.7_W15.24_W17.78_W18.5_3M_240-1280-00-0602J" H 4550 5950 60  0001 C CNN
 F 3 "" H 4550 5950 60  0000 C CNN
@@ -133,10 +133,6 @@ Text GLabel 5700 5550 2    50   Output ~ 0
 ~CS_SND
 Wire Wire Line
 	4000 4950 4400 4950
-Text GLabel 4200 4750 0    50   Output ~ 0
-~IRQ3
-Wire Wire Line
-	4400 4750 4200 4750
 Wire Wire Line
 	2550 5150 2550 5300
 Wire Wire Line
@@ -301,18 +297,7 @@ Wire Wire Line
 Text GLabel 6100 3000 0    50   Input ~ 0
 ~CS_SND
 Text Notes 1150 1300 0    50   ~ 0
-Sound and Memory Mapping controller (SaMM)\nIRQ3\nAddress space: 0xD120 - 0xD12F
-$Comp
-L PC:Expansion_Connector J1
-U 1 1 62713709
-P 2000 3150
-F 0 "J1" H 2050 4367 50  0000 C CNN
-F 1 "Expansion_Connector" H 2050 4276 50  0000 C CNN
-F 2 "PC:Expansion_Connector_Board" H 2000 3150 50  0001 C CNN
-F 3 "~" H 2000 3150 50  0001 C CNN
-	1    2000 3150
-	1    0    0    -1  
-$EndComp
+Sound controller\nIRQ3\nAddress space: 0xD120 - 0xD12F
 Text GLabel 1800 2150 0    50   Output ~ 0
 VCC
 Text GLabel 1800 2250 0    50   Input ~ 0
@@ -385,12 +370,6 @@ NoConn ~ 1800 4050
 NoConn ~ 1800 4150
 NoConn ~ 2300 3050
 NoConn ~ 2300 3150
-Text GLabel 2300 3550 2    50   Input ~ 0
-~IRQ3
-NoConn ~ 2300 3650
-NoConn ~ 2300 3750
-NoConn ~ 2300 3850
-NoConn ~ 2300 3950
 NoConn ~ 2300 4050
 NoConn ~ 2300 4150
 $Comp
@@ -694,7 +673,7 @@ U 1 1 62759524
 P 9700 2100
 F 0 "C1" V 9955 2100 50  0000 C CNN
 F 1 "CP" V 9864 2100 50  0000 C CNN
-F 2 "" H 9738 1950 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 9738 1950 50  0001 C CNN
 F 3 "~" H 9700 2100 50  0001 C CNN
 	1    9700 2100
 	0    -1   -1   0   
@@ -705,7 +684,7 @@ U 1 1 6275E25B
 P 9700 3500
 F 0 "C3" V 9955 3500 50  0000 C CNN
 F 1 "CP" V 9864 3500 50  0000 C CNN
-F 2 "" H 9738 3350 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 9738 3350 50  0001 C CNN
 F 3 "~" H 9700 3500 50  0001 C CNN
 	1    9700 3500
 	0    -1   -1   0   
@@ -716,7 +695,7 @@ U 1 1 6275E993
 P 9700 4800
 F 0 "C5" V 9955 4800 50  0000 C CNN
 F 1 "CP" V 9864 4800 50  0000 C CNN
-F 2 "" H 9738 4650 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 9738 4650 50  0001 C CNN
 F 3 "~" H 9700 4800 50  0001 C CNN
 	1    9700 4800
 	0    -1   -1   0   
@@ -763,4 +742,21 @@ Text GLabel 7050 5750 2    50   Output ~ 0
 GND
 Text GLabel 7050 5850 2    50   Output ~ 0
 SND_SUB
+$Comp
+L PC:Expansion_Connector J1
+U 1 1 62713709
+P 2000 3150
+F 0 "J1" H 2050 4367 50  0000 C CNN
+F 1 "Expansion_Connector" H 2050 4276 50  0000 C CNN
+F 2 "PC:Expansion_Connector_Board" H 2000 3150 50  0001 C CNN
+F 3 "~" H 2000 3150 50  0001 C CNN
+	1    2000 3150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4400 4750
+NoConn ~ 2300 3550
+NoConn ~ 2300 3650
+NoConn ~ 2300 3750
+NoConn ~ 2300 3850
+NoConn ~ 2300 3950
 $EndSCHEMATC
