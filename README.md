@@ -1,3 +1,5 @@
+![Board Preview](https://user-images.githubusercontent.com/65527568/166680765-ae8e56c6-4529-4d3d-b18a-2e8129bc0c34.png)
+
 # WN-6502-WBC
 
 WolfNet 6502 WBC. (WBC - WorkBench Computer)  
