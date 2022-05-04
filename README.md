@@ -20,7 +20,7 @@ Where can I find licensing information?
 In the Licensing folder in [Plain Text](Licensing/LICENSE), [HTML](https://thealmostgenius.geekgalaxy.com/WolfNet-6502-WBC/license.html) and [Markdown](Licensing/license.md)
 
 What size is the board?  
-330.2 mm x 508.0 mm
+330.2 mm x 508.0 mm. (2 ATX motherboards side-by-side.)
 
 That's a bit big for a board! What does it feature?
 - 6502 Processor.
