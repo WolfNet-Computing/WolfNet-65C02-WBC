@@ -1,4 +1,4 @@
-update=04/05/2022 15:02:02
+update=04/05/2022 18:38:18
 version=1
 last_client=kicad
 [general]
@@ -16,7 +16,7 @@ LibDir=
 version=1
 PageLayoutDescrFile=
 LastNetListRead=
-CopperLayerCount=6
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -64,7 +64,7 @@ Name=H.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
-Name=V2.Cu
+Name=VCC.Cu
 Type=1
 Enabled=1
 [pcbnew/Layer.In2.Cu]
@@ -72,13 +72,13 @@ Name=GND.Cu
 Type=1
 Enabled=1
 [pcbnew/Layer.In3.Cu]
-Name=VCC.Cu
+Name=In3.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In4.Cu]
-Name=H2.Cu
+Name=In4.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In5.Cu]
 Name=In5.Cu
 Type=0
@@ -237,3 +237,13 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
