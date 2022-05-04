@@ -22,7 +22,7 @@ In the Licensing folder in [Plain Text](Licensing/LICENSE), [HTML](https://theal
 What size is the board?  
 330.2 mm x 508.0 mm
 
-That's a bit big for a board! What does it feature?  
+That's a bit big for a board! What does it feature?
 - 6502 Processor.
 - Built-in Reset feature.
 - Power on and power off buttons.
