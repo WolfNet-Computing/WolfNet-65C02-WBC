@@ -399,7 +399,7 @@ RDY
 Text GLabel 2700 5300 0    50   Input ~ 0
 Sync
 Text GLabel 2700 5400 0    50   Input ~ 0
-RW
+R~W
 Text GLabel 2700 5500 0    50   Input ~ 0
 Reset
 Text GLabel 2700 5800 0    50   Input ~ 0
@@ -1560,4 +1560,15 @@ Text GLabel 2700 7850 0    50   Input ~ 0
 IRQ6
 Text GLabel 2700 7950 0    50   Input ~ 0
 IRQ7
+$Comp
+L PC:Expansion_Connector J?
+U 1 1 627369F2
+P 6400 5850
+F 0 "J?" H 6450 7067 50  0000 C CNN
+F 1 "Expansion_Connector" H 6450 6976 50  0000 C CNN
+F 2 "" H 6400 5850 50  0001 C CNN
+F 3 "~" H 6400 5850 50  0001 C CNN
+	1    6400 5850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

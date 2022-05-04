@@ -14,39 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L PC:BaseboardConnector J1
-U 1 1 60F5FFB0
-P 15100 4650
-F 0 "J1" H 15180 4642 50  0000 L CNN
-F 1 "BaseboardConnector" H 15180 4551 50  0000 L CNN
-F 2 "PC:BaseboardConnector_Male" H 15100 4650 50  0001 C CNN
-F 3 "" H 15100 4650 50  0001 C CNN
-	1    15100 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0101
-U 1 1 60F62B8C
-P 14900 3350
-F 0 "#PWR0101" H 14900 3100 50  0001 C CNN
-F 1 "GND" V 14905 3222 50  0000 R CNN
-F 2 "" H 14900 3350 50  0001 C CNN
-F 3 "" H 14900 3350 50  0001 C CNN
-	1    14900 3350
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 60F65C65
-P 14200 3550
-F 0 "#PWR0102" H 14200 3300 50  0001 C CNN
-F 1 "GND" H 14205 3377 50  0000 C CNN
-F 2 "" H 14200 3550 50  0001 C CNN
-F 3 "" H 14200 3550 50  0001 C CNN
-	1    14200 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L 74xx:74LS04 U1
 U 1 1 60F67B64
 P 13350 5800
@@ -1227,31 +1194,6 @@ F 3 "https://docs.broadcom.com/docs/AV02-2553EN" H 13950 1500 50  0001 C CNN
 	1    13950 1500
 	1    0    0    -1  
 $EndComp
-Connection ~ 14200 3250
-$Comp
-L Device:CP C1
-U 1 1 60F64799
-P 14200 3400
-F 0 "C1" H 14318 3446 50  0000 L CNN
-F 1 "10uF" H 14318 3355 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 14238 3250 50  0001 C CNN
-F 3 "~" H 14200 3400 50  0001 C CNN
-	1    14200 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0136
-U 1 1 60F631E5
-P 14200 3250
-F 0 "#PWR0136" H 14200 3100 50  0001 C CNN
-F 1 "+5V" H 14215 3423 50  0000 C CNN
-F 2 "" H 14200 3250 50  0001 C CNN
-F 3 "" H 14200 3250 50  0001 C CNN
-	1    14200 3250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14900 3250 14200 3250
 NoConn ~ 13650 1900
 NoConn ~ 13400 1950
 NoConn ~ 13300 1950
@@ -1328,70 +1270,6 @@ Text GLabel 12800 3250 3    50   Input ~ 0
 D6
 Text GLabel 12900 3250 3    50   Input ~ 0
 D7
-Text GLabel 14900 3450 0    50   Output ~ 0
-A0
-Text GLabel 14900 3550 0    50   Output ~ 0
-A1
-Text GLabel 14900 3650 0    50   Output ~ 0
-A2
-Text GLabel 14900 3750 0    50   Output ~ 0
-A3
-Text GLabel 14900 3850 0    50   Output ~ 0
-A4
-Text GLabel 14900 3950 0    50   Output ~ 0
-A5
-Text GLabel 14900 4050 0    50   Output ~ 0
-A6
-Text GLabel 14900 4150 0    50   Output ~ 0
-A7
-Text GLabel 14900 4250 0    50   Output ~ 0
-A8
-Text GLabel 14900 4350 0    50   Output ~ 0
-A9
-Text GLabel 14900 4450 0    50   Output ~ 0
-A10
-Text GLabel 14900 4550 0    50   Output ~ 0
-A11
-Text GLabel 14900 4650 0    50   Output ~ 0
-A12
-Text GLabel 14900 4750 0    50   Output ~ 0
-A13
-Text GLabel 14900 4850 0    50   Output ~ 0
-A14
-Text GLabel 14900 4950 0    50   Output ~ 0
-A15
-Text GLabel 14900 5050 0    50   Output ~ 0
-D0
-Text GLabel 14900 5150 0    50   Output ~ 0
-D1
-Text GLabel 14900 5250 0    50   Output ~ 0
-D2
-Text GLabel 14900 5350 0    50   Output ~ 0
-D3
-Text GLabel 14900 5450 0    50   Output ~ 0
-D4
-Text GLabel 14900 5550 0    50   Output ~ 0
-D5
-Text GLabel 14900 5650 0    50   Output ~ 0
-D6
-Text GLabel 14900 5750 0    50   Output ~ 0
-D7
-Text GLabel 14900 5950 0    50   Input ~ 0
-RDY
-Text GLabel 14900 6050 0    50   Output ~ 0
-Sync
-Text GLabel 14900 5850 0    50   Output ~ 0
-RW
-Text GLabel 14900 6150 0    50   Output ~ 0
-Reset
-Text GLabel 15400 3250 2    50   Output ~ 0
-PHI0
-Text GLabel 15400 3350 2    50   Output ~ 0
-PHI1
-Text GLabel 15400 3450 2    50   Output ~ 0
-PHI2
-Text GLabel 15400 3550 2    50   Output ~ 0
-NMI
 Text GLabel 2700 5600 0    50   Input ~ 0
 NMI
 Text GLabel 2700 5700 0    50   Input ~ 0
@@ -1682,38 +1560,4 @@ Text GLabel 2700 7850 0    50   Input ~ 0
 IRQ6
 Text GLabel 2700 7950 0    50   Input ~ 0
 IRQ7
-Text GLabel 15400 3650 2    50   Output ~ 0
-IRQ0
-Text GLabel 15400 3750 2    50   Output ~ 0
-IRQ1
-Text GLabel 15400 3850 2    50   Output ~ 0
-IRQ2
-Text GLabel 15400 3950 2    50   Output ~ 0
-IRQ3
-Text GLabel 15400 4050 2    50   Output ~ 0
-IRQ4
-Text GLabel 15400 4150 2    50   Output ~ 0
-IRQ5
-Text GLabel 15400 4250 2    50   Output ~ 0
-IRQ6
-Text GLabel 15400 4350 2    50   Output ~ 0
-IRQ7
-NoConn ~ 15400 4450
-NoConn ~ 15400 4550
-NoConn ~ 15400 4650
-NoConn ~ 15400 4750
-NoConn ~ 15400 4850
-NoConn ~ 15400 4950
-NoConn ~ 15400 5050
-NoConn ~ 15400 5150
-NoConn ~ 15400 5250
-NoConn ~ 15400 5350
-NoConn ~ 15400 5450
-NoConn ~ 15400 5550
-NoConn ~ 15400 5650
-NoConn ~ 15400 5750
-NoConn ~ 15400 5950
-NoConn ~ 15400 5850
-NoConn ~ 15400 6050
-NoConn ~ 15400 6150
 $EndSCHEMATC
