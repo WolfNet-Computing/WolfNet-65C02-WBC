@@ -36,3 +36,4 @@ That's a bit big for a board! What does it feature?
 - 4 processor clock speeds available.
 - Bank switched RAM. (4 banks.)
 - Bank switched ROM. (4 banks, 1 shared.)
+- Processor bus expansion slots. (To be used as a slot for add-on cards that are added straight to the board. NO CABLES! That includes you Mr Richard Branson. xD)
