@@ -18,3 +18,22 @@ I work on this project in my own time and release all files under an [OSHW](http
 
 Where can I find licensing information?  
 In the Licensing folder in [Plain Text](Licensing/LICENSE), [HTML](https://thealmostgenius.geekgalaxy.com/WolfNet-6502-WBC/license.html) and [Markdown](Licensing/license.md)
+
+What size is the board?  
+330.2 mm x 508.0 mm. (2 ATX motherboards side-by-side.)
+
+That's a bit big for a board! What does it feature?
+- 6502 Processor.
+- Built-in Reset feature.
+- Power on and power off buttons.
+- Programmable Insrtuction Decoder. (Use the dedicated ROM to program the instruction translation. E.g. invalid op-codes -> BRK)
+- Prioritised maskable interrupts.
+- [65SIB](http://forum.6502.org/viewtopic.php?p=10957#p10957) port.
+- RS-232 port. (For PC communication.)
+- 22-pin GPIO connector.
+- Dual power supply. (Wall wart or AC connector.)
+- Electronic circuit protection.
+- 4 processor clock speeds available.
+- Bank switched RAM. (4 banks.)
+- Bank switched ROM. (4 banks, 1 shared.)
+- Processor bus expansion slots. (To be used as a slot for add-on cards that are added straight to the board. NO CABLES! That includes you Mr Richard Branson. xD)
