@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>C:\Projects\Electronics\WolfNet-6502-WBC\Sound\Sound.sch</source>
-    <date>04/05/2022 18:38:23</date>
+    <date>04/05/2022 20:33:26</date>
     <tool>Eeschema (5.1.10)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -82,16 +82,8 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6273DB9A</tstamp>
     </comp>
-    <comp ref="U5">
-      <value>LM386</value>
-      <footprint>Package_DIP:DIP-8_W7.62mm_Socket_LongPads</footprint>
-      <datasheet>http://www.ti.com/lit/ds/symlink/lm386.pdf</datasheet>
-      <libsource lib="Amplifier_Audio" part="LM386" description="Low Voltage Audio Power Amplifier, DIP-8/SOIC-8/SSOP-8"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>6273E396</tstamp>
-    </comp>
     <comp ref="SUB_VOLUME1">
-      <value>R_POT</value>
+      <value>10k Ω</value>
       <footprint>Potentiometer_THT:Potentiometer_Piher_T-16H_Single_Horizontal</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="R_POT" description="Potentiometer"/>
@@ -99,30 +91,22 @@
       <tstamp>6271DAF0</tstamp>
     </comp>
     <comp ref="LINE_OUT_VOLUME1">
-      <value>LINE OUT VOLUME</value>
+      <value>10k Ω</value>
       <footprint>Potentiometer_THT:Potentiometer_Piher_T-16H_Double_Horizontal</footprint>
       <libsource lib="Device" part="R_POT_Dual_Separate" description="Dual potentiometer, separate units"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62732FE3</tstamp>
     </comp>
     <comp ref="C4">
-      <value>C</value>
+      <value>0.05 µF</value>
       <footprint>Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6274E865</tstamp>
     </comp>
-    <comp ref="C2">
-      <value>C</value>
-      <footprint>Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>6274EADA</tstamp>
-    </comp>
     <comp ref="C6">
-      <value>C</value>
+      <value>0.05 µF</value>
       <footprint>Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -130,7 +114,7 @@
       <tstamp>6274F92D</tstamp>
     </comp>
     <comp ref="C1">
-      <value>CP</value>
+      <value>250 µF</value>
       <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.50mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
@@ -138,7 +122,7 @@
       <tstamp>62759524</tstamp>
     </comp>
     <comp ref="C3">
-      <value>CP</value>
+      <value>250 µF</value>
       <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.50mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
@@ -146,14 +130,14 @@
       <tstamp>6275E25B</tstamp>
     </comp>
     <comp ref="C5">
-      <value>CP</value>
+      <value>250 µF</value>
       <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.50mm</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6275E993</tstamp>
     </comp>
-    <comp ref="J2">
+    <comp ref="LINE_OUT1">
       <value>LINE OUT</value>
       <footprint>Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal</footprint>
       <datasheet>~</datasheet>
@@ -161,7 +145,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62762067</tstamp>
     </comp>
-    <comp ref="J3">
+    <comp ref="SUB_OUT1">
       <value>SUB OUT</value>
       <footprint>Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal</footprint>
       <datasheet>~</datasheet>
@@ -176,6 +160,110 @@
       <libsource lib="PC" part="Expansion_Connector" description="Generic connector, double row, 02x21, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>62713709</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>0.05 µF</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6274EADA</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10 Ω</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62731CE4</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10 Ω</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>627320F2</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10 Ω</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>627325BE</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>10 µF</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62745B6D</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>10 µF</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6274648A</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10 Ω</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62753AA3</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>0.033 µF</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62753E9A</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>? Ω</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62766EED</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>LM386</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm_Socket_LongPads</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm386.pdf</datasheet>
+      <libsource lib="Amplifier_Audio" part="LM386" description="Low Voltage Audio Power Amplifier, DIP-8/SOIC-8/SSOP-8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6273E396</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>0.1 µF</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62770B43</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>0.1 µF</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62777C6E</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>0.1 µF</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62778328</tstamp>
     </comp>
   </components>
   <libparts>
@@ -429,6 +517,21 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Device" part="R_POT">
       <description>Potentiometer</description>
       <docs>~</docs>
@@ -579,409 +682,439 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="VCC">
-      <node ref="U5" pin="6"/>
-      <node ref="J1" pin="1"/>
-      <node ref="U3" pin="14"/>
-      <node ref="U1" pin="4"/>
-      <node ref="SOUND_GEN1" pin="13"/>
-      <node ref="SOUND_CTRL1" pin="20"/>
-      <node ref="U1" pin="13"/>
-      <node ref="U1" pin="1"/>
-      <node ref="U1" pin="14"/>
-      <node ref="U6" pin="6"/>
-      <node ref="U4" pin="14"/>
-      <node ref="U7" pin="6"/>
-      <node ref="U2" pin="14"/>
-      <node ref="U1" pin="10"/>
-      <node ref="SOUND_GEN1" pin="23"/>
+    <net code="1" name="Net-(LINE_OUT_VOLUME1-Pad5)">
+      <node ref="U6" pin="3"/>
+      <node ref="LINE_OUT_VOLUME1" pin="5"/>
     </net>
-    <net code="2" name="Net-(U5-Pad8)">
-      <node ref="U5" pin="8"/>
-    </net>
-    <net code="3" name="Net-(LINE_OUT_VOLUME1-Pad2)">
-      <node ref="U5" pin="3"/>
+    <net code="2" name="Net-(LINE_OUT_VOLUME1-Pad2)">
       <node ref="LINE_OUT_VOLUME1" pin="2"/>
+      <node ref="U5" pin="3"/>
     </net>
-    <net code="4" name="Net-(LINE_OUT_VOLUME1-Pad1)">
+    <net code="3" name="Net-(LINE_OUT_VOLUME1-Pad1)">
       <node ref="SOUND_GEN1" pin="17"/>
       <node ref="LINE_OUT_VOLUME1" pin="1"/>
     </net>
-    <net code="5" name="Net-(U7-Pad7)">
-      <node ref="U7" pin="7"/>
-    </net>
-    <net code="6" name="Net-(U6-Pad7)">
-      <node ref="U6" pin="7"/>
-    </net>
-    <net code="7" name="Net-(U5-Pad7)">
-      <node ref="U5" pin="7"/>
-    </net>
-    <net code="8" name="Net-(SOUND_GEN1-Pad18)">
+    <net code="4" name="Net-(SOUND_GEN1-Pad18)">
       <node ref="SOUND_GEN1" pin="18"/>
       <node ref="SUB_VOLUME1" pin="1"/>
     </net>
-    <net code="9" name="Net-(LINE_OUT_VOLUME1-Pad4)">
+    <net code="5" name="Net-(LINE_OUT_VOLUME1-Pad4)">
       <node ref="SOUND_GEN1" pin="15"/>
       <node ref="LINE_OUT_VOLUME1" pin="4"/>
     </net>
-    <net code="10" name="GND">
-      <node ref="J1" pin="3"/>
-      <node ref="U2" pin="7"/>
-      <node ref="U1" pin="7"/>
-      <node ref="SOUND_GEN1" pin="19"/>
-      <node ref="U3" pin="7"/>
-      <node ref="U4" pin="7"/>
-      <node ref="J3" pin="S"/>
-      <node ref="U6" pin="2"/>
-      <node ref="U6" pin="4"/>
-      <node ref="SOUND_GEN1" pin="22"/>
-      <node ref="SOUND_GEN1" pin="1"/>
-      <node ref="SOUND_CTRL1" pin="1"/>
-      <node ref="LINE_OUT_VOLUME1" pin="6"/>
-      <node ref="C2" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="LINE_OUT_VOLUME1" pin="3"/>
-      <node ref="SUB_VOLUME1" pin="3"/>
-      <node ref="U5" pin="2"/>
-      <node ref="U7" pin="2"/>
-      <node ref="U7" pin="4"/>
-      <node ref="J2" pin="S"/>
-      <node ref="U5" pin="4"/>
-    </net>
-    <net code="11" name="Net-(LINE_OUT_VOLUME1-Pad5)">
-      <node ref="LINE_OUT_VOLUME1" pin="5"/>
-      <node ref="U6" pin="3"/>
-    </net>
-    <net code="12" name="Net-(SUB_VOLUME1-Pad2)">
+    <net code="6" name="Net-(SUB_VOLUME1-Pad2)">
       <node ref="SUB_VOLUME1" pin="2"/>
       <node ref="U7" pin="3"/>
     </net>
-    <net code="13" name="Net-(U1-Pad12)">
-      <node ref="U1" pin="12"/>
-      <node ref="U1" pin="8"/>
+    <net code="7" name="SND_L">
+      <node ref="C3" pin="2"/>
+      <node ref="LINE_OUT1" pin="T"/>
     </net>
-    <net code="14" name="Net-(U1-Pad11)">
-      <node ref="U1" pin="11"/>
-      <node ref="U1" pin="6"/>
-      <node ref="U1" pin="2"/>
+    <net code="8" name="GND">
+      <node ref="U3" pin="7"/>
+      <node ref="U7" pin="4"/>
+      <node ref="U6" pin="4"/>
+      <node ref="U6" pin="2"/>
+      <node ref="U5" pin="2"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="U5" pin="4"/>
+      <node ref="C7" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="SUB_OUT1" pin="S"/>
+      <node ref="R3" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="LINE_OUT1" pin="S"/>
+      <node ref="SUB_VOLUME1" pin="3"/>
+      <node ref="SOUND_GEN1" pin="19"/>
+      <node ref="LINE_OUT_VOLUME1" pin="3"/>
+      <node ref="LINE_OUT_VOLUME1" pin="6"/>
+      <node ref="SOUND_GEN1" pin="22"/>
+      <node ref="SOUND_CTRL1" pin="1"/>
+      <node ref="SOUND_GEN1" pin="1"/>
+      <node ref="J1" pin="3"/>
+      <node ref="U7" pin="2"/>
+      <node ref="U1" pin="7"/>
+      <node ref="U2" pin="7"/>
+      <node ref="U4" pin="7"/>
     </net>
-    <net code="15" name="Net-(U1-Pad5)">
-      <node ref="U1" pin="5"/>
+    <net code="9" name="SND_R">
+      <node ref="LINE_OUT1" pin="R"/>
+      <node ref="C1" pin="2"/>
     </net>
-    <net code="16" name="2MHz">
-      <node ref="SOUND_GEN1" pin="20"/>
-      <node ref="U1" pin="9"/>
+    <net code="10" name="SND_SUB">
+      <node ref="SUB_OUT1" pin="T"/>
+      <node ref="C5" pin="2"/>
+      <node ref="R4" pin="1"/>
     </net>
-    <net code="17" name="Net-(U7-Pad1)">
-      <node ref="U7" pin="1"/>
+    <net code="11" name="Net-(C3-Pad1)">
+      <node ref="C4" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="U6" pin="5"/>
     </net>
-    <net code="18" name="Net-(U5-Pad1)">
-      <node ref="U5" pin="1"/>
+    <net code="12" name="VCC">
+      <node ref="SOUND_CTRL1" pin="20"/>
+      <node ref="U1" pin="13"/>
+      <node ref="U5" pin="6"/>
+      <node ref="U1" pin="10"/>
+      <node ref="U4" pin="14"/>
+      <node ref="U6" pin="6"/>
+      <node ref="U3" pin="14"/>
+      <node ref="U2" pin="14"/>
+      <node ref="U1" pin="14"/>
+      <node ref="U1" pin="4"/>
+      <node ref="J1" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="U7" pin="6"/>
+      <node ref="SOUND_GEN1" pin="23"/>
+      <node ref="SOUND_GEN1" pin="13"/>
     </net>
-    <net code="19" name="Net-(U7-Pad8)">
-      <node ref="U7" pin="8"/>
+    <net code="13" name="Net-(C6-Pad2)">
+      <node ref="C6" pin="2"/>
+      <node ref="R3" pin="1"/>
     </net>
-    <net code="20" name="Net-(C5-Pad1)">
-      <node ref="C6" pin="1"/>
-      <node ref="U7" pin="5"/>
-      <node ref="C5" pin="1"/>
+    <net code="14" name="Net-(C4-Pad2)">
+      <node ref="C4" pin="2"/>
+      <node ref="R2" pin="1"/>
     </net>
-    <net code="21" name="Net-(U6-Pad8)">
-      <node ref="U6" pin="8"/>
+    <net code="15" name="Net-(C9-Pad2)">
+      <node ref="U6" pin="7"/>
+      <node ref="C9" pin="2"/>
     </net>
-    <net code="22" name="Net-(U6-Pad1)">
+    <net code="16" name="Net-(C10-Pad1)">
+      <node ref="C10" pin="1"/>
       <node ref="U6" pin="1"/>
     </net>
-    <net code="23" name="Net-(SOUND_CTRL1-Pad17)">
+    <net code="17" name="Net-(SOUND_CTRL1-Pad17)">
       <node ref="SOUND_CTRL1" pin="17"/>
     </net>
-    <net code="24" name="Net-(J1-Pad41)">
-      <node ref="J1" pin="41"/>
+    <net code="18" name="Net-(U7-Pad8)">
+      <node ref="U7" pin="8"/>
     </net>
-    <net code="25" name="Net-(J1-Pad40)">
-      <node ref="J1" pin="40"/>
+    <net code="19" name="Net-(C11-Pad2)">
+      <node ref="C11" pin="2"/>
+      <node ref="U7" pin="7"/>
     </net>
-    <net code="26" name="Net-(J1-Pad39)">
-      <node ref="J1" pin="39"/>
+    <net code="20" name="Net-(C12-Pad2)">
+      <node ref="C6" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="U7" pin="5"/>
+      <node ref="C12" pin="2"/>
     </net>
-    <net code="27" name="Net-(J1-Pad38)">
-      <node ref="J1" pin="38"/>
+    <net code="21" name="Net-(C12-Pad1)">
+      <node ref="R5" pin="1"/>
+      <node ref="C12" pin="1"/>
     </net>
-    <net code="28" name="Net-(J1-Pad36)">
-      <node ref="J1" pin="36"/>
+    <net code="22" name="Net-(R5-Pad2)">
+      <node ref="U7" pin="1"/>
+      <node ref="R5" pin="2"/>
     </net>
-    <net code="29" name="Net-(J1-Pad35)">
-      <node ref="J1" pin="35"/>
+    <net code="23" name="Net-(C10-Pad2)">
+      <node ref="C10" pin="2"/>
+      <node ref="U6" pin="8"/>
     </net>
-    <net code="30" name="Net-(J1-Pad34)">
-      <node ref="J1" pin="34"/>
+    <net code="24" name="Net-(C8-Pad2)">
+      <node ref="U5" pin="8"/>
+      <node ref="C8" pin="2"/>
     </net>
-    <net code="31" name="Net-(J1-Pad33)">
-      <node ref="J1" pin="33"/>
+    <net code="25" name="Net-(C8-Pad1)">
+      <node ref="C8" pin="1"/>
+      <node ref="U5" pin="1"/>
     </net>
-    <net code="32" name="Net-(J1-Pad32)">
+    <net code="26" name="Net-(C2-Pad2)">
+      <node ref="C2" pin="2"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="27" name="Net-(C1-Pad1)">
+      <node ref="U5" pin="5"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="28" name="Net-(C7-Pad2)">
+      <node ref="U5" pin="7"/>
+      <node ref="C7" pin="2"/>
+    </net>
+    <net code="29" name="Net-(J1-Pad32)">
       <node ref="J1" pin="32"/>
     </net>
-    <net code="33" name="Net-(J1-Pad31)">
+    <net code="30" name="Net-(J1-Pad31)">
       <node ref="J1" pin="31"/>
     </net>
-    <net code="34" name="Net-(J1-Pad30)">
+    <net code="31" name="Net-(J1-Pad30)">
       <node ref="J1" pin="30"/>
     </net>
-    <net code="35" name="Net-(J1-Pad42)">
-      <node ref="J1" pin="42"/>
-    </net>
-    <net code="36" name="Net-(J1-Pad29)">
+    <net code="32" name="Net-(J1-Pad29)">
       <node ref="J1" pin="29"/>
     </net>
-    <net code="37" name="A11">
-      <node ref="U4" pin="13"/>
+    <net code="33" name="A11">
       <node ref="J1" pin="27"/>
+      <node ref="U4" pin="13"/>
     </net>
-    <net code="38" name="A10">
-      <node ref="U4" pin="11"/>
+    <net code="34" name="8MHz">
+      <node ref="J1" pin="26"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="35" name="A10">
       <node ref="J1" pin="25"/>
+      <node ref="U4" pin="11"/>
     </net>
-    <net code="39" name="A9">
-      <node ref="U4" pin="9"/>
+    <net code="36" name="A9">
       <node ref="J1" pin="23"/>
+      <node ref="U4" pin="9"/>
     </net>
-    <net code="40" name="Net-(J1-Pad22)">
+    <net code="37" name="Net-(J1-Pad22)">
       <node ref="J1" pin="22"/>
     </net>
-    <net code="41" name="A8">
-      <node ref="U3" pin="1"/>
+    <net code="38" name="A8">
       <node ref="J1" pin="21"/>
+      <node ref="U3" pin="1"/>
     </net>
-    <net code="42" name="Net-(J1-Pad20)">
+    <net code="39" name="Net-(J1-Pad20)">
       <node ref="J1" pin="20"/>
     </net>
-    <net code="43" name="A7">
-      <node ref="J1" pin="19"/>
-      <node ref="U4" pin="5"/>
+    <net code="40" name="Net-(J1-Pad33)">
+      <node ref="J1" pin="33"/>
     </net>
-    <net code="44" name="A6">
-      <node ref="J1" pin="17"/>
+    <net code="41" name="A6">
       <node ref="U4" pin="3"/>
+      <node ref="J1" pin="17"/>
+    </net>
+    <net code="42" name="Net-(J1-Pad38)">
+      <node ref="J1" pin="38"/>
+    </net>
+    <net code="43" name="Net-(J1-Pad36)">
+      <node ref="J1" pin="36"/>
+    </net>
+    <net code="44" name="Net-(J1-Pad34)">
+      <node ref="J1" pin="34"/>
     </net>
     <net code="45" name="Net-(SOUND_CTRL1-Pad21)">
       <node ref="SOUND_CTRL1" pin="21"/>
     </net>
-    <net code="46" name="Net-(C3-Pad1)">
-      <node ref="C3" pin="1"/>
-      <node ref="U6" pin="5"/>
-      <node ref="C4" pin="1"/>
+    <net code="46" name="Net-(J1-Pad42)">
+      <node ref="J1" pin="42"/>
     </net>
-    <net code="47" name="Net-(C1-Pad1)">
-      <node ref="C1" pin="1"/>
-      <node ref="U5" pin="5"/>
-      <node ref="C2" pin="1"/>
+    <net code="47" name="Net-(J1-Pad41)">
+      <node ref="J1" pin="41"/>
     </net>
-    <net code="48" name="A5">
-      <node ref="J1" pin="15"/>
-      <node ref="U3" pin="10"/>
+    <net code="48" name="Net-(J1-Pad40)">
+      <node ref="J1" pin="40"/>
     </net>
-    <net code="49" name="A4">
-      <node ref="U4" pin="1"/>
-      <node ref="J1" pin="13"/>
+    <net code="49" name="Net-(J1-Pad39)">
+      <node ref="J1" pin="39"/>
     </net>
-    <net code="50" name="SND_SUB">
-      <node ref="J3" pin="T"/>
-      <node ref="C5" pin="2"/>
+    <net code="50" name="Net-(J1-Pad35)">
+      <node ref="J1" pin="35"/>
     </net>
-    <net code="51" name="SND_L">
-      <node ref="J2" pin="T"/>
-      <node ref="C3" pin="2"/>
-    </net>
-    <net code="52" name="SND_R">
-      <node ref="J2" pin="R"/>
-      <node ref="C1" pin="2"/>
-    </net>
-    <net code="53" name="A1">
-      <node ref="SOUND_CTRL1" pin="37"/>
-      <node ref="J1" pin="7"/>
-    </net>
-    <net code="54" name="DA7">
-      <node ref="SOUND_CTRL1" pin="9"/>
-      <node ref="SOUND_GEN1" pin="4"/>
-    </net>
-    <net code="55" name="DA6">
-      <node ref="SOUND_CTRL1" pin="8"/>
-      <node ref="SOUND_GEN1" pin="5"/>
-    </net>
-    <net code="56" name="DA5">
-      <node ref="SOUND_GEN1" pin="6"/>
-      <node ref="SOUND_CTRL1" pin="7"/>
-    </net>
-    <net code="57" name="DA4">
-      <node ref="SOUND_GEN1" pin="7"/>
-      <node ref="SOUND_CTRL1" pin="6"/>
-    </net>
-    <net code="58" name="DA3">
+    <net code="51" name="DA3">
       <node ref="SOUND_CTRL1" pin="5"/>
       <node ref="SOUND_GEN1" pin="8"/>
     </net>
-    <net code="59" name="Net-(SOUND_CTRL1-Pad40)">
+    <net code="52" name="DA7">
+      <node ref="SOUND_GEN1" pin="4"/>
+      <node ref="SOUND_CTRL1" pin="9"/>
+    </net>
+    <net code="53" name="DA6">
+      <node ref="SOUND_GEN1" pin="5"/>
+      <node ref="SOUND_CTRL1" pin="8"/>
+    </net>
+    <net code="54" name="DA5">
+      <node ref="SOUND_GEN1" pin="6"/>
+      <node ref="SOUND_CTRL1" pin="7"/>
+    </net>
+    <net code="55" name="DA4">
+      <node ref="SOUND_CTRL1" pin="6"/>
+      <node ref="SOUND_GEN1" pin="7"/>
+    </net>
+    <net code="56" name="Net-(SOUND_CTRL1-Pad40)">
       <node ref="SOUND_CTRL1" pin="40"/>
     </net>
-    <net code="60" name="DA2">
-      <node ref="SOUND_GEN1" pin="9"/>
+    <net code="57" name="DA2">
       <node ref="SOUND_CTRL1" pin="4"/>
+      <node ref="SOUND_GEN1" pin="9"/>
     </net>
-    <net code="61" name="Net-(SOUND_CTRL1-Pad39)">
+    <net code="58" name="Net-(SOUND_CTRL1-Pad39)">
       <node ref="SOUND_CTRL1" pin="39"/>
     </net>
-    <net code="62" name="A0">
-      <node ref="J1" pin="5"/>
+    <net code="59" name="A0">
       <node ref="SOUND_CTRL1" pin="38"/>
+      <node ref="J1" pin="5"/>
     </net>
-    <net code="63" name="A2">
+    <net code="60" name="A1">
+      <node ref="SOUND_CTRL1" pin="37"/>
+      <node ref="J1" pin="7"/>
+    </net>
+    <net code="61" name="A2">
       <node ref="SOUND_CTRL1" pin="36"/>
       <node ref="J1" pin="9"/>
     </net>
-    <net code="64" name="A3">
-      <node ref="SOUND_CTRL1" pin="35"/>
+    <net code="62" name="A3">
       <node ref="J1" pin="11"/>
+      <node ref="SOUND_CTRL1" pin="35"/>
     </net>
-    <net code="65" name="~RESET">
+    <net code="63" name="~RESET">
       <node ref="SOUND_GEN1" pin="21"/>
       <node ref="SOUND_CTRL1" pin="34"/>
       <node ref="J1" pin="18"/>
     </net>
-    <net code="66" name="D0">
-      <node ref="SOUND_CTRL1" pin="33"/>
+    <net code="64" name="D0">
       <node ref="J1" pin="2"/>
+      <node ref="SOUND_CTRL1" pin="33"/>
     </net>
-    <net code="67" name="D1">
-      <node ref="J1" pin="4"/>
+    <net code="65" name="D1">
       <node ref="SOUND_CTRL1" pin="32"/>
+      <node ref="J1" pin="4"/>
     </net>
-    <net code="68" name="D2">
-      <node ref="SOUND_CTRL1" pin="31"/>
+    <net code="66" name="D2">
       <node ref="J1" pin="6"/>
+      <node ref="SOUND_CTRL1" pin="31"/>
     </net>
-    <net code="69" name="D3">
+    <net code="67" name="D3">
       <node ref="SOUND_CTRL1" pin="30"/>
       <node ref="J1" pin="8"/>
     </net>
-    <net code="70" name="DA1">
+    <net code="68" name="DA1">
       <node ref="SOUND_CTRL1" pin="3"/>
       <node ref="SOUND_GEN1" pin="10"/>
     </net>
-    <net code="71" name="D4">
+    <net code="69" name="D4">
       <node ref="SOUND_CTRL1" pin="29"/>
       <node ref="J1" pin="10"/>
     </net>
-    <net code="72" name="D5">
-      <node ref="SOUND_CTRL1" pin="28"/>
+    <net code="70" name="A5">
+      <node ref="J1" pin="15"/>
+      <node ref="U3" pin="10"/>
+    </net>
+    <net code="71" name="Net-(U2-Pad10)">
+      <node ref="U2" pin="10"/>
+      <node ref="U3" pin="6"/>
+    </net>
+    <net code="72" name="Net-(U2-Pad9)">
+      <node ref="U3" pin="8"/>
+      <node ref="U2" pin="9"/>
+    </net>
+    <net code="73" name="~CS_DEV">
+      <node ref="SOUND_CTRL1" pin="23"/>
+      <node ref="J1" pin="28"/>
+    </net>
+    <net code="74" name="D5">
       <node ref="J1" pin="12"/>
+      <node ref="SOUND_CTRL1" pin="28"/>
     </net>
-    <net code="73" name="D6">
-      <node ref="SOUND_CTRL1" pin="27"/>
-      <node ref="J1" pin="14"/>
-    </net>
-    <net code="74" name="D7">
-      <node ref="SOUND_CTRL1" pin="26"/>
-      <node ref="J1" pin="16"/>
-    </net>
-    <net code="75" name="PHI2">
-      <node ref="J1" pin="24"/>
-      <node ref="SOUND_CTRL1" pin="25"/>
-    </net>
-    <net code="76" name="BC1">
-      <node ref="SOUND_CTRL1" pin="11"/>
+    <net code="75" name="BC1">
       <node ref="SOUND_GEN1" pin="3"/>
+      <node ref="SOUND_CTRL1" pin="11"/>
     </net>
-    <net code="77" name="BDIR">
+    <net code="76" name="BDIR">
       <node ref="SOUND_GEN1" pin="2"/>
       <node ref="SOUND_CTRL1" pin="10"/>
     </net>
-    <net code="78" name="Net-(SOUND_GEN1-Pad16)">
+    <net code="77" name="Net-(SOUND_GEN1-Pad16)">
       <node ref="SOUND_GEN1" pin="16"/>
+    </net>
+    <net code="78" name="Net-(SOUND_GEN1-Pad14)">
+      <node ref="SOUND_GEN1" pin="14"/>
     </net>
     <net code="79" name="Net-(SOUND_GEN1-Pad14)">
       <node ref="SOUND_GEN1" pin="14"/>
     </net>
-    <net code="80" name="Net-(SOUND_GEN1-Pad14)">
-      <node ref="SOUND_GEN1" pin="14"/>
-    </net>
-    <net code="81" name="Net-(SOUND_GEN1-Pad12)">
+    <net code="80" name="Net-(SOUND_GEN1-Pad12)">
       <node ref="SOUND_GEN1" pin="12"/>
     </net>
-    <net code="82" name="~CS_DEV">
-      <node ref="SOUND_CTRL1" pin="23"/>
-      <node ref="J1" pin="28"/>
+    <net code="81" name="Net-(SOUND_CTRL1-Pad14)">
+      <node ref="SOUND_CTRL1" pin="14"/>
     </net>
-    <net code="83" name="R\~W">
-      <node ref="J1" pin="37"/>
+    <net code="82" name="D6">
+      <node ref="SOUND_CTRL1" pin="27"/>
+      <node ref="J1" pin="14"/>
+    </net>
+    <net code="83" name="D7">
+      <node ref="SOUND_CTRL1" pin="26"/>
+      <node ref="J1" pin="16"/>
+    </net>
+    <net code="84" name="PHI2">
+      <node ref="J1" pin="24"/>
+      <node ref="SOUND_CTRL1" pin="25"/>
+    </net>
+    <net code="85" name="R\~W">
       <node ref="SOUND_CTRL1" pin="22"/>
+      <node ref="J1" pin="37"/>
     </net>
-    <net code="84" name="DA0">
+    <net code="86" name="DA0">
       <node ref="SOUND_GEN1" pin="11"/>
       <node ref="SOUND_CTRL1" pin="2"/>
     </net>
-    <net code="85" name="Net-(SOUND_CTRL1-Pad19)">
+    <net code="87" name="Net-(SOUND_CTRL1-Pad19)">
       <node ref="SOUND_CTRL1" pin="19"/>
     </net>
-    <net code="86" name="Net-(SOUND_CTRL1-Pad18)">
+    <net code="88" name="Net-(SOUND_CTRL1-Pad18)">
       <node ref="SOUND_CTRL1" pin="18"/>
     </net>
-    <net code="87" name="Net-(SOUND_CTRL1-Pad16)">
+    <net code="89" name="Net-(SOUND_CTRL1-Pad16)">
       <node ref="SOUND_CTRL1" pin="16"/>
     </net>
-    <net code="88" name="Net-(SOUND_CTRL1-Pad15)">
+    <net code="90" name="Net-(SOUND_CTRL1-Pad15)">
       <node ref="SOUND_CTRL1" pin="15"/>
     </net>
-    <net code="89" name="Net-(SOUND_CTRL1-Pad14)">
-      <node ref="SOUND_CTRL1" pin="14"/>
-    </net>
-    <net code="90" name="Net-(SOUND_CTRL1-Pad13)">
+    <net code="91" name="Net-(SOUND_CTRL1-Pad13)">
       <node ref="SOUND_CTRL1" pin="13"/>
     </net>
-    <net code="91" name="~CS_SND">
-      <node ref="SOUND_CTRL1" pin="12"/>
+    <net code="92" name="~CS_SND">
       <node ref="SOUND_GEN1" pin="24"/>
+      <node ref="SOUND_CTRL1" pin="12"/>
     </net>
-    <net code="92" name="8MHz">
-      <node ref="J1" pin="26"/>
-      <node ref="U1" pin="3"/>
+    <net code="93" name="Net-(U1-Pad12)">
+      <node ref="U1" pin="8"/>
+      <node ref="U1" pin="12"/>
     </net>
-    <net code="93" name="Net-(SOUND_CTRL1-Pad24)">
-      <node ref="SOUND_CTRL1" pin="24"/>
-      <node ref="U2" pin="8"/>
+    <net code="94" name="Net-(U1-Pad11)">
+      <node ref="U1" pin="11"/>
+      <node ref="U1" pin="6"/>
+      <node ref="U1" pin="2"/>
     </net>
-    <net code="94" name="Net-(U3-Pad9)">
-      <node ref="U3" pin="9"/>
-      <node ref="U4" pin="2"/>
+    <net code="95" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
     </net>
-    <net code="95" name="Net-(U2-Pad9)">
-      <node ref="U3" pin="8"/>
-      <node ref="U2" pin="9"/>
+    <net code="96" name="2MHz">
+      <node ref="SOUND_GEN1" pin="20"/>
+      <node ref="U1" pin="9"/>
     </net>
-    <net code="96" name="Net-(U3-Pad2)">
-      <node ref="U4" pin="8"/>
-      <node ref="U3" pin="2"/>
-    </net>
-    <net code="97" name="Net-(U2-Pad10)">
-      <node ref="U2" pin="10"/>
-      <node ref="U3" pin="6"/>
-    </net>
-    <net code="98" name="Net-(U3-Pad13)">
-      <node ref="U4" pin="6"/>
-      <node ref="U3" pin="13"/>
-    </net>
-    <net code="99" name="Net-(U3-Pad12)">
-      <node ref="U4" pin="4"/>
-      <node ref="U3" pin="12"/>
-    </net>
-    <net code="100" name="Net-(U3-Pad5)">
+    <net code="97" name="Net-(U3-Pad5)">
       <node ref="U4" pin="12"/>
       <node ref="U3" pin="5"/>
     </net>
-    <net code="101" name="Net-(U3-Pad4)">
-      <node ref="U3" pin="4"/>
+    <net code="98" name="Net-(U3-Pad4)">
       <node ref="U4" pin="10"/>
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="99" name="Net-(U3-Pad2)">
+      <node ref="U3" pin="2"/>
+      <node ref="U4" pin="8"/>
+    </net>
+    <net code="100" name="Net-(U3-Pad13)">
+      <node ref="U4" pin="6"/>
+      <node ref="U3" pin="13"/>
+    </net>
+    <net code="101" name="A7">
+      <node ref="J1" pin="19"/>
+      <node ref="U4" pin="5"/>
+    </net>
+    <net code="102" name="Net-(U3-Pad9)">
+      <node ref="U3" pin="9"/>
+      <node ref="U4" pin="2"/>
+    </net>
+    <net code="103" name="A4">
+      <node ref="U4" pin="1"/>
+      <node ref="J1" pin="13"/>
+    </net>
+    <net code="104" name="Net-(SOUND_CTRL1-Pad24)">
+      <node ref="SOUND_CTRL1" pin="24"/>
+      <node ref="U2" pin="8"/>
+    </net>
+    <net code="105" name="Net-(U3-Pad12)">
+      <node ref="U4" pin="4"/>
+      <node ref="U3" pin="12"/>
     </net>
   </nets>
 </export>

@@ -672,10 +672,10 @@ SND_L
 Text GLabel 10500 4800 2    50   Output ~ 0
 SND_SUB
 $Comp
-L Connector:AudioJack3 J2
+L Connector:AudioJack3 LINE_OUT1
 U 1 1 62762067
 P 6900 4900
-F 0 "J2" H 6882 5225 50  0000 C CNN
+F 0 "LINE_OUT1" H 6882 5225 50  0000 C CNN
 F 1 "LINE OUT" H 6882 5134 50  0000 C CNN
 F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal" H 6900 4900 50  0001 C CNN
 F 3 "~" H 6900 4900 50  0001 C CNN
@@ -689,10 +689,10 @@ SND_R
 Text GLabel 7100 4800 2    50   Output ~ 0
 GND
 $Comp
-L Connector:AudioJack2 J3
+L Connector:AudioJack2 SUB_OUT1
 U 1 1 62765D72
 P 6850 5850
-F 0 "J3" H 6882 6175 50  0000 C CNN
+F 0 "SUB_OUT1" H 6882 6175 50  0000 C CNN
 F 1 "SUB OUT" H 6882 6084 50  0000 C CNN
 F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal" H 6850 5850 50  0001 C CNN
 F 3 "~" H 6850 5850 50  0001 C CNN
@@ -891,8 +891,6 @@ Wire Wire Line
 	9200 5500 9350 5500
 Wire Wire Line
 	9350 5500 9350 5350
-Wire Wire Line
-	10150 4800 10500 4800
 Text GLabel 10300 5100 3    50   Output ~ 0
 GND
 $Comp
@@ -957,4 +955,9 @@ Text GLabel 9200 3200 2    50   Output ~ 0
 GND
 Text GLabel 9200 4500 2    50   Output ~ 0
 GND
+Wire Wire Line
+	10150 4800 10300 4800
+Connection ~ 10300 4800
+Wire Wire Line
+	10300 4800 10500 4800
 $EndSCHEMATC
