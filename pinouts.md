@@ -38,7 +38,7 @@ For this connector I would refer to the 6502.org forum post for the 65 Serial In
 
 ## Expansion ports
 
-These are all usable lines taken directly from the board or processor. To be used with the matching right-angled connectors so that they can be used similarly to PCI ports in x86 family PCs.
+These are all usable lines taken directly from the board or processor. To be used with the matching right-angled connectors so that they can be used similarly to PCI ports or the ISA bus in x86 family PCs.
 
 | Column 1 | Column 2 |
 | :---: | :---: |
