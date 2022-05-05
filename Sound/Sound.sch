@@ -703,17 +703,6 @@ Text GLabel 7050 5750 2    50   Output ~ 0
 GND
 Text GLabel 7050 5850 2    50   Output ~ 0
 SND_SUB
-$Comp
-L PC:Expansion_Connector J1
-U 1 1 62713709
-P 2000 3150
-F 0 "J1" H 2050 4367 50  0000 C CNN
-F 1 "Expansion_Connector" H 2050 4276 50  0000 C CNN
-F 2 "PC:Expansion_Connector_Board" H 2000 3150 50  0001 C CNN
-F 3 "~" H 2000 3150 50  0001 C CNN
-	1    2000 3150
-	1    0    0    -1  
-$EndComp
 NoConn ~ 4400 4750
 NoConn ~ 2300 3550
 NoConn ~ 2300 3650
@@ -960,4 +949,15 @@ Wire Wire Line
 Connection ~ 10300 4800
 Wire Wire Line
 	10300 4800 10500 4800
+$Comp
+L PC:Expansion_Connector J1
+U 1 1 62713709
+P 2000 3150
+F 0 "J1" H 2050 4367 50  0000 C CNN
+F 1 "Expansion_Connector" H 2050 4276 50  0000 C CNN
+F 2 "PC:Expansion_Connector_Board" H 2000 3150 50  0001 C CNN
+F 3 "~" H 2000 3150 50  0001 C CNN
+	1    2000 3150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
