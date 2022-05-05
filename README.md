@@ -8,7 +8,7 @@ The first usable release will be version 2.0. This will be the case as we starte
 
 ## FAQ:  
 Why a 6502?  
-Because why not? It was good enough for the [Apple I](https://en.wikipedia.org/wiki/Apple_I), [Apple II](https://en.wikipedia.org/wiki/Apple_II), the [NES console](https://en.wikipedia.org/wiki/Ricoh_2A03) and many other home computers and consoles, it is a well documented processor, plus EEPROM programmers and ZIF sockets are really cheap now.
+Because why not? It was good enough for the [Apple I](https://en.wikipedia.org/wiki/Apple_I), [Apple II](https://en.wikipedia.org/wiki/Apple_II), the [NES console](https://en.wikipedia.org/wiki/Ricoh_2A03) and many other home computers and consoles, it is a well documented processor, plus EEPROM programmers and sockets are really cheap now.
 
 What programs(s) did you use to make the schematics and boards?  
 [KiCad for Windows bundle.](https://www.kicad.org/download/windows/)
