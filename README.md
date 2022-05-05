@@ -26,7 +26,7 @@ That's a bit big for a board! What does it feature?
 - 6502 Processor.
 - Built-in Reset feature.
 - Power on and power off buttons.
-- Programmable Insrtuction Decoder. (Use the dedicated ROM to program the instruction translation. E.g. invalid op-codes -> BRK)
+- Programmable Instruction Decoder. (Use the dedicated ROM to program the instruction translation. E.g. invalid op-codes -> BRK)
 - Prioritised maskable interrupts.
 - [65SIB](http://forum.6502.org/viewtopic.php?p=10957#p10957) port.
 - RS-232 port. (For PC communication.)
