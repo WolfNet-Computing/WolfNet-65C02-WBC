@@ -13,4 +13,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L PC:WolfNet_Bus_ISA_8bit J?
+U 1 1 6274B212
+P 5800 3750
+F 0 "J?" H 5800 5517 50  0000 C CNN
+F 1 "WolfNet_Bus_ISA_8bit" H 5800 5426 50  0000 C CNN
+F 2 "" H 5800 3750 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 5800 3750 50  0001 C CNN
+	1    5800 3750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
