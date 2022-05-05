@@ -78,7 +78,7 @@ K connector
 F ~
 $ENDCMP
 #
-$CMP WolfNet_Bus_ISA_8bit
+$CMP WolfNet_Bus_ISA_8bit_Socket
 D 8-bit ISA-PC bus connector
 K ISA
 F https://en.wikipedia.org/wiki/Industry_Standard_Architecture
