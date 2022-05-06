@@ -1,10 +1,14 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 update=06/05/2022 16:30:42
 =======
 update=06/05/2022 16:38:06
 >>>>>>> Stashed changes
+=======
+update=06/05/2022 18:03:29
+>>>>>>> Stashed changes
 version=1
-last_client=kicad
+last_client=eeschema
 [general]
 version=1
 RootSch=

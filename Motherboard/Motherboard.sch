@@ -6372,10 +6372,17 @@ F 3 "~" H 2200 8500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
+<<<<<<< Updated upstream
 L WolfNet-Logo:LOGO #G1
 U 1 1 6280F7FD
 P 32300 21350
 F 0 "#G1" H 32300 21146 60  0001 C CNN
+=======
+L WolfNet-Logo:LOGO #G?
+U 1 1 62809309
+P 32300 21350
+F 0 "#G?" H 32300 21146 60  0001 C CNN
+>>>>>>> Stashed changes
 F 1 "LOGO" H 32300 21554 60  0001 C CNN
 F 2 "WolfNet:WolfNet-Logo_silkscreen" H 32300 21350 50  0001 C CNN
 F 3 "" H 32300 21350 50  0001 C CNN
