@@ -5,8 +5,8 @@ $Descr A1 33110 23386
 encoding utf-8
 Sheet 1 1
 Title "WolfNet 6502 WBC - Motherboard"
-Date "2022-04-29"
-Rev "2.3"
+Date "2022-05-06"
+Rev "2.4"
 Comp "WolfNet Computing"
 Comment1 "Motherboard for the WolfNet 65C02 based (NMOS Compatible) WorkBench Computer."
 Comment2 "CODENAME: Wolfe-1"

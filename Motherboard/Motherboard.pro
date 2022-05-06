@@ -1,4 +1,8 @@
-update=04/05/2022 00:47:15
+<<<<<<< Updated upstream
+update=06/05/2022 16:30:42
+=======
+update=06/05/2022 16:38:06
+>>>>>>> Stashed changes
 version=1
 last_client=kicad
 [general]

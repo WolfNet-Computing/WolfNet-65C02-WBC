@@ -280,10 +280,10 @@ Connection ~ 3300 5250
 Wire Wire Line
 	3300 5250 3850 5250
 $Comp
-L PC_Jumpers:Jumper_2_Bridged IRQ_EN
+L PC_Jumpers:Jumper_2_Bridged IRQ_EN1
 U 1 1 61933BAE
 P 3100 4950
-F 0 "IRQ_EN" V 3054 5008 50  0000 L CNN
+F 0 "IRQ_EN1" V 3054 5008 50  0000 L CNN
 F 1 "IRQ_EN" V 3145 5008 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3100 4950 50  0001 C CNN
 F 3 "~" H 3100 4950 50  0001 C CNN
@@ -291,10 +291,10 @@ F 3 "~" H 3100 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PC_Jumpers:Jumper_2_Bridged NMI_EN
+L PC_Jumpers:Jumper_2_Bridged NMI_EN1
 U 1 1 61934091
 P 2900 4950
-F 0 "NMI_EN" V 2854 5008 50  0000 L CNN
+F 0 "NMI_EN1" V 2854 5008 50  0000 L CNN
 F 1 "NMI_EN" V 2945 5008 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2900 4950 50  0001 C CNN
 F 3 "~" H 2900 4950 50  0001 C CNN
@@ -1919,10 +1919,10 @@ Connection ~ 6850 3900
 Wire Wire Line
 	6850 3900 6900 3900
 $Comp
-L PC_Jumpers:Jumper_2_Bridged VP_GND
+L PC_Jumpers:Jumper_2_Bridged VP_GND1
 U 1 1 61921827
 P 3500 4950
-F 0 "VP_GND" V 3454 5008 50  0000 L CNN
+F 0 "VP_GND1" V 3454 5008 50  0000 L CNN
 F 1 "VP_GND" V 3545 5008 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3500 4950 50  0001 C CNN
 F 3 "~" H 3500 4950 50  0001 C CNN
