@@ -31,7 +31,7 @@ What does it feature?
 - RS-232 port. (For PC communication.)
 - 22-pin GPIO connector.
 - 20/24-pin ATX compatible power connector.
-- 4 processor clock speeds available.
+- 3 processor clock speeds available.
 - Bank switched RAM. (16 banks.)
 - Bank switched ROM. (16 banks, 1 shared.)
 - Processor bus expansion slots. (To be used as a slot for add-on cards that are added straight to the board. NO CABLE! That includes you Sir Richard Branson. xD)
