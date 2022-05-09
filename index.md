@@ -1,6 +1,6 @@
 # WolfNet 6502 WorkBench Computer
 
-* [README](README.md)  
+* [README](readme.html)  
 * [Memory map](memory_map.html)  
 * [Hardware Licensing](LICENSE.md)  
 * [Connector Pinouts](pinouts.md)
