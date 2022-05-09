@@ -17,7 +17,7 @@ Is this really free and if so how?
 I work on this project in my own time and release all files under an [OSHW](https://www.oshwa.org) license. [WolfNet Computing](https://github.com/WolfNet-Computing) is a not for profit organisation run by [me](https://github.com/TheAlmostGenius). All files needed to manufacture are there, so the only costs are for the PCB manucfacturer YOU choose to use. :D
 
 Where can I find licensing information?  
-In the Licensing folder in [Plain Text](Licensing/LICENSE), [HTML](https://thealmostgenius.geekgalaxy.com/WolfNet-6502-WBC/license.html) and [Markdown](Licensing/license.md)
+In the Licensing folder in [Plain Text](LICENSE), [HTML](https://thealmostgenius.geekgalaxy.com/WolfNet-6502-WBC/license.html) and [Markdown](license.md)
 
 What size is the board?  
 330.2 mm x 508.0 mm. (2 ATX motherboards side-by-side.)
