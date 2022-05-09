@@ -25,15 +25,13 @@ What size is the board?
 That's a bit big for a board! What does it feature?
 - 6502 Processor.
 - Built-in Reset feature.
-- Power on and power off buttons.
 - Programmable Instruction Decoder. (Use the dedicated ROM to program the instruction translation. E.g. invalid op-codes -> BRK)
 - Prioritised maskable interrupts.
 - [65SIB](http://forum.6502.org/viewtopic.php?p=10957#p10957) port.
 - RS-232 port. (For PC communication.)
 - 22-pin GPIO connector.
-- Dual power supply. (Wall wart or AC connector.)
-- Electronic circuit protection.
+- 20/24-pin ATX compatible power connector.
 - 4 processor clock speeds available.
-- Bank switched RAM. (4 banks.)
-- Bank switched ROM. (4 banks, 1 shared.)
+- Bank switched RAM. (16 banks.)
+- Bank switched ROM. (16 banks, 1 shared.)
 - Processor bus expansion slots. (To be used as a slot for add-on cards that are added straight to the board. NO CABLE! That includes you Sir Richard Branson. xD)
