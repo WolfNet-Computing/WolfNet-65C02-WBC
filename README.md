@@ -22,7 +22,7 @@ In the main folder in [Plain Text](LICENSE), [HTML](https://thealmostgenius.geek
 What size is the board?  
 TBC
 
-What does it feature?
+What does it feature?  
 - 6502 Processor.
 - Built-in Reset feature.
 - Programmable Instruction Decoder. (Use the dedicated ROM to program the instruction translation. E.g. invalid op-codes -> BRK)
