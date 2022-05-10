@@ -1,1 +1,43 @@
+9860495452019
+PC
+BUS_AT_8_Edge_Connector
+AT ISA 8 bits Bus Edge Connector
+BUS ISA AT Edge connector
 0
+62
+62
+PC
+DB9_Header
+Through hole straight pin header, 2x05, 2.54mm pitch, double rows
+Through hole pin header THT 2x05 2.54mm double row
+0
+10
+10
+PC
+Expansion_Connector_Board
+Through hole angled pin header, 2x19, 2.54mm pitch, 6mm pin length, double rows
+Through hole angled pin header THT 2x19 2.54mm double row
+0
+38
+38
+PC
+Expansion_Connector_Motherboard
+Through hole straight socket strip, 2x19, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated
+Through hole socket strip THT 2x19 2.54mm double row
+0
+38
+38
+PC
+SPI_Breakout_Female
+Through hole straight socket strip, 1x06, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
+Through hole socket strip THT 1x06 2.54mm single row
+0
+6
+6
+PC
+SPI_Breakout_Male
+Through hole angled pin header, 1x06, 2.54mm pitch, 6mm pin length, single row
+Through hole angled pin header THT 1x06 2.54mm single row
+0
+6
+6

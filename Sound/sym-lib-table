@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name 65xx)(type Legacy)(uri C:/Projects/Electronics/WolfNet-6502-WBC/65xx.lib)(options "")(descr ""))
   (lib (name PC)(type Legacy)(uri C:/Projects/Electronics/WolfNet-6502-WBC/PC.lib)(options "")(descr ""))
+  (lib (name Sound-rescue)(type Legacy)(uri ${KIPRJMOD}/Sound-rescue.lib)(options "")(descr ""))
 )
