@@ -1,7 +1,7 @@
 {
   "board": {
     "active_layer": 2,
-    "active_layer_preset": "",
+    "active_layer_preset": "All Layers",
     "auto_track_width": false,
     "hidden_nets": [],
     "high_contrast_mode": 0,
@@ -62,7 +62,7 @@
       35,
       36
     ],
-    "visible_layers": "7ffffff_8000007f",
+    "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
@@ -72,7 +72,7 @@
   "project": {
     "files": [
       {
-        "name": "Motherboard.kicad_sch",
+        "name": "Motherboard.kicad_pcb",
         "open": false,
         "window": {
           "display": 0,
