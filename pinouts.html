@@ -1,0 +1,198 @@
+<h1 id="pinouts-for-the-connectors-">Pinouts for the connectors.</h1>
+<h2 id="gpio">GPIO</h2>
+<p>5v VCC, other pins named according to their 65(C)22 counterparts.<br>GPIO0-GPIO15 are PA0-PB7 respectively and CA1-CB2 are named directly after their counterparts.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Column 1</th>
+<th style="text-align:center">Column 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">VCC</td>
+<td style="text-align:center">GND</td>
+</tr>
+<tr>
+<td style="text-align:center">GPIO0</td>
+<td style="text-align:center">CB2</td>
+</tr>
+<tr>
+<td style="text-align:center">GPIO1</td>
+<td style="text-align:center">CB1</td>
+</tr>
+<tr>
+<td style="text-align:center">GPIO2</td>
+<td style="text-align:center">CA2</td>
+</tr>
+<tr>
+<td style="text-align:center">GPIO3</td>
+<td style="text-align:center">CA1</td>
+</tr>
+<tr>
+<td style="text-align:center">GPIO4</td>
+<td style="text-align:center">GPIO15</td>
+</tr>
+<tr>
+<td style="text-align:center">GPIO5</td>
+<td style="text-align:center">GPIO14</td>
+</tr>
+<tr>
+<td style="text-align:center">GPIO6</td>
+<td style="text-align:center">GPIO13</td>
+</tr>
+<tr>
+<td style="text-align:center">GPIO7</td>
+<td style="text-align:center">GPIO12</td>
+</tr>
+<tr>
+<td style="text-align:center">GPIO8</td>
+<td style="text-align:center">GPIO11</td>
+</tr>
+<tr>
+<td style="text-align:center">GPIO9</td>
+<td style="text-align:center">GPIO10</td>
+</tr>
+</tbody>
+</table>
+<h2 id="65sib-connector">65SIB Connector</h2>
+<p>For this connector I would refer to the 6502.org forum post for the 65 Serial Interface Bus <a href="http://forum.6502.org/viewtopic.php?p=10957#p10957">here</a>. However I will provide a pinout anyways.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Column 1</th>
+<th style="text-align:center">Column 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">CONF\</td>
+<td style="text-align:center">GND</td>
+</tr>
+<tr>
+<td style="text-align:center">CLK</td>
+<td style="text-align:center">GND</td>
+</tr>
+<tr>
+<td style="text-align:center">MOSI</td>
+<td style="text-align:center">GND</td>
+</tr>
+<tr>
+<td style="text-align:center">MISO</td>
+<td style="text-align:center">+12v</td>
+</tr>
+<tr>
+<td style="text-align:center">IRQ\</td>
+<td style="text-align:center">+12v</td>
+</tr>
+<tr>
+<td style="text-align:center">SEL1\</td>
+<td style="text-align:center">SEL2\</td>
+</tr>
+<tr>
+<td style="text-align:center">-12v</td>
+<td style="text-align:center">SEL3</td>
+</tr>
+<tr>
+<td style="text-align:center">SEL4\</td>
+<td style="text-align:center">GND</td>
+</tr>
+<tr>
+<td style="text-align:center">SEL5\</td>
+<td style="text-align:center">SEL6\</td>
+</tr>
+<tr>
+<td style="text-align:center">GND</td>
+<td style="text-align:center">SEL7\</td>
+</tr>
+</tbody>
+</table>
+<h2 id="expansion-ports">Expansion ports</h2>
+<p>These are all usable lines taken directly from the board or processor. To be used with the matching right-angled connectors so that they can be used similarly to PCI ports or the ISA bus in x86 family PCs.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Column 1</th>
+<th style="text-align:center">Column 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">VCC</td>
+<td style="text-align:center">MEM_D0</td>
+</tr>
+<tr>
+<td style="text-align:center">GND</td>
+<td style="text-align:center">MEM_D1</td>
+</tr>
+<tr>
+<td style="text-align:center">A0</td>
+<td style="text-align:center">MEM_D2</td>
+</tr>
+<tr>
+<td style="text-align:center">A1</td>
+<td style="text-align:center">MEM_D3</td>
+</tr>
+<tr>
+<td style="text-align:center">A2</td>
+<td style="text-align:center">MEM_D4</td>
+</tr>
+<tr>
+<td style="text-align:center">A3</td>
+<td style="text-align:center">MEM_D5</td>
+</tr>
+<tr>
+<td style="text-align:center">A4</td>
+<td style="text-align:center">MEM_D6</td>
+</tr>
+<tr>
+<td style="text-align:center">A5</td>
+<td style="text-align:center">MEM_D7</td>
+</tr>
+<tr>
+<td style="text-align:center">A6</td>
+<td style="text-align:center">RESET\</td>
+</tr>
+<tr>
+<td style="text-align:center">A7</td>
+<td style="text-align:center">CLK</td>
+</tr>
+<tr>
+<td style="text-align:center">A8</td>
+<td style="text-align:center">PHI1</td>
+</tr>
+<tr>
+<td style="text-align:center">A9</td>
+<td style="text-align:center">PHI2</td>
+</tr>
+<tr>
+<td style="text-align:center">A10</td>
+<td style="text-align:center">8MHz</td>
+</tr>
+<tr>
+<td style="text-align:center">A11</td>
+<td style="text-align:center">CS_DEV</td>
+</tr>
+<tr>
+<td style="text-align:center">A12</td>
+<td style="text-align:center">RDY</td>
+</tr>
+<tr>
+<td style="text-align:center">A13</td>
+<td style="text-align:center">SYNC</td>
+</tr>
+<tr>
+<td style="text-align:center">A14</td>
+<td style="text-align:center">IRQ*</td>
+</tr>
+<tr>
+<td style="text-align:center">A15</td>
+<td style="text-align:center">+12v</td>
+</tr>
+<tr>
+<td style="text-align:center">R\W</td>
+<td style="text-align:center">-12v</td>
+</tr>
+</tbody>
+</table>
+<p>*The IRQ vector is decided by slot so that slot 1 = IRQ3\ and slot 5 = IRQ7\</p>
