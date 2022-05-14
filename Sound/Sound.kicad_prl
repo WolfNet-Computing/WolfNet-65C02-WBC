@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 40,
+    "active_layer": 1,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_nets": [],
@@ -74,7 +74,7 @@
   "project": {
     "files": [
       {
-        "name": "Sound.kicad_pcb",
+        "name": "Sound.kicad_sch",
         "open": false,
         "window": {
           "display": 0,
@@ -86,7 +86,7 @@
         }
       },
       {
-        "name": "Sound.kicad_sch",
+        "name": "Sound.kicad_pcb",
         "open": false,
         "window": {
           "display": 0,

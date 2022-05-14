@@ -6,8 +6,8 @@
 
   (title_block
     (title "WolfNet 6502 WBC - Sound Card")
-    (date "2022-05-11")
-    (rev "1.0")
+    (date "2022-05-14")
+    (rev "1.1")
     (company "WolfNet Computing")
     (comment 1 "Sound card for the WolfNet 65C02-based WorkBench Computer.")
     (comment 2 "NOTE: Always use same type of components for the board. CMOS OR TTL NOT MIXED!")
@@ -3603,8 +3603,8 @@
     (pin "11" (uuid f41d061e-fc65-42ab-9d9e-2d08bec94aed))
     (pin "12" (uuid 737004ac-4ed1-4c90-a966-42580bf6a0b2))
     (pin "13" (uuid 74184f24-18d8-465a-84fa-bf1da5a53ee0))
-    (pin "14" (uuid f0da62e5-e364-412f-808e-006a78d1f16d))
-    (pin "14" (uuid f0da62e5-e364-412f-808e-006a78d1f16d))
+    (pin "14" (uuid f0da62e5-e364-412f-808e-006a78d1f16e))
+    (pin "14" (uuid f0da62e5-e364-412f-808e-006a78d1f16e))
     (pin "15" (uuid a4b04322-2f3b-45f5-a23b-f4b9f9511926))
     (pin "16" (uuid 161f77d4-f639-4d14-9c45-fe012de50a5c))
     (pin "17" (uuid a50155fc-3da8-423a-9faa-81350ea2a996))
