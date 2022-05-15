@@ -7,8 +7,8 @@
   (paper "A3")
   (title_block
     (title "WolfNet 6502 WBC - Motherboard")
-    (date "2022-05-12")
-    (rev "2.5")
+    (date "2022-05-16")
+    (rev "2.6")
     (company "WolfNet Computing")
     (comment 1 "Motherboard for the WolfNet 65C02-based WorkBench Computer.")
     (comment 2 "CODENAME: Wolfe-1")
