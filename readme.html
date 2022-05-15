@@ -13,7 +13,6 @@
 <li>6502 Processor.</li>
 <li>Built-in Reset feature.</li>
 <li>Programmable Instruction Decoder. (Use the dedicated ROM to program the instruction translation. E.g. invalid op-codes -&gt; BRK)</li>
-<li>Prioritised maskable interrupts.</li>
 <li><a href="http://forum.6502.org/viewtopic.php?p=10957#p10957">65SIB</a> port.</li>
 <li>RS-232 port. (For PC communication.)</li>
 <li>22-pin GPIO connector.</li>
@@ -26,7 +25,6 @@
 <h2 id="reasons-">Reasons for design choices:</h2>
 <ul>
 <li>Programmable Instruction Decoder allows the user to translate instructions to other instructions outside of the processor and under the users control.</li>
-<li>Prioritised maskable interrupts allow for multiple interrupt sources and the processing of more important interrrupts e.g. timers, to be serviced first.</li>
 <li><a href="http://forum.6502.org/viewtopic.php?p=10957#p10957">65SIB</a> port for interfacing with external componennts via SPI for example. This allows for expansion cards, plugin boards and other things similar to these.</li>
 <li>RS-232 port will allow the PC to control the computer via serial connection using the PC's keyboard, mouse and monitor.</li>
 <li>22-pin GPIO connector for other interfaces and connections like I2C or MIDI.</li>
