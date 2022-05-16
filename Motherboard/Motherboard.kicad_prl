@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 3,
+    "active_layer": 0,
     "active_layer_preset": "All Layers",
     "auto_track_width": false,
     "hidden_nets": [],
@@ -85,7 +85,7 @@
       },
       {
         "name": "Motherboard.kicad_pcb",
-        "open": true,
+        "open": false,
         "window": {
           "display": 0,
           "maximized": true,
