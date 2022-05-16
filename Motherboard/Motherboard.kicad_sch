@@ -16956,7 +16956,7 @@
     (property "Reference" "GPIO_CTRL1" (id 0) (at 76.2 242.9002 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Value" "WD65C22" (id 1) (at 76.2 245.5926 0)
+    (property "Value" "WD65C22N" (id 1) (at 76.2 245.5926 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Footprint" "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" (id 2) (at 63.5 267.97 0)
@@ -17107,7 +17107,7 @@
     (property "Reference" "65SIB/MM1" (id 0) (at 411.48 49.8602 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Value" "WD65C22" (id 1) (at 411.48 52.5526 0)
+    (property "Value" "WD65C22N" (id 1) (at 411.48 52.5526 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Footprint" "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" (id 2) (at 424.18 86.36 0)
@@ -18424,7 +18424,7 @@
       (reference "#SYM4") (unit 1) (value "SYM_Flash_XLarge") (footprint "Symbol:Symbol_HighVoltage_Type2_CopperTop_Big")
     )
     (path "/00000000-0000-0000-0000-000061c6031f"
-      (reference "65SIB/MM1") (unit 1) (value "WD65C22") (footprint "Package_DIP:DIP-40_W15.24mm_Socket_LongPads")
+      (reference "65SIB/MM1") (unit 1) (value "WD65C22N") (footprint "Package_DIP:DIP-40_W15.24mm_Socket_LongPads")
     )
     (path "/00000000-0000-0000-0000-00006343fd00"
       (reference "65SIB_LATCH1") (unit 1) (value "74HCT137") (footprint "Package_DIP:DIP-16_W7.62mm_Socket_LongPads")
@@ -18481,7 +18481,7 @@
       (reference "CPU1") (unit 1) (value "WD65C02") (footprint "Package_DIP:DIP-40_W15.24mm_Socket_LongPads")
     )
     (path "/00000000-0000-0000-0000-000061a772a1"
-      (reference "GPIO_CTRL1") (unit 1) (value "WD65C22") (footprint "Package_DIP:DIP-40_W15.24mm_Socket_LongPads")
+      (reference "GPIO_CTRL1") (unit 1) (value "WD65C22N") (footprint "Package_DIP:DIP-40_W15.24mm_Socket_LongPads")
     )
     (path "/00000000-0000-0000-0000-00006483e48f"
       (reference "H1") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_3.2mm_M3")
