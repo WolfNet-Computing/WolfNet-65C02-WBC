@@ -5,7 +5,7 @@
   (paper "A3")
 
   (title_block
-    (title "Debug Card")
+    (title "WolfNet 6502 WBC - Debug Card")
     (date "2022-05-17")
     (rev "1.0")
     (company "WolfNet Computing")
