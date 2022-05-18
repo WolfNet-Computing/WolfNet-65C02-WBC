@@ -18127,13 +18127,13 @@
   (symbol (lib_id "Jumper:Jumper_3_Bridged12") (at 259.08 246.38 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 6f4b6105-224e-42bf-b7e2-d653e1d8735d)
-    (property "Reference" "JP?" (id 0) (at 257.4539 245.5453 90)
+    (property "Reference" "JP2" (id 0) (at 257.4539 245.5453 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Jumper_3_Bridged12" (id 1) (at 257.4539 248.0822 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 259.08 246.38 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (id 2) (at 259.08 246.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 259.08 246.38 0)
@@ -18265,13 +18265,13 @@
   (symbol (lib_id "Jumper:Jumper_3_Bridged12") (at 76.2 88.9 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid add8bc41-e3d3-481e-b128-ae08b0cb09f3)
-    (property "Reference" "JP?" (id 0) (at 74.5739 88.0653 90)
+    (property "Reference" "JP1" (id 0) (at 74.5739 88.0653 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Jumper_3_Bridged12" (id 1) (at 74.5739 90.6022 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 76.2 88.9 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (id 2) (at 76.2 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 76.2 88.9 0)
@@ -18388,7 +18388,7 @@
     (property "Value" "3.3k" (id 1) (at 105.918 209.9822 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 102.362 208.28 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (id 2) (at 102.362 208.28 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 104.14 208.28 0)
@@ -18401,7 +18401,7 @@
   (symbol (lib_id "Device:R") (at 76.2 78.74 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid dff96944-e331-4220-a56d-d8c923ac86a8)
-    (property "Reference" "R?" (id 0) (at 70.9422 78.74 90))
+    (property "Reference" "R2" (id 0) (at 70.9422 78.74 90))
     (property "Value" "3.3k Ω" (id 1) (at 73.2536 78.74 90))
     (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (id 2) (at 74.422 78.74 90)
       (effects (font (size 1.27 1.27)) hide)
@@ -18586,6 +18586,12 @@
     (path "/00000000-0000-0000-0000-000062ac7a5d"
       (reference "J9") (unit 1) (value "Expansion_Connector") (footprint "PC:Expansion_Connector_Motherboard")
     )
+    (path "/add8bc41-e3d3-481e-b128-ae08b0cb09f3"
+      (reference "JP1") (unit 1) (value "Jumper_3_Bridged12") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+    )
+    (path "/6f4b6105-224e-42bf-b7e2-d653e1d8735d"
+      (reference "JP2") (unit 1) (value "Jumper_3_Bridged12") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+    )
     (path "/00000000-0000-0000-0000-000061a41acc"
       (reference "JP4") (unit 1) (value "CLK/1") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
@@ -18594,12 +18600,6 @@
     )
     (path "/00000000-0000-0000-0000-000061a42c03"
       (reference "JP6") (unit 1) (value "CLK/4") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
-    )
-    (path "/6f4b6105-224e-42bf-b7e2-d653e1d8735d"
-      (reference "JP?") (unit 1) (value "Jumper_3_Bridged12") (footprint "")
-    )
-    (path "/add8bc41-e3d3-481e-b128-ae08b0cb09f3"
-      (reference "JP?") (unit 1) (value "Jumper_3_Bridged12") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000061a75d9b"
       (reference "NMI/IRQ1") (unit 1) (value "SW") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
@@ -18611,7 +18611,10 @@
       (reference "PWR_OK1") (unit 1) (value "LED") (footprint "LED_THT:LED_D5.0mm")
     )
     (path "/dde2964d-78c7-464b-aee8-feca4368665c"
-      (reference "R1") (unit 1) (value "3.3k") (footprint "")
+      (reference "R1") (unit 1) (value "3.3k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+    )
+    (path "/dff96944-e331-4220-a56d-d8c923ac86a8"
+      (reference "R2") (unit 1) (value "3.3k Ω") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
     )
     (path "/dcd42140-1abc-4c79-b38e-d454cf8ccfb6"
       (reference "R9") (unit 1) (value "220 Ω") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
@@ -18636,9 +18639,6 @@
     )
     (path "/00000000-0000-0000-0000-0000652a6ad9"
       (reference "R21") (unit 1) (value "3.3k Ω") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
-    )
-    (path "/dff96944-e331-4220-a56d-d8c923ac86a8"
-      (reference "R?") (unit 1) (value "3.3k Ω") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-00006196bac3"
       (reference "RESET1") (unit 1) (value "PROCESSOR RESET") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
