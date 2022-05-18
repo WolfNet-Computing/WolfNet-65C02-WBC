@@ -18339,7 +18339,7 @@
   (symbol (lib_id "Device:R") (at 104.14 208.28 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid dde2964d-78c7-464b-aee8-feca4368665c)
-    (property "Reference" "R?" (id 0) (at 105.918 207.4453 0)
+    (property "Reference" "R1" (id 0) (at 105.918 207.4453 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "3.3k" (id 1) (at 105.918 209.9822 0)
@@ -18546,6 +18546,9 @@
     (path "/74c4812c-6e06-4d26-a5a5-c7b65c0620a4"
       (reference "PWR_OK1") (unit 1) (value "LED") (footprint "LED_THT:LED_D5.0mm")
     )
+    (path "/dde2964d-78c7-464b-aee8-feca4368665c"
+      (reference "R1") (unit 1) (value "3.3k") (footprint "")
+    )
     (path "/dcd42140-1abc-4c79-b38e-d454cf8ccfb6"
       (reference "R9") (unit 1) (value "220 Ω") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
     )
@@ -18572,9 +18575,6 @@
     )
     (path "/00000000-0000-0000-0000-0000652a6ad9"
       (reference "R21") (unit 1) (value "3.3k Ω") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
-    )
-    (path "/dde2964d-78c7-464b-aee8-feca4368665c"
-      (reference "R?") (unit 1) (value "3.3k") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006196bac3"
       (reference "RESET1") (unit 1) (value "PROCESSOR RESET") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
