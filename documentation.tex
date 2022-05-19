@@ -1,0 +1,169 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt]{book} % use larger type; default would be 10pt
+\usepackage[subpreambles=true]{standalone}
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+\fancyhf{}
+\fancyhead[LE,RO]{\chaptername}
+\fancyhead[RE,LO]{\rightmark}
+\fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+\usepackage{hyperref}
+\hypersetup{
+    pdftitle={WolfNet 6502 WorkBench Computer},
+    }
+\usepackage{url}
+\graphicspath{ {.} }
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{WolfNet 6502 WorkBench Computer}
+\author{John Wolfe}
+\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed
+
+\begin{document}
+\frontmatter
+\maketitle
+\tableofcontents
+\mainmatter
+\chapter{Hardware Licensing}
+\section{Solderpad Hardware License v2.1}
+This license operates as a wraparound license to the Apache License Version 2.0 (the "Apache License") and incorporates the terms and conditions of the Apache License (which can be found here: \url{http://apache.org/licenses/LICENSE-2.0}), with the following additions and modifications. It must be read in conjunction with the Apache License. Section 1 below modifies definitions and terminology in the Apache License and Section 2 below replaces Section 2 of the Apache License. The Appendix replaces the Appendix in the Apache License. You may, at your option, choose to treat any Work released under this license as released under the Apache License (thus ignoring all sections written below entirely).
+
+Terminology in the Apache License is supplemented or modified as follows:
+
+        \textbullet"Authorship": any reference to 'authorship' shall be taken to read "authorship or design".
+
+        \textbullet"Copyright owner": any reference to 'copyright owner' shall be taken to read "Rights owner".
+
+        \textbullet"Copyright statement": the reference to 'copyright statement' shall be taken to read 'copyright or other statement pertaining to Rights'.
+
+The following new definition shall be added to the Definitions section of the Apache License:
+
+        \textbullet"Rights" means copyright and any similar right including design right (whether registered or unregistered), rights in semiconductor topographies (mask works) and database rights (but excluding Patents and Trademarks).
+The following definitions shall replace the corresponding definitions in the Apache License:
+
+        \textbullet"License" shall mean this Solderpad Hardware License version 2.1, being the terms and conditions for use, manufacture, instantiation, adaptation, reproduction, and distribution as defined by Sections 1 through 9 of this document.
+
+        \textbullet"Licensor" shall mean the owner of the Rights or entity authorized by the owner of the Rights that is granting the License.
+
+        \textbullet"Derivative Works" shall mean any work, whether in Source or Object form, that is based on (or derived from) the Work and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship or design. For the purposes of this License, Derivative Works shall not include works that remain reversibly separable from, or merely link (or bind by name) or physically connect to or interoperate with the Work and Derivative Works thereof.
+
+        \textbullet"Object" form shall mean any form resulting from mechanical transformation or translation of a Source form or the application of a Source form to physical material, including but not limited to compiled object code, generated documentation, the instantiation of a hardware design or physical object or material and conversions to other media types, including intermediate forms such as bytecodes, FPGA bitstreams, moulds, artwork and semiconductor topographies (mask works).
+
+        \textbullet"Source" form shall mean the preferred form for making modifications, including but not limited to source code, net lists, board layouts, CAD files, documentation source, and configuration files.
+
+        \textbullet"Work" shall mean the work of authorship or design, whether in Source or Object form, made available under the License, as indicated by a notice relating to Rights that is included in or attached to the work (an example is provided in the Appendix below).
+
+Grant of License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable license under the Rights to reproduce, prepare Derivative Works of, make, adapt, repair, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form and do anything in relation to the Work as if the Rights did not exist.
+
+APPENDIX
+Copyright 2019 - 2022 John Wolfe
+
+SPDX-License-Identifier: Apache-2.0 WITH SHL-2.1
+
+Licensed under the Solderpad Hardware License v 2.1 (the "License"); you may not use this file except in compliance with the License, or, at your option, the Apache License version 2.0. You may obtain a copy of the License at
+
+\href{https://solderpad.org/licenses/SHL-2.1/}{Solderpad Hardware License 2.1}
+
+Unless required by applicable law or agreed to in writing, any work distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+\chapter{README}
+WolfNet 6502 WBC. (WBC - WorkBench Computer)\\
+Designed as a single-board computer the WN-6502-WBC is an electrical design, control and programming computer. Inspired by home computers like the Apple II, many games consoles and the users of the 6502.org forums. Made using a simple design and cheap-ish, easy-to-use and easy to assemble; This computer is perfect for beginners to electronics and veterans alike.\\
+The first usable release will be version 2.0. This will be the case as we started at version 1.0 rather than 0.0 as this is hardware, NOT software.\\
+
+\section{FAQ:}
+Why a 6502?\\
+Because why not? It was good enough for the Apple I, Apple II, the NES console and many other home computers and consoles, it is a well documented processor, plus EEPROM programmers and sockets are really cheap now.\\
+\\
+What programs(s) did you use to make the schematics and boards?\\
+KiCad for Windows bundle.\\
+\\
+Is this really free and if so how?\\
+I work on this project in my own time and release all files under an OSHW license. WolfNet Computing is a not for profit organisation run by me. All files needed to manufacture are there, so the only costs are for the PCB manucfacturer YOU choose to use. :D\\
+\\
+Where can I find licensing information?\\
+In the main folder in HTML and Markdown\\
+\\
+How do I add components or circuits to it?\\
+At the moment only the 65SIB and GPIO ports are available for easily adding anything to. However there is a prototyping board in the works, this will facilitate adding components to the computer. You could also always use the KiCad libraries provided and create your own expansion card.\\
+\\
+What size is the board?\\
+305mm x 190mm.\\
+\\
+That's a bit big for a board! What does it feature?\\
+\textbullet{6502 Processor.}\\
+\textbullet{Built-in Reset feature.}\\
+\textbullet{Programmable Instruction Decoder. (Use the dedicated ROM to program the instruction translation. E.g. invalid op-codes -> BRK)}\\
+\textbullet{65SIB port.}\\
+\textbullet{RS-232 port. (For PC communication.)}\\
+\textbullet{22-pin GPIO connector.}\\
+\textbullet{20/24-pin ATX compatible power connector.}\\
+\textbullet{3 processor clock speeds available. (2, 4 \& 8 MHz)}\\
+\textbullet{Bank switched RAM. (16 banks.)}\\
+\textbullet{Bank switched ROM. (16 banks, 1 shared.)}\\
+\textbullet{Processor bus expansion slots. (To be used as a slot for add-on cards that are added straight to the board. NO CABLE! That includes you Sir Richard Branson. xD)}\\
+\\
+\section{Reasons for design choices:}
+Programmable Instruction Decoder allows the user to translate instructions to other instructions outside of the processor and under the users control.\\
+65SIB port for interfacing with external componennts via SPI for example. This allows for expansion cards, plugin boards and other things similar to these.\\
+RS-232 port will allow the PC to control the computer via serial connection using the PC's keyboard, mouse and monitor.\\
+22-pin GPIO connector for other interfaces and connections like I2C or MIDI.\\
+20/24-pin ATX compatible power connector to ensure a safe power supply is used.\\
+Bank switched RAM will allow the user to have one bank of memory per program running.\\
+Bank switched ROM means 16 programs on one EEPROM! Who doesn't want this...\\
+Processor bus expansion slots. There is already a sound card available for one of these slots.\\
+\chapter{Memory map}
+\chapter{Interactive BOM lists}
+\chapter{Connector Pinouts}
+\chapter{Pictures}
+\chapter{Thanks}
+
+\end{document}
