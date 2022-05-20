@@ -2654,11 +2654,11 @@
       (effects (font (size 1.27 1.27)) hide)
     )
   )
-  (global_label "R\\~{W}" (shape input) (at 156.21 171.45 180) (fields_autoplaced)
+  (global_label "R{slash}~{W}" (shape input) (at 156.21 171.45 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid dcc14f4b-3386-43fe-b5b3-912622926db8)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at -438.15 -161.29 0)
-      (effects (font (size 1.27 1.27)) hide)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 149.8339 171.3706 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
   (global_label "LE" (shape input) (at 110.49 81.28 270) (fields_autoplaced)
@@ -4313,7 +4313,7 @@
   (symbol (lib_id "power:GND") (at 149.86 128.27 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 1dc9ba2a-69c0-42e3-a4c2-6901de1d5d49)
-    (property "Reference" "#PWR?" (id 0) (at 149.86 134.62 0)
+    (property "Reference" "#PWR0101" (id 0) (at 149.86 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 149.987 132.6642 0))
@@ -4329,7 +4329,7 @@
   (symbol (lib_id "power:+5V") (at 149.86 125.73 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid b118dd9e-05e2-402c-8b56-7c9265857475)
-    (property "Reference" "#PWR?" (id 0) (at 149.86 129.54 0)
+    (property "Reference" "#PWR0102" (id 0) (at 149.86 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (id 1) (at 149.86 121.92 0))
@@ -4347,6 +4347,12 @@
   )
 
   (symbol_instances
+    (path "/1dc9ba2a-69c0-42e3-a4c2-6901de1d5d49"
+      (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/b118dd9e-05e2-402c-8b56-7c9265857475"
+      (reference "#PWR0102") (unit 1) (value "+5V") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-000060f72f97"
       (reference "#PWR0103") (unit 1) (value "GND") (footprint "")
     )
@@ -4445,12 +4451,6 @@
     )
     (path "/00000000-0000-0000-0000-000061095904"
       (reference "#PWR0135") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/1dc9ba2a-69c0-42e3-a4c2-6901de1d5d49"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/b118dd9e-05e2-402c-8b56-7c9265857475"
-      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006102ae1c"
       (reference "D1") (unit 1) (value "RDY") (footprint "LED_THT:LED_D5.0mm")
