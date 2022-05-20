@@ -2123,11 +2123,11 @@
       )
     )
   )
-  (symbol "MCP2200" (in_bom yes) (on_board yes)
+  (symbol "MCP2200-SO" (in_bom yes) (on_board yes)
     (property "Reference" "U" (id 0) (at 0 0 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "MCP2200" (id 1) (at 0 -27.94 0)
+    (property "Value" "MCP2200-SO" (id 1) (at 0 -27.94 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (id 2) (at 0 0 0)
@@ -2136,13 +2136,13 @@
     (property "Datasheet" "" (id 3) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (symbol "MCP2200_0_1"
+    (symbol "MCP2200-SO_0_1"
       (rectangle (start -15.24 -1.27) (end 15.24 -26.67)
         (stroke (width 0.1524) (type default) (color 0 0 0 0))
         (fill (type background))
       )
     )
-    (symbol "MCP2200_1_1"
+    (symbol "MCP2200-SO_1_1"
       (pin power_in line (at 0 1.27 270) (length 2.54)
         (name "VCC" (effects (font (size 1.27 1.27))))
         (number "1" (effects (font (size 1.27 1.27))))
