@@ -73,7 +73,7 @@
     "files": [
       {
         "name": "Debug.kicad_pcb",
-        "open": true,
+        "open": false,
         "window": {
           "display": 0,
           "maximized": true,
