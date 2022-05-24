@@ -180,6 +180,6 @@ pip-log.txt
 .DS_Store
 
 # Project specific files
-Reference
+#Reference
 WolfNet-6502-Software
 *.zip
