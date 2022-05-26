@@ -70,6 +70,19 @@
     "version": 3
   },
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "Video.kicad_sch",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": false,
+          "pos_x": -8,
+          "pos_y": 0,
+          "size_x": 976,
+          "size_y": 1038
+        }
+      }
+    ]
   }
 }
