@@ -6,7 +6,7 @@
 
   (title_block
     (title "WolfNet 6502 WBC - Motherboard")
-    (date "2022-05-20")
+    (date "2022-05-26")
     (rev "2.7")
     (company "WolfNet Computing")
     (comment 1 "Motherboard for the WolfNet 65C02-based WorkBench Computer.")
@@ -11813,7 +11813,6 @@
     )
   )
 
-
   (junction (at 257.81 80.01) (diameter 0) (color 0 0 0 0)
     (uuid 041425de-2678-4e8f-9dcf-b974d1dfb35f)
   )
@@ -11921,8 +11920,8 @@
   (no_connect (at 186.69 147.32) (uuid 625c7422-00df-4daa-adf7-7f2fe247124f))
   (no_connect (at 549.91 128.27) (uuid 7cdaf094-6a0e-46b0-b96c-5362ab402df7))
   (no_connect (at 610.87 69.85) (uuid 96742db5-a676-4dc7-ab80-55b9b3167b34))
-  (no_connect (at 608.33 69.85) (uuid 96742db5-a676-4dc7-ab80-55b9b3167b34))
-  (no_connect (at 623.57 69.85) (uuid 96742db5-a676-4dc7-ab80-55b9b3167b34))
+  (no_connect (at 608.33 69.85) (uuid 96742db5-a676-4dc7-ab80-55b9b3167b35))
+  (no_connect (at 623.57 69.85) (uuid 96742db5-a676-4dc7-ab80-55b9b3167b36))
   (no_connect (at 764.54 322.58) (uuid 99439eb5-7cb9-444b-9bf6-28ba194de68c))
   (no_connect (at 622.3 322.58) (uuid 99439eb5-7cb9-444b-9bf6-28ba194de68d))
   (no_connect (at 726.44 322.58) (uuid 99439eb5-7cb9-444b-9bf6-28ba194de68e))
