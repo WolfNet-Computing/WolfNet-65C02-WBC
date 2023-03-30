@@ -21676,7 +21676,7 @@
   )
 
   (gr_rect (start 19.05 25.4) (end 323.85 215.9) (layer "Edge.Cuts") (width 0.1) (fill none) (tstamp dd5e1340-1f4b-40e9-af45-9e9a135e8812))
-  (gr_text "https://thealmostgenius.geekgalaxy.com/WolfNet-6502-WBC/" (at 147.32 96.52) (layer "F.SilkS") (tstamp 2f909d11-6533-4a6e-810e-dc846fe05585)
+  (gr_text "https://wolfnet-computing.com" (at 147.32 96.52) (layer "F.SilkS") (tstamp 2f909d11-6533-4a6e-810e-dc846fe05585)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
   (gr_text "WolfNet-6502-WBC" (at 147.32 90.17) (layer "F.SilkS") (tstamp 6660d70f-d483-4aa1-8745-b149443d13cd)
