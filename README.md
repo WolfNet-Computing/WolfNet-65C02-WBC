@@ -1,4 +1,4 @@
 [Pictures](./pictures.html)  
-[Pinout](./pinout.html)  
+[Connector Pinouts](./pinouts.html)  
 [Memory Map](./memory_map.html)  
 [Thanks](./thanks.html)  
