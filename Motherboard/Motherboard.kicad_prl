@@ -132,19 +132,7 @@
   "project": {
     "files": [
       {
-        "name": "Motherboard.kicad_pcb",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": false,
-          "pos_x": -16,
-          "pos_y": -16,
-          "size_x": 1936,
-          "size_y": 1048
-        }
-      },
-      {
-        "name": "Motherboard.kicad_sch",
+        "name": "Motherboard.kicad_pro",
         "open": false,
         "window": {
           "display": 0,
