@@ -1,12 +1,19 @@
 (kicad_pcb
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "Prototyping Board")
+		(date "2026-AUG-31")
+		(rev "1.0")
+		(company "WolfNet Computing C.I.C.")
+		(comment 1 "INCOMPLETE")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -41,7 +48,20 @@
 	(setup
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
-		(tenting front back)
+		(tenting
+			(front yes)
+			(back yes)
+		)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(capping no)
+		(filling no)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -50,15 +70,12 @@
 			(usegerberattributes yes)
 			(usegerberadvancedattributes yes)
 			(creategerberjobfile yes)
-			(dashed_line_dash_ratio 12.000000)
-			(dashed_line_gap_ratio 3.000000)
+			(dashed_line_dash_ratio 12)
+			(dashed_line_gap_ratio 3)
 			(svgprecision 6)
 			(plotframeref no)
 			(mode 1)
 			(useauxorigin no)
-			(hpglpennumber 1)
-			(hpglpenspeed 20)
-			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
 			(pdf_metadata yes)
@@ -82,7 +99,6 @@
 			(outputdirectory "")
 		)
 	)
-	(net 0 "")
 	(footprint "PC:Expansion_Connector_Board"
 		(layer "F.Cu")
 		(uuid "be9b46c3-fff0-460f-b731-1f695cb7b240")
@@ -136,6 +152,7 @@
 			)
 		)
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.27 -1.27)
 			(end 0 -1.27)
@@ -3325,14 +3342,14 @@
 		)
 	)
 	(gr_line
-		(start 142.24 45.72)
-		(end 142.24 111.76)
+		(start 42.164 45.72)
+		(end 142.24 45.72)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(layer "Edge.Cuts")
-		(uuid "39514db8-aed9-4d06-be37-46a63ad1c7d9")
+		(uuid "bff0c53b-7e49-4f6b-bd94-b7ebaf3f8fff")
 	)
 	(gr_line
 		(start 42.164 111.76)
@@ -3345,6 +3362,16 @@
 		(uuid "5acea866-be2e-4da3-8a66-01314fc6e5e7")
 	)
 	(gr_line
+		(start 142.24 45.72)
+		(end 142.24 111.76)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "39514db8-aed9-4d06-be37-46a63ad1c7d9")
+	)
+	(gr_line
 		(start 142.24 111.76)
 		(end 42.164 111.76)
 		(stroke
@@ -3353,16 +3380,6 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "a1b06ded-5f4f-4061-92f1-b977c3516cf3")
-	)
-	(gr_line
-		(start 42.164 45.72)
-		(end 142.24 45.72)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "Edge.Cuts")
-		(uuid "bff0c53b-7e49-4f6b-bd94-b7ebaf3f8fff")
 	)
 	(dimension
 		(type aligned)
